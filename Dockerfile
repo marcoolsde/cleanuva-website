@@ -1,27 +1,18 @@
-FROM node:22-alpine AS deps
-WORKDIR /app
-
-RUN corepack enable
-
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-RUN pnpm install --frozen-lockfile
-
 FROM node:22-alpine AS builder
 WORKDIR /app
 
-RUN corepack enable
+COPY package.json ./
 
-COPY --from=deps /app/node_modules ./node_modules
+RUN npm install --legacy-peer-deps
+
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN pnpm build
+RUN npm run build
 
 FROM node:22-alpine AS runner
 WORKDIR /app
-
-RUN corepack enable
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
@@ -32,4 +23,4 @@ COPY --from=builder /app ./
 
 EXPOSE 3002
 
-CMD ["pnpm", "start"]
+CMD ["npm", "run", "start"]
