@@ -1,0 +1,1190 @@
+{
+  "Common": {
+    "brand": "Cleanuva",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "selectLanguage": "Select language"
+  },
+  "Nav": {
+    "platform": "Platform",
+    "robotics": "Robotics",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "company": "Company"
+  },
+  "Cta": {
+    "requestDemo": "Request a demo",
+    "getPricing": "Get pricing",
+    "getRoboticsPricing": "Get robotics pricing",
+    "seeCommandCenter": "See the Command Center"
+  },
+  "Hero": {
+    "eyebrow": "The AI-native operating layer for solar",
+    "headline": {
+      "sees": {
+        "lead": "It unifies the",
+        "accent": "fragments."
+      },
+      "fix": {
+        "lead": "It coordinates the",
+        "accent": "work."
+      },
+      "paid": {
+        "lead": "It runs the",
+        "accent": "operation."
+      }
+    },
+    "subline": "Cleanuva unifies your fragmented systems, coordinates the work, and gives your team an AI Copilot grounded in your plant's own operational knowledge — the system you run solar on, not another dashboard.",
+    "seeHowItWorks": "See how it works",
+    "sceneAlt": "A solar plant running on the Cleanuva operating layer, with a connected cleaning robot executing a task"
+  },
+  "Outcome": {
+    "eyebrow": "Verified recovery",
+    "title": "Verified recovery, where it pays.",
+    "body": "Where soiling economics justify it, Cleanuva confirms recovered yield against real generation — financial-grade evidence you can act on and stand behind, not an estimate.",
+    "steps": {
+      "detected": "Detected",
+      "yield": "Yield impact",
+      "recovered": "Revenue recovered",
+      "cost": "Cleaning cost",
+      "roi": "Return",
+      "verified": "Outcome"
+    },
+    "values": {
+      "soiling": "Soiling",
+      "verified": "Verified"
+    }
+  },
+  "Loop": {
+    "eyebrow": "The operating model",
+    "title": "Fragmented layers, one connected system.",
+    "body": "Connect, analyze, inspect, execute, verify — the architecture in motion. Fragmented systems, workflows, and intelligence become one coordinated, accountable operation.",
+    "platformTag": "Cleanuva Platform",
+    "roboticsTag": "Cleanuva Robotics",
+    "verbs": {
+      "connect": "Connect",
+      "analyze": "Analyze",
+      "inspect": "Inspect",
+      "execute": "Execute",
+      "verify": "Verify"
+    }
+  },
+  "Proof": {
+    "eyebrow": "Proof",
+    "title": "Outcomes, not dashboards.",
+    "items": {
+      "revenueRecovered": "Revenue recovered",
+      "yieldUplift": "Yield uplift",
+      "truckRolls": "Truck rolls reduced",
+      "plantsManaged": "Plants managed"
+    },
+    "note": "Illustrative figures — verified case studies coming soon."
+  },
+  "Solutions": {
+    "eyebrow": "Solutions by role",
+    "title": "Built for everyone who runs solar.",
+    "learnMore": "Learn more",
+    "roles": {
+      "owners": {
+        "title": "Self-operated Asset Owners",
+        "outcome": "Run a lean in-house team without losing your operation's hard-won expertise.",
+        "help": "Keep senior-engineer know-how in the system, so a smaller team can run the whole portfolio with confidence."
+      },
+      "om": {
+        "title": "Independent O&M Providers",
+        "outcome": "Escape the multi-portal scramble — and win renewals with proof.",
+        "help": "Run every client's mixed fleet from one place, and hand owners verified cleaning-ROI evidence that locks in the next contract."
+      },
+      "ipps": {
+        "title": "Financial Asset Owners / IPPs",
+        "outcome": "An independent, trustworthy read on what your contractors actually deliver.",
+        "help": "Audit performance and verify real recovery yourself — no more taking the O&M report on faith."
+      },
+      "epc": {
+        "title": "EPC Contractors",
+        "outcome": "Differentiate your tender, and protect yourself through the warranty period.",
+        "help": "Hard evidence to delineate performance liability — and an intelligent operating layer that strengthens your bid."
+      },
+      "auditor": {
+        "title": "Technical Auditors",
+        "outcome": "Turn years of messy historical data into fast, financial-grade reports.",
+        "help": "Drop in historical exports and inspection reports and get clean degradation and recovery analysis in minutes."
+      }
+    },
+    "page": {
+      "title": "For the people who run solar.",
+      "intro": "Cleanuva Solutions packages Platform and Robotics into one accountable operation for every role in the asset's life — instead of a dozen disconnected tools. Here's what that looks like for each.",
+      "ctaTitle": "See it on your portfolio.",
+      "ctaBody": "A short, focused demo on your assets — no account needed.",
+      "cta": "Request a demo"
+    }
+  },
+  "FinalCta": {
+    "title": "Run your plant on Cleanuva.",
+    "body": "Book a Command Center walkthrough and meet the AI Copilot grounded in your operation — or get pricing for connected robotic cleaning."
+  },
+  "CommandCenter": {
+    "eyebrow": "Platform · Command Center",
+    "title": "One live operational picture.",
+    "body": "A preview of the Cleanuva Command Center — portfolio health, live telemetry, work orders, AI recommendations, and verified outcomes, all in one room.",
+    "mapTitle": "Portfolio",
+    "live": "Live",
+    "mapAlt": "Portfolio map showing site status across regions",
+    "telemetryLabel": "Portfolio yield",
+    "logTitle": "Activity",
+    "woTitle": "Work orders",
+    "wo": {
+      "queued": "Queued",
+      "executing": "Dispatched",
+      "done": "Verified"
+    },
+    "actions": {
+      "dispatch": "Dispatch NuvaTrack R · String 12",
+      "rca": "Inverter alarm · root-cause analysis",
+      "restored": "Yield restored +4.8%",
+      "underperf": "String underperformance flagged"
+    },
+    "verified": "Outcome verified — yield back on the meter",
+    "cta": "See the Command Center"
+  },
+  "Vision": {
+    "eyebrow": "Future expansion",
+    "title": "Where the loop goes next.",
+    "body": "A look at the capabilities we're building toward. These are on our roadmap — not yet generally available.",
+    "badge": "Roadmap",
+    "items": {
+      "drone": {
+        "title": "Drone Inspection",
+        "desc": "A connected aerial and thermal data-capture layer, feeding inspection straight into the Copilot's intelligence."
+      },
+      "thermal": {
+        "title": "Thermal Inspection",
+        "desc": "Thermal and IR findings from specialist inspection partners, connected into your operating picture."
+      },
+      "defect": {
+        "title": "Defect Detection",
+        "desc": "Module-level defect classification from specialist providers, fed straight into the Copilot view."
+      },
+      "twin": {
+        "title": "Digital Twin",
+        "desc": "A living model of every asset for what-if operations."
+      },
+      "agents": {
+        "title": "Autonomous operation",
+        "desc": "Narrow, audited automation — earned only after the advisory Copilot has proven itself."
+      }
+    }
+  },
+  "Platform": {
+    "Hero": {
+      "eyebrow": "The AI-native operating layer for solar",
+      "headline": "The operating system for solar assets.",
+      "subline": "Cleanuva unifies your fragmented systems, coordinates the work, and gives your team an AI Copilot grounded in your plant's own operational knowledge — so you run the operation instead of chasing it.",
+      "values": {
+        "truckRolls": "Coordinate crews and robots",
+        "rca": "Diagnose root cause with AI",
+        "revenue": "Prove every outcome"
+      },
+      "sceneAlt": "The Cleanuva Command Center showing live portfolio intelligence",
+      "diag": {
+        "title": "AI Copilot",
+        "confidence": "97%",
+        "rootCauseLabel": "Root cause",
+        "rootCauseValue": "String-level soiling",
+        "assetLabel": "Asset",
+        "assetValue": "DE-NRW-04 · String 12"
+      }
+    },
+    "Roi": {
+      "eyebrow": "Verified recovery",
+      "title": "Verified recovery — proven against real results.",
+      "calculatorCta": "Request a demo",
+      "subline": "A financial-grade view of recovered yield, reconciled against real generation rather than estimated. Worked example · 250 MWp portfolio · 30-day window, where soiling economics justify it. Illustrative figures."
+    },
+    "IntelArc": {
+      "eyebrow": "The intelligence arc",
+      "title": "From signal to evidence-based decision.",
+      "body": "Before anyone drives to site, Cleanuva turns raw signals into an evidence-based diagnosis — so every dispatch is a decision you can justify.",
+      "stages": {
+        "connect": {
+          "title": "Connect",
+          "desc": "Ingest signals and link every asset into one live picture."
+        },
+        "analyze": {
+          "title": "Analyze",
+          "desc": "AI diagnosis, alarm correlation, and root-cause analysis."
+        },
+        "inspect": {
+          "title": "Inspect",
+          "desc": "Confirm the fault in the field with targeted imagery."
+        }
+      }
+    },
+    "Capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "Everything it takes to run the operation.",
+      "body": "One operating system, organized as three layers — operational intelligence, coordination, and accountability.",
+      "groups": {
+        "intelligence": "Operational Intelligence",
+        "coordination": "Operational Coordination",
+        "accountability": "Operational Accountability"
+      },
+      "items": {
+        "telemetry": {
+          "title": "Telemetry Integration",
+          "outcome": "Every plant, inverter, and meter in one live picture — no more logging into a dozen portals.",
+          "proof": "All sites · one feed"
+        },
+        "diagnosis": {
+          "title": "AI Diagnosis",
+          "outcome": "Interpret faults, correlate alarms, and confirm the root cause — your team acts on answers, not raw alarms.",
+          "proof": "97% diagnosis confidence"
+        },
+        "analytics": {
+          "title": "Asset Performance Analytics",
+          "outcome": "See exactly where yield and revenue are leaking across the whole portfolio.",
+          "proof": "+6.8% yield uplift"
+        },
+        "correlation": {
+          "title": "Alarm Correlation",
+          "outcome": "Thousands of alarms collapse into the few root causes that actually matter.",
+          "proof": "Alarm noise −90%"
+        },
+        "workOrders": {
+          "title": "Work Order Management",
+          "outcome": "Turn a diagnosis into the right job — assigned, tracked, and closed.",
+          "proof": "Detection → dispatch in minutes"
+        },
+        "dispatch": {
+          "title": "Execution Dispatch",
+          "outcome": "Coordinate the right fix across crews, robots, and drones — automatically.",
+          "proof": "−38% truck rolls"
+        },
+        "verification": {
+          "title": "Verification & Proof",
+          "outcome": "Measure the recovered yield and prove every euro back to owners and investors.",
+          "proof": "€12,400 recovered · verified"
+        },
+        "reporting": {
+          "title": "Reporting",
+          "outcome": "Board-ready reports your asset managers and LPs actually trust.",
+          "proof": "Owner & LP ready"
+        }
+      }
+    },
+    "Command": {
+      "eyebrow": "Command Center",
+      "title": "Mission control for your whole portfolio.",
+      "body": "One operating picture across every site — status, alarms, diagnosis, coordination, robots, and the AI Copilot. Not a dashboard you watch; a system you run.",
+      "consoleTitle": "Cleanuva · Command Center",
+      "live": "Live",
+      "kpi": {
+        "sitesOnline": "Sites online",
+        "mwp": "MWp managed",
+        "alarms": "Active alarms",
+        "yield": "Portfolio yield"
+      },
+      "panels": {
+        "portfolio": "Portfolio",
+        "plants": "Plant status",
+        "alarms": "Alarms",
+        "recommendations": "AI recommendations",
+        "work": "Work & dispatch",
+        "verification": "Verification"
+      },
+      "cols": {
+        "asset": "Asset",
+        "region": "Region",
+        "status": "Status",
+        "yield": "Yield"
+      },
+      "status": {
+        "online": "Online",
+        "warning": "Attention",
+        "critical": "Fault"
+      },
+      "alarms": {
+        "a1": "Inverter trip · block 3",
+        "a2": "Soiling loss rising · String 12",
+        "a3": "Tracker stall · row 22"
+      },
+      "rec": {
+        "r1Title": "Dispatch NuvaTrack R",
+        "r1Desc": "Recover +4.8% on DE-NRW-04 · String 12 — no truck roll.",
+        "r1Impact": "+€12,400",
+        "r2Title": "Inspect inverter ES-AND-11",
+        "r2Desc": "Alarm cluster resolves to a single root cause.",
+        "r2Impact": "Avoids 2 truck rolls",
+        "apply": "Apply",
+        "review": "Review"
+      },
+      "wo": {
+        "queued": "Queued",
+        "executing": "Dispatched",
+        "done": "Verified"
+      },
+      "woItems": {
+        "w1": "NuvaTrack R cleaning · String 12",
+        "w2": "Inverter root-cause analysis",
+        "w3": "Yield restored +4.8%"
+      },
+      "dispatch": {
+        "label": "NuvaTrack R-04 · en route",
+        "eta": "ETA 14 min"
+      },
+      "verification": "DE-NRW-04 · yield restored +4.8% · verified"
+    },
+    "Deployment": {
+      "eyebrow": "Deployment",
+      "title": "Run it the way your business requires.",
+      "body": "Three deployment models, one platform. Choose by data ownership and operational needs — not by what we'd prefer to host.",
+      "models": {
+        "saas": {
+          "title": "SaaS Cloud",
+          "tagline": "Fastest to value",
+          "points": [
+            "Up and running in days, with no infrastructure to manage",
+            "Scales from one site to a global fleet automatically",
+            "Your data hosted in the EU, exportable any time",
+            "We run uptime, updates, and security for you"
+          ],
+          "bestFor": "Best for: teams that want value fast"
+        },
+        "private": {
+          "title": "Private Cloud",
+          "tagline": "Maximum control",
+          "points": [
+            "Deployed in your own cloud tenancy or VPC",
+            "Scales with your infrastructure and controls",
+            "Full data residency and ownership in your environment",
+            "Meets stricter internal IT and compliance policies"
+          ],
+          "bestFor": "Best for: utilities and enterprises with strict IT policy"
+        },
+        "hybrid": {
+          "title": "Hybrid Cloud",
+          "tagline": "Best of both",
+          "points": [
+            "Keep sensitive data on site, run analytics in the cloud",
+            "Place compute where it makes operational sense",
+            "You decide what stays inside your perimeter",
+            "Fits phased rollouts and mixed estates"
+          ],
+          "bestFor": "Best for: mixed estates and phased rollouts"
+        }
+      }
+    },
+    "Security": {
+      "eyebrow": "Security & trust",
+      "title": "Built for the people who answer to regulators and boards.",
+      "body": "The controls IPPs, asset owners, utilities, and enterprise O&M teams ask about — described plainly.",
+      "items": {
+        "gdpr": {
+          "title": "GDPR readiness",
+          "desc": "Data handling aligned to GDPR, with clear processing terms and data-subject controls."
+        },
+        "residency": {
+          "title": "EU data residency",
+          "desc": "Your operational data stays hosted in the EU by default."
+        },
+        "rbac": {
+          "title": "Role-based access",
+          "desc": "Each person gets exactly the access their role needs — nothing more."
+        },
+        "audit": {
+          "title": "Auditability",
+          "desc": "Every action and change is logged and exportable for review."
+        },
+        "verification": {
+          "title": "Verification trail",
+          "desc": "Each recovered-yield claim is backed by the data that proves it."
+        },
+        "api": {
+          "title": "API integrations",
+          "desc": "Connects to your existing SCADA, monitoring, and CMMS — it fits in, not over."
+        },
+        "posture": {
+          "title": "Enterprise security posture",
+          "desc": "Encryption in transit and at rest, least-privilege access, and regular review."
+        }
+      }
+    },
+    "Cta": {
+      "title": "See it run on your portfolio.",
+      "body": "A focused demo on your sites, or a walkthrough of the live Command Center. No slideware."
+    },
+    "WorksWithData": {
+      "eyebrow": "Works with your existing data",
+      "title": "Built to connect with the data you already have.",
+      "body": "No new hardware, no rip-and-replace. Cleanuva is designed to work with the operational data your sites already produce — turning fragmented exports into one clear, actionable picture.",
+      "sourcesHeading": "Operational data sources",
+      "categories": {
+        "monitoring": "Monitoring-platform data",
+        "csv": "CSV exports",
+        "inspections": "Inspection reports"
+      },
+      "vendorsLabel": "Monitoring platforms, for example",
+      "vendors": {
+        "solarman": "Solarman",
+        "huawei": "Huawei FusionSolar",
+        "sungrow": "Sungrow",
+        "sma": "SMA"
+      },
+      "foot": "Built to connect with existing operational data — designed for historical CSV and inspection data."
+    },
+    "EarlyAccess": {
+      "badge": "Early Access",
+      "title": "Turn historical data into actionable insight.",
+      "body": "Bring a historical export or an inspection report, and see Cleanuva turn it into a financial-grade analysis and clear next actions.",
+      "useCases": {
+        "csv": {
+          "title": "Historical CSV Analysis",
+          "desc": "Drop in historical generation exports and surface soiling, underperformance, and recoverable yield."
+        },
+        "pdf": {
+          "title": "Inspection Report Analysis",
+          "desc": "Hand over an inspection report and get the defects, risks, and recommended actions."
+        }
+      },
+      "cta": "Request a demo",
+      "note": "An Early Access capability — we'll show it on your data."
+    },
+    "Faq": {
+      "eyebrow": "FAQ",
+      "title": "Questions, answered.",
+      "items": {
+        "existingData": {
+          "q": "Can Cleanuva work with my existing data?",
+          "a": "Yes — it's built to connect with the operational data you already produce, including historical exports and inspection reports, with no new hardware."
+        },
+        "hardware": {
+          "q": "Do I need new hardware?",
+          "a": "No. Cleanuva is a software layer that works on top of the data you already have."
+        },
+        "historical": {
+          "q": "Can I use historical data?",
+          "a": "Yes. Bring historical exports and past inspection reports, not just live data."
+        },
+        "getStarted": {
+          "q": "How do I get started?",
+          "a": "Request a demo. We'll walk through your operation and the fastest path to results."
+        },
+        "dataTypes": {
+          "q": "What types of operational data can be analyzed?",
+          "a": "CSV exports from your monitoring platforms, plus inspection reports — historical or current. If your sites already produce it, Cleanuva is built to turn it into insight."
+        }
+      }
+    }
+  },
+  "Robotics": {
+    "Hero": {
+      "eyebrow": "Autonomous solar robotics",
+      "headline": "Cleaning that runs itself.",
+      "subline": "NuvaTrack robots clean autonomously, every night, with no crew on site — scheduled by AI and proven by the platform. Premium hardware, made intelligent.",
+      "meetFleet": "Meet the fleet",
+      "sceneAlt": "A NuvaTrack robot cleaning a solar array autonomously at golden hour",
+      "autonomousTag": "Autonomous · running"
+    },
+    "Autonomy": {
+      "eyebrow": "Autonomy",
+      "title": "Built to operate without you.",
+      "body": "NuvaTrack doesn't wait for a crew. It runs on its own schedule, makes its own cleaning decisions, and keeps the field at peak yield — every night, no one on site.",
+      "items": {
+        "unmanned": {
+          "title": "Unmanned operation",
+          "desc": "Runs with no crew on site — deploy it and it works."
+        },
+        "ai": {
+          "title": "AI-assisted decisions",
+          "desc": "It decides what to clean, and when it's worth it."
+        },
+        "scheduling": {
+          "title": "Intelligent scheduling",
+          "desc": "Cleans on the right night, not a fixed calendar."
+        },
+        "nightly": {
+          "title": "Every night",
+          "desc": "Continuous, waterless cleaning while the plant sleeps."
+        }
+      }
+    },
+    "platformConnected": "Platform-connected",
+    "viewDetails": "View details",
+    "Advantage": {
+      "eyebrow": "The advantage",
+      "title": "A cleaning robot that knows why it's there.",
+      "body": "Most cleaning robots are blind hardware. NuvaTrack is connected to the Cleanuva platform — so it cleans only where it pays, on the right schedule, and proves the yield it recovered.",
+      "items": {
+        "knowsWhen": {
+          "title": "Knows when",
+          "desc": "AI scheduling cleans on the right night — not a fixed calendar."
+        },
+        "cleansWhere": {
+          "title": "Cleans where it pays",
+          "desc": "Dispatched only to the rows losing real yield."
+        },
+        "provesIt": {
+          "title": "Proves it worked",
+          "desc": "Recovered yield, measured and verified — not just a clean panel."
+        }
+      }
+    },
+    "Fleet": {
+      "eyebrow": "The fleet",
+      "title": "Three models, one autonomous standard.",
+      "body": "Cleanuva Robotics is our first-party robot line — NuvaTrack R-Series, U-Series, and NuvaSpan, for single operators, fully autonomous nights, and utility-scale plants. Every one platform-connected and proven."
+    },
+    "Partner": {
+      "eyebrow": "How it's built",
+      "line": "Premium hardware, engineered with manufacturing partners and Cleanuva-branded — made intelligent by the platform.",
+      "chips": {
+        "partner": "Partner-engineered",
+        "branded": "Cleanuva-branded",
+        "connected": "Platform-connected"
+      }
+    },
+    "Cta": {
+      "title": "Bring autonomous cleaning to your plant.",
+      "body": "Get pricing for your site — or see the platform that schedules, dispatches, and verifies every clean.",
+      "seePlatform": "See the platform"
+    },
+    "product": {
+      "configure": "Configure",
+      "compareModels": "Compare models",
+      "sections": {
+        "metrics": "Key performance",
+        "autonomy": "Autonomy",
+        "specs": "Technical specifications",
+        "deployment": "Best-fit deployment",
+        "config": "Configuration",
+        "advantage": "Platform-connected"
+      },
+      "specsTitle": "The technical detail.",
+      "deploymentTitle": "Where it fits best.",
+      "configTitle": "Configured to your site.",
+      "configBody": "Tune each robot to your plant — batteries, brushes, service, and regional logistics. Pricing follows your configuration.",
+      "config": {
+        "batteries": {
+          "title": "Battery options",
+          "desc": "Runtime and swap options matched to shift length."
+        },
+        "brushes": {
+          "title": "Brush systems",
+          "desc": "Brush type tuned to your module and soiling."
+        },
+        "warranty": {
+          "title": "Warranty & service",
+          "desc": "Extended warranty and service tiers."
+        },
+        "logistics": {
+          "title": "Regional logistics",
+          "desc": "Shipping, deployment, and support for your region."
+        }
+      },
+      "advantageTitle": "Smarter because it's connected.",
+      "advantageBody": "Every NuvaTrack is dispatched, scheduled, and verified by the Cleanuva platform — so it cleans where it pays and proves the yield it recovered.",
+      "ctaTitle": "Configure your NuvaTrack.",
+      "ctaBody": "Get pricing for your site, or compare the models to find your fit."
+    },
+    "compare": {
+      "eyebrow": "Compare",
+      "title": "Find your NuvaTrack.",
+      "body": "Three models, one autonomous standard. Compare coverage, operation, and fit — then configure the one that matches your site.",
+      "bestFitLabel": "Best for",
+      "configNote": "Every model configures the same way: batteries, brushes, warranty & service, and regional logistics.",
+      "viewProduct": "View"
+    },
+    "specs": {
+      "coverage": "Coverage",
+      "operators": "Operators",
+      "water": "Water use",
+      "uptime": "Uptime",
+      "autonomy": "Autonomy",
+      "siteType": "Site type",
+      "cleaning": "Cleaning",
+      "navigation": "Navigation",
+      "power": "Power",
+      "connectivity": "Connectivity"
+    },
+    "families": {
+      "rSeries": {
+        "tagline": "Single operator. Maximum coverage.",
+        "line": "One trained operator runs a fleet across the rows — maximum coverage per shift, zero water.",
+        "cta": "Get R-Series pricing",
+        "alt": "NuvaTrack R-Series robot cleaning a solar array at golden hour",
+        "positioning": "One trained operator runs a fleet of R-Series robots across the rows — the fastest way to bring autonomous, waterless cleaning to commercial and distributed sites.",
+        "autonomyTitle": "Operator-light. Decision-rich.",
+        "autonomy": {
+          "a1": {
+            "title": "AI cleaning decisions",
+            "desc": "It decides which rows need cleaning, and when it pays."
+          },
+          "a2": {
+            "title": "Single-operator fleet",
+            "desc": "One person supervises many robots across the site."
+          },
+          "a3": {
+            "title": "Swap and resume",
+            "desc": "Swap a battery and it picks up where it left off."
+          }
+        },
+        "deployment": {
+          "d1": {
+            "title": "Commercial & C&I arrays",
+            "desc": "Right-sized for commercial and industrial sites."
+          },
+          "d2": {
+            "title": "Distributed portfolios",
+            "desc": "Move it between nearby sites on one operator's schedule."
+          }
+        },
+        "bestFit": "Commercial & distributed sites with an operator on hand."
+      },
+      "uSeries": {
+        "tagline": "Autonomous. Every night.",
+        "line": "Fully autonomous cleaning that runs on its own schedule after dark — no operator, no downtime.",
+        "cta": "Get U-Series pricing",
+        "alt": "NuvaTrack U-Series robot cleaning a solar array at dusk",
+        "positioning": "Fully autonomous, every night. U-Series docks, charges, and cleans on its own schedule — no operator, no downtime, no water.",
+        "autonomyTitle": "Unmanned. Every night.",
+        "autonomy": {
+          "a1": {
+            "title": "Fully unmanned",
+            "desc": "Runs with no crew on site, on its own schedule."
+          },
+          "a2": {
+            "title": "Auto-charging",
+            "desc": "Returns to its dock and resumes without intervention."
+          },
+          "a3": {
+            "title": "Nightly autonomy",
+            "desc": "Cleans while the plant sleeps, every night."
+          }
+        },
+        "deployment": {
+          "d1": {
+            "title": "Unattended sites",
+            "desc": "Ideal where no operator is on site."
+          },
+          "d2": {
+            "title": "Large commercial & mid-scale",
+            "desc": "Covers more ground each night, hands-free."
+          }
+        },
+        "bestFit": "Unattended sites needing hands-free nightly cleaning."
+      },
+      "nuvaSpan": {
+        "tagline": "Built for utility-scale operations.",
+        "line": "Engineered for the longest rows and the largest plants — utility-scale throughput, proven yield.",
+        "cta": "Get NuvaSpan pricing",
+        "alt": "NuvaSpan robot operating across a utility-scale solar plant",
+        "positioning": "Built for the longest rows and the largest plants. NuvaSpan brings autonomous, wide-span cleaning to utility-scale solar — fleet-synced and platform-scheduled.",
+        "autonomyTitle": "Autonomous. At utility scale.",
+        "autonomy": {
+          "a1": {
+            "title": "Wide-span autonomy",
+            "desc": "Covers utility-scale rows in a single autonomous pass."
+          },
+          "a2": {
+            "title": "Fleet sync",
+            "desc": "Coordinates multiple units across a large plant."
+          },
+          "a3": {
+            "title": "Platform scheduling",
+            "desc": "The platform schedules cleaning across the whole site."
+          }
+        },
+        "deployment": {
+          "d1": {
+            "title": "Utility-scale plants",
+            "desc": "Engineered for hundreds of MWp."
+          },
+          "d2": {
+            "title": "High-soiling regions",
+            "desc": "Strongest where dust makes cleaning pay, e.g. MEA."
+          }
+        },
+        "bestFit": "Utility-scale plants and high-soiling regions."
+      }
+    }
+  },
+  "Fragmentation": {
+    "eyebrow": "The problem",
+    "title": "Solar operations are fragmented.",
+    "body": "Different systems that don't talk, workflows scattered across tools and spreadsheets, expertise locked in a few heads, and no connected record of what worked. The owner is the integrator of last resort.",
+    "leadOut": "The enemy isn't dirt. It's fragmentation.",
+    "items": {
+      "systems": {
+        "title": "Fragmented systems",
+        "desc": "Inverters, SCADA, meters, sensors, and point tools — none designed to interoperate."
+      },
+      "workflows": {
+        "title": "Fragmented workflows",
+        "desc": "Alarms, inspections, work orders, and reports live in disconnected tools. Nothing flows from detection to action to record."
+      },
+      "intelligence": {
+        "title": "Fragmented intelligence",
+        "desc": "The expertise to interpret a fault is tacit, scarce, and walks out the door when people leave."
+      },
+      "accountability": {
+        "title": "Fragmented accountability",
+        "desc": "No connected record of what was decided, what was done, and whether it actually worked."
+      }
+    }
+  },
+  "OperatingModel": {
+    "eyebrow": "The operating model",
+    "title": "Three layers that run a solar plant.",
+    "body": "Cleanuva Platform replaces fragmented tools with one operating layer — intelligence, coordination, and accountability, working as a single system.",
+    "layers": {
+      "intelligence": {
+        "title": "Operational Intelligence",
+        "desc": "Unify the data, interpret every alarm, and diagnose the root cause — the truth of the asset.",
+        "tangible": "AI Copilot + Command Center"
+      },
+      "coordination": {
+        "title": "Operational Coordination",
+        "desc": "Turn intelligence into orchestrated action — work orders, scheduling, and dispatch across any execution layer.",
+        "tangible": "Command Center"
+      },
+      "accountability": {
+        "title": "Operational Accountability",
+        "desc": "Prove and report what happened — verification, reporting, and owner-facing summaries that close the loop.",
+        "tangible": "Reporting + Proof"
+      }
+    }
+  },
+  "Copilot": {
+    "eyebrow": "AI Copilot · the differentiator",
+    "title": "An AI Copilot that learns your operation.",
+    "body": "It learns from your operational history and verified outcomes — interpreting alarms, pinpointing the likely cause, and drafting the work order, in plain language. Advisory and source-cited, with a human in the loop. The result: faster diagnosis, better decisions, and higher recovery.",
+    "knowledgeLabel": "Learns from your operational history",
+    "note": "Every answer is source-cited, and a human stays in the loop.",
+    "sources": {
+      "manuals": "Equipment manuals",
+      "faults": "Fault libraries",
+      "inspections": "Inspection reports",
+      "thermal": "Thermal reports",
+      "workOrders": "Work-order history",
+      "history": "Operational history"
+    },
+    "convo": {
+      "userLabel": "Operator",
+      "user": "Why is inverter 3 underperforming at DE-NRW-04?",
+      "copilotLabel": "Copilot",
+      "copilot": "String 12 shows a 4.8% soiling loss, consistent with the dust trend since the last clean. Likely soiling, not a fault.",
+      "source": "Source: inverter 3 manual · soiling history · 2 inspection reports",
+      "action": "Draft work order"
+    }
+  },
+  "Execution": {
+    "eyebrow": "Connected execution",
+    "title": "Cleanuva Platform commands the execution.",
+    "body": "Cleanuva Robotics — our own first-party robot line — leads the execution, alongside connected drones and field crews. Cleanuva Platform decides, they act, and every outcome is verified: a product line in its own right, not just an execution option.",
+    "status": {
+      "now": "Available now",
+      "future": "On the roadmap"
+    },
+    "layers": {
+      "robotics": {
+        "title": "Cleanuva Robotics",
+        "desc": "Our first-party NuvaTrack robots — Cleanuva-branded, platform-directed, deployed where soiling economics justify it.",
+        "cta": "Explore robotics"
+      },
+      "drones": {
+        "title": "Drone inspection",
+        "desc": "Connected aerial and thermal data-capture, feeding the Copilot's intelligence."
+      },
+      "crews": {
+        "title": "Field crews",
+        "desc": "Your existing O&M teams, coordinated and dispatched from the same Command Center."
+      }
+    }
+  },
+  "Footer": {
+    "tagline": "Find lost solar revenue. Recover it. Prove it.",
+    "brandLine": "Cleanuva Platform · Cleanuva Robotics · Cleanuva Solutions",
+    "columns": {
+      "platform": "Platform",
+      "robotics": "Robotics",
+      "solutions": "Solutions",
+      "company": "Company"
+    },
+    "links": {
+      "monitoring": "Operational intelligence",
+      "diagnosis": "AI Copilot",
+      "commandCenter": "Command Center",
+      "roi": "Reporting & proof",
+      "rSeries": "NuvaTrack R-Series",
+      "uSeries": "NuvaTrack U-Series",
+      "nuvaSpan": "NuvaSpan",
+      "pricing": "Get pricing",
+      "owners": "Self-operated owners",
+      "ipps": "Financial owners / IPPs",
+      "epc": "EPC contractors",
+      "om": "Independent O&M",
+      "about": "About",
+      "vision": "Vision",
+      "security": "Security & trust",
+      "contact": "Contact",
+      "auditor": "Technical auditors"
+    },
+    "legal": {
+      "copyright": "© {year} NETRO Sparkle GmbH.",
+      "brandOf": "Cleanuva is a brand of NETRO Sparkle GmbH.",
+      "imprint": "Imprint",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookie settings"
+    }
+  },
+  "Forms": {
+    "required": "This field is required.",
+    "invalidEmail": "Enter a valid email address.",
+    "submitting": "Sending…",
+    "errorGeneric": "Something went wrong. Please try again, or email us directly.",
+    "optional": "optional",
+    "selectPlaceholder": "Select",
+    "Demo": {
+      "eyebrow": "Platform · Request a demo",
+      "title": "See Cleanuva run your operation.",
+      "subtitle": "A short, focused session on your portfolio — the Command Center and the AI Copilot, live. No account needed, no slideware.",
+      "fields": {
+        "name": "Full name",
+        "email": "Work email",
+        "company": "Company",
+        "role": "Your role",
+        "portfolio": "Portfolio size",
+        "region": "Region",
+        "goal": "Primary goal",
+        "message": "Anything else?"
+      },
+      "roles": {
+        "owner": "Self-operated Asset Owner",
+        "om": "Independent O&M Provider",
+        "ipp": "Financial Asset Owner / IPP",
+        "epc": "EPC Contractor",
+        "auditor": "Technical Auditor",
+        "other": "Other"
+      },
+      "portfolios": {
+        "p1": "Under 50 MWp",
+        "p2": "50–250 MWp",
+        "p3": "250–1,000 MWp",
+        "p4": "1,000+ MWp"
+      },
+      "regions": {
+        "eu": "Europe",
+        "mea": "Middle East & Africa",
+        "na": "North America"
+      },
+      "goals": {
+        "unify": "Unify fragmented systems",
+        "copilot": "AI Copilot",
+        "command": "Command Center",
+        "reporting": "Reporting & accountability",
+        "robotics": "Robotic cleaning",
+        "other": "Something else"
+      },
+      "submit": "Request a demo",
+      "successTitle": "Request received.",
+      "successBody": "Our team will be in touch shortly to schedule your demo."
+    },
+    "Quote": {
+      "eyebrow": "Robotics · Get pricing",
+      "title": "Configure and request a quote.",
+      "subtitle": "Choose your model and options, and we'll prepare a tailored quote. No account needed — your configuration goes straight to our team.",
+      "sections": {
+        "model": "Model",
+        "config": "Configuration",
+        "contact": "Your details"
+      },
+      "fields": {
+        "model": "Model",
+        "battery": "Battery",
+        "brush": "Brush system",
+        "warranty": "Warranty & service",
+        "units": "Approx. units",
+        "region": "Logistics region",
+        "name": "Full name",
+        "email": "Work email",
+        "company": "Company",
+        "message": "Anything else?"
+      },
+      "models": {
+        "nuvatrack-r": "NuvaTrack R-Series",
+        "nuvatrack-u": "NuvaTrack U-Series",
+        "nuvaspan": "NuvaSpan"
+      },
+      "battery": {
+        "standard": "Standard",
+        "extended": "Extended runtime"
+      },
+      "brush": {
+        "standard": "Standard",
+        "abrasion": "High-abrasion"
+      },
+      "warranty": {
+        "standard": "Standard (1 year)",
+        "extended": "Extended (3 years)",
+        "premium": "Premium (5 years)"
+      },
+      "units": {
+        "u1": "1 unit",
+        "u2": "2–5 units",
+        "u3": "6–20 units",
+        "u4": "20+ units"
+      },
+      "regions": {
+        "eu": "Europe",
+        "mea": "Middle East & Africa",
+        "na": "North America"
+      },
+      "summaryTitle": "Your configuration",
+      "submit": "Request a quote",
+      "successTitle": "Quote requested.",
+      "successBody": "Our team will prepare your configuration and follow up shortly."
+    }
+  },
+  "Legal": {
+    "imprint": {
+      "title": "Imprint",
+      "providerHeading": "Information pursuant to § 5 DDG",
+      "brandOf": "Cleanuva is a brand of NETRO Sparkle GmbH.",
+      "labels": {
+        "entity": "Company",
+        "address": "Registered office",
+        "court": "Register court",
+        "hrb": "Register number",
+        "director": "Managing director",
+        "vat": "VAT ID",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "sections": [
+        {
+          "heading": "Responsibility for content",
+          "body": "Responsible for content pursuant to § 18 (2) MStV: TODO (address as above)."
+        },
+        {
+          "heading": "EU online dispute resolution",
+          "body": "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr.\nWe are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
+        },
+        {
+          "heading": "Liability for content",
+          "body": "As a service provider we are responsible for our own content on these pages in accordance with general law. We are not obliged to monitor transmitted or stored third-party information. Obligations to remove or block the use of information under general law remain unaffected."
+        },
+        {
+          "heading": "Liability for links",
+          "body": "Our site contains links to external websites over whose content we have no control. We accept no liability for this third-party content. The respective provider or operator of the linked pages is always responsible for their content."
+        }
+      ],
+      "note": "Some details below are marked TODO and will be completed before launch."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "sections": [
+        {
+          "heading": "Overview",
+          "body": "This policy explains how NETRO Sparkle GmbH (“we”) processes personal data when you use this website. Specific details marked TODO will be finalised before launch."
+        },
+        {
+          "heading": "Controller",
+          "body": "The controller responsible for data processing on this website is NETRO Sparkle GmbH (see Imprint). Data protection contact: TODO."
+        },
+        {
+          "heading": "Data we process",
+          "body": "When you contact us through the demo or quote forms, we process the information you provide — such as your name, work email, company, role and message — in order to respond to your request. Server log data may be processed by our hosting provider: TODO."
+        },
+        {
+          "heading": "Purpose and legal basis",
+          "body": "We process this data to handle your enquiry and our business communication, based on Art. 6(1)(b) and Art. 6(1)(f) GDPR. TODO: confirm with counsel."
+        },
+        {
+          "heading": "Retention",
+          "body": "We retain enquiry data only as long as necessary to process your request and to meet legal obligations. TODO: retention periods."
+        },
+        {
+          "heading": "Processors and transfers",
+          "body": "We may use processors such as hosting and CRM providers. TODO: list of processors and any international transfers."
+        },
+        {
+          "heading": "Your rights",
+          "body": "Under the GDPR you have the right to access, rectification, erasure, restriction, data portability and objection, and you may lodge a complaint with a supervisory authority. To exercise your rights, contact: TODO."
+        },
+        {
+          "heading": "Contact",
+          "body": "For any privacy questions, contact: TODO."
+        }
+      ],
+      "note": "Some details below are marked TODO and will be completed before launch."
+    },
+    "terms": {
+      "title": "Terms of use",
+      "sections": [
+        {
+          "heading": "Scope",
+          "body": "These terms govern your use of the Cleanuva website operated by NETRO Sparkle GmbH. The website is for information purposes and does not constitute a binding offer; product quotations are provided separately through our sales process."
+        },
+        {
+          "heading": "Use of the website",
+          "body": "You may use this website for lawful, informational purposes. You agree not to misuse the website or interfere with its operation."
+        },
+        {
+          "heading": "Intellectual property",
+          "body": "Cleanuva, NuvaTrack, NuvaSpan and the content of this website are the property of NETRO Sparkle GmbH or its licensors. TODO: detailed usage terms."
+        },
+        {
+          "heading": "Disclaimer and liability",
+          "body": "The website is provided “as is”, without warranty as to completeness or accuracy. TODO: liability provisions, subject to legal review."
+        },
+        {
+          "heading": "Governing law",
+          "body": "German law applies, to the extent permitted by mandatory consumer-protection rules. TODO: place of jurisdiction."
+        }
+      ],
+      "note": "Some details below are marked TODO and will be completed before launch."
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "sections": [
+        {
+          "heading": "What cookies are",
+          "body": "Cookies are small text files stored on your device that help a website function and remember your preferences."
+        },
+        {
+          "heading": "Cookies we use",
+          "body": "This website uses cookies that are necessary for it to function and to remember your language preference. TODO: confirm the full cookie inventory, including any analytics or third-party cookies."
+        },
+        {
+          "heading": "Managing cookies",
+          "body": "You can control or delete cookies through your browser settings. TODO: consent management tool, if introduced."
+        },
+        {
+          "heading": "Changes to this policy",
+          "body": "We update this notice when our use of cookies changes."
+        }
+      ],
+      "note": "Some details below are marked TODO and will be completed before launch."
+    }
+  },
+  "Company": {
+    "eyebrow": "Company",
+    "title": "Building the technology behind solar operations.",
+    "lead": "Cleanuva is a clean-energy technology brand for solar — one brand, three product lines: Cleanuva Platform (the AI software), Cleanuva Robotics, and Cleanuva Solutions. Together they turn fragmented tools, data, and execution into one accountable operation, not a dozen disconnected ones.",
+    "about": {
+      "heading": "Why Cleanuva exists",
+      "body1": "Cleanuva is built from an operator's point of view. Anyone who has run hundreds of megawatts knows the problem: the systems that monitor a plant, inspect it, and clean it barely talk to each other, and the people in the field are left to stitch it together by hand.",
+      "body2": "Cleanuva connects those layers — data integration, operational intelligence, an AI Copilot, workflow orchestration, execution, and accountability — into one operating layer for the whole portfolio."
+    },
+    "focus": {
+      "heading": "Focused on solar",
+      "body": "We work in solar PV only. Not wind, not storage, not grid. That focus is deliberate — it keeps the product, the data model, and the field expertise sharp for the operators we serve."
+    },
+    "entity": {
+      "heading": "The company behind Cleanuva",
+      "body": "Cleanuva is a brand of {entity}, an operating company based in Germany. Full registration details — registered office, commercial register, and management — are listed in our Imprint.",
+      "imprintLink": "See the Imprint"
+    },
+    "security": {
+      "heading": "Security & trust",
+      "body": "Security and access control are built into the platform. You can review how we approach data isolation, access, and reliability on the Platform page.",
+      "link": "Platform security"
+    },
+    "contact": {
+      "heading": "Talk to us",
+      "body": "The fastest way to reach us is to request a demo — tell us about your portfolio and we'll follow up.",
+      "demoCta": "Request a demo",
+      "legalNote": "For legal and registration details, see the Imprint."
+    },
+    "vision": {
+      "eyebrow": "Vision",
+      "heading": "One brand, three product lines.",
+      "body": "Cleanuva is the brand. Cleanuva Platform is the AI software that runs the operation — with the AI Copilot at its core; Cleanuva Robotics is our connected first-party robot line; and Cleanuva Solutions packages them into delivery for every role that runs solar.",
+      "pillars": {
+        "platform": {
+          "title": "Cleanuva Platform",
+          "desc": "The AI software that runs the operation — operational intelligence, coordination, and accountability for the whole portfolio, with the AI Copilot at its core. Valuable on its own, with or without robots."
+        },
+        "solutions": {
+          "title": "Cleanuva Solutions",
+          "desc": "Packaged delivery for every role that runs solar — Platform and Robotics combined and configured to your operation."
+        },
+        "robotics": {
+          "title": "Cleanuva Robotics",
+          "desc": "Our first-party robot line — NuvaTrack and NuvaSpan. Autonomous cleaning the Platform schedules, directs, and verifies."
+        }
+      }
+    },
+    "legalHeading": "Legal"
+  },
+  "Resources": {
+    "eyebrow": "Resources",
+    "title": "Everything you need to evaluate Cleanuva.",
+    "intro": "Product overviews and reference material. We're expanding this section — more brochures, models, and insights are on the way.",
+    "view": "View",
+    "soon": "Coming soon",
+    "note": "More resources — including downloadable brochures, the economic model, and operator insights — are coming soon.",
+    "categories": {
+      "platform": {
+        "title": "Platform overview",
+        "desc": "How Cleanuva Platform unifies intelligence, coordination, and accountability."
+      },
+      "robotics": {
+        "title": "Robotics specifications",
+        "desc": "Cleanuva Robotics: compare the NuvaTrack and NuvaSpan families — specs, autonomy, and deployment."
+      },
+      "brochures": {
+        "title": "Product brochures",
+        "desc": "Downloadable one-pagers for the platform and robotics range."
+      },
+      "roi": {
+        "title": "ROI / economic model",
+        "desc": "How Cleanuva quantifies recovered yield, avoided truck rolls, and verified outcomes."
+      },
+      "insights": {
+        "title": "Insights",
+        "desc": "Perspectives on running solar operations as one accountable system."
+      }
+    }
+  },
+  "Trust": {
+    "eyebrow": "Where we stand",
+    "heading": "Credible by design — and honest about stage.",
+    "signals": {
+      "germany": {
+        "label": "German company",
+        "desc": "Cleanuva is a brand of NETRO Sparkle GmbH, an operating company based in Germany."
+      },
+      "solar": {
+        "label": "Solar-focused",
+        "desc": "Solar PV only — focused domain expertise, not a generic multi-energy tool."
+      },
+      "maturity": {
+        "label": "Platform and robotics",
+        "desc": "A working operating platform and an autonomous robotics range — across software and hardware."
+      },
+      "multilang": {
+        "label": "Built for international teams",
+        "desc": "Available in English, German, Arabic and Chinese, with full right-to-left support."
+      },
+      "markets": {
+        "label": "Europe, Middle East & global",
+        "desc": "Designed for utility-scale solar operators across EU, MEA and beyond."
+      },
+      "partners": {
+        "label": "Partner & OEM-enabled",
+        "desc": "Robotics delivered through a partner/OEM model — connected and platform-directed."
+      },
+      "gdpr": {
+        "label": "GDPR-aware by design",
+        "desc": "Built on a GDPR-aware architecture, with imprint, privacy and terms in place."
+      },
+      "contact": {
+        "label": "Direct commercial paths",
+        "desc": "Reach us through Request a demo or Get pricing — no account required."
+      }
+    },
+    "status": "Cleanuva is at an early commercial stage. We welcome pilots, design partnerships, and deployment discussions with solar operators — and we don't claim customers we don't have."
+  }
+}
