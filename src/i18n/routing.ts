@@ -8,6 +8,9 @@ export const routing = defineRouting({
   locales: ["en", "de", "ar", "zh"],
   defaultLocale: "en",
   localePrefix: "always",
+  // Root always opens in English (/en); no Accept-Language/cookie auto-redirect.
+  // Other locales stay reachable directly and via the language switcher.
+  localeDetection: false,
 });
 
 export type Locale = (typeof routing.locales)[number];

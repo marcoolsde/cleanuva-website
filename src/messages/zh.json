@@ -10,7 +10,25 @@
     "robotics": "机器人",
     "solutions": "解决方案",
     "resources": "资源",
-    "company": "公司"
+    "company": "公司",
+    "roboticsMenu": {
+      "rSeries": {
+        "name": "NuvaTrack R-Series",
+        "desc": "单人操作 · 屋顶与分布式"
+      },
+      "uSeries": {
+        "name": "NuvaTrack U-Series",
+        "desc": "无人值守 · 大型电站"
+      },
+      "nuvaSpan": {
+        "name": "NuvaSpan Series",
+        "desc": "悬挂式 · 公用事业级"
+      },
+      "compare": {
+        "name": "型号对比",
+        "desc": "三款并排对比"
+      }
+    }
   },
   "Cta": {
     "requestDemo": "申请演示",
@@ -552,15 +570,15 @@
       "configure": "配置",
       "compareModels": "比较机型",
       "sections": {
-        "metrics": "关键性能",
-        "autonomy": "自主能力",
-        "specs": "技术规格",
-        "deployment": "最佳部署",
-        "config": "配置",
-        "advantage": "接入平台"
+        "video": "演示",
+        "summary": "概览",
+        "features": "核心特点",
+        "useCases": "部署与应用场景",
+        "datasheet": "数据表",
+        "specs": "技术规格"
       },
-      "specsTitle": "技术细节。",
-      "deploymentTitle": "最适合之处。",
+      "specsTitle": "技术参数。",
+      "deploymentTitle": "最适合的场景。",
       "configTitle": "按你的站点配置。",
       "configBody": "为你的电站调校每台机器人——电池、刷头、服务与区域物流。价格随配置而定。",
       "config": {
@@ -584,7 +602,18 @@
       "advantageTitle": "因相连而更聪明。",
       "advantageBody": "每台 NuvaTrack 都由 Cleanuva 平台派遣、排程并验证——只在划算之处清洁，并证明其恢复的发电量。",
       "ctaTitle": "配置你的 NuvaTrack。",
-      "ctaBody": "为你的站点获取报价，或比较机型以找到合适的一款。"
+      "ctaBody": "为你的站点获取报价，或比较机型以找到合适的一款。",
+      "summaryTitle": "为现场而生。",
+      "featuresTitle": "与众不同之处。",
+      "specsNote": "所有数据来自产品数据表。",
+      "bestForLabel": "最适合：",
+      "videoPlay": "播放演示",
+      "videoSoon": "演示视频即将上线。",
+      "datasheetTitle": "获取完整数据表。",
+      "datasheetBody": "全部尺寸、规格与选项，集于一份 PDF。",
+      "downloadDatasheet": "下载数据表",
+      "requestDatasheet": "索取数据表",
+      "videoPause": "暂停视频"
     },
     "compare": {
       "eyebrow": "比较",
@@ -595,24 +624,36 @@
       "viewProduct": "查看"
     },
     "specs": {
-      "coverage": "覆盖能力",
+      "cleaningCapacity": "清洗能力",
+      "speed": "行进速度",
+      "climbing": "爬坡能力",
+      "moduleTilt": "组件倾角",
+      "obstacle": "越障能力",
+      "dimensions": "尺寸",
+      "weight": "重量",
+      "cleaning": "清洗方式",
+      "battery": "电池",
+      "autonomy": "单次续航",
+      "charging": "充电",
+      "remote": "遥控",
+      "waterFlow": "水流量",
+      "brush": "刷子",
+      "brushSpeed": "刷子转速",
+      "ip": "防护等级",
+      "warranty": "质保",
+      "operation": "运行方式",
       "operators": "操作人员",
-      "water": "用水量",
-      "uptime": "正常运行率",
-      "autonomy": "自主程度",
-      "siteType": "站点类型",
-      "cleaning": "清洁方式",
-      "navigation": "导航",
-      "power": "动力",
+      "power": "供电",
+      "architecture": "结构",
       "connectivity": "连接"
     },
     "families": {
       "rSeries": {
-        "tagline": "单人操作。最大覆盖。",
-        "line": "一名受训操作员即可跨排管理整队机器人——每班次最大覆盖，零用水。",
+        "tagline": "单人操作清洗，干湿两用。",
+        "line": "为屋顶、车棚与分布式站点带来高效的单人清洗——干湿两用，一人一机，无需拖拽水管。",
         "cta": "获取 R-Series 报价",
-        "alt": "金色时分 NuvaTrack R-Series 机器人清洁光伏阵列",
-        "positioning": "一名受训操作员即可跨排管理整队 R-Series 机器人——将自主、无水清洁带到工商业与分布式站点的最快方式。",
+        "alt": "NuvaTrack R-Series 单人操作太阳能清洗机器人在光伏阵列上作业",
+        "positioning": "面向分布式电站、车棚与屋顶光伏的紧凑高效履带机器人。一名操作员即可部署、操控并完成每日清洗——干刷或湿洗，一次双向往返。",
         "autonomyTitle": "少人操作，富于决策。",
         "autonomy": {
           "a1": {
@@ -630,22 +671,28 @@
         },
         "deployment": {
           "d1": {
-            "title": "工商业阵列",
-            "desc": "为工商业站点量身适配。"
+            "title": "屋顶与车棚光伏",
+            "desc": "足够紧凑，适合屋顶、车棚与狭窄行距。"
           },
           "d2": {
-            "title": "分布式资产组合",
-            "desc": "按一名操作员的日程在邻近站点间调动。"
+            "title": "分布式工商业资产组合",
+            "desc": "一名操作员即可在邻近中小站点间转场。"
           }
         },
-        "bestFit": "有操作员在场的工商业与分布式站点。"
+        "bestFit": "有操作员在场的屋顶、车棚与中小型分布式光伏。",
+        "features": {
+          "f1": "单人遥控，半自动车道辅助",
+          "f2": "干湿两种清洗模式——干刷或湿洗",
+          "f3": "双向往返：双刷加前后喷嘴",
+          "f4": "模块化设计，单人即可搬运与部署"
+        }
       },
       "uSeries": {
-        "tagline": "自主运行。每个夜晚。",
-        "line": "完全自主的清洁，入夜后按自有计划运行——无需操作员，无停机。",
+        "tagline": "真正的无人值守光伏清洗。",
+        "line": "一次部署即按计划清洗——自动路径规划、智能返航充电，现场无需班组。",
         "cta": "获取 U-Series 报价",
-        "alt": "暮色中 NuvaTrack U-Series 机器人清洁光伏阵列",
-        "positioning": "完全自主，每个夜晚。U-Series 自行停靠、充电并按自有计划清洁——无需操作员、无停机、无用水。",
+        "alt": "NuvaTrack U-Series 无人值守太阳能清洗机器人于黄昏作业",
+        "positioning": "专为大型电站的高频例行清洗而生——无需现场人员，昼夜运行，适应严苛户外环境。干式、无水、IP65。",
         "autonomyTitle": "无人值守。每个夜晚。",
         "autonomy": {
           "a1": {
@@ -663,22 +710,28 @@
         },
         "deployment": {
           "d1": {
-            "title": "无人值守站点",
-            "desc": "现场无操作员时的理想之选。"
+            "title": "大型无人值守电站",
+            "desc": "现场无班组——按计划免人工清洗。"
           },
           "d2": {
-            "title": "大型工商业与中等规模",
-            "desc": "每晚免手覆盖更大范围。"
+            "title": "严苛多尘环境",
+            "desc": "IP65 与抗盐雾，适用于沙漠、海岸与夜间作业。"
           }
         },
-        "bestFit": "需免手夜间清洁的无人值守站点。"
+        "bestFit": "需要无需现场班组、高频清洗的大型电站。",
+        "features": {
+          "f1": "真正无人值守——部署后现场无需班组",
+          "f2": "自动路径规划与智能返航充电",
+          "f3": "IP65、抗盐雾结构，昼夜可用",
+          "f4": "干式螺旋双纤维刷洗——无水、无痕"
+        }
       },
       "nuvaSpan": {
-        "tagline": "为公用事业级运营而生。",
-        "line": "为最长的组串与最大的电站而设计——公用事业级吞吐，经验证的发电量。",
+        "tagline": "面向公用事业级地形的悬挂式清洗。",
+        "line": "为最长的行列与最难的站点而生——轨道导引、无水清洗，降低运维工作量与用水。",
         "cta": "获取 NuvaSpan 报价",
-        "alt": "NuvaSpan 机器人在公用事业级光伏电站作业",
-        "positioning": "为最长的组串与最大的电站而生。NuvaSpan 将自主、宽幅清洁带到公用事业级光伏——机队同步、由平台排程。",
+        "alt": "NuvaSpan 悬挂式太阳能清洗机器人在公用事业级电站上方作业",
+        "positioning": "面向公用事业级地面电站与复杂地形的悬挂桥式机器人。沿项目专属轨道自动往返，清除灰尘、沙土与污垢——无水，并具备机载光伏自充电。",
         "autonomyTitle": "自主。公用事业级。",
         "autonomy": {
           "a1": {
@@ -696,15 +749,21 @@
         },
         "deployment": {
           "d1": {
-            "title": "公用事业级电站",
-            "desc": "为数百 MWp 而工程化。"
+            "title": "公用事业级地面电站",
+            "desc": "长行列与最大电站，轨道导引。"
           },
           "d2": {
-            "title": "高积灰区域",
-            "desc": "在积灰使清洁划算之处最为强大，例如 MEA。"
+            "title": "复杂地形",
+            "desc": "山地、沙漠/戈壁与长而不平的行列。"
           }
         },
-        "bestFit": "公用事业级电站与高积灰区域。"
+        "bestFit": "公用事业级地面电站与复杂地形（山地、沙漠、长而不平的行列）。",
+        "features": {
+          "f1": "沿项目专属轨道的悬挂/桥式行进",
+          "f2": "部署后无人值守，具自检与诊断",
+          "f3": "电池加机载光伏自充电——无需外部布线",
+          "f4": "无水干刷，清除灰尘、沙土与鸟粪"
+        }
       }
     }
   },

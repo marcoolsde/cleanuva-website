@@ -6,15 +6,32 @@
  * the active locale prefix.
  */
 
-export interface NavItem {
-  /** Message key under the Nav namespace. */
+export interface NavChild {
+  /** Message key under Nav.roboticsMenu.* (name + desc). */
   key: string;
   href: string;
 }
 
+export interface NavItem {
+  /** Message key under the Nav namespace. */
+  key: string;
+  href: string;
+  /** Optional product submenu (Robotics dropdown). */
+  children?: NavChild[];
+}
+
 export const NAV: NavItem[] = [
   { key: "platform", href: "/platform" },
-  { key: "robotics", href: "/robotics" },
+  {
+    key: "robotics",
+    href: "/robotics",
+    children: [
+      { key: "rSeries", href: "/robotics/r-series" },
+      { key: "uSeries", href: "/robotics/u-series" },
+      { key: "nuvaSpan", href: "/robotics/nuvaspan" },
+      { key: "compare", href: "/robotics/compare" },
+    ],
+  },
   { key: "solutions", href: "/solutions" },
   { key: "resources", href: "/resources" },
   { key: "company", href: "/company" },

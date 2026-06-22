@@ -10,7 +10,25 @@
     "robotics": "Robotik",
     "solutions": "Lösungen",
     "resources": "Ressourcen",
-    "company": "Unternehmen"
+    "company": "Unternehmen",
+    "roboticsMenu": {
+      "rSeries": {
+        "name": "NuvaTrack R-Series",
+        "desc": "Ein Bediener · Aufdach & verteilt"
+      },
+      "uSeries": {
+        "name": "NuvaTrack U-Series",
+        "desc": "Unbeaufsichtigt · Großanlagen"
+      },
+      "nuvaSpan": {
+        "name": "NuvaSpan Series",
+        "desc": "Aufgehängt · Utility-Scale"
+      },
+      "compare": {
+        "name": "Modelle vergleichen",
+        "desc": "Alle drei im Vergleich"
+      }
+    }
   },
   "Cta": {
     "requestDemo": "Demo anfordern",
@@ -552,14 +570,14 @@
       "configure": "Konfigurieren",
       "compareModels": "Modelle vergleichen",
       "sections": {
-        "metrics": "Kernleistung",
-        "autonomy": "Autonomie",
-        "specs": "Technische Daten",
-        "deployment": "Optimaler Einsatz",
-        "config": "Konfiguration",
-        "advantage": "Plattformverbunden"
+        "video": "Demo",
+        "summary": "Überblick",
+        "features": "Hauptmerkmale",
+        "useCases": "Einsatz & Anwendungsfälle",
+        "datasheet": "Datenblatt",
+        "specs": "Spezifikationen"
       },
-      "specsTitle": "Die technischen Details.",
+      "specsTitle": "Technische Daten.",
       "deploymentTitle": "Wo es am besten passt.",
       "configTitle": "Auf Ihren Standort konfiguriert.",
       "configBody": "Stimmen Sie jeden Roboter auf Ihre Anlage ab — Batterien, Bürsten, Service und regionale Logistik. Der Preis folgt Ihrer Konfiguration.",
@@ -584,7 +602,18 @@
       "advantageTitle": "Intelligenter, weil verbunden.",
       "advantageBody": "Jeder NuvaTrack wird von der Cleanuva-Plattform entsandt, geplant und nachgewiesen — er reinigt, wo es sich lohnt, und belegt den zurückgewonnenen Ertrag.",
       "ctaTitle": "Konfigurieren Sie Ihren NuvaTrack.",
-      "ctaBody": "Erhalten Sie Preise für Ihren Standort oder vergleichen Sie die Modelle, um das passende zu finden."
+      "ctaBody": "Erhalten Sie Preise für Ihren Standort oder vergleichen Sie die Modelle, um das passende zu finden.",
+      "summaryTitle": "Für den Feldeinsatz gebaut.",
+      "featuresTitle": "Was es auszeichnet.",
+      "specsNote": "Alle Angaben aus dem Produktdatenblatt.",
+      "bestForLabel": "Am besten für:",
+      "videoPlay": "Demo abspielen",
+      "videoSoon": "Demo-Video folgt in Kürze.",
+      "datasheetTitle": "Das vollständige Datenblatt.",
+      "datasheetBody": "Alle Maße, Spezifikationen und Optionen in einem PDF.",
+      "downloadDatasheet": "Datenblatt herunterladen",
+      "requestDatasheet": "Datenblatt anfragen",
+      "videoPause": "Video pausieren"
     },
     "compare": {
       "eyebrow": "Vergleich",
@@ -595,24 +624,36 @@
       "viewProduct": "Ansehen"
     },
     "specs": {
-      "coverage": "Abdeckung",
+      "cleaningCapacity": "Reinigungsleistung",
+      "speed": "Geschwindigkeit",
+      "climbing": "Steigfähigkeit",
+      "moduleTilt": "Modulneigung",
+      "obstacle": "Hindernisüberwindung",
+      "dimensions": "Abmessungen",
+      "weight": "Gewicht",
+      "cleaning": "Reinigungsart",
+      "battery": "Batterie",
+      "autonomy": "Laufzeit pro Ladung",
+      "charging": "Ladung",
+      "remote": "Fernsteuerung",
+      "waterFlow": "Wasserdurchfluss",
+      "brush": "Bürste",
+      "brushSpeed": "Bürstendrehzahl",
+      "ip": "Schutzart",
+      "warranty": "Garantie",
+      "operation": "Betrieb",
       "operators": "Bediener",
-      "water": "Wasserverbrauch",
-      "uptime": "Verfügbarkeit",
-      "autonomy": "Autonomie",
-      "siteType": "Standorttyp",
-      "cleaning": "Reinigung",
-      "navigation": "Navigation",
       "power": "Energie",
+      "architecture": "Architektur",
       "connectivity": "Anbindung"
     },
     "families": {
       "rSeries": {
-        "tagline": "Ein Bediener. Maximale Abdeckung.",
-        "line": "Ein geschulter Bediener steuert eine Flotte über die Reihen — maximale Abdeckung pro Schicht, null Wasser.",
+        "tagline": "Reinigung mit einem Bediener — trocken oder nass.",
+        "line": "Effiziente Ein-Bediener-Reinigung für Dächer, Carports und verteilte Standorte — trocken oder nass, mit einer Person und einer Maschine.",
         "cta": "R-Series-Preise erhalten",
-        "alt": "NuvaTrack-R-Series-Roboter reinigt eine Solaranlage im goldenen Licht",
-        "positioning": "Ein geschulter Bediener steuert eine Flotte von R-Series-Robotern über die Reihen — der schnellste Weg zu autonomer, wasserloser Reinigung an gewerblichen und verteilten Standorten.",
+        "alt": "NuvaTrack R-Series Ein-Bediener-Reinigungsroboter auf einer PV-Anlage",
+        "positioning": "Kompakte, hocheffiziente Raupenroboter für verteilte Anlagen, Carports und Aufdach-PV. Ein Bediener bringt sie aus, steuert sie und schließt die tägliche Reinigung ab — Trockenbürsten oder Nassspülung in einem beidseitigen Durchgang.",
         "autonomyTitle": "Bedienerarm. Entscheidungsstark.",
         "autonomy": {
           "a1": {
@@ -630,22 +671,28 @@
         },
         "deployment": {
           "d1": {
-            "title": "Gewerbe- & C&I-Anlagen",
-            "desc": "Passend dimensioniert für gewerbliche und industrielle Standorte."
+            "title": "Aufdach- & Carport-PV",
+            "desc": "Kompakt genug für Dächer, Carports und enge Reihen."
           },
           "d2": {
-            "title": "Verteilte Portfolios",
-            "desc": "Zwischen nahegelegenen Standorten nach dem Zeitplan eines Bedieners bewegen."
+            "title": "Verteilte C&I-Portfolios",
+            "desc": "Ein Bediener bewegt ihn zwischen nahen kleinen bis mittleren Standorten."
           }
         },
-        "bestFit": "Gewerbliche & verteilte Standorte mit einem Bediener vor Ort."
+        "bestFit": "Aufdach, Carport und kleine bis mittlere verteilte PV mit Bediener vor Ort.",
+        "features": {
+          "f1": "Ein-Bediener-Fernsteuerung mit halbautomatischer Spurführung",
+          "f2": "Zwei Modi — Trockenbürsten oder Nassspülung",
+          "f3": "Beidseitiger Durchgang: Doppelbürsten mit vorderer und hinterer Düse",
+          "f4": "Modularer Aufbau für Transport und Aufbau durch eine Person"
+        }
       },
       "uSeries": {
-        "tagline": "Autonom. Jede Nacht.",
-        "line": "Vollautonome Reinigung nach eigenem Zeitplan nach Einbruch der Dunkelheit — kein Bediener, keine Ausfallzeit.",
+        "tagline": "Echte unbeaufsichtigte PV-Reinigung.",
+        "line": "Einmal einrichten, dann reinigt er nach Plan — automatische Routenplanung, intelligente Rückkehr zur Ladung, ohne Crew vor Ort.",
         "cta": "U-Series-Preise erhalten",
-        "alt": "NuvaTrack-U-Series-Roboter reinigt eine Solaranlage in der Dämmerung",
-        "positioning": "Vollautonom, jede Nacht. U-Series dockt an, lädt und reinigt nach eigenem Zeitplan — kein Bediener, keine Ausfallzeit, kein Wasser.",
+        "alt": "NuvaTrack U-Series unbeaufsichtigter Reinigungsroboter in der Dämmerung",
+        "positioning": "Gebaut für die routinemäßige, häufige Reinigung großer Anlagen — läuft ohne Personal vor Ort, bei Tag und Nacht, unter harten Außenbedingungen. Trocken, wasserfrei, IP65.",
         "autonomyTitle": "Unbemannt. Jede Nacht.",
         "autonomy": {
           "a1": {
@@ -663,22 +710,28 @@
         },
         "deployment": {
           "d1": {
-            "title": "Unbeaufsichtigte Standorte",
-            "desc": "Ideal, wo kein Bediener vor Ort ist."
+            "title": "Große unbeaufsichtigte Anlagen",
+            "desc": "Wo keine Crew vor Ort ist — geplante, freihändige Reinigung."
           },
           "d2": {
-            "title": "Großgewerbe & mittlerer Maßstab",
-            "desc": "Schafft jede Nacht mehr Fläche, freihändig."
+            "title": "Harte, staubige Umgebungen",
+            "desc": "IP65 und salzbeständig für Wüste, Küste und Nachtbetrieb."
           }
         },
-        "bestFit": "Unbeaufsichtigte Standorte mit nächtlichem Reinigungsbedarf."
+        "bestFit": "Große Anlagen, die häufige, freihändige Reinigung ohne Crew vor Ort brauchen.",
+        "features": {
+          "f1": "Echter unbeaufsichtigter Betrieb — nach der Einrichtung keine Crew vor Ort",
+          "f2": "Automatische Routenplanung und intelligente Rückkehr zur Ladung",
+          "f3": "IP65, salzbeständiger Aufbau für Tag und Nacht",
+          "f4": "Trockenes helikales Doppelfaser-Bürsten — kein Wasser, keine Spuren"
+        }
       },
       "nuvaSpan": {
-        "tagline": "Für den Betrieb im Versorgungsmaßstab.",
-        "line": "Konstruiert für die längsten Reihen und größten Anlagen — Durchsatz im Versorgungsmaßstab, nachgewiesener Ertrag.",
+        "tagline": "Aufgehängte Reinigung für Utility-Scale-Gelände.",
+        "line": "Gebaut für die längsten Reihen und schwierigsten Standorte — schienengeführte, wasserfreie Reinigung, die O&M-Aufwand und Wasserverbrauch senkt.",
         "cta": "NuvaSpan-Preise erhalten",
-        "alt": "NuvaSpan-Roboter im Einsatz auf einer Solaranlage im Versorgungsmaßstab",
-        "positioning": "Gebaut für die längsten Reihen und größten Anlagen. NuvaSpan bringt autonome Reinigung mit großer Spannweite in den Versorgungsmaßstab — flottensynchronisiert und plattformgeplant.",
+        "alt": "NuvaSpan aufgehängter Reinigungsroboter über einer Utility-Scale-Anlage",
+        "positioning": "Ein aufgehängter Brückenroboter für Utility-Scale-Freiflächen und komplexes Gelände. Er fährt automatisch entlang projektspezifischer Schienen, um Staub, Sand und Verschmutzung zu entfernen — wasserfrei, mit integrierter PV-Selbstladung.",
         "autonomyTitle": "Autonom. Im Versorgungsmaßstab.",
         "autonomy": {
           "a1": {
@@ -696,15 +749,21 @@
         },
         "deployment": {
           "d1": {
-            "title": "Anlagen im Versorgungsmaßstab",
-            "desc": "Konstruiert für Hunderte MWp."
+            "title": "Utility-Scale-Freiflächen",
+            "desc": "Lange Reihen und größte Anlagen, schienengeführt."
           },
           "d2": {
-            "title": "Regionen mit starker Verschmutzung",
-            "desc": "Am stärksten, wo Staub die Reinigung lohnt, z. B. MEA."
+            "title": "Komplexes Gelände",
+            "desc": "Gebirgig, Wüste/Gobi und lange unebene Reihen."
           }
         },
-        "bestFit": "Anlagen im Versorgungsmaßstab und Regionen mit starker Verschmutzung."
+        "bestFit": "Utility-Scale-Freiflächen und komplexes Gelände (gebirgig, Wüste, lange unebene Reihen).",
+        "features": {
+          "f1": "Aufgehängte/Brücken-Fahrt auf projektspezifischen Schienen",
+          "f2": "Unbeaufsichtigt nach dem Einsatz, mit Selbstprüfung und Diagnose",
+          "f3": "Batterie mit integrierter PV-Selbstladung — keine externe Verkabelung",
+          "f4": "Wasserfreies Trockenbürsten für Staub, Sand und Vogelkot"
+        }
       }
     }
   },

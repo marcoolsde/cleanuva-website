@@ -9,13 +9,13 @@ import { Link } from "@/i18n/navigation";
 import { ROBOT_FAMILIES, type RobotFamily } from "@/content/robots";
 
 const COMPARE_ROWS = [
-  "coverage",
-  "operators",
-  "water",
-  "uptime",
+  "cleaningCapacity",
+  "speed",
+  "climbing",
+  "weight",
   "cleaning",
-  "navigation",
-  "power",
+  "warranty",
+  "connectivity",
 ] as const;
 
 function specMap(family: RobotFamily): Record<string, string> {

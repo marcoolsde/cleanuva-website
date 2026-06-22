@@ -10,7 +10,25 @@
     "robotics": "Robotics",
     "solutions": "Solutions",
     "resources": "Resources",
-    "company": "Company"
+    "company": "Company",
+    "roboticsMenu": {
+      "rSeries": {
+        "name": "NuvaTrack R-Series",
+        "desc": "Single-operator · rooftop & distributed"
+      },
+      "uSeries": {
+        "name": "NuvaTrack U-Series",
+        "desc": "Unattended · large plants"
+      },
+      "nuvaSpan": {
+        "name": "NuvaSpan Series",
+        "desc": "Suspended · utility-scale"
+      },
+      "compare": {
+        "name": "Compare models",
+        "desc": "All three, side by side"
+      }
+    }
   },
   "Cta": {
     "requestDemo": "Request a demo",
@@ -552,14 +570,14 @@
       "configure": "Configure",
       "compareModels": "Compare models",
       "sections": {
-        "metrics": "Key performance",
-        "autonomy": "Autonomy",
-        "specs": "Technical specifications",
-        "deployment": "Best-fit deployment",
-        "config": "Configuration",
-        "advantage": "Platform-connected"
+        "video": "Demo",
+        "summary": "Overview",
+        "features": "Key features",
+        "useCases": "Deployment & use cases",
+        "datasheet": "Datasheet",
+        "specs": "Specifications"
       },
-      "specsTitle": "The technical detail.",
+      "specsTitle": "Technical data.",
       "deploymentTitle": "Where it fits best.",
       "configTitle": "Configured to your site.",
       "configBody": "Tune each robot to your plant — batteries, brushes, service, and regional logistics. Pricing follows your configuration.",
@@ -584,7 +602,18 @@
       "advantageTitle": "Smarter because it's connected.",
       "advantageBody": "Every NuvaTrack is dispatched, scheduled, and verified by the Cleanuva platform — so it cleans where it pays and proves the yield it recovered.",
       "ctaTitle": "Configure your NuvaTrack.",
-      "ctaBody": "Get pricing for your site, or compare the models to find your fit."
+      "ctaBody": "Get pricing for your site, or compare the models to find your fit.",
+      "summaryTitle": "Built for the field.",
+      "featuresTitle": "What sets it apart.",
+      "specsNote": "All figures from the product datasheet.",
+      "bestForLabel": "Best for:",
+      "videoPlay": "Play the demo",
+      "videoSoon": "Demo video coming soon.",
+      "datasheetTitle": "Get the full datasheet.",
+      "datasheetBody": "Every dimension, spec, and option in one PDF.",
+      "downloadDatasheet": "Download datasheet",
+      "requestDatasheet": "Request datasheet",
+      "videoPause": "Pause video"
     },
     "compare": {
       "eyebrow": "Compare",
@@ -595,24 +624,36 @@
       "viewProduct": "View"
     },
     "specs": {
-      "coverage": "Coverage",
+      "cleaningCapacity": "Cleaning capacity",
+      "speed": "Travel speed",
+      "climbing": "Climbing",
+      "moduleTilt": "Module tilt",
+      "obstacle": "Obstacle clearance",
+      "dimensions": "Dimensions",
+      "weight": "Weight",
+      "cleaning": "Cleaning method",
+      "battery": "Battery",
+      "autonomy": "Runtime per charge",
+      "charging": "Charging",
+      "remote": "Remote control",
+      "waterFlow": "Water flow",
+      "brush": "Brush",
+      "brushSpeed": "Brush speed",
+      "ip": "Ingress protection",
+      "warranty": "Warranty",
+      "operation": "Operation",
       "operators": "Operators",
-      "water": "Water use",
-      "uptime": "Uptime",
-      "autonomy": "Autonomy",
-      "siteType": "Site type",
-      "cleaning": "Cleaning",
-      "navigation": "Navigation",
       "power": "Power",
+      "architecture": "Architecture",
       "connectivity": "Connectivity"
     },
     "families": {
       "rSeries": {
-        "tagline": "Single operator. Maximum coverage.",
-        "line": "One trained operator runs a fleet across the rows — maximum coverage per shift, zero water.",
+        "tagline": "Single-operator cleaning, dry or wet.",
+        "line": "Efficient single-operator cleaning for rooftops, carports and distributed sites — dry or wet, with one person and one machine.",
         "cta": "Get R-Series pricing",
-        "alt": "NuvaTrack R-Series robot cleaning a solar array at golden hour",
-        "positioning": "One trained operator runs a fleet of R-Series robots across the rows — the fastest way to bring autonomous, waterless cleaning to commercial and distributed sites.",
+        "alt": "NuvaTrack R-Series single-operator solar-cleaning robot on a PV array",
+        "positioning": "Compact, high-efficiency tracked robots for distributed plants, carports and rooftop PV. One operator deploys, controls and finishes daily cleaning — dry brushing or wet rinse, in a single dual-ended pass.",
         "autonomyTitle": "Operator-light. Decision-rich.",
         "autonomy": {
           "a1": {
@@ -630,22 +671,28 @@
         },
         "deployment": {
           "d1": {
-            "title": "Commercial & C&I arrays",
-            "desc": "Right-sized for commercial and industrial sites."
+            "title": "Rooftop & carport PV",
+            "desc": "Compact enough for rooftops, carports and tight rows."
           },
           "d2": {
-            "title": "Distributed portfolios",
-            "desc": "Move it between nearby sites on one operator's schedule."
+            "title": "Distributed C&I portfolios",
+            "desc": "One operator moves it between nearby small-to-medium sites."
           }
         },
-        "bestFit": "Commercial & distributed sites with an operator on hand."
+        "bestFit": "Rooftop, carport and small-to-medium distributed PV with an operator on hand.",
+        "features": {
+          "f1": "Single-operator remote with semi-auto lane assist",
+          "f2": "Dual-mode cleaning — dry brushing or wet rinse",
+          "f3": "Dual-ended pass: twin brushes with front and rear nozzles",
+          "f4": "Modular build for one-person transport and setup"
+        }
       },
       "uSeries": {
-        "tagline": "Autonomous. Every night.",
-        "line": "Fully autonomous cleaning that runs on its own schedule after dark — no operator, no downtime.",
+        "tagline": "True unattended PV cleaning.",
+        "line": "Set it up once and it cleans on schedule — auto route planning, smart return-to-charge, no crew on site.",
         "cta": "Get U-Series pricing",
-        "alt": "NuvaTrack U-Series robot cleaning a solar array at dusk",
-        "positioning": "Fully autonomous, every night. U-Series docks, charges, and cleans on its own schedule — no operator, no downtime, no water.",
+        "alt": "NuvaTrack U-Series unattended solar-cleaning robot at dusk",
+        "positioning": "Purpose-built for routine, high-frequency cleaning of large plants — it runs without on-site personnel, day or night, in harsh outdoor conditions. Dry, water-free, IP65.",
         "autonomyTitle": "Unmanned. Every night.",
         "autonomy": {
           "a1": {
@@ -663,22 +710,28 @@
         },
         "deployment": {
           "d1": {
-            "title": "Unattended sites",
-            "desc": "Ideal where no operator is on site."
+            "title": "Large unattended plants",
+            "desc": "Where no crew is on site — scheduled, hands-free cleaning."
           },
           "d2": {
-            "title": "Large commercial & mid-scale",
-            "desc": "Covers more ground each night, hands-free."
+            "title": "Harsh, dusty environments",
+            "desc": "IP65 and salt-resistant for desert, coastal and night work."
           }
         },
-        "bestFit": "Unattended sites needing hands-free nightly cleaning."
+        "bestFit": "Large plants that need hands-free, high-frequency cleaning without on-site crew.",
+        "features": {
+          "f1": "True unattended operation — no on-site crew after setup",
+          "f2": "Auto route planning and smart return-to-charge",
+          "f3": "IP65, salt-resistant build for day or night",
+          "f4": "Dry helical dual-fibre brushing — no water, no trace"
+        }
       },
       "nuvaSpan": {
-        "tagline": "Built for utility-scale operations.",
-        "line": "Engineered for the longest rows and the largest plants — utility-scale throughput, proven yield.",
+        "tagline": "Suspended cleaning for utility-scale terrain.",
+        "line": "Built for the longest rows and the hardest sites — rail-guided, water-free cleaning that cuts O&M workload and water use.",
         "cta": "Get NuvaSpan pricing",
-        "alt": "NuvaSpan robot operating across a utility-scale solar plant",
-        "positioning": "Built for the longest rows and the largest plants. NuvaSpan brings autonomous, wide-span cleaning to utility-scale solar — fleet-synced and platform-scheduled.",
+        "alt": "NuvaSpan suspended solar-cleaning robot over a utility-scale plant",
+        "positioning": "A suspended, bridge-type robot for utility-scale ground-mount and complex terrain. It travels automatically along project-specific rails to clear dust, sand and soiling — water-free, with onboard PV self-charging.",
         "autonomyTitle": "Autonomous. At utility scale.",
         "autonomy": {
           "a1": {
@@ -696,15 +749,21 @@
         },
         "deployment": {
           "d1": {
-            "title": "Utility-scale plants",
-            "desc": "Engineered for hundreds of MWp."
+            "title": "Utility-scale ground-mount",
+            "desc": "Long rows and the largest plants, rail-guided."
           },
           "d2": {
-            "title": "High-soiling regions",
-            "desc": "Strongest where dust makes cleaning pay, e.g. MEA."
+            "title": "Complex terrain",
+            "desc": "Mountainous, desert/Gobi and long uneven rows."
           }
         },
-        "bestFit": "Utility-scale plants and high-soiling regions."
+        "bestFit": "Utility-scale ground-mount and complex terrain (mountainous, desert, long uneven rows).",
+        "features": {
+          "f1": "Suspended/bridge travel on project-specific rails",
+          "f2": "Unattended after deployment, with self-check and diagnostics",
+          "f3": "Battery with integrated PV self-charging — no external cabling",
+          "f4": "Water-free dry brushing for dust, sand and bird droppings"
+        }
       }
     }
   },

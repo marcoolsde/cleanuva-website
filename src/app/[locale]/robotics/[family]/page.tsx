@@ -21,7 +21,7 @@ export async function generateMetadata({
   if (!f) return {};
   return {
     title: `${f.name} — Cleanuva Robotics`,
-    description: `${f.name}: autonomous, platform-connected solar cleaning.`,
+    description: `${f.name}: platform-connected solar-cleaning robot. Real specs, datasheet, and pricing.`,
   };
 }
 

@@ -1,14 +1,14 @@
 /**
- * Robot families (build-plan #8). Three NuvaTrack families, each a connected
- * execution product. Used by: the overview fleet (cinematic teasers), the
- * per-family product pages (/robotics/[slug]), and the compare page.
+ * Robot families (Cleanuva Robotics product line). Three NuvaTrack/NuvaSpan
+ * families, each a connected execution product. Used by: the overview fleet
+ * (cinematic teasers), the per-family product pages (/robotics/[slug]), and the
+ * compare page.
  *
- * Brand/model names are fixed (not localized). Spec/metric VALUES are mono
- * technical strings (also not localized). Spec LABELS and all marketing copy
- * resolve from the Robotics.* messages namespace:
- *   - shared labels  → Robotics.specs.* / Robotics.product.*
- *   - per family     → Robotics.families.<key>.*  (tagline, positioning,
- *                       autonomy.a1–a3, deployment.d1–d2)
+ * RP-0: ALL metric/spec VALUES below are sourced from the real product
+ * datasheets (NuvaTrack R-Series / U-Series / NuvaSpan Series, 2026-06). No
+ * invented MWp/day, uptime %, or "auto-charging dock" figures. Brand/model names
+ * are fixed (not localized); spec LABELS and marketing copy resolve from the
+ * Robotics.* messages namespace.
  */
 
 export interface RobotSpec {
@@ -27,14 +27,15 @@ export interface RobotFamily {
   accent: "warm";
   theme: "day" | "dusk";
   scene: string;
-  /**
-   * Real product image under /public. If the file is absent, PhotoPlate keeps
-   * the `scene` gradient. To swap: overwrite the same-named file + rebuild.
-   */
+  /** Real product image under /public; PhotoPlate keeps the scene gradient if absent. */
   image: string;
-  /** Headline performance metrics (4) shown big on the product page. */
+  /** Demo video under /public/videos; ProductVideo shows the poster if absent. */
+  video: string;
+  /** Datasheet PDF under /public/downloads; button degrades to "Request datasheet" if absent. */
+  datasheet: string;
+  /** Headline performance metrics (4) shown big on the product page — datasheet-sourced. */
   metrics: RobotSpec[];
-  /** Full technical specifications. */
+  /** Full technical specifications — datasheet-sourced. */
   specs: RobotSpec[];
   /** /get-pricing deep link (commercial path). */
   pricingHref: string;
@@ -50,18 +51,30 @@ export const ROBOT_FAMILIES: RobotFamily[] = [
     theme: "day",
     scene: "robot-in-operation",
     image: "/images/robotics/r-series-hero.jpg",
+    video: "/videos/robotics/nuvatrack-r-demo.mp4",
+    datasheet: "/downloads/robotics/nuvatrack-r-series-datasheet.pdf",
+    // Datasheet: 2000 m²/h · up to 60 m/min · 20° climb · single operator
     metrics: [
-      { key: "coverage", value: "1.2 MWp/day" },
+      { key: "cleaningCapacity", value: "2,000 m²/h" },
+      { key: "speed", value: "60 m/min" },
+      { key: "climbing", value: "20°" },
       { key: "operators", value: "1" },
-      { key: "water", value: "0 L" },
-      { key: "uptime", value: "99.2%" },
     ],
     specs: [
-      { key: "coverage", value: "1.2 MWp/day" },
-      { key: "operators", value: "1 operator" },
-      { key: "cleaning", value: "Dry, brush-based" },
-      { key: "navigation", value: "Row-guided" },
-      { key: "power", value: "Swappable battery" },
+      { key: "dimensions", value: "600 × 530 × 220 mm" },
+      { key: "weight", value: "42 kg" },
+      { key: "speed", value: "Up to 60 m/min" },
+      { key: "cleaningCapacity", value: "2,000 m²/h" },
+      { key: "climbing", value: "20°" },
+      { key: "cleaning", value: "Dry & wet (dual-mode)" },
+      { key: "battery", value: "2 × Li-ion 36 V / 15 Ah" },
+      { key: "autonomy", value: "3 h" },
+      { key: "charging", value: "1.5 h" },
+      { key: "remote", value: "2.4 GHz · 200 m" },
+      { key: "waterFlow", value: "9.6 L/min" },
+      { key: "brush", value: "1,132 / 1,420 mm · Ø200 mm" },
+      { key: "brushSpeed", value: "330 rpm" },
+      { key: "warranty", value: "12 months" },
       { key: "connectivity", value: "Platform-connected" },
     ],
     pricingHref: "/get-pricing?model=nuvatrack-r",
@@ -75,18 +88,30 @@ export const ROBOT_FAMILIES: RobotFamily[] = [
     theme: "dusk",
     scene: "robot-dusk",
     image: "/images/robotics/u-series-hero.jpg",
+    video: "/videos/robotics/nuvatrack-u-demo.mp4",
+    datasheet: "/downloads/robotics/nuvatrack-u-series-datasheet.pdf",
+    // Datasheet: 600 m²/h · 30 m/min · 10° climb · IP65 · true unattended · 4 h
     metrics: [
-      { key: "coverage", value: "2.8 MWp/night" },
-      { key: "autonomy", value: "Full" },
-      { key: "water", value: "0 L" },
-      { key: "uptime", value: "99.5%" },
+      { key: "cleaningCapacity", value: "600 m²/h" },
+      { key: "autonomy", value: "4 h" },
+      { key: "ip", value: "IP65" },
+      { key: "climbing", value: "10°" },
     ],
     specs: [
-      { key: "coverage", value: "2.8 MWp/night" },
-      { key: "operators", value: "Autonomous" },
-      { key: "cleaning", value: "Dry, brush-based" },
-      { key: "navigation", value: "Autonomous" },
-      { key: "power", value: "Auto-charging dock" },
+      { key: "dimensions", value: "600 × 490 × 220 mm" },
+      { key: "weight", value: "38 kg" },
+      { key: "speed", value: "30 m/min" },
+      { key: "cleaningCapacity", value: "600 m²/h" },
+      { key: "climbing", value: "10°" },
+      { key: "cleaning", value: "Dry, fully automatic" },
+      { key: "operation", value: "True unattended" },
+      { key: "battery", value: "Li-ion 36 V / 15 Ah" },
+      { key: "autonomy", value: "4 h" },
+      { key: "charging", value: "3 h · solar" },
+      { key: "ip", value: "IP65" },
+      { key: "brush", value: "1,132 / 1,420 mm · Ø200 mm" },
+      { key: "brushSpeed", value: "330 rpm" },
+      { key: "warranty", value: "12 months" },
       { key: "connectivity", value: "Platform-connected" },
     ],
     pricingHref: "/get-pricing?model=nuvatrack-u",
@@ -94,24 +119,34 @@ export const ROBOT_FAMILIES: RobotFamily[] = [
   {
     id: "nuvaspan",
     slug: "nuvaspan",
-    name: "NuvaSpan",
+    name: "NuvaSpan Series",
     key: "nuvaSpan",
     accent: "warm",
     theme: "day",
     scene: "plant-utility",
     image: "/images/robotics/nuvaspan-hero.jpg",
+    video: "/videos/robotics/nuvaspan-demo.mp4",
+    datasheet: "/downloads/robotics/nuvaspan-series-datasheet.pdf",
+    // Datasheet: 4000 m²/h · 18 m/min · 25° climb · 45° module tilt · suspended/bridge
     metrics: [
-      { key: "coverage", value: "6.0 MWp/night" },
-      { key: "siteType", value: "Utility" },
-      { key: "water", value: "0 L" },
-      { key: "uptime", value: "99.6%" },
+      { key: "cleaningCapacity", value: "4,000 m²/h" },
+      { key: "climbing", value: "25°" },
+      { key: "moduleTilt", value: "45°" },
+      { key: "weight", value: "48–80 kg" },
     ],
     specs: [
-      { key: "coverage", value: "6.0 MWp/night" },
-      { key: "operators", value: "Autonomous" },
-      { key: "cleaning", value: "Wide-span, dry" },
-      { key: "navigation", value: "Autonomous" },
-      { key: "power", value: "Auto-charging" },
+      { key: "dimensions", value: "4,923 × 540 × 562 mm" },
+      { key: "weight", value: "48–80 kg" },
+      { key: "speed", value: "18 m/min" },
+      { key: "cleaningCapacity", value: "4,000 m²/h" },
+      { key: "climbing", value: "25°" },
+      { key: "moduleTilt", value: "45°" },
+      { key: "obstacle", value: "50 mm step / offset" },
+      { key: "cleaning", value: "Water-free dry" },
+      { key: "architecture", value: "Suspended / bridge" },
+      { key: "power", value: "Solar self-powered" },
+      { key: "autonomy", value: "2 h" },
+      { key: "warranty", value: "12 months" },
       { key: "connectivity", value: "Platform-connected" },
     ],
     pricingHref: "/get-pricing?model=nuvaspan",
@@ -119,10 +154,8 @@ export const ROBOT_FAMILIES: RobotFamily[] = [
 ];
 
 /** Per-family copy iterators (keys live under Robotics.families.<key>.*). */
-export const AUTONOMY_KEYS = ["a1", "a2", "a3"] as const;
+export const FEATURE_KEYS = ["f1", "f2", "f3", "f4"] as const;
 export const DEPLOYMENT_KEYS = ["d1", "d2"] as const;
-/** Shared configuration highlights (Robotics.product.config.*). */
-export const CONFIG_KEYS = ["batteries", "brushes", "warranty", "logistics"] as const;
 
 export function familyBySlug(slug: string): RobotFamily | undefined {
   return ROBOT_FAMILIES.find((f) => f.slug === slug);

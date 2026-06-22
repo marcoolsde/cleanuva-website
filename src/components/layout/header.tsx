@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useTranslations } from "next-intl";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 
 import { Link, usePathname } from "@/i18n/navigation";
 import { NAV } from "@/content/nav";
@@ -42,6 +42,7 @@ function isActive(pathname: string, href: string) {
 
 export function Header() {
   const tNav = useTranslations("Nav");
+  const tRobo = useTranslations("Nav.roboticsMenu");
   const tCta = useTranslations("Cta");
   const tCommon = useTranslations("Common");
   const pathname = usePathname();
@@ -55,10 +56,15 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const linkCls = (active: boolean) =>
+    cn(
+      "border-b-2 py-1 text-[15px] font-medium transition-colors",
+      active ? "border-cool text-ink" : "border-transparent text-ink-2 hover:text-ink",
+    );
+
   return (
     <header
       className={cn(
-        // Always light, translucent; hairline appears only after scroll.
         "sticky top-0 z-50 bg-canvas/82 backdrop-blur transition-shadow",
         scrolled && "border-b border-line",
       )}
@@ -67,23 +73,51 @@ export function Header() {
         <BrandMark />
 
         {/* Center nav — hidden below lg, available in the drawer on mobile. */}
-        <nav
-          aria-label="Primary"
-          className="hidden items-center gap-7 lg:flex"
-        >
+        <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
           {NAV.map((item) => {
             const active = isActive(pathname, item.href);
+
+            if (item.children) {
+              return (
+                <div key={item.key} className="group relative">
+                  <Link href={item.href} className={cn(linkCls(active), "inline-flex items-center gap-1")}>
+                    {tNav(item.key)}
+                    <ChevronDown
+                      className="size-3.5 text-ink-3 transition-transform group-hover:rotate-180"
+                      aria-hidden
+                    />
+                  </Link>
+                  {/* Hover/focus panel — pt bridges the gap so it stays open on the way down. */}
+                  <div className="invisible absolute left-1/2 top-full z-50 w-[296px] -translate-x-1/2 pt-3 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                    <div className="rounded-xl border border-line bg-canvas p-2 shadow-lift">
+                      {item.children.map((c) => {
+                        const isCompare = c.key === "compare";
+                        return (
+                          <Link
+                            key={c.key}
+                            href={c.href}
+                            className={cn(
+                              "block rounded-lg px-3 py-2.5 transition-colors hover:bg-surface-sunk focus-visible:bg-surface-sunk focus-visible:outline-none",
+                              isCompare && "mt-1 border-t border-line pt-3",
+                            )}
+                          >
+                            <span className="block text-[15px] font-medium text-ink">
+                              {tRobo(`${c.key}.name`)}
+                            </span>
+                            <span className="mt-0.5 block text-[13px] text-ink-3">
+                              {tRobo(`${c.key}.desc`)}
+                            </span>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+
             return (
-              <Link
-                key={item.key}
-                href={item.href}
-                className={cn(
-                  "border-b-2 py-1 text-[15px] font-medium transition-colors",
-                  active
-                    ? "border-cool text-ink"
-                    : "border-transparent text-ink-2 hover:text-ink",
-                )}
-              >
+              <Link key={item.key} href={item.href} className={linkCls(active)}>
                 {tNav(item.key)}
               </Link>
             );
@@ -114,19 +148,34 @@ export function Header() {
               </SheetHeader>
               <nav aria-label="Mobile" className="flex flex-col gap-1 px-4">
                 {NAV.map((item) => (
-                  <Link
-                    key={item.key}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className={cn(
-                      "rounded-md px-3 py-2.5 text-[17px] font-medium transition-colors",
-                      isActive(pathname, item.href)
-                        ? "bg-cool-tint text-cool-text"
-                        : "text-ink hover:bg-surface-sunk",
-                    )}
-                  >
-                    {tNav(item.key)}
-                  </Link>
+                  <div key={item.key}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className={cn(
+                        "rounded-md px-3 py-2.5 text-[17px] font-medium transition-colors",
+                        isActive(pathname, item.href)
+                          ? "bg-cool-tint text-cool-text"
+                          : "text-ink hover:bg-surface-sunk",
+                      )}
+                    >
+                      {tNav(item.key)}
+                    </Link>
+                    {item.children ? (
+                      <div className="ms-3 mt-1 flex flex-col gap-0.5 border-s border-line ps-3">
+                        {item.children.map((c) => (
+                          <Link
+                            key={c.key}
+                            href={c.href}
+                            onClick={() => setOpen(false)}
+                            className="rounded-md px-3 py-2 text-[15px] text-ink-2 transition-colors hover:bg-surface-sunk hover:text-ink"
+                          >
+                            {tRobo(`${c.key}.name`)}
+                          </Link>
+                        ))}
+                      </div>
+                    ) : null}
+                  </div>
                 ))}
               </nav>
               <div className="mt-6 flex flex-col gap-3 px-4">

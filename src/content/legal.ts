@@ -5,23 +5,24 @@
  * The footer MUST render the literal line: "Cleanuva is a brand of NETRO Sparkle GmbH."
  * (localized per locale via the Legal.* messages; English is the canonical literal).
  *
- * ⚠️ The fields below are UNKNOWN and must be filled with real registration data
- * before launch. DO NOT invent them. Build the Imprint/Privacy/Terms pages
- * (Step 12) against these constants.
+ * Registration data confirmed by the founder (2026-06-16). Two fields remain
+ * TODO (managing director / Geschäftsführer, and phone) — DO NOT invent them.
  */
 export const LEGAL = {
   brand: "Cleanuva",
   entity: "NETRO Sparkle GmbH",
   copyrightYear: 2026,
 
-  // TODO — fill before launch (do not invent):
-  registeredOffice: "TODO", // registered office / Sitz
-  registerCourt: "TODO", // Handelsregister / Amtsgericht
-  hrb: "TODO", // HRB number
-  managingDirectors: ["TODO"], // Geschäftsführer
-  vatId: "TODO", // USt-IdNr. / VAT ID
-  contactEmail: "TODO", // Kontakt E-Mail
-  phone: "TODO", // Telefon
+  // Confirmed registration data:
+  registeredOffice: "Römerstraße 54, 40667 Meerbusch, Germany", // registered office / Sitz
+  registerCourt: "Amtsgericht Neuss", // Handelsregister / Amtsgericht
+  hrb: "HRB 22958", // HRB number
+  vatId: "DE362154837", // USt-IdNr. / VAT ID
+  contactEmail: "info@cleanuva.de", // Kontakt E-Mail
+
+  // TODO — still required before launch (do not invent):
+  managingDirectors: ["TODO"], // Geschäftsführer — not yet provided
+  phone: "TODO", // Telefon — not yet provided
 } as const;
 
 export type Legal = typeof LEGAL;
