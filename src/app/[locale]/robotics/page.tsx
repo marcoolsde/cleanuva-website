@@ -11,7 +11,7 @@ import { RoboticsCta } from "@/components/sections/robotics-cta";
 export const metadata: Metadata = {
   title: "Robotics — Cleanuva",
   description:
-    "Autonomous solar robotics: NuvaTrack robots clean autonomously, every night, scheduled by AI and proven by the Cleanuva platform.",
+    "Solar cleaning robots: NuvaTrack-R, NuvaTrack-R Pro, NuvaTrack-U and NuvaSpan — dispatched, scheduled and verified by the Cleanuva platform.",
 };
 
 // Robotics overview (Phase 5A) — product-led and autonomy-forward:

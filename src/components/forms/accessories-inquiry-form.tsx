@@ -20,9 +20,9 @@ import { submitAccessoryInquiry } from "@/lib/form-actions";
 
 // Brand product names are never translated.
 const MODEL_NAMES: Record<string, string> = {
-  nuvar: "NuvaR",
-  "nuvar-pro": "NuvaR Pro",
-  "nuva-u": "Nuva U",
+  "nuvatrack-r": "NuvaTrack-R",
+  "nuvatrack-r-pro": "NuvaTrack-R Pro",
+  "nuvatrack-u": "NuvaTrack-U",
   nuvaspan: "NuvaSpan",
 };
 

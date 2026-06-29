@@ -12,7 +12,19 @@ import { Field, SelectField, FormSuccess, fieldControl } from "@/components/form
 import { makeQuoteSchema, type QuoteInput } from "@/lib/form-schemas";
 import { submitQuote } from "@/lib/form-actions";
 
-const MODELS = ["nuvatrack-r", "nuvatrack-u", "nuvaspan"] as const;
+// Canonical model values (also the payload values; the dropdown order). NuvaTrack-R
+// Pro is a quote-only upgrade configuration — selectable here, no separate page.
+const MODELS = ["nuvatrack-r", "nuvatrack-r-pro", "nuvatrack-u", "nuvaspan"] as const;
+
+// ?model= aliases → canonical. Lets old / route-style links preselect correctly.
+// Never surfaced in the UI; only normalises the incoming query param.
+const MODEL_ALIASES: Record<string, string> = {
+  "r-series": "nuvatrack-r",
+  "u-series": "nuvatrack-u",
+  nuvar: "nuvatrack-r",
+  "nuvar-pro": "nuvatrack-r-pro",
+  "nuva-u": "nuvatrack-u",
+};
 
 /**
  * Robotics RFQ funnel (founder clarifications #4–#5): a deliberately simple
@@ -33,7 +45,10 @@ export function GetPricingForm({ initialModel }: { initialModel?: string }) {
     [t],
   );
 
-  const validInitial = initialModel && (MODELS as readonly string[]).includes(initialModel) ? initialModel : "";
+  // Normalise the incoming ?model= (alias → canonical), then only preselect a
+  // value the form actually offers.
+  const canonical = initialModel ? (MODEL_ALIASES[initialModel] ?? initialModel) : "";
+  const validInitial = (MODELS as readonly string[]).includes(canonical) ? canonical : "";
 
   const {
     register,

@@ -13,15 +13,15 @@
     "company": "Unternehmen",
     "roboticsMenu": {
       "rSeries": {
-        "name": "NuvaTrack R-Series",
+        "name": "NuvaTrack-R",
         "desc": "Ein Bediener · Aufdach & verteilt"
       },
       "uSeries": {
-        "name": "NuvaTrack U-Series",
+        "name": "NuvaTrack-U",
         "desc": "Unbeaufsichtigt · Großanlagen"
       },
       "nuvaSpan": {
-        "name": "NuvaSpan Series",
+        "name": "NuvaSpan",
         "desc": "Aufgehängt · Utility-Scale"
       },
       "compare": {
@@ -31,6 +31,18 @@
       "accessories": {
         "name": "Zubehör",
         "desc": "Bürsten · Batterien · Teile"
+      },
+      "nuvar": {
+        "name": "NuvaTrack-R",
+        "desc": "Ferngesteuert · flexibel"
+      },
+      "nuvarPro": {
+        "name": "NuvaTrack-R Pro",
+        "desc": "Kamerafähig · Kurshaltung"
+      },
+      "nuvaU": {
+        "name": "NuvaTrack-U",
+        "desc": "Unbeaufsichtigt · wiederholbar"
       }
     }
   },
@@ -163,7 +175,7 @@
       "done": "Verifiziert"
     },
     "actions": {
-      "dispatch": "NuvaTrack R entsenden · String 12",
+      "dispatch": "NuvaTrack-R entsenden · String 12",
       "rca": "Wechselrichter-Alarm · Ursachenanalyse",
       "restored": "Ertrag wiederhergestellt +4,8 %",
       "underperf": "String-Minderleistung gemeldet"
@@ -333,7 +345,7 @@
         "a3": "Tracker blockiert · Reihe 22"
       },
       "rec": {
-        "r1Title": "NuvaTrack R entsenden",
+        "r1Title": "NuvaTrack-R entsenden",
         "r1Desc": "+4,8 % auf DE-NRW-04 · String 12 zurückgewinnen — ohne Einsatzfahrt.",
         "r1Impact": "+12.400 €",
         "r2Title": "Wechselrichter ES-AND-11 prüfen",
@@ -348,12 +360,12 @@
         "done": "Verifiziert"
       },
       "woItems": {
-        "w1": "NuvaTrack R Reinigung · String 12",
+        "w1": "NuvaTrack-R Reinigung · String 12",
         "w2": "Wechselrichter-Ursachenanalyse",
         "w3": "Ertrag wiederhergestellt +4,8 %"
       },
       "dispatch": {
-        "label": "NuvaTrack R-04 · unterwegs",
+        "label": "NuvaTrack-R-04 · unterwegs",
         "eta": "Ankunft in 14 Min."
       },
       "verification": "DE-NRW-04 · Ertrag wiederhergestellt +4,8 % · verifiziert"
@@ -504,15 +516,15 @@
     "Hero": {
       "eyebrow": "Autonome Solar-Robotik",
       "headline": "Reinigung, die sich selbst erledigt.",
-      "subline": "NuvaTrack-Roboter reinigen autonom, jede Nacht, ohne Crew vor Ort — von KI geplant und von der Plattform nachgewiesen. Premium-Hardware, intelligent gemacht.",
+      "subline": "Cleanuva-Roboter reinigen autonom, jede Nacht, ohne Crew vor Ort — von KI geplant und von der Plattform nachgewiesen. Premium-Hardware, intelligent gemacht.",
       "meetFleet": "Die Flotte kennenlernen",
-      "sceneAlt": "Ein NuvaTrack-Roboter reinigt eine Solaranlage autonom im goldenen Licht",
+      "sceneAlt": "Ein Cleanuva-Roboter reinigt eine Solaranlage autonom im goldenen Licht",
       "autonomousTag": "Autonom · im Betrieb"
     },
     "Autonomy": {
       "eyebrow": "Autonomie",
       "title": "Gebaut, um ohne Sie zu arbeiten.",
-      "body": "NuvaTrack wartet nicht auf eine Crew. Es läuft nach eigenem Zeitplan, trifft eigene Reinigungsentscheidungen und hält das Feld auf Spitzenertrag — jede Nacht, niemand vor Ort.",
+      "body": "Cleanuva Robotics wartet nicht auf eine Crew. Es läuft nach eigenem Zeitplan, trifft eigene Reinigungsentscheidungen und hält das Feld auf Spitzenertrag — jede Nacht, niemand vor Ort.",
       "items": {
         "unmanned": {
           "title": "Unbemannter Betrieb",
@@ -537,7 +549,7 @@
     "Advantage": {
       "eyebrow": "Der Vorteil",
       "title": "Ein Reinigungsroboter, der weiß, warum er da ist.",
-      "body": "Die meisten Reinigungsroboter sind blinde Hardware. NuvaTrack ist mit der Cleanuva-Plattform verbunden — es reinigt nur dort, wo es sich lohnt, zum richtigen Zeitpunkt, und weist den zurückgewonnenen Ertrag nach.",
+      "body": "Die meisten Reinigungsroboter sind blinde Hardware. Cleanuva Robotics ist mit der Cleanuva-Plattform verbunden — es reinigt nur dort, wo es sich lohnt, zum richtigen Zeitpunkt, und weist den zurückgewonnenen Ertrag nach.",
       "items": {
         "knowsWhen": {
           "title": "Weiß wann",
@@ -556,7 +568,7 @@
     "Fleet": {
       "eyebrow": "Die Flotte",
       "title": "Drei Modelle, ein autonomer Standard.",
-      "body": "Cleanuva Robotics ist unsere eigene Roboterlinie — NuvaTrack R-Series, U-Series und NuvaSpan, für einzelne Bediener, vollautonome Nächte und Anlagen im Versorgungsmaßstab. Jedes plattformverbunden und nachgewiesen."
+      "body": "Cleanuva Robotics ist unsere eigene Roboterlinie — NuvaTrack-R, NuvaTrack-U und NuvaSpan, für einzelne Bediener, vollautonome Nächte und Anlagen im Versorgungsmaßstab. Jedes plattformverbunden und nachgewiesen."
     },
     "Partner": {
       "eyebrow": "Wie es gebaut wird",
@@ -606,8 +618,8 @@
         }
       },
       "advantageTitle": "Intelligenter, weil verbunden.",
-      "advantageBody": "Jeder NuvaTrack wird von der Cleanuva-Plattform entsandt, geplant und nachgewiesen — er reinigt, wo es sich lohnt, und belegt den zurückgewonnenen Ertrag.",
-      "ctaTitle": "Konfigurieren Sie Ihren NuvaTrack.",
+      "advantageBody": "Jeder Cleanuva Robotics wird von der Cleanuva-Plattform entsandt, geplant und nachgewiesen — er reinigt, wo es sich lohnt, und belegt den zurückgewonnenen Ertrag.",
+      "ctaTitle": "Konfigurieren Sie Ihren Roboter.",
       "ctaBody": "Erhalten Sie Preise für Ihren Standort oder vergleichen Sie die Modelle, um das passende zu finden.",
       "summaryTitle": "Für den Feldeinsatz gebaut.",
       "featuresTitle": "Was es auszeichnet.",
@@ -623,7 +635,7 @@
     },
     "compare": {
       "eyebrow": "Vergleich",
-      "title": "Finden Sie Ihren NuvaTrack.",
+      "title": "Finden Sie Ihren Roboter.",
       "body": "Drei Modelle, ein autonomer Standard. Vergleichen Sie Abdeckung, Betrieb und Eignung — und konfigurieren Sie dann das passende für Ihren Standort.",
       "bestFitLabel": "Ideal für",
       "configNote": "Jedes Modell wird gleich konfiguriert: Batterien, Bürsten, Garantie & Service und regionale Logistik.",
@@ -657,8 +669,8 @@
       "rSeries": {
         "tagline": "Reinigung mit einem Bediener — trocken oder nass.",
         "line": "Effiziente Ein-Bediener-Reinigung für Dächer, Carports und verteilte Standorte — trocken oder nass, mit einer Person und einer Maschine.",
-        "cta": "R-Series-Preise erhalten",
-        "alt": "NuvaTrack R-Series Ein-Bediener-Reinigungsroboter auf einer PV-Anlage",
+        "cta": "NuvaTrack-R-Preise erhalten",
+        "alt": "NuvaTrack-R Ein-Bediener-Reinigungsroboter auf einer PV-Anlage",
         "positioning": "Kompakte, hocheffiziente Raupenroboter für verteilte Anlagen, Carports und Aufdach-PV. Ein Bediener bringt sie aus, steuert sie und schließt die tägliche Reinigung ab — Trockenbürsten oder Nassspülung in einem beidseitigen Durchgang.",
         "autonomyTitle": "Bedienerarm. Entscheidungsstark.",
         "autonomy": {
@@ -696,8 +708,8 @@
       "uSeries": {
         "tagline": "Echte unbeaufsichtigte PV-Reinigung.",
         "line": "Einmal einrichten, dann reinigt er nach Plan — automatische Routenplanung, intelligente Rückkehr zur Ladung, ohne Crew vor Ort.",
-        "cta": "U-Series-Preise erhalten",
-        "alt": "NuvaTrack U-Series unbeaufsichtigter Reinigungsroboter in der Dämmerung",
+        "cta": "NuvaTrack-U-Preise erhalten",
+        "alt": "NuvaTrack-U unbeaufsichtigter Reinigungsroboter in der Dämmerung",
         "positioning": "Gebaut für die routinemäßige, häufige Reinigung großer Anlagen — läuft ohne Personal vor Ort, bei Tag und Nacht, unter harten Außenbedingungen. Trocken, wasserfrei, IP65.",
         "autonomyTitle": "Unbemannt. Jede Nacht.",
         "autonomy": {
@@ -790,15 +802,15 @@
       "ctaTitle": "Zubehör oder Serviceteile benötigt?",
       "ctaBody": "Nennen Sie uns Ihr Robotermodell und die Standortbedingungen — wir helfen, die richtigen Teile und das passende Reinigungssetup zu finden.",
       "models": {
-        "nuvar": {
+        "nuvatrack-r": {
           "type": "Ferngesteuert",
           "note": "Manuell ferngesteuerter Reinigungsroboter für flexible Einsätze."
         },
-        "nuvar-pro": {
+        "nuvatrack-r-pro": {
           "type": "Ferngesteuertes Upgrade",
           "note": "Ferngesteuerte Upgrade-Option mit kamerafähigem Betrieb und Kurshaltefunktion."
         },
-        "nuva-u": {
+        "nuvatrack-u": {
           "type": "Autonomiebereit",
           "note": "Unbeaufsichtigte Reinigungsplattform für wiederkehrende PV-Einsätze."
         },
@@ -822,7 +834,7 @@
         },
         "remote-controllers": {
           "title": "Fernsteuerungen",
-          "desc": "Handsender für die ferngesteuerten NuvaR und NuvaR Pro."
+          "desc": "Handsender für die ferngesteuerten NuvaTrack-R und NuvaTrack-R Pro."
         },
         "water-system": {
           "title": "Wassersystem-Teile",
@@ -849,7 +861,27 @@
       "eyebrow": "Cleanuva Robotics",
       "title": "Solar-Reinigungsroboter, einsatzbereit.",
       "intro": "Drei vernetzte Reinigungsroboter — Ein-Bediener, echt unbeaufsichtigt und aufgehängt für Utility-Scale-Gelände. Wählen Sie das passende Modell für Ihren Standort und fragen Sie ein Angebot an.",
-      "viewModel": "Modell ansehen"
+      "viewModel": "Modell ansehen",
+      "pro": {
+        "tagline": "Ferngesteuert, aufgewertet.",
+        "bestFit": "Kamerafähiger Betrieb und Kurshalte-Assistenz.",
+        "alt": "NuvaTrack-R Pro ferngesteuerter Solar-Reinigungsroboter"
+      }
+    },
+    "proBlock": {
+      "eyebrow": "Konfigurationen",
+      "title": "NuvaTrack-R oder NuvaTrack-R Pro?",
+      "intro": "Beide sind ferngesteuert. Wählen Sie das Standard-NuvaTrack-R oder das Upgrade NuvaTrack-R Pro für ein leistungsfähigeres Steuererlebnis.",
+      "upgradeBadge": "Upgrade",
+      "nuvar": {
+        "title": "NuvaTrack-R",
+        "desc": "Ferngesteuert, kosteneffizient und flexibel einsetzbar — das Arbeitstier für die tägliche PV-Reinigung."
+      },
+      "nuvarPro": {
+        "title": "NuvaTrack-R Pro",
+        "desc": "Ein ferngesteuertes Upgrade mit kamerafähigem Betrieb und Kurshalte-Assistenz für einen ruhigeren, kontrollierteren Lauf."
+      },
+      "proCta": "NuvaTrack-R Pro anfragen"
     }
   },
   "Fragmentation": {
@@ -932,7 +964,7 @@
     "layers": {
       "robotics": {
         "title": "Cleanuva Robotics",
-        "desc": "Unsere eigenen NuvaTrack-Roboter — Cleanuva-gebrandet, plattformgesteuert, eingesetzt, wo die Verschmutzungsökonomie es rechtfertigt.",
+        "desc": "Unsere eigenen Cleanuva-Roboter — Cleanuva-gebrandet, plattformgesteuert, eingesetzt, wo die Verschmutzungsökonomie es rechtfertigt.",
         "cta": "Robotik entdecken"
       },
       "drones": {
@@ -959,8 +991,8 @@
       "diagnosis": "KI-Copilot",
       "commandCenter": "Kommandozentrale",
       "roi": "Berichte & Nachweis",
-      "rSeries": "NuvaTrack R-Series",
-      "uSeries": "NuvaTrack U-Series",
+      "rSeries": "NuvaTrack-R",
+      "uSeries": "NuvaTrack-U",
       "nuvaSpan": "NuvaSpan",
       "pricing": "Preise erhalten",
       "owners": "Selbstbetreibende Eigentümer",
@@ -972,7 +1004,10 @@
       "security": "Sicherheit & Vertrauen",
       "contact": "Kontakt",
       "auditor": "Technische Auditoren",
-      "accessories": "Zubehör"
+      "accessories": "Zubehör",
+      "nuvar": "NuvaTrack-R",
+      "nuvarPro": "NuvaTrack-R Pro",
+      "nuvaU": "NuvaTrack-U"
     },
     "legal": {
       "copyright": "© {year} NETRO Sparkle GmbH.",
@@ -1057,8 +1092,9 @@
         "message": "Sonst noch etwas?"
       },
       "models": {
-        "nuvatrack-r": "NuvaTrack R-Series",
-        "nuvatrack-u": "NuvaTrack U-Series",
+        "nuvatrack-r": "NuvaTrack-R",
+        "nuvatrack-r-pro": "NuvaTrack-R Pro",
+        "nuvatrack-u": "NuvaTrack-U",
         "nuvaspan": "NuvaSpan"
       },
       "battery": {
@@ -1290,7 +1326,7 @@
         },
         "robotics": {
           "title": "Cleanuva Robotics",
-          "desc": "Unsere eigene Roboterlinie — NuvaTrack und NuvaSpan. Autonome Reinigung, die die Plattform plant, steuert und verifiziert."
+          "desc": "Unsere eigene Roboterlinie — NuvaTrack-R, NuvaTrack-U und NuvaSpan. Autonome Reinigung, die die Plattform plant, steuert und verifiziert."
         }
       }
     },
@@ -1310,7 +1346,7 @@
       },
       "robotics": {
         "title": "Robotik-Spezifikationen",
-        "desc": "Cleanuva Robotics: Vergleichen Sie die Baureihen NuvaTrack und NuvaSpan — Spezifikationen, Autonomie und Einsatz."
+        "desc": "Cleanuva Robotics: Vergleichen Sie die Baureihen NuvaTrack-R, NuvaTrack-U und NuvaSpan — Spezifikationen, Autonomie und Einsatz."
       },
       "brochures": {
         "title": "Produktbroschüren",

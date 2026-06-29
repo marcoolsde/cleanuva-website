@@ -50,7 +50,7 @@ export const INQUIRY_TYPES = [
 ] as const;
 
 /** Robot-model values for the accessories inquiry (no link to any product page). */
-export const INQUIRY_MODELS = ["not_sure", "nuvar", "nuvar-pro", "nuva-u", "nuvaspan"] as const;
+export const INQUIRY_MODELS = ["not_sure", "nuvatrack-r", "nuvatrack-r-pro", "nuvatrack-u", "nuvaspan"] as const;
 
 type ConsentMessages = Messages & { consent: string };
 

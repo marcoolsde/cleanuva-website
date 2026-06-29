@@ -27,8 +27,11 @@ export const NAV: NavItem[] = [
     key: "robotics",
     href: "/robotics",
     children: [
-      { key: "rSeries", href: "/robotics/r-series" },
-      { key: "uSeries", href: "/robotics/u-series" },
+      // Unified product names (P1B). NuvaR Pro is an upgrade config on the NuvaR
+      // (r-series) page — anchor, not a separate route (no dead link).
+      { key: "nuvar", href: "/robotics/r-series#nuvatrack-r" },
+      { key: "nuvarPro", href: "/robotics/r-series#nuvatrack-r-pro" },
+      { key: "nuvaU", href: "/robotics/u-series" },
       { key: "nuvaSpan", href: "/robotics/nuvaspan" },
       { key: "compare", href: "/robotics/compare" },
       { key: "accessories", href: "/robotics/accessories" },
@@ -57,9 +60,10 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
   {
     key: "robotics",
     links: [
-      { key: "rSeries", href: "/robotics#r-series" },
-      { key: "uSeries", href: "/robotics#u-series" },
-      { key: "nuvaSpan", href: "/robotics#nuvaspan" },
+      { key: "nuvar", href: "/robotics/r-series" },
+      { key: "nuvarPro", href: "/robotics/r-series#nuvatrack-r-pro" },
+      { key: "nuvaU", href: "/robotics/u-series" },
+      { key: "nuvaSpan", href: "/robotics/nuvaspan" },
       { key: "accessories", href: "/robotics/accessories" },
       { key: "pricing", href: "/get-pricing" },
     ],

@@ -21,12 +21,20 @@ export function RoboticsProduct({ family }: { family: RobotFamily }) {
   const t = useTranslations("Robotics");
   const tp = useTranslations("Robotics.product");
   const tf = useTranslations(`Robotics.families.${family.key}`);
+  const tpro = useTranslations("Robotics.proBlock");
   const tCta = useTranslations("Cta");
+
+  // NuvaR Pro lives as an upgrade configuration on the NuvaR (r-series) page —
+  // no separate route. The #nuvar / #nuvar-pro anchors back the header dropdown.
+  const isRSeries = family.id === "nuvatrack-r";
 
   return (
     <>
       {/* 1. Hero banner */}
-      <section className="dark relative isolate flex min-h-[560px] w-full items-end overflow-hidden text-ink-inv md:min-h-[80vh]">
+      <section
+        id={isRSeries ? "nuvatrack-r" : undefined}
+        className="dark relative isolate flex min-h-[560px] w-full items-end overflow-hidden scroll-mt-20 text-ink-inv md:min-h-[80vh]"
+      >
         <PhotoPlate fill src={family.image} scene={family.scene} alt={tf("alt")} />
         <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-abyss/90 via-abyss/35 to-abyss/10" />
         <div aria-hidden className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-abyss/55 to-transparent" />
@@ -113,6 +121,50 @@ export function RoboticsProduct({ family }: { family: RobotFamily }) {
           </Reveal>
         </Container>
       </Section>
+
+      {/* 3b. NuvaR or NuvaR Pro? — r-series only; NuvaR Pro upgrade configuration. */}
+      {isRSeries ? (
+        <Section tone="light" id="nuvatrack-r-pro" className="scroll-mt-20 bg-surface">
+          <Container className="max-w-[1000px]">
+            <Reveal>
+              <div className="max-w-[60ch]">
+                <Eyebrow accent="warm">{tpro("eyebrow")}</Eyebrow>
+                <h2 className="mt-3 text-h1 text-balance">{tpro("title")}</h2>
+                <p className="mt-4 text-body-l text-ink-2">{tpro("intro")}</p>
+              </div>
+            </Reveal>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              <Reveal className="h-full">
+                <div className="flex h-full flex-col rounded-xl border border-line bg-canvas p-7">
+                  <h3 className="text-h3 text-ink">{tpro("nuvar.title")}</h3>
+                  <p className="mt-2 flex-1 text-body-m text-ink-2">{tpro("nuvar.desc")}</p>
+                  <div className="mt-5">
+                    <Button variant="warm" asChild>
+                      <Link href="/get-pricing?model=nuvatrack-r">{tCta("getQuote")}</Link>
+                    </Button>
+                  </div>
+                </div>
+              </Reveal>
+              <Reveal delay={0.06} className="h-full">
+                <div className="flex h-full flex-col rounded-xl border border-cool/40 bg-cool-tint/30 p-7">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h3 className="text-h3 text-ink">{tpro("nuvarPro.title")}</h3>
+                    <span className="rounded-pill bg-cool-tint px-2.5 py-0.5 text-[12px] font-medium text-cool-text">
+                      {tpro("upgradeBadge")}
+                    </span>
+                  </div>
+                  <p className="mt-2 flex-1 text-body-m text-ink-2">{tpro("nuvarPro.desc")}</p>
+                  <div className="mt-5">
+                    <Button variant="secondary" asChild>
+                      <Link href="/get-pricing?model=nuvatrack-r-pro">{tpro("proCta")}</Link>
+                    </Button>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+          </Container>
+        </Section>
+      ) : null}
 
       {/* 4. Key features */}
       <Section tone="light">

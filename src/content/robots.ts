@@ -45,7 +45,7 @@ export const ROBOT_FAMILIES: RobotFamily[] = [
   {
     id: "nuvatrack-r",
     slug: "r-series",
-    name: "NuvaTrack R-Series",
+    name: "NuvaTrack-R",
     key: "rSeries",
     accent: "warm",
     theme: "day",
@@ -82,7 +82,7 @@ export const ROBOT_FAMILIES: RobotFamily[] = [
   {
     id: "nuvatrack-u",
     slug: "u-series",
-    name: "NuvaTrack U-Series",
+    name: "NuvaTrack-U",
     key: "uSeries",
     accent: "warm",
     theme: "dusk",
@@ -119,7 +119,7 @@ export const ROBOT_FAMILIES: RobotFamily[] = [
   {
     id: "nuvaspan",
     slug: "nuvaspan",
-    name: "NuvaSpan Series",
+    name: "NuvaSpan",
     key: "nuvaSpan",
     accent: "warm",
     theme: "day",

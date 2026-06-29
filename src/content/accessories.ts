@@ -6,15 +6,15 @@
  *
  * Display strings resolve from the Robotics.accessories.* message namespace via
  * the *Key fields (titleKey / descriptionKey / typeKey / noteKey / inquiryLabelKey).
- * Product names (NuvaR, NuvaR Pro, Nuva U, NuvaSpan) are brand names — never
+ * Product names (NuvaTrack-R, NuvaTrack-R Pro, NuvaTrack-U, NuvaSpan) are brand names — never
  * translated — so they stay as literal strings here.
  *
  * NOTE: these are the model labels used by the Accessories page only. Product
- * detail pages and the Compare page are NOT touched in this phase, and NuvaR Pro
+ * detail pages and the Compare page are NOT touched in this phase, and NuvaTrack-R Pro
  * has no detail page yet (so nothing here links to one).
  */
 
-export type AccessoryModelId = "nuvar" | "nuvar-pro" | "nuva-u" | "nuvaspan";
+export type AccessoryModelId = "nuvatrack-r" | "nuvatrack-r-pro" | "nuvatrack-u" | "nuvaspan";
 
 export interface AccessoryModel {
   id: AccessoryModelId;
@@ -28,9 +28,9 @@ export interface AccessoryModel {
 }
 
 export const ACCESSORY_MODELS: AccessoryModel[] = [
-  { id: "nuvar", name: "NuvaR", shortName: "NuvaR", typeKey: "models.nuvar.type", noteKey: "models.nuvar.note" },
-  { id: "nuvar-pro", name: "NuvaR Pro", shortName: "NuvaR Pro", typeKey: "models.nuvar-pro.type", noteKey: "models.nuvar-pro.note" },
-  { id: "nuva-u", name: "Nuva U", shortName: "Nuva U", typeKey: "models.nuva-u.type", noteKey: "models.nuva-u.note" },
+  { id: "nuvatrack-r", name: "NuvaTrack-R", shortName: "NuvaTrack-R", typeKey: "models.nuvatrack-r.type", noteKey: "models.nuvatrack-r.note" },
+  { id: "nuvatrack-r-pro", name: "NuvaTrack-R Pro", shortName: "NuvaTrack-R Pro", typeKey: "models.nuvatrack-r-pro.type", noteKey: "models.nuvatrack-r-pro.note" },
+  { id: "nuvatrack-u", name: "NuvaTrack-U", shortName: "NuvaTrack-U", typeKey: "models.nuvatrack-u.type", noteKey: "models.nuvatrack-u.note" },
   { id: "nuvaspan", name: "NuvaSpan", shortName: "NuvaSpan", typeKey: "models.nuvaspan.type", noteKey: "models.nuvaspan.note" },
 ];
 
@@ -73,7 +73,7 @@ export interface AccessoryItem {
   inquiryLabelKey: string;
 }
 
-const ALL_MODELS: AccessoryModelId[] = ["nuvar", "nuvar-pro", "nuva-u", "nuvaspan"];
+const ALL_MODELS: AccessoryModelId[] = ["nuvatrack-r", "nuvatrack-r-pro", "nuvatrack-u", "nuvaspan"];
 
 export const ACCESSORY_ITEMS: AccessoryItem[] = [
   {
@@ -117,7 +117,7 @@ export const ACCESSORY_ITEMS: AccessoryItem[] = [
     image: "/images/accessories/remote-controllers.jpg",
     category: "control",
     // Remote controllers are for the remote-controlled models only.
-    compatibleModels: ["nuvar", "nuvar-pro"],
+    compatibleModels: ["nuvatrack-r", "nuvatrack-r-pro"],
     useCases: ["control", "operation"],
     inquiryLabelKey: "requestDetails",
   },
@@ -151,7 +151,7 @@ export const ACCESSORY_ITEMS: AccessoryItem[] = [
     image: "/images/accessories/water-hose.jpg",
     category: "fluid",
     // Hose for wet-cleaning / water-supply setups — not the suspended system.
-    compatibleModels: ["nuvar", "nuvar-pro", "nuva-u"],
+    compatibleModels: ["nuvatrack-r", "nuvatrack-r-pro", "nuvatrack-u"],
     useCases: ["wet-cleaning", "water-supply"],
     options: ["50 m", "100 m"],
     inquiryLabelKey: "requestDetails",

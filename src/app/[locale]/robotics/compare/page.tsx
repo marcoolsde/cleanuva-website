@@ -4,9 +4,9 @@ import { setRequestLocale } from "next-intl/server";
 import { RoboticsCompare } from "@/components/sections/robotics-compare";
 
 export const metadata: Metadata = {
-  title: "Compare NuvaTrack models — Cleanuva Robotics",
+  title: "Compare robots — Cleanuva Robotics",
   description:
-    "Compare the NuvaTrack R-Series, U-Series, and NuvaSpan — coverage, operation mode, and best-fit deployment.",
+    "Compare NuvaTrack-R, NuvaTrack-U and NuvaSpan — coverage, operation mode, and best-fit deployment.",
 };
 
 export default async function RoboticsComparePage({

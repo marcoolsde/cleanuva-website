@@ -13,15 +13,15 @@
     "company": "公司",
     "roboticsMenu": {
       "rSeries": {
-        "name": "NuvaTrack R-Series",
+        "name": "NuvaTrack-R",
         "desc": "单人操作 · 屋顶与分布式"
       },
       "uSeries": {
-        "name": "NuvaTrack U-Series",
+        "name": "NuvaTrack-U",
         "desc": "无人值守 · 大型电站"
       },
       "nuvaSpan": {
-        "name": "NuvaSpan Series",
+        "name": "NuvaSpan",
         "desc": "悬挂式 · 公用事业级"
       },
       "compare": {
@@ -31,6 +31,18 @@
       "accessories": {
         "name": "配件",
         "desc": "刷子 · 电池 · 零件"
+      },
+      "nuvar": {
+        "name": "NuvaTrack-R",
+        "desc": "遥控 · 灵活部署"
+      },
+      "nuvarPro": {
+        "name": "NuvaTrack-R Pro",
+        "desc": "预留摄像头 · 航向保持"
+      },
+      "nuvaU": {
+        "name": "NuvaTrack-U",
+        "desc": "无人值守 · 可重复作业"
       }
     }
   },
@@ -163,7 +175,7 @@
       "done": "已验证"
     },
     "actions": {
-      "dispatch": "派遣 NuvaTrack R · String 12",
+      "dispatch": "派遣 NuvaTrack-R · String 12",
       "rca": "逆变器告警 · 根因分析",
       "restored": "发电量已恢复 +4.8%",
       "underperf": "组串性能不足已标记"
@@ -333,7 +345,7 @@
         "a3": "跟踪器卡停 · 第 22 排"
       },
       "rec": {
-        "r1Title": "派遣 NuvaTrack R",
+        "r1Title": "派遣 NuvaTrack-R",
         "r1Desc": "在 DE-NRW-04 · String 12 恢复 +4.8%——无需出车。",
         "r1Impact": "+12,400 €",
         "r2Title": "检查逆变器 ES-AND-11",
@@ -348,12 +360,12 @@
         "done": "已验证"
       },
       "woItems": {
-        "w1": "NuvaTrack R 清洁 · String 12",
+        "w1": "NuvaTrack-R 清洁 · String 12",
         "w2": "逆变器根因分析",
         "w3": "发电量已恢复 +4.8%"
       },
       "dispatch": {
-        "label": "NuvaTrack R-04 · 途中",
+        "label": "NuvaTrack-R-04 · 途中",
         "eta": "预计 14 分钟"
       },
       "verification": "DE-NRW-04 · 发电量已恢复 +4.8% · 已验证"
@@ -504,15 +516,15 @@
     "Hero": {
       "eyebrow": "自主光伏机器人",
       "headline": "会自己运行的清洁。",
-      "subline": "NuvaTrack 机器人自主清洁，每个夜晚，现场无需人员——由 AI 排程、由平台验证。高端硬件，被赋予智能。",
+      "subline": "Cleanuva 机器人自主清洁，每个夜晚，现场无需人员——由 AI 排程、由平台验证。高端硬件，被赋予智能。",
       "meetFleet": "认识机队",
-      "sceneAlt": "金色时分一台 NuvaTrack 机器人自主清洁光伏阵列",
+      "sceneAlt": "金色时分一台 Cleanuva 机器人自主清洁光伏阵列",
       "autonomousTag": "自主 · 运行中"
     },
     "Autonomy": {
       "eyebrow": "自主",
       "title": "为无需你而生。",
-      "body": "NuvaTrack 不等待团队。它按自己的计划运行、自行决定清洁，并让电站保持峰值发电——每个夜晚，现场无人。",
+      "body": "Cleanuva Robotics 不等待团队。它按自己的计划运行、自行决定清洁，并让电站保持峰值发电——每个夜晚，现场无人。",
       "items": {
         "unmanned": {
           "title": "无人运行",
@@ -537,7 +549,7 @@
     "Advantage": {
       "eyebrow": "优势所在",
       "title": "一台知道自己为何而来的清洁机器人。",
-      "body": "多数清洁机器人是盲目的硬件。NuvaTrack 与 Cleanuva 平台相连——因此只在划算之处、在正确的时间清洁，并证明其恢复的发电量。",
+      "body": "多数清洁机器人是盲目的硬件。Cleanuva Robotics 与 Cleanuva 平台相连——因此只在划算之处、在正确的时间清洁，并证明其恢复的发电量。",
       "items": {
         "knowsWhen": {
           "title": "知道何时",
@@ -556,7 +568,7 @@
     "Fleet": {
       "eyebrow": "机队",
       "title": "三款机型，同一自主标准。",
-      "body": "Cleanuva Robotics 是我们自有的机器人产品线——NuvaTrack R-Series、U-Series 与 NuvaSpan，面向单人操作、完全自主的夜间作业，以及公用事业级电站。每一款都接入平台、经过验证。"
+      "body": "Cleanuva Robotics 是我们自有的机器人产品线——NuvaTrack-R、NuvaTrack-U 与 NuvaSpan，面向单人操作、完全自主的夜间作业，以及公用事业级电站。每一款都接入平台、经过验证。"
     },
     "Partner": {
       "eyebrow": "如何打造",
@@ -606,8 +618,8 @@
         }
       },
       "advantageTitle": "因相连而更聪明。",
-      "advantageBody": "每台 NuvaTrack 都由 Cleanuva 平台派遣、排程并验证——只在划算之处清洁，并证明其恢复的发电量。",
-      "ctaTitle": "配置你的 NuvaTrack。",
+      "advantageBody": "每台 Cleanuva Robotics 都由 Cleanuva 平台派遣、排程并验证——只在划算之处清洁，并证明其恢复的发电量。",
+      "ctaTitle": "配置你的机器人。",
       "ctaBody": "为你的站点获取报价，或比较机型以找到合适的一款。",
       "summaryTitle": "为现场而生。",
       "featuresTitle": "与众不同之处。",
@@ -623,7 +635,7 @@
     },
     "compare": {
       "eyebrow": "比较",
-      "title": "找到你的 NuvaTrack。",
+      "title": "找到适合你的机器人。",
       "body": "三款机型，同一自主标准。比较覆盖能力、运行方式与适配——然后配置最契合你站点的一款。",
       "bestFitLabel": "最适合",
       "configNote": "每款机型的配置方式相同：电池、刷头、保修与服务，以及区域物流。",
@@ -657,8 +669,8 @@
       "rSeries": {
         "tagline": "单人操作清洗，干湿两用。",
         "line": "为屋顶、车棚与分布式站点带来高效的单人清洗——干湿两用，一人一机，无需拖拽水管。",
-        "cta": "获取 R-Series 报价",
-        "alt": "NuvaTrack R-Series 单人操作太阳能清洗机器人在光伏阵列上作业",
+        "cta": "获取 NuvaTrack-R 报价",
+        "alt": "NuvaTrack-R 单人操作太阳能清洗机器人在光伏阵列上作业",
         "positioning": "面向分布式电站、车棚与屋顶光伏的紧凑高效履带机器人。一名操作员即可部署、操控并完成每日清洗——干刷或湿洗，一次双向往返。",
         "autonomyTitle": "少人操作，富于决策。",
         "autonomy": {
@@ -696,8 +708,8 @@
       "uSeries": {
         "tagline": "真正的无人值守光伏清洗。",
         "line": "一次部署即按计划清洗——自动路径规划、智能返航充电，现场无需班组。",
-        "cta": "获取 U-Series 报价",
-        "alt": "NuvaTrack U-Series 无人值守太阳能清洗机器人于黄昏作业",
+        "cta": "获取 NuvaTrack-U 报价",
+        "alt": "NuvaTrack-U 无人值守太阳能清洗机器人于黄昏作业",
         "positioning": "专为大型电站的高频例行清洗而生——无需现场人员，昼夜运行，适应严苛户外环境。干式、无水、IP65。",
         "autonomyTitle": "无人值守。每个夜晚。",
         "autonomy": {
@@ -790,15 +802,15 @@
       "ctaTitle": "需要配件或服务备件？",
       "ctaBody": "告诉我们你的机器人型号与场地条件——我们会帮你确定合适的部件与清洁配置。",
       "models": {
-        "nuvar": {
+        "nuvatrack-r": {
           "type": "遥控版",
           "note": "手动遥控清洁机器人，适合灵活的现场作业。"
         },
-        "nuvar-pro": {
+        "nuvatrack-r-pro": {
           "type": "遥控升级版",
           "note": "遥控升级选项，预留摄像头并支持航向保持能力。"
         },
-        "nuva-u": {
+        "nuvatrack-u": {
           "type": "自主就绪",
           "note": "无人值守清洁平台，面向可重复的光伏场地作业。"
         },
@@ -822,7 +834,7 @@
         },
         "remote-controllers": {
           "title": "遥控器",
-          "desc": "用于遥控版 NuvaR 与 NuvaR Pro 的手持遥控器。"
+          "desc": "用于遥控版 NuvaTrack-R 与 NuvaTrack-R Pro 的手持遥控器。"
         },
         "water-system": {
           "title": "水路系统部件",
@@ -849,7 +861,27 @@
       "eyebrow": "Cleanuva Robotics",
       "title": "光伏清洁机器人，即刻部署。",
       "intro": "三款互联清洁机器人——单人操作、真无人值守，以及面向公用事业级地形的悬挂式。选择适合你场地的型号，立即询价。",
-      "viewModel": "查看型号"
+      "viewModel": "查看型号",
+      "pro": {
+        "tagline": "遥控版，升级款。",
+        "bestFit": "预留摄像头操作与航向保持辅助。",
+        "alt": "NuvaTrack-R Pro 遥控光伏清洁机器人"
+      }
+    },
+    "proBlock": {
+      "eyebrow": "配置",
+      "title": "NuvaTrack-R 还是 NuvaTrack-R Pro？",
+      "intro": "两者均为遥控版。选择标准 NuvaTrack-R，或升级到 NuvaTrack-R Pro 以获得更强的操控体验。",
+      "upgradeBadge": "升级款",
+      "nuvar": {
+        "title": "NuvaTrack-R",
+        "desc": "遥控、高性价比、部署灵活——日常光伏清洁的主力机型。"
+      },
+      "nuvarPro": {
+        "title": "NuvaTrack-R Pro",
+        "desc": "遥控升级款，预留摄像头操作并提供航向保持辅助，作业更顺畅、更可控。"
+      },
+      "proCta": "咨询 NuvaTrack-R Pro"
     }
   },
   "Fragmentation": {
@@ -932,7 +964,7 @@
     "layers": {
       "robotics": {
         "title": "Cleanuva Robotics",
-        "desc": "我们自有的 NuvaTrack 机器人——Cleanuva 品牌、由平台指挥，在积灰经济性成立之处部署。",
+        "desc": "我们自有的 Cleanuva 机器人——Cleanuva 品牌、由平台指挥，在积灰经济性成立之处部署。",
         "cta": "探索机器人"
       },
       "drones": {
@@ -959,8 +991,8 @@
       "diagnosis": "AI Copilot",
       "commandCenter": "指挥中心",
       "roi": "报表与证明",
-      "rSeries": "NuvaTrack R-Series",
-      "uSeries": "NuvaTrack U-Series",
+      "rSeries": "NuvaTrack-R",
+      "uSeries": "NuvaTrack-U",
       "nuvaSpan": "NuvaSpan",
       "pricing": "获取报价",
       "owners": "自运营所有者",
@@ -972,7 +1004,10 @@
       "security": "安全与信任",
       "contact": "联系我们",
       "auditor": "技术审计方",
-      "accessories": "配件"
+      "accessories": "配件",
+      "nuvar": "NuvaTrack-R",
+      "nuvarPro": "NuvaTrack-R Pro",
+      "nuvaU": "NuvaTrack-U"
     },
     "legal": {
       "copyright": "© {year} NETRO Sparkle GmbH.",
@@ -1057,8 +1092,9 @@
         "message": "其他说明？"
       },
       "models": {
-        "nuvatrack-r": "NuvaTrack R-Series",
-        "nuvatrack-u": "NuvaTrack U-Series",
+        "nuvatrack-r": "NuvaTrack-R",
+        "nuvatrack-r-pro": "NuvaTrack-R Pro",
+        "nuvatrack-u": "NuvaTrack-U",
         "nuvaspan": "NuvaSpan"
       },
       "battery": {
@@ -1290,7 +1326,7 @@
         },
         "robotics": {
           "title": "Cleanuva Robotics",
-          "desc": "我们自有并接入平台的机器人产品线——NuvaTrack 与 NuvaSpan。由平台调度、指挥并验证的自主清洗。"
+          "desc": "我们自有并接入平台的机器人产品线——NuvaTrack-R、NuvaTrack-U 与 NuvaSpan。由平台调度、指挥并验证的自主清洗。"
         }
       }
     },
@@ -1310,7 +1346,7 @@
       },
       "robotics": {
         "title": "机器人规格",
-        "desc": "Cleanuva Robotics：比较 NuvaTrack 与 NuvaSpan 系列——规格、自主性与部署。"
+        "desc": "Cleanuva Robotics：比较 NuvaTrack-R、NuvaTrack-U 与 NuvaSpan 系列——规格、自主性与部署。"
       },
       "brochures": {
         "title": "产品手册",
