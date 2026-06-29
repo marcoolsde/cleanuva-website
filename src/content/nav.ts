@@ -39,7 +39,11 @@ export const NAV: NavItem[] = [
   },
   { key: "platform", href: "/platform" },
   { key: "solutions", href: "/solutions" },
-  { key: "resources", href: "/resources" },
+  { key: "distribution", href: "/distribution-network" },
+  { key: "gallery", href: "/gallery" },
+  // Resources demoted from the top nav (kept as a page + footer link) to make
+  // room for Support without crowding. Support is the customer-facing entry.
+  { key: "support", href: "/support" },
   { key: "company", href: "/company" },
 ];
 
@@ -91,6 +95,9 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
     key: "company",
     links: [
       { key: "about", href: "/company" },
+      { key: "distribution", href: "/distribution-network" },
+      { key: "gallery", href: "/gallery" },
+      { key: "support", href: "/support" },
       { key: "vision", href: "/company#vision" },
       { key: "security", href: "/company#security" },
       { key: "contact", href: "/company#contact" },

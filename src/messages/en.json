@@ -44,7 +44,10 @@
         "name": "NuvaTrack-U",
         "desc": "Unattended · repeatable runs"
       }
-    }
+    },
+    "distribution": "Distribution Network",
+    "gallery": "Gallery",
+    "support": "Support"
   },
   "Cta": {
     "requestDemo": "Request a demo",
@@ -1014,7 +1017,10 @@
       "accessories": "Accessories",
       "nuvar": "NuvaTrack-R",
       "nuvarPro": "NuvaTrack-R Pro",
-      "nuvaU": "NuvaTrack-U"
+      "nuvaU": "NuvaTrack-U",
+      "distribution": "Distribution Network",
+      "gallery": "Gallery",
+      "support": "Support"
     },
     "legal": {
       "copyright": "© {year} NETRO Sparkle GmbH.",
@@ -1508,6 +1514,211 @@
       "prove": {
         "title": "Prove the impact",
         "desc": "Turn each cleaning into a clear, reportable outcome."
+      }
+    }
+  },
+  "Distribution": {
+    "eyebrow": "Distribution Network",
+    "title": "Become a Cleanuva distribution partner",
+    "subtitle": "Bring cost-efficient solar cleaning robotics and AI-supported operations to PV owners, EPCs and service companies in your market.",
+    "becomePartner": "Become a partner",
+    "talkToUs": "Talk to us",
+    "exploreRobotics": "Explore robotics",
+    "finalTitle": "Let's discuss your market.",
+    "finalBody": "Tell us about your market and how you serve PV operators — we'll explore the right partnership from there.",
+    "why": {
+      "eyebrow": "Why partner",
+      "heading": "Why partner with Cleanuva",
+      "body": "Cleanuva is building a practical distribution and service partner network for solar cleaning robotics and AI-supported PV operations.",
+      "cards": {
+        "c1": {
+          "title": "Robotics-first portfolio",
+          "desc": "NuvaTrack-R, NuvaTrack-R Pro, NuvaTrack-U and NuvaSpan — from remote-controlled to suspended cleaning systems."
+        },
+        "c2": {
+          "title": "Accessories & service parts pathway",
+          "desc": "Brushes, batteries, motors, water hoses and service kits to keep fleets running."
+        },
+        "c3": {
+          "title": "AI operations platform",
+          "desc": "An AI-supported operations layer as a differentiator beyond the hardware."
+        },
+        "c4": {
+          "title": "Practical support from NETRO Sparkle GmbH",
+          "desc": "European operations, customer communication and future service planning."
+        }
+      }
+    },
+    "profiles": {
+      "eyebrow": "Partner profiles",
+      "heading": "Who we partner with",
+      "items": {
+        "p1": {
+          "title": "Solar equipment distributors",
+          "desc": "Add solar cleaning robotics to your equipment portfolio."
+        },
+        "p2": {
+          "title": "EPC & project developers",
+          "desc": "Offer cleaning robotics and AI operations on your projects."
+        },
+        "p3": {
+          "title": "PV cleaning service companies",
+          "desc": "Scale your service with robotics matched to each site."
+        },
+        "p4": {
+          "title": "Regional service & integration partners",
+          "desc": "Support deployment, service and local operations in your region."
+        }
+      }
+    },
+    "support": {
+      "eyebrow": "What we can support",
+      "heading": "How we work with partners",
+      "body": "We work with partners pragmatically. Depending on your market, this can include:",
+      "items": {
+        "s1": "Product introduction materials",
+        "s2": "Model selection support",
+        "s3": "Accessories and service parts planning",
+        "s4": "Demo and pilot discussion",
+        "s5": "AI platform introduction",
+        "s6": "Regional go-to-market discussion"
+      }
+    },
+    "markets": {
+      "eyebrow": "Target markets",
+      "heading": "Markets we're building toward",
+      "regionsTitle": "Regions",
+      "marketsTitle": "Market types",
+      "regions": {
+        "europe": "Europe",
+        "mea": "Middle East",
+        "nafrica": "North Africa",
+        "intl": "Selected international markets"
+      },
+      "types": {
+        "utility": "Utility-scale PV",
+        "commercial": "Commercial rooftops",
+        "distributed": "Distributed PV portfolios",
+        "service": "Cleaning service operators"
+      }
+    },
+    "process": {
+      "eyebrow": "Partner process",
+      "heading": "How to get started",
+      "steps": {
+        "s1": "Introduce your market",
+        "s2": "Discuss product fit",
+        "s3": "Plan demo or pilot",
+        "s4": "Build local sales and service pathway"
+      }
+    }
+  },
+  "Gallery": {
+    "eyebrow": "Gallery",
+    "title": "Gallery",
+    "subtitle": "A growing visual library of Cleanuva robotics, solar cleaning applications, field operation and exhibition moments.",
+    "exploreRobotics": "Explore robotics",
+    "talkToUs": "Talk to us",
+    "videoSoon": "Video coming soon",
+    "finalTitle": "Need media or product details for your market?",
+    "finalBody": "Tell us what you need and we'll share the right materials.",
+    "requestMaterials": "Request materials",
+    "becomePartner": "Become a partner",
+    "filters": {
+      "all": "All",
+      "robotics": "Robotics",
+      "operation": "Field operation",
+      "video": "Video",
+      "exhibition": "Exhibitions"
+    },
+    "items": {
+      "rHero": "NuvaTrack-R",
+      "uHero": "NuvaTrack-U",
+      "spanHero": "NuvaSpan application",
+      "overview": "Cleanuva robotics",
+      "rOp1": "NuvaTrack-R in operation",
+      "rOp2": "Field operation",
+      "uOp1": "NuvaTrack-U platform cleaning",
+      "spanOp1": "NuvaSpan application",
+      "rVid": "NuvaTrack-R in operation",
+      "uVid": "NuvaTrack-U in operation",
+      "spanVid": "NuvaSpan application",
+      "exh1": "Exhibition meeting",
+      "exh2": "Exhibition moment"
+    }
+  },
+  "Support": {
+    "eyebrow": "Support",
+    "title": "Support",
+    "subtitle": "Find product information, service guidance and contact paths for Cleanuva robotics, accessories and AI-supported PV operations.",
+    "contactSupport": "Contact support",
+    "viewAccessories": "View accessories",
+    "exploreRobotics": "Explore robotics",
+    "requestMaterials": "Request materials",
+    "finalTitle": "Need product or service support?",
+    "finalBody": "Tell us what you need and our team will help.",
+    "areas": {
+      "eyebrow": "Support areas",
+      "heading": "How we can help",
+      "cards": {
+        "docs": {
+          "title": "Product documentation",
+          "desc": "Datasheets, brochures and manuals will be provided as product materials become available."
+        },
+        "accessories": {
+          "title": "Accessories & service parts",
+          "desc": "Brushes, batteries, chargers, motors, water hoses and service kits."
+        },
+        "warranty": {
+          "title": "Service & warranty questions",
+          "desc": "Help with service communication and warranty questions."
+        },
+        "platform": {
+          "title": "Platform support",
+          "desc": "Questions about AI operations platform access, demo and deployment model."
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "heading": "Common questions",
+      "items": {
+        "q1": {
+          "q": "Which robot model should I choose?",
+          "a": "It depends on PV site type, cleaning method, slope, access, labor model and automation needs. Contact us to discuss."
+        },
+        "q2": {
+          "q": "Can I buy accessories and service parts?",
+          "a": "Yes — Cleanuva provides an accessories inquiry path for brushes, batteries, chargers, motors, water hoses and service kits."
+        },
+        "q3": {
+          "q": "Does Cleanuva provide installation or training?",
+          "a": "We can discuss product introduction, demo and operation guidance depending on the project and partner setup."
+        },
+        "q4": {
+          "q": "Is the AI platform required to use the robots?",
+          "a": "No. Robotics and Platform can be discussed separately, while the platform can support planning, verification and operations workflows."
+        },
+        "q5": {
+          "q": "Where does Cleanuva provide support?",
+          "a": "NETRO Sparkle GmbH leads European operations and customer communication. Other markets are discussed case by case with partners."
+        },
+        "q6": {
+          "q": "How do I request product materials?",
+          "a": "Use the support contact path or request a demo."
+        }
+      }
+    },
+    "materials": {
+      "eyebrow": "Materials",
+      "heading": "Product materials",
+      "body": "Materials are shared on request as they become available.",
+      "status": "Available on request",
+      "items": {
+        "datasheets": "Product datasheets",
+        "brochures": "Brochures",
+        "manuals": "Manuals & guides",
+        "certificates": "Certificates"
       }
     }
   }

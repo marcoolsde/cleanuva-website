@@ -44,7 +44,10 @@
         "name": "NuvaTrack-U",
         "desc": "无人值守 · 可重复作业"
       }
-    }
+    },
+    "distribution": "分销网络",
+    "gallery": "图库",
+    "support": "支持"
   },
   "Cta": {
     "requestDemo": "申请演示",
@@ -1014,7 +1017,10 @@
       "accessories": "配件",
       "nuvar": "NuvaTrack-R",
       "nuvarPro": "NuvaTrack-R Pro",
-      "nuvaU": "NuvaTrack-U"
+      "nuvaU": "NuvaTrack-U",
+      "distribution": "分销网络",
+      "gallery": "图库",
+      "support": "支持"
     },
     "legal": {
       "copyright": "© {year} NETRO Sparkle GmbH.",
@@ -1508,6 +1514,211 @@
       "prove": {
         "title": "证明成效",
         "desc": "把每次清洁转化为清晰、可报告的成果。"
+      }
+    }
+  },
+  "Distribution": {
+    "eyebrow": "分销网络",
+    "title": "成为 Cleanuva 分销合作伙伴",
+    "subtitle": "把高性价比的光伏清洁机器人与 AI 支持的运营，带给你所在市场的电站业主、EPC 与服务公司。",
+    "becomePartner": "成为合作伙伴",
+    "talkToUs": "与我们联系",
+    "exploreRobotics": "了解机器人",
+    "finalTitle": "聊聊你的市场。",
+    "finalBody": "告诉我们你的市场以及你如何服务光伏运营方——我们再一起探索合适的合作方式。",
+    "why": {
+      "eyebrow": "为何合作",
+      "heading": "为何与 Cleanuva 合作",
+      "body": "Cleanuva 正在为光伏清洁机器人与 AI 支持的光伏运营，构建务实的分销与服务伙伴网络。",
+      "cards": {
+        "c1": {
+          "title": "机器人优先的产品组合",
+          "desc": "NuvaTrack-R、NuvaTrack-R Pro、NuvaTrack-U 与 NuvaSpan——从遥控到悬挂式清洁系统。"
+        },
+        "c2": {
+          "title": "配件与服务备件通道",
+          "desc": "刷子、电池、电机、水管与保养套件，让机队持续运转。"
+        },
+        "c3": {
+          "title": "AI 运营平台",
+          "desc": "AI 支持的运营层，作为超越硬件的差异化优势。"
+        },
+        "c4": {
+          "title": "来自 NETRO Sparkle GmbH 的务实支持",
+          "desc": "欧洲运营、客户沟通与未来服务规划。"
+        }
+      }
+    },
+    "profiles": {
+      "eyebrow": "合作伙伴类型",
+      "heading": "我们与谁合作",
+      "items": {
+        "p1": {
+          "title": "光伏设备分销商",
+          "desc": "将光伏清洁机器人加入你的设备组合。"
+        },
+        "p2": {
+          "title": "EPC 与项目开发商",
+          "desc": "在你的项目中提供清洁机器人与 AI 运营。"
+        },
+        "p3": {
+          "title": "光伏清洁服务公司",
+          "desc": "用按场地匹配的机器人扩展你的服务。"
+        },
+        "p4": {
+          "title": "区域服务与集成伙伴",
+          "desc": "在你的区域支持部署、服务与本地运营。"
+        }
+      }
+    },
+    "support": {
+      "eyebrow": "我们能支持什么",
+      "heading": "我们如何与伙伴协作",
+      "body": "我们以务实方式与伙伴协作。视你的市场而定，可包括：",
+      "items": {
+        "s1": "产品介绍资料",
+        "s2": "型号选择支持",
+        "s3": "配件与服务备件规划",
+        "s4": "演示与试点沟通",
+        "s5": "AI 平台介绍",
+        "s6": "区域市场进入沟通"
+      }
+    },
+    "markets": {
+      "eyebrow": "目标市场",
+      "heading": "我们正在拓展的市场",
+      "regionsTitle": "地区",
+      "marketsTitle": "市场类型",
+      "regions": {
+        "europe": "欧洲",
+        "mea": "中东",
+        "nafrica": "北非",
+        "intl": "选定的国际市场"
+      },
+      "types": {
+        "utility": "大型地面光伏",
+        "commercial": "工商业屋顶",
+        "distributed": "分布式光伏组合",
+        "service": "清洁服务运营方"
+      }
+    },
+    "process": {
+      "eyebrow": "合作流程",
+      "heading": "如何开始",
+      "steps": {
+        "s1": "介绍你的市场",
+        "s2": "探讨产品契合",
+        "s3": "规划演示或试点",
+        "s4": "建立本地销售与服务路径"
+      }
+    }
+  },
+  "Gallery": {
+    "eyebrow": "图库",
+    "title": "图库",
+    "subtitle": "Cleanuva 机器人、光伏清洁应用、现场作业与展会瞬间的持续扩充视觉库。",
+    "exploreRobotics": "了解机器人",
+    "talkToUs": "与我们联系",
+    "videoSoon": "视频即将上线",
+    "finalTitle": "需要面向你市场的素材或产品资料？",
+    "finalBody": "告诉我们你的需求，我们会提供合适的素材。",
+    "requestMaterials": "索取素材",
+    "becomePartner": "成为合作伙伴",
+    "filters": {
+      "all": "全部",
+      "robotics": "机器人",
+      "operation": "现场作业",
+      "video": "视频",
+      "exhibition": "展会"
+    },
+    "items": {
+      "rHero": "NuvaTrack-R",
+      "uHero": "NuvaTrack-U",
+      "spanHero": "NuvaSpan 应用",
+      "overview": "Cleanuva 机器人",
+      "rOp1": "NuvaTrack-R 现场作业",
+      "rOp2": "现场作业",
+      "uOp1": "NuvaTrack-U 平面清洁",
+      "spanOp1": "NuvaSpan 应用",
+      "rVid": "NuvaTrack-R 现场作业",
+      "uVid": "NuvaTrack-U 现场作业",
+      "spanVid": "NuvaSpan 应用",
+      "exh1": "展会会面",
+      "exh2": "展会瞬间"
+    }
+  },
+  "Support": {
+    "eyebrow": "支持",
+    "title": "支持",
+    "subtitle": "查找 Cleanuva 机器人、配件与 AI 支持的光伏运营的产品信息、服务指引与联系方式。",
+    "contactSupport": "联系支持",
+    "viewAccessories": "查看配件",
+    "exploreRobotics": "了解机器人",
+    "requestMaterials": "索取资料",
+    "finalTitle": "需要产品或服务支持？",
+    "finalBody": "告诉我们你的需求，我们的团队会提供帮助。",
+    "areas": {
+      "eyebrow": "支持范围",
+      "heading": "我们能如何帮助",
+      "cards": {
+        "docs": {
+          "title": "产品文档",
+          "desc": "数据表、宣传册与手册将随产品资料的就绪逐步提供。"
+        },
+        "accessories": {
+          "title": "配件与服务备件",
+          "desc": "刷子、电池、充电器、电机、水管与保养套件。"
+        },
+        "warranty": {
+          "title": "服务与保修问题",
+          "desc": "协助服务沟通与保修相关问题。"
+        },
+        "platform": {
+          "title": "平台支持",
+          "desc": "关于 AI 运营平台的访问、演示与部署方式的问题。"
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "常见问题",
+      "heading": "常见问题",
+      "items": {
+        "q1": {
+          "q": "我该选择哪款机器人型号？",
+          "a": "这取决于光伏场地类型、清洁方式、坡度、通达性、人力模式与自动化需求。欢迎与我们沟通。"
+        },
+        "q2": {
+          "q": "我可以购买配件与服务备件吗？",
+          "a": "可以——Cleanuva 提供配件询盘通道，涵盖刷子、电池、充电器、电机、水管与保养套件。"
+        },
+        "q3": {
+          "q": "Cleanuva 提供安装或培训吗？",
+          "a": "我们可视项目与合作方式，沟通产品介绍、演示与操作指引。"
+        },
+        "q4": {
+          "q": "使用机器人必须用 AI 平台吗？",
+          "a": "不必。机器人与平台可分别沟通；平台可支持规划、验证与运营流程。"
+        },
+        "q5": {
+          "q": "Cleanuva 在哪些地区提供支持？",
+          "a": "NETRO Sparkle GmbH 负责欧洲运营与客户沟通；其他市场与合作伙伴逐案沟通。"
+        },
+        "q6": {
+          "q": "如何索取产品资料？",
+          "a": "通过支持联系方式或预约演示即可。"
+        }
+      }
+    },
+    "materials": {
+      "eyebrow": "资料",
+      "heading": "产品资料",
+      "body": "资料将随就绪情况按需提供。",
+      "status": "按需提供",
+      "items": {
+        "datasheets": "产品数据表",
+        "brochures": "宣传册",
+        "manuals": "手册与指南",
+        "certificates": "证书"
       }
     }
   }
