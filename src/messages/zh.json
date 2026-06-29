@@ -631,7 +631,14 @@
       "datasheetBody": "全部尺寸、规格与选项，集于一份 PDF。",
       "downloadDatasheet": "下载数据表",
       "requestDatasheet": "索取数据表",
-      "videoPause": "暂停视频"
+      "videoPause": "暂停视频",
+      "mediaEyebrow": "图集",
+      "mediaTitle": "现场作业",
+      "accessoriesEyebrow": "配件",
+      "accessoriesTitle": "配件与服务备件",
+      "accessoriesBody": "用刷子、电池、充电器、电机、水管与保养套件让你的机器人保持现场可用——按你的型号与清洁方式匹配。",
+      "accessoriesView": "查看配件",
+      "accessoriesParts": "申请备件支持"
     },
     "compare": {
       "eyebrow": "比较",
@@ -1309,7 +1316,8 @@
       "heading": "联系我们",
       "body": "联系我们最快的方式是预约演示——告诉我们您的资产组合，我们会尽快跟进。",
       "demoCta": "预约演示",
-      "legalNote": "有关法律与注册详情，请参阅法律声明。"
+      "legalNote": "有关法律与注册详情，请参阅法律声明。",
+      "quoteCta": "获取报价"
     },
     "vision": {
       "eyebrow": "愿景",
@@ -1330,7 +1338,50 @@
         }
       }
     },
-    "legalHeading": "法律"
+    "legalHeading": "法律",
+    "manufacturing": {
+      "eyebrow": "制造与供应链",
+      "heading": "面向高性价比、可维护的机器人。",
+      "body": "Cleanuva 与中国的制造伙伴协作，由 NETRO Sparkle GmbH 负责欧洲运营、客户沟通与未来服务规划。",
+      "points": {
+        "p1": {
+          "title": "制造伙伴",
+          "desc": "机器人由中国的制造伙伴生产。"
+        },
+        "p2": {
+          "title": "以成本效率为设计目标",
+          "desc": "我们为成本效率、实际部署与可维护性而设计。"
+        },
+        "p3": {
+          "title": "可扩展的备件与服务",
+          "desc": "机器人、配件与未来的服务备件，均规划为可扩展供应链的一部分。"
+        }
+      }
+    },
+    "presence": {
+      "eyebrow": "全球布局",
+      "heading": "我们服务的市场。",
+      "body": "Cleanuva 服务多个地区与项目类型的光伏运营方——从大型地面电站到工商业屋顶与分布式光伏。",
+      "regionsTitle": "服务地区",
+      "marketsTitle": "市场类型",
+      "regions": {
+        "europe": "欧洲",
+        "mea": "中东",
+        "nafrica": "北非",
+        "na": "选定的国际市场"
+      },
+      "markets": {
+        "utility": "大型地面",
+        "commercial": "工商业屋顶",
+        "distributed": "分布式光伏"
+      }
+    },
+    "events": {
+      "eyebrow": "展会与活动",
+      "heading": "现场与我们相见。",
+      "body": "Cleanuva 在光伏展会与行业活动中与电站业主、EPC、分销商和清洁服务商交流，包括 Intersolar Europe / The smarter E Europe（慕尼黑）等活动。",
+      "note": "如需在即将举办的活动中安排会面，欢迎与我们联系。"
+    }
   },
   "Resources": {
     "eyebrow": "资源",

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Layers, Bot, Boxes, ArrowRight, ShieldCheck } from "lucide-react";
+import { Layers, Bot, Boxes, ArrowRight, ShieldCheck, Factory, Wrench } from "lucide-react";
 
 import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
@@ -29,6 +29,14 @@ const LEGAL_PAGES = [
   { key: "terms", href: "/company/legal/terms" },
   { key: "cookies", href: "/company/legal/cookies" },
 ] as const;
+
+const MFG_POINTS = [
+  { key: "p1", icon: Factory },
+  { key: "p2", icon: Wrench },
+  { key: "p3", icon: Boxes },
+] as const;
+const PRESENCE_REGIONS = ["europe", "mea", "nafrica", "na"] as const;
+const PRESENCE_MARKETS = ["utility", "commercial", "distributed"] as const;
 
 export default async function CompanyPage({
   params,
@@ -91,6 +99,73 @@ export default async function CompanyPage({
         </Container>
       </Section>
 
+      {/* Manufacturing & supply chain */}
+      <Section>
+        <Container className="max-w-[920px]">
+          <Eyebrow accent="warm">{t("manufacturing.eyebrow")}</Eyebrow>
+          <h2 className="mt-3 text-h1 text-balance text-ink">{t("manufacturing.heading")}</h2>
+          <p className="mt-4 max-w-[62ch] text-body-l text-ink-2">{t("manufacturing.body")}</p>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {MFG_POINTS.map(({ key, icon: Icon }) => (
+              <div key={key} className="rounded-lg border border-line bg-canvas p-6">
+                <span className="inline-flex size-10 items-center justify-center rounded-md bg-warm-tint text-warm-text">
+                  <Icon className="size-5" aria-hidden />
+                </span>
+                <h3 className="mt-4 text-h4 text-ink">{t(`manufacturing.points.${key}.title`)}</h3>
+                <p className="mt-2 text-body-s text-ink-2">{t(`manufacturing.points.${key}.desc`)}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Global presence — regions & markets served (no fabricated offices) */}
+      <Section tone="light" className="bg-surface">
+        <Container className="max-w-[920px]">
+          <Eyebrow accent="cool">{t("presence.eyebrow")}</Eyebrow>
+          <h2 className="mt-3 text-h1 text-balance text-ink">{t("presence.heading")}</h2>
+          <p className="mt-4 max-w-[62ch] text-body-l text-ink-2">{t("presence.body")}</p>
+          <div className="mt-8 grid gap-8 sm:grid-cols-2">
+            <div>
+              <h3 className="text-eyebrow text-ink-3">{t("presence.regionsTitle")}</h3>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {PRESENCE_REGIONS.map((r) => (
+                  <span
+                    key={r}
+                    className="rounded-pill border border-line bg-canvas px-3 py-1 text-body-s text-ink-2"
+                  >
+                    {t(`presence.regions.${r}`)}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-eyebrow text-ink-3">{t("presence.marketsTitle")}</h3>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {PRESENCE_MARKETS.map((m) => (
+                  <span
+                    key={m}
+                    className="rounded-pill border border-line bg-canvas px-3 py-1 text-body-s text-ink-2"
+                  >
+                    {t(`presence.markets.${m}`)}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Exhibitions & events */}
+      <Section>
+        <Container className="max-w-[760px]">
+          <Eyebrow accent="warm">{t("events.eyebrow")}</Eyebrow>
+          <h2 className="mt-3 text-h1 text-balance text-ink">{t("events.heading")}</h2>
+          <p className="mt-4 text-body-l text-ink-2">{t("events.body")}</p>
+          <p className="mt-3 text-body-s text-ink-3">{t("events.note")}</p>
+        </Container>
+      </Section>
+
       {/* Trust layer */}
       <TrustSection />
 
@@ -133,8 +208,11 @@ export default async function CompanyPage({
             <div id="contact" className="scroll-mt-24 rounded-lg border border-line bg-canvas p-6">
               <h2 className="text-h2 text-ink">{t("contact.heading")}</h2>
               <p className="mt-3 text-body-m text-ink-2">{t("contact.body")}</p>
-              <div className="mt-5">
-                <Button variant="primary" asChild>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Button variant="warm" asChild>
+                  <Link href="/get-pricing">{t("contact.quoteCta")}</Link>
+                </Button>
+                <Button variant="secondary" asChild>
                   <Link href="/request-demo">{t("contact.demoCta")}</Link>
                 </Button>
               </div>

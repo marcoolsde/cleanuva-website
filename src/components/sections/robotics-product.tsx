@@ -233,8 +233,33 @@ export function RoboticsProduct({ family }: { family: RobotFamily }) {
         </Container>
       </Section>
 
+      {/* 6b. In operation — lightweight, replaceable media gallery. First tile is
+           the real hero asset; the others are future slots (graceful gradient
+           placeholders until real photos drop in — never a broken image). */}
+      <Section tone="light" className="bg-surface">
+        <Container>
+          <Reveal>
+            <div className="max-w-[60ch]">
+              <Eyebrow accent="warm">{tp("mediaEyebrow")}</Eyebrow>
+              <h2 className="mt-3 text-h1">{tp("mediaTitle")}</h2>
+            </div>
+          </Reveal>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              family.image,
+              `/images/robotics/${family.slug}-op-1.jpg`,
+              `/images/robotics/${family.slug}-op-2.jpg`,
+            ].map((src, i) => (
+              <Reveal key={src} delay={i * 0.06}>
+                <PhotoPlate ratio="aspect-[4/3]" src={src} scene={family.scene} alt={tf("alt")} />
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
       {/* 7. Datasheet download */}
-      <Section tone="light" className="bg-surface" id="datasheet">
+      <Section tone="light" id="datasheet">
         <Container>
           <Reveal>
             <div className="flex flex-col items-start gap-5 rounded-xl border border-line bg-canvas p-8 md:flex-row md:items-center md:justify-between md:p-10">
@@ -249,6 +274,32 @@ export function RoboticsProduct({ family }: { family: RobotFamily }) {
                 requestLabel={tp("requestDatasheet")}
                 variant="primary"
               />
+            </div>
+          </Reveal>
+        </Container>
+      </Section>
+
+      {/* 7b. Accessories & service parts — entry to the Accessories page (no
+           parts table / prices / SKUs here; just the cross-sell entry). */}
+      <Section tone="light" className="bg-surface">
+        <Container>
+          <Reveal>
+            <div className="flex flex-col items-start gap-5 rounded-xl border border-line bg-canvas p-8 md:flex-row md:items-center md:justify-between md:p-10">
+              <div className="max-w-[60ch]">
+                <Eyebrow accent="warm">{tp("accessoriesEyebrow")}</Eyebrow>
+                <h2 className="mt-2 text-h2">{tp("accessoriesTitle")}</h2>
+                <p className="mt-3 text-body-m text-ink-2">{tp("accessoriesBody")}</p>
+              </div>
+              <div className="flex shrink-0 flex-wrap gap-3">
+                <Button variant="warm" asChild>
+                  <Link href="/robotics/accessories">{tp("accessoriesView")}</Link>
+                </Button>
+                <Button variant="secondary" asChild>
+                  <Link href="/robotics/accessories#accessories-inquiry">
+                    {tp("accessoriesParts")}
+                  </Link>
+                </Button>
+              </div>
             </div>
           </Reveal>
         </Container>

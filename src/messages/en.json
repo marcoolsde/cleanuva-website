@@ -631,7 +631,14 @@
       "datasheetBody": "Every dimension, spec, and option in one PDF.",
       "downloadDatasheet": "Download datasheet",
       "requestDatasheet": "Request datasheet",
-      "videoPause": "Pause video"
+      "videoPause": "Pause video",
+      "mediaEyebrow": "Gallery",
+      "mediaTitle": "In operation",
+      "accessoriesEyebrow": "Accessories",
+      "accessoriesTitle": "Accessories & service parts",
+      "accessoriesBody": "Keep your robot ready for site operation with brushes, batteries, chargers, motors, water hoses and service kits matched to your model and cleaning method.",
+      "accessoriesView": "View accessories",
+      "accessoriesParts": "Request parts support"
     },
     "compare": {
       "eyebrow": "Compare",
@@ -1309,7 +1316,8 @@
       "heading": "Talk to us",
       "body": "The fastest way to reach us is to request a demo — tell us about your portfolio and we'll follow up.",
       "demoCta": "Request a demo",
-      "legalNote": "For legal and registration details, see the Imprint."
+      "legalNote": "For legal and registration details, see the Imprint.",
+      "quoteCta": "Get a quote"
     },
     "vision": {
       "eyebrow": "Vision",
@@ -1330,7 +1338,50 @@
         }
       }
     },
-    "legalHeading": "Legal"
+    "legalHeading": "Legal",
+    "manufacturing": {
+      "eyebrow": "Manufacturing & supply chain",
+      "heading": "Built for cost-efficient, serviceable robotics.",
+      "body": "Cleanuva works with manufacturing partners in China, while NETRO Sparkle GmbH leads European operations, customer communication and future service planning.",
+      "points": {
+        "p1": {
+          "title": "Manufacturing partners",
+          "desc": "Robotics produced with manufacturing partners in China."
+        },
+        "p2": {
+          "title": "Cost-efficient by design",
+          "desc": "We design for cost-efficiency, practical deployment and serviceability."
+        },
+        "p3": {
+          "title": "Scalable parts & service",
+          "desc": "Robots, accessories and future service parts are planned as part of a scalable supply chain."
+        }
+      }
+    },
+    "presence": {
+      "eyebrow": "Global presence",
+      "heading": "Markets we serve.",
+      "body": "Cleanuva serves solar operators across multiple regions and project types — from utility-scale plants to commercial rooftops and distributed PV.",
+      "regionsTitle": "Regions served",
+      "marketsTitle": "Market types",
+      "regions": {
+        "europe": "Europe",
+        "mea": "Middle East",
+        "nafrica": "North Africa",
+        "na": "Selected international markets"
+      },
+      "markets": {
+        "utility": "Utility-scale",
+        "commercial": "Commercial rooftop",
+        "distributed": "Distributed PV"
+      }
+    },
+    "events": {
+      "eyebrow": "Exhibitions & events",
+      "heading": "Meet us in the field.",
+      "body": "Cleanuva meets PV owners, EPCs, distributors and service companies at solar exhibitions and industry meetings, including events such as Intersolar Europe / The smarter E Europe in Munich.",
+      "note": "Get in touch to arrange a meeting at an upcoming event."
+    }
   },
   "Resources": {
     "eyebrow": "Resources",
