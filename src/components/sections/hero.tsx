@@ -25,12 +25,15 @@ import { cn } from "@/lib/utils";
     6. Copy      — category line, lower-left, over the scene
 */
 
-// Headline clauses map to the brand current; on the dark scene the bright
-// accents (not the AA-on-light -text variants) finally get full contrast.
-const CLAUSES = [
-  { key: "sees", accent: "text-cool" },
-  { key: "fix", accent: "text-warm" },
-  { key: "paid", accent: "text-status-verified" },
+// Hero keyword chips — the at-a-glance value props under the subline. Warm
+// marks the commercial (cost) and differentiator (AI platform) chips.
+const CHIPS = [
+  { key: "efficient", accent: "cool" },
+  { key: "smart", accent: "cool" },
+  { key: "deploy", accent: "cool" },
+  { key: "mobility", accent: "cool" },
+  { key: "cost", accent: "warm" },
+  { key: "aiplatform", accent: "warm" },
 ] as const;
 
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
@@ -272,28 +275,34 @@ export function Hero() {
           </Reveal>
           <Reveal delay={0.05}>
             <h1 className="mt-4 text-display-xl text-balance text-ink-inv">
-              {CLAUSES.map((clause) => (
-                <span key={clause.key} className="block">
-                  {t(`headline.${clause.key}.lead`)}{" "}
-                  <span className={clause.accent}>
-                    {t(`headline.${clause.key}.accent`)}
-                  </span>
-                </span>
-              ))}
+              <span className="block">{t("headline.line1")}</span>
+              <span className="block">
+                {t("headline.line2lead")}{" "}
+                <span className="text-cool">{t("headline.line2accent")}</span>
+              </span>
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-6 max-w-[52ch] text-body-l text-ink-inv-2">
+            <p className="mt-6 max-w-[54ch] text-body-l text-ink-inv-2">
               {t("subline")}
             </p>
           </Reveal>
-          <Reveal delay={0.15}>
+          <Reveal delay={0.14}>
+            <div className="mt-7 flex flex-wrap gap-2">
+              {CHIPS.map((c) => (
+                <Chip key={c.key} accent={c.accent}>
+                  {t(`chips.${c.key}`)}
+                </Chip>
+              ))}
+            </div>
+          </Reveal>
+          <Reveal delay={0.18}>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Button variant="primary" asChild>
-                <Link href="/request-demo">{tCta("requestDemo")}</Link>
+                <Link href="/get-pricing">{tCta("getQuote")}</Link>
               </Button>
               <Button variant="ghostLink" asChild>
-                <Link href="/#loop">{t("seeHowItWorks")}</Link>
+                <Link href="/robotics">{tCta("exploreRobotics")}</Link>
               </Button>
             </div>
           </Reveal>

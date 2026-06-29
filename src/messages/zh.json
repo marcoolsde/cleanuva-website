@@ -27,6 +27,10 @@
       "compare": {
         "name": "型号对比",
         "desc": "三款并排对比"
+      },
+      "accessories": {
+        "name": "配件",
+        "desc": "刷子 · 电池 · 零件"
       }
     }
   },
@@ -34,27 +38,29 @@
     "requestDemo": "申请演示",
     "getPricing": "获取报价",
     "getRoboticsPricing": "获取机器人报价",
-    "seeCommandCenter": "查看指挥中心"
+    "seeCommandCenter": "查看指挥中心",
+    "getQuote": "获取报价",
+    "exploreRobotics": "了解机器人",
+    "explorePlatform": "了解平台"
   },
   "Hero": {
-    "eyebrow": "面向光伏的 AI 原生运营层",
+    "eyebrow": "Cleanuva · 机器人 + AI 平台",
     "headline": {
-      "sees": {
-        "lead": "它统一",
-        "accent": "碎片化的系统。"
-      },
-      "fix": {
-        "lead": "它协调",
-        "accent": "工作。"
-      },
-      "paid": {
-        "lead": "它运行",
-        "accent": "整个运营。"
-      }
+      "line1": "面向每一类光伏场景的清洁机器人，",
+      "line2lead": "核心是",
+      "line2accent": "智能运营"
     },
-    "subline": "Cleanuva 统一你碎片化的系统、协调工作，并为团队提供一个植根于你电站自身运营知识的 AI Copilot——这是你用来运行光伏的系统，而非又一个仪表盘。",
+    "subline": "从遥控清洁到自主机队，Cleanuva 为屋顶、工商业光伏与大型地面电站提供高性价比的光伏清洁机器人——并以 AI 平台协调作业、验证成效，缩短回本路径。",
     "seeHowItWorks": "了解它如何运作",
-    "sceneAlt": "一座运行在 Cleanuva 运营层上的光伏电站，一台联网清洁机器人正在执行任务"
+    "sceneAlt": "一座运行在 Cleanuva 运营层上的光伏电站，一台联网清洁机器人正在执行任务",
+    "chips": {
+      "efficient": "高效清洁",
+      "smart": "智能控制",
+      "deploy": "快速部署",
+      "mobility": "便捷移动",
+      "cost": "高性价比运营",
+      "aiplatform": "AI 平台"
+    }
   },
   "Outcome": {
     "eyebrow": "已验证的挽回",
@@ -138,8 +144,8 @@
     }
   },
   "FinalCta": {
-    "title": "用 Cleanuva 运行你的电站。",
-    "body": "预约指挥中心导览，认识植根于你运营的 AI Copilot——或获取联网机器人清洁的报价。"
+    "title": "为你的场地选对光伏清洁方案。",
+    "body": "告诉我们你的光伏场地、屋顶类型与清洁需求——我们会帮你匹配合适的 Cleanuva 机器人、配件与 AI 平台支持组合。"
   },
   "CommandCenter": {
     "eyebrow": "平台 · 指挥中心",
@@ -765,6 +771,85 @@
           "f4": "无水干刷，清除灰尘、沙土与鸟粪"
         }
       }
+    },
+    "accessories": {
+      "eyebrow": "Cleanuva Robotics · 配件",
+      "title": "Cleanuva 清洁机器人的配件与服务备件。",
+      "intro": "适配 Cleanuva 清洁机器人的配件与服务备件——从刷子、电机到电池、充电器、水管与保养套件。选择你的机器人型号，告诉我们现场条件，我们的团队会帮你匹配适合清洁配置的部件。",
+      "selectorLabel": "选择你的机器人型号：",
+      "all": "全部",
+      "requestDetails": "索取详情",
+      "compatEyebrow": "兼容性",
+      "compatTitle": "按你的机器人与场地匹配。",
+      "compatLead": "配件按机器人型号、清洁方式与场地条件进行匹配。",
+      "compat": {
+        "point1": "告诉我们你的机器人型号与场地条件。",
+        "point2": "我们帮你匹配刷子、电池、充电器与保养套件。",
+        "point3": "部分部件取决于配置与供货情况。"
+      },
+      "ctaTitle": "需要配件或服务备件？",
+      "ctaBody": "告诉我们你的机器人型号与场地条件——我们会帮你确定合适的部件与清洁配置。",
+      "models": {
+        "nuvar": {
+          "type": "遥控版",
+          "note": "手动遥控清洁机器人，适合灵活的现场作业。"
+        },
+        "nuvar-pro": {
+          "type": "遥控升级版",
+          "note": "遥控升级选项，预留摄像头并支持航向保持能力。"
+        },
+        "nuva-u": {
+          "type": "自主就绪",
+          "note": "无人值守清洁平台，面向可重复的光伏场地作业。"
+        },
+        "nuvaspan": {
+          "type": "悬挂 / 桥架系统",
+          "note": "面向固定安装场景的悬挂式清洁方案。"
+        }
+      },
+      "items": {
+        "brushes": {
+          "title": "刷子",
+          "desc": "按积灰与组件表面状况匹配的清洁刷。"
+        },
+        "batteries": {
+          "title": "电池",
+          "desc": "可换装电池组，支撑机器人完成整个班次。"
+        },
+        "chargers": {
+          "title": "充电器",
+          "desc": "面向基地与现场供电的充电选项。"
+        },
+        "remote-controllers": {
+          "title": "遥控器",
+          "desc": "用于遥控版 NuvaR 与 NuvaR Pro 的手持遥控器。"
+        },
+        "water-system": {
+          "title": "水路系统部件",
+          "desc": "用于湿洗模式的水管、喷嘴与水泵部件。"
+        },
+        "service-kits": {
+          "title": "保养套件",
+          "desc": "维护套件，让机队在现场持续可用。"
+        },
+        "motors": {
+          "title": "电机",
+          "desc": "用于维护、维修与更换规划的电机部件，按机器人型号与配置匹配。"
+        },
+        "water-hose": {
+          "title": "水管",
+          "desc": "用于湿洗配置的水管选项，提供 50 m 与 100 m 两种长度，依现场布局与清洁方式确认。"
+        }
+      },
+      "requestQuote": "申请配件报价",
+      "contactSupport": "联系支持",
+      "inquiryEyebrow": "联系我们"
+    },
+    "home": {
+      "eyebrow": "Cleanuva Robotics",
+      "title": "光伏清洁机器人，即刻部署。",
+      "intro": "三款互联清洁机器人——单人操作、真无人值守，以及面向公用事业级地形的悬挂式。选择适合你场地的型号，立即询价。",
+      "viewModel": "查看型号"
     }
   },
   "Fragmentation": {
@@ -886,7 +971,8 @@
       "vision": "愿景",
       "security": "安全与信任",
       "contact": "联系我们",
-      "auditor": "技术审计方"
+      "auditor": "技术审计方",
+      "accessories": "配件"
     },
     "legal": {
       "copyright": "© {year} NETRO Sparkle GmbH.",
@@ -1003,6 +1089,39 @@
       "submit": "申请报价",
       "successTitle": "已提交报价申请。",
       "successBody": "我们的团队将准备您的配置并尽快跟进。"
+    },
+    "Accessory": {
+      "title": "联系我们",
+      "subtitle": "告诉我们你的需求，我们的团队将通过 {email} 与你联系。",
+      "consent": "我同意 Cleanuva 使用我提供的信息回复本次咨询，详见",
+      "privacyPolicy": "隐私政策",
+      "consentError": "请勾选同意以继续。",
+      "submit": "发送咨询",
+      "successTitle": "谢谢——信息已发送。",
+      "successBody": "我们的团队会通过你提供的邮箱与你联系。如有紧急事项，请联系 info@cleanuva.de。",
+      "fields": {
+        "firstName": "名",
+        "lastName": "姓",
+        "company": "公司名称",
+        "country": "国家/地区",
+        "email": "邮箱",
+        "phone": "电话",
+        "inquiryType": "咨询类型",
+        "robotModel": "机器人型号",
+        "accessoryInterest": "关注的产品 / 配件",
+        "hearAbout": "你从何处了解到我们？",
+        "message": "留言"
+      },
+      "inquiryTypes": {
+        "accessories_quote": "配件报价",
+        "after_sales": "售后服务",
+        "technical_support": "技术支持",
+        "general_inquiry": "一般咨询"
+      },
+      "models": {
+        "not_sure": "尚不确定"
+      },
+      "submitError": "暂时无法发送您的咨询，请直接发送邮件至 info@cleanuva.de。"
     }
   },
   "Legal": {
@@ -1245,5 +1364,64 @@
       }
     },
     "status": "Cleanuva 处于早期商业阶段。我们欢迎与太阳能运营者开展试点、设计合作与部署洽谈——并且绝不声称我们尚未拥有的客户。"
+  },
+  "HomeVideo": {
+    "eyebrow": "现场作业的机器人",
+    "title": "看真机如何作业。",
+    "body": "从移动清洁到无人值守，Cleanuva Robotics 为真实光伏电站而生。",
+    "alt": "Cleanuva 清洁机器人在光伏阵列上作业",
+    "play": "播放视频",
+    "pause": "暂停视频",
+    "soon": "视频即将上线"
+  },
+  "PlatformOverview": {
+    "eyebrow": "AI 平台",
+    "title": "机队背后的 AI 平台。",
+    "body": "在机器人之外，Cleanuva 运行一套 AI 原生的运营层：统一协调清洁、发现发电下滑之处，并确认成效。",
+    "bullets": {
+      "coordinate": "协调机器人与作业班组",
+      "diagnose": "诊断积灰与性能下滑",
+      "verify": "验证清洁成效"
+    },
+    "card": {
+      "title": "指挥中心",
+      "live": "实时",
+      "row1": {
+        "label": "机队",
+        "value": "已协调"
+      },
+      "row2": {
+        "label": "积灰",
+        "value": "已检测"
+      },
+      "row3": {
+        "label": "清洁",
+        "value": "已验证"
+      }
+    },
+    "shotAlt": "Cleanuva 平台仪表盘"
+  },
+  "ProofImpact": {
+    "eyebrow": "成效证明",
+    "title": "从清洁动作到可验证的成效。",
+    "body": "从发现发电损失到证明清洁见效，路径很短——让每一次作业都可被追溯。",
+    "steps": {
+      "detect": {
+        "title": "发现损失",
+        "desc": "在全站范围识别积灰与性能下滑。"
+      },
+      "clean": {
+        "title": "用机器人清洁",
+        "desc": "为场地与阵列派出合适的机器人。"
+      },
+      "verify": {
+        "title": "验证结果",
+        "desc": "确认清洁后阵列发电恢复。"
+      },
+      "prove": {
+        "title": "证明成效",
+        "desc": "把每次清洁转化为清晰、可报告的成果。"
+      }
+    }
   }
 }

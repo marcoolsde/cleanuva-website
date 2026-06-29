@@ -45,3 +45,6 @@ next-env.d.ts
 .env.local
 .env.production
 .env*.local
+
+# Local OEM reference materials - never commit
+tmp_ref/

@@ -27,6 +27,10 @@
       "compare": {
         "name": "Modelle vergleichen",
         "desc": "Alle drei im Vergleich"
+      },
+      "accessories": {
+        "name": "Zubehör",
+        "desc": "Bürsten · Batterien · Teile"
       }
     }
   },
@@ -34,27 +38,29 @@
     "requestDemo": "Demo anfordern",
     "getPricing": "Preise erhalten",
     "getRoboticsPricing": "Robotik-Preise anfragen",
-    "seeCommandCenter": "Zur Kommandozentrale"
+    "seeCommandCenter": "Zur Kommandozentrale",
+    "getQuote": "Angebot anfragen",
+    "exploreRobotics": "Robotik entdecken",
+    "explorePlatform": "Plattform entdecken"
   },
   "Hero": {
-    "eyebrow": "Die KI-native Betriebsschicht für Solar",
+    "eyebrow": "Cleanuva · Robotik + KI-Plattform",
     "headline": {
-      "sees": {
-        "lead": "Sie vereint die",
-        "accent": "Fragmente."
-      },
-      "fix": {
-        "lead": "Sie koordiniert die",
-        "accent": "Arbeit."
-      },
-      "paid": {
-        "lead": "Sie führt den",
-        "accent": "Betrieb."
-      }
+      "line1": "Solar-Reinigungsrobotik für jede PV-Anlage —",
+      "line2lead": "angetrieben von",
+      "line2accent": "intelligentem Betrieb"
     },
-    "subline": "Cleanuva vereint Ihre fragmentierten Systeme, koordiniert die Arbeit und gibt Ihrem Team einen KI-Copilot, der im operativen Wissen Ihrer Anlage verankert ist — das System, auf dem Sie Solar betreiben, kein weiteres Dashboard.",
+    "subline": "Von ferngesteuerter Reinigung bis zu autonomen Flotten liefert Cleanuva kosteneffiziente Solar-Reinigungsroboter für Dächer, Gewerbe-PV und Utility-Scale-Anlagen — mit einer KI-Plattform, die Einsätze koordiniert, Ergebnisse verifiziert und den Weg zur Amortisation verkürzt.",
     "seeHowItWorks": "So funktioniert es",
-    "sceneAlt": "Eine Solaranlage, die auf der Cleanuva-Betriebsschicht läuft, mit einem angebundenen Reinigungsroboter im Einsatz"
+    "sceneAlt": "Eine Solaranlage, die auf der Cleanuva-Betriebsschicht läuft, mit einem angebundenen Reinigungsroboter im Einsatz",
+    "chips": {
+      "efficient": "Effiziente Reinigung",
+      "smart": "Intelligente Steuerung",
+      "deploy": "Schnelle Inbetriebnahme",
+      "mobility": "Einfache Mobilität",
+      "cost": "Kosteneffizienter Betrieb",
+      "aiplatform": "KI-Plattform"
+    }
   },
   "Outcome": {
     "eyebrow": "Verifizierte Rückgewinnung",
@@ -138,8 +144,8 @@
     }
   },
   "FinalCta": {
-    "title": "Betreiben Sie Ihre Anlage mit Cleanuva.",
-    "body": "Buchen Sie einen Rundgang durch die Kommandozentrale und lernen Sie den KI-Copilot kennen, der in Ihrem Betrieb verankert ist — oder erhalten Sie Preise für angebundene robotergestützte Reinigung."
+    "title": "Finden Sie die richtige Solar-Reinigungslösung für Ihren Standort.",
+    "body": "Erzählen Sie uns von Ihrer PV-Anlage, Ihrem Dachtyp und Ihrem Reinigungsbedarf — wir helfen, die passende Kombination aus Cleanuva-Robotik, Zubehör und KI-Plattform-Unterstützung zu finden."
   },
   "CommandCenter": {
     "eyebrow": "Plattform · Kommandozentrale",
@@ -765,6 +771,85 @@
           "f4": "Wasserfreies Trockenbürsten für Staub, Sand und Vogelkot"
         }
       }
+    },
+    "accessories": {
+      "eyebrow": "Cleanuva Robotics · Zubehör",
+      "title": "Zubehör und Serviceteile für Cleanuva-Reinigungsroboter.",
+      "intro": "Kompatibles Zubehör und Serviceteile für Cleanuva-Reinigungsroboter — von Bürsten und Motoren bis zu Batterien, Ladegeräten, Wasserschläuchen und Wartungskits. Wählen Sie Ihr Robotermodell, nennen Sie uns Ihre Standortbedingungen, und unser Team hilft, die richtigen Teile für Ihr Reinigungssetup zu finden.",
+      "selectorLabel": "Wählen Sie Ihr Robotermodell:",
+      "all": "Alle",
+      "requestDetails": "Details anfragen",
+      "compatEyebrow": "Kompatibilität",
+      "compatTitle": "Passend zu Roboter und Standort.",
+      "compatLead": "Zubehör wird nach Robotermodell, Reinigungsmethode und Standortbedingungen abgestimmt.",
+      "compat": {
+        "point1": "Nennen Sie uns Ihr Robotermodell und die Standortbedingungen.",
+        "point2": "Wir helfen, Bürsten, Batterien, Ladegeräte und Service-Kits zuzuordnen.",
+        "point3": "Manche Teile hängen von Konfiguration und Verfügbarkeit ab."
+      },
+      "ctaTitle": "Zubehör oder Serviceteile benötigt?",
+      "ctaBody": "Nennen Sie uns Ihr Robotermodell und die Standortbedingungen — wir helfen, die richtigen Teile und das passende Reinigungssetup zu finden.",
+      "models": {
+        "nuvar": {
+          "type": "Ferngesteuert",
+          "note": "Manuell ferngesteuerter Reinigungsroboter für flexible Einsätze."
+        },
+        "nuvar-pro": {
+          "type": "Ferngesteuertes Upgrade",
+          "note": "Ferngesteuerte Upgrade-Option mit kamerafähigem Betrieb und Kurshaltefunktion."
+        },
+        "nuva-u": {
+          "type": "Autonomiebereit",
+          "note": "Unbeaufsichtigte Reinigungsplattform für wiederkehrende PV-Einsätze."
+        },
+        "nuvaspan": {
+          "type": "Hänge-/Brückensystem",
+          "note": "Aufgehängte Reinigungslösung für feste Installationsszenarien."
+        }
+      },
+      "items": {
+        "brushes": {
+          "title": "Bürsten",
+          "desc": "Reinigungsbürsten passend zu Verschmutzung und Moduloberfläche."
+        },
+        "batteries": {
+          "title": "Batterien",
+          "desc": "Wechselbare Akkupacks, damit Roboter eine Schicht durchhalten."
+        },
+        "chargers": {
+          "title": "Ladegeräte",
+          "desc": "Ladeoptionen für Depot und Vor-Ort-Stromversorgung."
+        },
+        "remote-controllers": {
+          "title": "Fernsteuerungen",
+          "desc": "Handsender für die ferngesteuerten NuvaR und NuvaR Pro."
+        },
+        "water-system": {
+          "title": "Wassersystem-Teile",
+          "desc": "Schläuche, Düsen und Pumpenteile für die Nassreinigung."
+        },
+        "service-kits": {
+          "title": "Service-Kits",
+          "desc": "Wartungskits, um eine Flotte im Feld einsatzfähig zu halten."
+        },
+        "motors": {
+          "title": "Motoren",
+          "desc": "Motoreinheiten für Service, Reparatur und Austauschplanung — abgestimmt auf Robotermodell und Konfiguration."
+        },
+        "water-hose": {
+          "title": "Wasserschlauch",
+          "desc": "Wasserschlauch-Optionen für die Nassreinigung, erhältlich in 50 m und 100 m je nach Standortlayout und Reinigungsmethode."
+        }
+      },
+      "requestQuote": "Zubehör-Angebot anfragen",
+      "contactSupport": "Support kontaktieren",
+      "inquiryEyebrow": "Kontakt"
+    },
+    "home": {
+      "eyebrow": "Cleanuva Robotics",
+      "title": "Solar-Reinigungsroboter, einsatzbereit.",
+      "intro": "Drei vernetzte Reinigungsroboter — Ein-Bediener, echt unbeaufsichtigt und aufgehängt für Utility-Scale-Gelände. Wählen Sie das passende Modell für Ihren Standort und fragen Sie ein Angebot an.",
+      "viewModel": "Modell ansehen"
     }
   },
   "Fragmentation": {
@@ -886,7 +971,8 @@
       "vision": "Vision",
       "security": "Sicherheit & Vertrauen",
       "contact": "Kontakt",
-      "auditor": "Technische Auditoren"
+      "auditor": "Technische Auditoren",
+      "accessories": "Zubehör"
     },
     "legal": {
       "copyright": "© {year} NETRO Sparkle GmbH.",
@@ -1003,6 +1089,39 @@
       "submit": "Angebot anfragen",
       "successTitle": "Angebot angefragt.",
       "successBody": "Unser Team bereitet Ihre Konfiguration vor und meldet sich in Kürze."
+    },
+    "Accessory": {
+      "title": "Kontaktieren Sie uns",
+      "subtitle": "Sagen Sie uns, was Sie brauchen — unser Team meldet sich über {email}.",
+      "consent": "Ich bin einverstanden, dass Cleanuva meine Angaben zur Beantwortung dieser Anfrage verwendet, wie beschrieben in der",
+      "privacyPolicy": "Datenschutzerklärung",
+      "consentError": "Bitte stimmen Sie zu, um fortzufahren.",
+      "submit": "Anfrage senden",
+      "successTitle": "Danke — Nachricht gesendet.",
+      "successBody": "Unser Team meldet sich unter der angegebenen E-Mail. Bei dringenden Anliegen erreichen Sie uns unter info@cleanuva.de.",
+      "fields": {
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "company": "Firmenname",
+        "country": "Land",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "inquiryType": "Anliegen",
+        "robotModel": "Robotermodell",
+        "accessoryInterest": "Produkt / Zubehör-Interesse",
+        "hearAbout": "Wie haben Sie von uns erfahren?",
+        "message": "Nachricht"
+      },
+      "inquiryTypes": {
+        "accessories_quote": "Zubehör-Angebot",
+        "after_sales": "After-Sales-Service",
+        "technical_support": "Technischer Support",
+        "general_inquiry": "Allgemeine Anfrage"
+      },
+      "models": {
+        "not_sure": "Noch unsicher"
+      },
+      "submitError": "Wir konnten Ihre Anfrage gerade nicht senden. Bitte schreiben Sie uns direkt an info@cleanuva.de."
     }
   },
   "Legal": {
@@ -1245,5 +1364,64 @@
       }
     },
     "status": "Cleanuva befindet sich in einer frühen kommerziellen Phase. Wir freuen uns über Pilotprojekte, Design-Partnerschaften und Gespräche über Einsätze mit Solarbetreibern — und behaupten keine Kunden, die wir nicht haben."
+  },
+  "HomeVideo": {
+    "eyebrow": "Roboter im Einsatz",
+    "title": "Die Maschinen bei der Arbeit.",
+    "body": "Von mobiler Reinigung bis zum unbeaufsichtigten Betrieb — Cleanuva Robotics ist für echte PV-Anlagen gebaut.",
+    "alt": "Cleanuva-Reinigungsroboter auf einer Solaranlage",
+    "play": "Video abspielen",
+    "pause": "Video pausieren",
+    "soon": "Video folgt in Kürze"
+  },
+  "PlatformOverview": {
+    "eyebrow": "KI-Plattform",
+    "title": "Die KI-Plattform hinter der Reinigungsflotte.",
+    "body": "Über die Roboter hinaus betreibt Cleanuva eine KI-native Betriebsebene, die die Reinigung koordiniert, Ertragsverluste findet und das Ergebnis bestätigt.",
+    "bullets": {
+      "coordinate": "Roboter und Teams koordinieren",
+      "diagnose": "Verschmutzung und Minderleistung erkennen",
+      "verify": "Reinigungswirkung verifizieren"
+    },
+    "card": {
+      "title": "Command Center",
+      "live": "Live",
+      "row1": {
+        "label": "Flotte",
+        "value": "Koordiniert"
+      },
+      "row2": {
+        "label": "Verschmutzung",
+        "value": "Erkannt"
+      },
+      "row3": {
+        "label": "Reinigung",
+        "value": "Verifiziert"
+      }
+    },
+    "shotAlt": "Cleanuva-Plattform-Dashboard"
+  },
+  "ProofImpact": {
+    "eyebrow": "Nachweis",
+    "title": "Von der Reinigung zur belegten Wirkung.",
+    "body": "Ein kurzer Weg vom Erkennen verlorener Leistung bis zum Nachweis, dass die Reinigung gewirkt hat — jeder Einsatz wird nachvollziehbar.",
+    "steps": {
+      "detect": {
+        "title": "Verlust erkennen",
+        "desc": "Verschmutzung und Minderleistung in der Anlage aufspüren."
+      },
+      "clean": {
+        "title": "Mit Robotern reinigen",
+        "desc": "Den passenden Roboter für Standort und Modulfeld einsetzen."
+      },
+      "verify": {
+        "title": "Ergebnis verifizieren",
+        "desc": "Bestätigen, dass sich das Modulfeld nach der Reinigung erholt hat."
+      },
+      "prove": {
+        "title": "Wirkung belegen",
+        "desc": "Jede Reinigung in ein klares, berichtsfähiges Ergebnis überführen."
+      }
+    }
   }
 }

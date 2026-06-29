@@ -47,6 +47,13 @@ export const metadata: Metadata = {
   title: "Cleanuva — Autonomous Solar Asset Operations",
   description:
     "From detection to done. And proven. The operating system and robotics for solar asset operations.",
+  // Brand favicon / app icon. Falls back to src/app/favicon.ico until the PNG
+  // is added; once present it becomes the declared icon. Swap = same-name file.
+  icons: {
+    icon: "/images/brand/cleanuva-icon.png",
+    shortcut: "/images/brand/cleanuva-icon.png",
+    apple: "/images/brand/cleanuva-icon.png",
+  },
 };
 
 export function generateStaticParams() {

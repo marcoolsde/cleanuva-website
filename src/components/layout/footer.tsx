@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { FOOTER_COLUMNS } from "@/content/nav";
 import { LEGAL } from "@/content/legal";
+import { FooterBrand } from "@/components/layout/footer-brand";
 
 const LEGAL_LINKS = [
   { key: "imprint", href: "/company/legal/imprint" },
@@ -13,7 +14,6 @@ const LEGAL_LINKS = [
 
 export function Footer() {
   const t = useTranslations("Footer");
-  const tCommon = useTranslations("Common");
 
   return (
     // Always light (design-system §6 [11]); brand seam + legal.
@@ -22,15 +22,7 @@ export function Footer() {
         {/* Tier 1 — brand + IA columns */}
         <div className="grid grid-cols-2 gap-10 md:grid-cols-[1.4fr_repeat(4,1fr)]">
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2.5">
-              <span
-                aria-hidden
-                className="size-[22px] rounded-full bg-[image:var(--current)]"
-              />
-              <span className="text-[19px] font-semibold tracking-[-0.01em]">
-                {tCommon("brand")}
-              </span>
-            </Link>
+            <FooterBrand />
             <p className="mt-4 max-w-[28ch] text-body-s text-ink-2">
               {t("tagline")}
             </p>

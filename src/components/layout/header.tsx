@@ -19,19 +19,32 @@ import {
 
 function BrandMark() {
   const t = useTranslations("Common");
+  const [logoFailed, setLogoFailed] = React.useState(false);
   return (
     <Link
       href="/"
       className="inline-flex items-center gap-2.5 focus-visible:ring-2 focus-visible:ring-cool focus-visible:ring-offset-2 focus-visible:outline-none"
     >
-      {/* 22px brand circle carrying the Current gradient (design-system §brand). */}
-      <span
-        aria-hidden
-        className="size-[22px] rounded-full bg-[image:var(--current)]"
-      />
-      <span className="text-[19px] font-semibold tracking-[-0.01em] text-ink">
-        {t("brand")}
-      </span>
+      {logoFailed ? (
+        // Fallback (image missing): the original gradient mark + wordmark.
+        <>
+          <span
+            aria-hidden
+            className="size-[22px] rounded-full bg-[image:var(--current)]"
+          />
+          <span className="text-[19px] font-semibold tracking-[-0.01em] text-ink">
+            {t("brand")}
+          </span>
+        </>
+      ) : (
+        // eslint-disable-next-line @next/next/no-img-element -- swappable logo of unknown aspect; scale by height, fall back to text on error
+        <img
+          src="/images/brand/cleanuva-logo.png"
+          alt={t("brand")}
+          className="h-[26px] w-auto md:h-[30px]"
+          onError={() => setLogoFailed(true)}
+        />
+      )}
     </Link>
   );
 }
@@ -127,11 +140,12 @@ export function Header() {
         {/* Right actions */}
         <div className="flex items-center gap-2">
           <LocaleSwitcher className="hidden sm:inline-flex" />
+          {/* Robotics-first: primary action = robot quote; demo is secondary. */}
           <Button variant="secondary" size="sm" asChild className="hidden md:inline-flex">
-            <Link href="/get-pricing">{tCta("getRoboticsPricing")}</Link>
+            <Link href="/request-demo">{tCta("requestDemo")}</Link>
           </Button>
           <Button variant="primary" size="sm" asChild className="hidden sm:inline-flex">
-            <Link href="/request-demo">{tCta("requestDemo")}</Link>
+            <Link href="/get-pricing">{tCta("getQuote")}</Link>
           </Button>
 
           {/* Mobile drawer */}
@@ -180,13 +194,13 @@ export function Header() {
               </nav>
               <div className="mt-6 flex flex-col gap-3 px-4">
                 <Button variant="primary" asChild>
-                  <Link href="/request-demo" onClick={() => setOpen(false)}>
-                    {tCta("requestDemo")}
+                  <Link href="/get-pricing" onClick={() => setOpen(false)}>
+                    {tCta("getQuote")}
                   </Link>
                 </Button>
                 <Button variant="secondary" asChild>
-                  <Link href="/get-pricing" onClick={() => setOpen(false)}>
-                    {tCta("getRoboticsPricing")}
+                  <Link href="/request-demo" onClick={() => setOpen(false)}>
+                    {tCta("requestDemo")}
                   </Link>
                 </Button>
                 <div className="pt-2">

@@ -20,8 +20,9 @@ export interface NavItem {
   children?: NavChild[];
 }
 
+// Robotics-first (P0A). Distribution Network / Gallery / Support are NOT added
+// yet — their pages don't exist (no dead nav). Resources stays until P2 Support.
 export const NAV: NavItem[] = [
-  { key: "platform", href: "/platform" },
   {
     key: "robotics",
     href: "/robotics",
@@ -30,8 +31,10 @@ export const NAV: NavItem[] = [
       { key: "uSeries", href: "/robotics/u-series" },
       { key: "nuvaSpan", href: "/robotics/nuvaspan" },
       { key: "compare", href: "/robotics/compare" },
+      { key: "accessories", href: "/robotics/accessories" },
     ],
   },
+  { key: "platform", href: "/platform" },
   { key: "solutions", href: "/solutions" },
   { key: "resources", href: "/resources" },
   { key: "company", href: "/company" },
@@ -49,7 +52,18 @@ export interface FooterColumn {
   links: FooterLink[];
 }
 
+// Robotics-first (P0A) — robotics column leads; no Distribution/Gallery/Support yet.
 export const FOOTER_COLUMNS: FooterColumn[] = [
+  {
+    key: "robotics",
+    links: [
+      { key: "rSeries", href: "/robotics#r-series" },
+      { key: "uSeries", href: "/robotics#u-series" },
+      { key: "nuvaSpan", href: "/robotics#nuvaspan" },
+      { key: "accessories", href: "/robotics/accessories" },
+      { key: "pricing", href: "/get-pricing" },
+    ],
+  },
   {
     key: "platform",
     links: [
@@ -57,15 +71,6 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { key: "diagnosis", href: "/platform#copilot" },
       { key: "commandCenter", href: "/platform#command-center" },
       { key: "roi", href: "/platform#proof" },
-    ],
-  },
-  {
-    key: "robotics",
-    links: [
-      { key: "rSeries", href: "/robotics#r-series" },
-      { key: "uSeries", href: "/robotics#u-series" },
-      { key: "nuvaSpan", href: "/robotics#nuvaspan" },
-      { key: "pricing", href: "/get-pricing" },
     ],
   },
   {

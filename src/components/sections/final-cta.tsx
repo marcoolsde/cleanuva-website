@@ -29,12 +29,13 @@ export function FinalCta() {
             <p className="mx-auto mt-4 max-w-[52ch] text-body-l text-ink-2">
               {t("body")}
             </p>
+            {/* Robotics-first (P0B): robot quote leads; demo is secondary. */}
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Button variant="primary" asChild>
-                <Link href="/request-demo">{tCta("requestDemo")}</Link>
-              </Button>
               <Button variant="warm" asChild>
-                <Link href="/get-pricing">{tCta("getRoboticsPricing")}</Link>
+                <Link href="/get-pricing">{tCta("getQuote")}</Link>
+              </Button>
+              <Button variant="secondary" asChild>
+                <Link href="/request-demo">{tCta("requestDemo")}</Link>
               </Button>
             </div>
           </div>

@@ -27,6 +27,10 @@
       "compare": {
         "name": "Compare models",
         "desc": "All three, side by side"
+      },
+      "accessories": {
+        "name": "Accessories",
+        "desc": "Brushes · batteries · parts"
       }
     }
   },
@@ -34,27 +38,29 @@
     "requestDemo": "Request a demo",
     "getPricing": "Get pricing",
     "getRoboticsPricing": "Get robotics pricing",
-    "seeCommandCenter": "See the Command Center"
+    "seeCommandCenter": "See the Command Center",
+    "getQuote": "Get a quote",
+    "exploreRobotics": "Explore robotics",
+    "explorePlatform": "Explore platform"
   },
   "Hero": {
-    "eyebrow": "The AI-native operating layer for solar",
+    "eyebrow": "Cleanuva · Robotics + AI Platform",
     "headline": {
-      "sees": {
-        "lead": "It unifies the",
-        "accent": "fragments."
-      },
-      "fix": {
-        "lead": "It coordinates the",
-        "accent": "work."
-      },
-      "paid": {
-        "lead": "It runs the",
-        "accent": "operation."
-      }
+      "line1": "Solar cleaning robotics for every PV site —",
+      "line2lead": "powered by",
+      "line2accent": "intelligent operations"
     },
-    "subline": "Cleanuva unifies your fragmented systems, coordinates the work, and gives your team an AI Copilot grounded in your plant's own operational knowledge — the system you run solar on, not another dashboard.",
+    "subline": "From remote-controlled cleaning to autonomous fleets, Cleanuva provides cost-efficient solar cleaning robots for rooftops, commercial PV and utility-scale plants — with an AI platform to help coordinate work, verify results and shorten the path to payback.",
     "seeHowItWorks": "See how it works",
-    "sceneAlt": "A solar plant running on the Cleanuva operating layer, with a connected cleaning robot executing a task"
+    "sceneAlt": "A solar plant running on the Cleanuva operating layer, with a connected cleaning robot executing a task",
+    "chips": {
+      "efficient": "Efficient cleaning",
+      "smart": "Smart control",
+      "deploy": "Quick deployment",
+      "mobility": "Easy mobility",
+      "cost": "Cost-efficient operation",
+      "aiplatform": "AI platform"
+    }
   },
   "Outcome": {
     "eyebrow": "Verified recovery",
@@ -138,8 +144,8 @@
     }
   },
   "FinalCta": {
-    "title": "Run your plant on Cleanuva.",
-    "body": "Book a Command Center walkthrough and meet the AI Copilot grounded in your operation — or get pricing for connected robotic cleaning."
+    "title": "Get the right solar cleaning solution for your site.",
+    "body": "Tell us about your PV site, roof type and cleaning needs — we'll help match the right combination of Cleanuva robotics, accessories and AI platform support."
   },
   "CommandCenter": {
     "eyebrow": "Platform · Command Center",
@@ -765,6 +771,85 @@
           "f4": "Water-free dry brushing for dust, sand and bird droppings"
         }
       }
+    },
+    "accessories": {
+      "eyebrow": "Cleanuva Robotics · Accessories",
+      "title": "Accessories and service parts for Cleanuva cleaning robots.",
+      "intro": "Compatible accessories and service parts for Cleanuva cleaning robots — from brushes and motors to batteries, chargers, water hoses and maintenance kits. Select your robot model, tell us your site conditions, and our team will help match the right parts for your cleaning setup.",
+      "selectorLabel": "Select your robot model:",
+      "all": "All",
+      "requestDetails": "Request details",
+      "compatEyebrow": "Compatibility",
+      "compatTitle": "Matched to your robot and site.",
+      "compatLead": "Accessories are matched by robot model, cleaning method and site conditions.",
+      "compat": {
+        "point1": "Tell us your robot model and site conditions.",
+        "point2": "We help match brushes, batteries, chargers and service kits.",
+        "point3": "Some parts depend on configuration and availability."
+      },
+      "ctaTitle": "Need accessories or service parts?",
+      "ctaBody": "Tell us your robot model and site conditions — we’ll help identify the right parts and cleaning setup.",
+      "models": {
+        "nuvar": {
+          "type": "Remote-controlled",
+          "note": "Manual remote-controlled cleaning robot for flexible site work."
+        },
+        "nuvar-pro": {
+          "type": "Remote-controlled upgrade",
+          "note": "Remote-controlled upgrade option with camera-ready operation and heading-hold capability."
+        },
+        "nuva-u": {
+          "type": "Autonomous-ready",
+          "note": "Unattended cleaning platform for repeatable PV site operations."
+        },
+        "nuvaspan": {
+          "type": "Suspended / bridge system",
+          "note": "Suspended cleaning solution for fixed installation scenarios."
+        }
+      },
+      "items": {
+        "brushes": {
+          "title": "Brushes",
+          "desc": "Cleaning brushes matched to soiling and panel surface conditions."
+        },
+        "batteries": {
+          "title": "Batteries",
+          "desc": "Swappable battery packs to keep robots running through a shift."
+        },
+        "chargers": {
+          "title": "Chargers",
+          "desc": "Charging options for depot and on-site power."
+        },
+        "remote-controllers": {
+          "title": "Remote controllers",
+          "desc": "Handheld controllers for the remote-controlled NuvaR and NuvaR Pro."
+        },
+        "water-system": {
+          "title": "Water system parts",
+          "desc": "Hoses, nozzles and pump parts for wet-mode cleaning."
+        },
+        "service-kits": {
+          "title": "Service kits",
+          "desc": "Maintenance kits to keep a fleet serviceable in the field."
+        },
+        "motors": {
+          "title": "Motors",
+          "desc": "Motor units for service, repair and replacement planning, matched by robot model and configuration."
+        },
+        "water-hose": {
+          "title": "Water Hose",
+          "desc": "Water hose options for wet-cleaning setups, available in 50 m and 100 m lengths depending on site layout and cleaning method."
+        }
+      },
+      "requestQuote": "Request accessories quote",
+      "contactSupport": "Contact support",
+      "inquiryEyebrow": "Contact"
+    },
+    "home": {
+      "eyebrow": "Cleanuva Robotics",
+      "title": "Solar-cleaning robots, ready to deploy.",
+      "intro": "Three connected cleaning robots — single-operator, true unattended, and suspended for utility-scale terrain. Pick the model that fits your site and get a quote.",
+      "viewModel": "View model"
     }
   },
   "Fragmentation": {
@@ -886,7 +971,8 @@
       "vision": "Vision",
       "security": "Security & trust",
       "contact": "Contact",
-      "auditor": "Technical auditors"
+      "auditor": "Technical auditors",
+      "accessories": "Accessories"
     },
     "legal": {
       "copyright": "© {year} NETRO Sparkle GmbH.",
@@ -1003,6 +1089,39 @@
       "submit": "Request a quote",
       "successTitle": "Quote requested.",
       "successBody": "Our team will prepare your configuration and follow up shortly."
+    },
+    "Accessory": {
+      "title": "Contact us",
+      "subtitle": "Tell us what you need and our team will respond from {email}.",
+      "consent": "I agree that Cleanuva may use my details to respond to this inquiry, as described in the",
+      "privacyPolicy": "Privacy Policy",
+      "consentError": "Please accept to continue.",
+      "submit": "Send inquiry",
+      "successTitle": "Thank you — message sent.",
+      "successBody": "Our team will get back to you at the email you provided. For anything urgent, reach us at info@cleanuva.de.",
+      "fields": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "company": "Company name",
+        "country": "Country",
+        "email": "Email",
+        "phone": "Phone",
+        "inquiryType": "Message type",
+        "robotModel": "Robot model",
+        "accessoryInterest": "Product / accessory interest",
+        "hearAbout": "How did you hear about us?",
+        "message": "Message"
+      },
+      "inquiryTypes": {
+        "accessories_quote": "Accessories quote",
+        "after_sales": "After-sales service",
+        "technical_support": "Technical support",
+        "general_inquiry": "General inquiry"
+      },
+      "models": {
+        "not_sure": "Not sure yet"
+      },
+      "submitError": "We could not send your inquiry right now. Please email us directly at info@cleanuva.de."
     }
   },
   "Legal": {
@@ -1245,5 +1364,64 @@
       }
     },
     "status": "Cleanuva is at an early commercial stage. We welcome pilots, design partnerships, and deployment discussions with solar operators — and we don't claim customers we don't have."
+  },
+  "HomeVideo": {
+    "eyebrow": "Robots in the field",
+    "title": "See the machines at work.",
+    "body": "From mobile cleaning to unattended operation, Cleanuva Robotics is built for real PV sites.",
+    "alt": "Cleanuva cleaning robot operating on a solar array",
+    "play": "Play video",
+    "pause": "Pause video",
+    "soon": "Video coming soon"
+  },
+  "PlatformOverview": {
+    "eyebrow": "AI Platform",
+    "title": "The AI platform behind the cleaning fleet.",
+    "body": "Beyond the robots, Cleanuva runs an AI-native operations layer that coordinates cleaning, finds where production is slipping, and confirms the result.",
+    "bullets": {
+      "coordinate": "Coordinate robots and crews",
+      "diagnose": "Diagnose soiling and underperformance",
+      "verify": "Verify cleaning impact"
+    },
+    "card": {
+      "title": "Command Center",
+      "live": "Live",
+      "row1": {
+        "label": "Fleet",
+        "value": "Coordinated"
+      },
+      "row2": {
+        "label": "Soiling",
+        "value": "Detected"
+      },
+      "row3": {
+        "label": "Cleaning",
+        "value": "Verified"
+      }
+    },
+    "shotAlt": "Cleanuva platform dashboard"
+  },
+  "ProofImpact": {
+    "eyebrow": "Proof",
+    "title": "From cleaning action to verified impact.",
+    "body": "A short path from spotting lost output to proving the cleaning worked — so every visit is accountable.",
+    "steps": {
+      "detect": {
+        "title": "Detect loss",
+        "desc": "Spot soiling and underperformance across the plant."
+      },
+      "clean": {
+        "title": "Clean with robots",
+        "desc": "Dispatch the right robot for the site and array."
+      },
+      "verify": {
+        "title": "Verify the result",
+        "desc": "Confirm the array recovered after cleaning."
+      },
+      "prove": {
+        "title": "Prove the impact",
+        "desc": "Turn each cleaning into a clear, reportable outcome."
+      }
+    }
   }
 }
