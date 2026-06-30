@@ -151,11 +151,249 @@
       }
     },
     "page": {
-      "title": "For the people who run solar.",
-      "intro": "Cleanuva Solutions packages Platform and Robotics into one accountable operation for every role in the asset's life — instead of a dozen disconnected tools. Here's what that looks like for each.",
-      "ctaTitle": "See it on your portfolio.",
-      "ctaBody": "A short, focused demo on your assets — no account needed.",
-      "cta": "Request a demo"
+      "hero": {
+        "eyebrow": "Cleanuva Solutions",
+        "title": "Solutions for solar cleaning and PV operations",
+        "subtitle": "Combine robotics, AI operations and verified reporting for the way your solar assets are actually managed.",
+        "support": "Whether you own PV assets, run O&M teams, provide cleaning services or manage EPC warranty obligations, Cleanuva helps turn site conditions into action and proof.",
+        "cta": {
+          "explore": "Explore solutions",
+          "robotics": "View robotics",
+          "demo": "Request a demo"
+        },
+        "flow": {
+          "f1": {
+            "owner": "PV site",
+            "label": "A site condition or production loss"
+          },
+          "f2": {
+            "owner": "Platform",
+            "label": "Cleanuva Platform detects & prioritizes"
+          },
+          "f3": {
+            "owner": "Robotics",
+            "label": "Robots or service teams execute"
+          },
+          "f4": {
+            "owner": "Platform",
+            "label": "Platform verifies & reports"
+          }
+        }
+      },
+      "cta": {
+        "demo": "Request a demo",
+        "platform": "View Platform",
+        "compare": "Compare robots",
+        "pricing": "Get pricing",
+        "talk": "Talk to Cleanuva",
+        "distribution": "Distribution Network",
+        "contact": "Contact Cleanuva"
+      },
+      "paths": {
+        "eyebrow": "Solution paths",
+        "title": "Find your scenario",
+        "painLabel": "Where it hurts",
+        "combineLabel": "What Cleanuva combines",
+        "items": {
+          "owners": {
+            "role": "PV asset owners",
+            "tag": "Own and account for production",
+            "pains": {
+              "p1": "Production loss",
+              "p2": "Soiling impact",
+              "p3": "Unclear cleaning timing",
+              "p4": "Need proof of recovery"
+            },
+            "combine": {
+              "c1": "Platform monitoring",
+              "c2": "Cleaning recommendation",
+              "c3": "Robot / service execution",
+              "c4": "Verification report"
+            }
+          },
+          "om": {
+            "role": "O&M teams",
+            "tag": "Keep sites running",
+            "pains": {
+              "p1": "Too many alarms",
+              "p2": "Hard to prioritize field work",
+              "p3": "Manual work order decisions",
+              "p4": "Need closed-loop evidence"
+            },
+            "combine": {
+              "c1": "Alarm analysis",
+              "c2": "Operational Analyst",
+              "c3": "Work orders",
+              "c4": "Verification"
+            }
+          },
+          "cleaning": {
+            "role": "Cleaning service operators",
+            "tag": "Deliver cleaning at scale",
+            "pains": {
+              "p1": "Labor efficiency",
+              "p2": "Equipment choice",
+              "p3": "Cleaning proof",
+              "p4": "Recurring customer reporting"
+            },
+            "combine": {
+              "c1": "R-Series / U-Series robots",
+              "c2": "Accessories",
+              "c3": "Proof reports",
+              "c4": "Service workflow"
+            }
+          },
+          "epc": {
+            "role": "EPC / warranty teams",
+            "tag": "Stand behind the handover",
+            "pains": {
+              "p1": "Performance questions after handover",
+              "p2": "Soiling vs technical issue",
+              "p3": "Warranty communication",
+              "p4": "Evidence trail"
+            },
+            "combine": {
+              "c1": "Platform evidence",
+              "c2": "Inspection / work order trail",
+              "c3": "Cleaning verification",
+              "c4": "Reporting package"
+            }
+          },
+          "partner": {
+            "role": "Distributors / service partners",
+            "tag": "Sell and support in your market",
+            "pains": {
+              "p1": "Need a marketable product line",
+              "p2": "Need models for different site types",
+              "p3": "Need support and accessories",
+              "p4": "Need a platform story for differentiation"
+            },
+            "combine": {
+              "c1": "Cleanuva Robotics portfolio",
+              "c2": "Accessories and spare parts",
+              "c3": "Demo support",
+              "c4": "Platform-enabled story"
+            }
+          }
+        }
+      },
+      "choose": {
+        "eyebrow": "Start from the problem",
+        "title": "Choose by problem",
+        "view": "View",
+        "items": {
+          "q1": {
+            "need": "I need to reduce manual cleaning cost",
+            "target": "Robotics"
+          },
+          "q2": {
+            "need": "I need to know when cleaning pays back",
+            "target": "Platform"
+          },
+          "q3": {
+            "need": "I need to prove the cleaning result",
+            "target": "Platform + Robotics"
+          },
+          "q4": {
+            "need": "I need unattended, repeatable cleaning",
+            "target": "NuvaTrack-U"
+          },
+          "q5": {
+            "need": "I need a fixed cleaning system",
+            "target": "NuvaSpan"
+          },
+          "q6": {
+            "need": "I need parts, brushes or service",
+            "target": "Accessories"
+          }
+        }
+      },
+      "loop": {
+        "eyebrow": "How the combination works",
+        "title": "Platform + Robotics, one solution loop",
+        "intro": "The two business lines combine into a single path — software finds and proves, robots and teams do the work.",
+        "steps": {
+          "s1": {
+            "name": "Detect the issue",
+            "body": "The platform flags abnormal production, soiling or alarms."
+          },
+          "s2": {
+            "name": "Quantify the loss",
+            "body": "Estimate the production and revenue impact."
+          },
+          "s3": {
+            "name": "Choose the action",
+            "body": "Decide between cleaning, service or watch."
+          },
+          "s4": {
+            "name": "Execute with robots or teams",
+            "body": "Dispatch Cleanuva robots or a service crew."
+          },
+          "s5": {
+            "name": "Verify recovery",
+            "body": "Compare before/after and generate the report."
+          }
+        }
+      },
+      "flex": {
+        "eyebrow": "How we work together",
+        "title": "Flexible by market and project",
+        "items": {
+          "w1": {
+            "name": "Direct project supply",
+            "note": "Cleanuva supplies and configures for your project."
+          },
+          "w2": {
+            "name": "Distributor / partner model",
+            "note": "Resell and service in your region."
+          },
+          "w3": {
+            "name": "SaaS or private platform",
+            "note": "Hosted, or deployed in your own environment."
+          },
+          "w4": {
+            "name": "Robot sales or project configuration",
+            "note": "Buy models outright or as a configured system."
+          },
+          "w5": {
+            "name": "Service and accessories support",
+            "note": "Brushes, parts and maintenance backing."
+          }
+        }
+      },
+      "matrix": {
+        "eyebrow": "Where to next",
+        "title": "Pick your next step",
+        "items": {
+          "m1": {
+            "need": "Need robots?",
+            "action": "View Robotics"
+          },
+          "m2": {
+            "need": "Need an AI O&M platform?",
+            "action": "View Platform"
+          },
+          "m3": {
+            "need": "Need to compare models?",
+            "action": "Compare robots"
+          },
+          "m4": {
+            "need": "Need accessories?",
+            "action": "View Accessories"
+          },
+          "m5": {
+            "need": "Need pricing?",
+            "action": "Get pricing"
+          },
+          "m6": {
+            "need": "Need a discussion?",
+            "action": "Request a demo"
+          }
+        }
+      },
+      "finalCta": {
+        "title": "Build the right cleaning and operations solution for your PV assets."
+      }
     }
   },
   "FinalCta": {

@@ -151,11 +151,249 @@
       }
     },
     "page": {
-      "title": "Für alle, die Solar betreiben.",
-      "intro": "Cleanuva Solutions bündelt Platform und Robotics zu einem nachweisbaren Betrieb für jede Rolle im Leben der Anlage — statt eines Dutzends getrennter Werkzeuge. So sieht das für jede Rolle aus.",
-      "ctaTitle": "Sehen Sie es an Ihrem Portfolio.",
-      "ctaBody": "Eine kurze, fokussierte Demo zu Ihren Anlagen — kein Konto nötig.",
-      "cta": "Demo anfragen"
+      "hero": {
+        "eyebrow": "Cleanuva Solutions",
+        "title": "Lösungen für Solarreinigung und PV-Betrieb",
+        "subtitle": "Kombinieren Sie Robotik, KI-Operations und verifiziertes Reporting — so, wie Ihre Solaranlagen tatsächlich betrieben werden.",
+        "support": "Ob Sie PV-Anlagen besitzen, O&M-Teams führen, Reinigungsdienste anbieten oder EPC-Garantiepflichten verwalten — Cleanuva macht aus Standortbedingungen Maßnahme und Nachweis.",
+        "cta": {
+          "explore": "Lösungen entdecken",
+          "robotics": "Robotik ansehen",
+          "demo": "Demo anfragen"
+        },
+        "flow": {
+          "f1": {
+            "owner": "PV-Standort",
+            "label": "Eine Standortbedingung oder ein Produktionsverlust"
+          },
+          "f2": {
+            "owner": "Platform",
+            "label": "Cleanuva Platform erkennt & priorisiert"
+          },
+          "f3": {
+            "owner": "Robotics",
+            "label": "Roboter oder Serviceteams führen aus"
+          },
+          "f4": {
+            "owner": "Platform",
+            "label": "Platform verifiziert & berichtet"
+          }
+        }
+      },
+      "cta": {
+        "demo": "Demo anfragen",
+        "platform": "Platform ansehen",
+        "compare": "Roboter vergleichen",
+        "pricing": "Preis anfragen",
+        "talk": "Mit Cleanuva sprechen",
+        "distribution": "Vertriebsnetz",
+        "contact": "Cleanuva kontaktieren"
+      },
+      "paths": {
+        "eyebrow": "Lösungswege",
+        "title": "Finden Sie Ihr Szenario",
+        "painLabel": "Wo es wehtut",
+        "combineLabel": "Was Cleanuva kombiniert",
+        "items": {
+          "owners": {
+            "role": "PV-Anlagenbesitzer",
+            "tag": "Produktion besitzen und verantworten",
+            "pains": {
+              "p1": "Produktionsverlust",
+              "p2": "Verschmutzungswirkung",
+              "p3": "Unklarer Reinigungszeitpunkt",
+              "p4": "Nachweis der Wiederherstellung nötig"
+            },
+            "combine": {
+              "c1": "Plattform-Monitoring",
+              "c2": "Reinigungsempfehlung",
+              "c3": "Roboter- / Serviceausführung",
+              "c4": "Verifizierungsbericht"
+            }
+          },
+          "om": {
+            "role": "O&M-Teams",
+            "tag": "Anlagen am Laufen halten",
+            "pains": {
+              "p1": "Zu viele Alarme",
+              "p2": "Feldarbeit schwer zu priorisieren",
+              "p3": "Manuelle Arbeitsauftragsentscheidungen",
+              "p4": "Geschlossener Nachweiskreis nötig"
+            },
+            "combine": {
+              "c1": "Alarmanalyse",
+              "c2": "Operational Analyst",
+              "c3": "Arbeitsaufträge",
+              "c4": "Verifizierung"
+            }
+          },
+          "cleaning": {
+            "role": "Reinigungsdienstleister",
+            "tag": "Reinigung im großen Maßstab",
+            "pains": {
+              "p1": "Arbeitseffizienz",
+              "p2": "Geräteauswahl",
+              "p3": "Reinigungsnachweis",
+              "p4": "Wiederkehrendes Kundenreporting"
+            },
+            "combine": {
+              "c1": "R-Series / U-Series Roboter",
+              "c2": "Zubehör",
+              "c3": "Nachweisberichte",
+              "c4": "Service-Workflow"
+            }
+          },
+          "epc": {
+            "role": "EPC- / Garantieteams",
+            "tag": "Für die Übergabe einstehen",
+            "pains": {
+              "p1": "Leistungsfragen nach Übergabe",
+              "p2": "Verschmutzung vs. technisches Problem",
+              "p3": "Garantiekommunikation",
+              "p4": "Nachweiskette"
+            },
+            "combine": {
+              "c1": "Plattform-Belege",
+              "c2": "Inspektions- / Arbeitsauftragsverlauf",
+              "c3": "Reinigungsverifizierung",
+              "c4": "Reporting-Paket"
+            }
+          },
+          "partner": {
+            "role": "Distributoren / Servicepartner",
+            "tag": "In Ihrem Markt verkaufen und betreuen",
+            "pains": {
+              "p1": "Vermarktbare Produktlinie nötig",
+              "p2": "Modelle für verschiedene Standorttypen nötig",
+              "p3": "Support und Zubehör nötig",
+              "p4": "Plattform-Story zur Differenzierung nötig"
+            },
+            "combine": {
+              "c1": "Cleanuva Robotics Portfolio",
+              "c2": "Zubehör und Ersatzteile",
+              "c3": "Demo-Unterstützung",
+              "c4": "Plattformgestützte Story"
+            }
+          }
+        }
+      },
+      "choose": {
+        "eyebrow": "Vom Problem aus starten",
+        "title": "Nach Problem wählen",
+        "view": "Ansehen",
+        "items": {
+          "q1": {
+            "need": "Ich will manuelle Reinigungskosten senken",
+            "target": "Robotik"
+          },
+          "q2": {
+            "need": "Ich will wissen, wann sich Reinigung lohnt",
+            "target": "Platform"
+          },
+          "q3": {
+            "need": "Ich will das Reinigungsergebnis nachweisen",
+            "target": "Platform + Robotik"
+          },
+          "q4": {
+            "need": "Ich brauche unbeaufsichtigte, wiederkehrende Reinigung",
+            "target": "NuvaTrack-U"
+          },
+          "q5": {
+            "need": "Ich brauche ein festes Reinigungssystem",
+            "target": "NuvaSpan"
+          },
+          "q6": {
+            "need": "Ich brauche Teile, Bürsten oder Service",
+            "target": "Zubehör"
+          }
+        }
+      },
+      "loop": {
+        "eyebrow": "Wie die Kombination funktioniert",
+        "title": "Platform + Robotik, ein Lösungskreislauf",
+        "intro": "Die beiden Geschäftsbereiche verbinden sich zu einem Weg — Software findet und weist nach, Roboter und Teams erledigen die Arbeit.",
+        "steps": {
+          "s1": {
+            "name": "Problem erkennen",
+            "body": "Die Plattform meldet auffällige Produktion, Verschmutzung oder Alarme."
+          },
+          "s2": {
+            "name": "Verlust quantifizieren",
+            "body": "Produktions- und Umsatzwirkung abschätzen."
+          },
+          "s3": {
+            "name": "Maßnahme wählen",
+            "body": "Zwischen Reinigung, Service oder Beobachtung entscheiden."
+          },
+          "s4": {
+            "name": "Mit Robotern oder Teams ausführen",
+            "body": "Cleanuva-Roboter oder ein Serviceteam disponieren."
+          },
+          "s5": {
+            "name": "Wiederherstellung verifizieren",
+            "body": "Vorher/Nachher vergleichen und Bericht erzeugen."
+          }
+        }
+      },
+      "flex": {
+        "eyebrow": "Wie wir zusammenarbeiten",
+        "title": "Flexibel nach Markt und Projekt",
+        "items": {
+          "w1": {
+            "name": "Direkte Projektlieferung",
+            "note": "Cleanuva liefert und konfiguriert für Ihr Projekt."
+          },
+          "w2": {
+            "name": "Distributor- / Partnermodell",
+            "note": "In Ihrer Region weiterverkaufen und betreuen."
+          },
+          "w3": {
+            "name": "SaaS oder private Plattform",
+            "note": "Gehostet oder in Ihrer eigenen Umgebung betrieben."
+          },
+          "w4": {
+            "name": "Roboterkauf oder Projektkonfiguration",
+            "note": "Modelle direkt kaufen oder als konfiguriertes System."
+          },
+          "w5": {
+            "name": "Service- und Zubehörsupport",
+            "note": "Bürsten, Teile und Wartungsunterstützung."
+          }
+        }
+      },
+      "matrix": {
+        "eyebrow": "Wie weiter",
+        "title": "Wählen Sie Ihren nächsten Schritt",
+        "items": {
+          "m1": {
+            "need": "Roboter gesucht?",
+            "action": "Robotik ansehen"
+          },
+          "m2": {
+            "need": "KI-O&M-Plattform gesucht?",
+            "action": "Platform ansehen"
+          },
+          "m3": {
+            "need": "Modelle vergleichen?",
+            "action": "Roboter vergleichen"
+          },
+          "m4": {
+            "need": "Zubehör gesucht?",
+            "action": "Zubehör ansehen"
+          },
+          "m5": {
+            "need": "Preise gesucht?",
+            "action": "Preis anfragen"
+          },
+          "m6": {
+            "need": "Gespräch gewünscht?",
+            "action": "Demo anfragen"
+          }
+        }
+      },
+      "finalCta": {
+        "title": "Bauen Sie die richtige Reinigungs- und Betriebslösung für Ihre PV-Anlagen."
+      }
     }
   },
   "FinalCta": {
