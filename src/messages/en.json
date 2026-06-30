@@ -513,6 +513,229 @@
           "a": "CSV exports from your monitoring platforms, plus inspection reports — historical or current. If your sites already produce it, Cleanuva is built to turn it into insight."
         }
       }
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "Cleanuva AI O&M Platform",
+        "title": "AI-native operations for solar assets",
+        "subtitle": "Detect production losses, decide the right action, execute cleaning or service work, and prove the recovered value.",
+        "support": "Cleanuva Platform turns PV telemetry, alarms, inspections and robot operations into a closed operational loop — from detection to verified recovery.",
+        "panelLabel": "Operations view",
+        "screenshotAlt": "Cleanuva Platform operations dashboard",
+        "cta": {
+          "demo": "Request a demo",
+          "robotics": "View robotics",
+          "loop": "See operating loop"
+        },
+        "triad": {
+          "t1": {
+            "label": "Detect",
+            "line": "Software that sees it."
+          },
+          "t2": {
+            "label": "Execute",
+            "line": "Robots and teams that fix it."
+          },
+          "t3": {
+            "label": "Prove",
+            "line": "Proof that it paid."
+          }
+        }
+      },
+      "loop": {
+        "eyebrow": "The operating loop",
+        "title": "One closed loop, from signal to proof",
+        "intro": "Every issue runs the same path — and the loop closes when recovery is verified, informing the next decision.",
+        "closure": "The loop closes: Verify informs the next Detect.",
+        "steps": {
+          "detect": {
+            "name": "Detect",
+            "body": "Find abnormal production, soiling signals, alarms or inspection findings."
+          },
+          "quantify": {
+            "name": "Quantify",
+            "body": "Estimate production impact and economic loss."
+          },
+          "recommend": {
+            "name": "Recommend",
+            "body": "Suggest cleaning, inspection, repair or watch actions."
+          },
+          "approve": {
+            "name": "Approve",
+            "body": "Operators review and approve the operational decision."
+          },
+          "execute": {
+            "name": "Execute",
+            "body": "Dispatch work orders, service teams or Cleanuva robots."
+          },
+          "verify": {
+            "name": "Verify",
+            "body": "Compare before/after performance and generate proof."
+          }
+        }
+      },
+      "caps": {
+        "eyebrow": "Capabilities",
+        "title": "What the platform does",
+        "intro": "Concrete operations work — not a generic dashboard.",
+        "items": {
+          "portfolio": {
+            "title": "Portfolio monitoring",
+            "value": "Track production and health across every site in one view."
+          },
+          "alarms": {
+            "title": "Alarm analysis",
+            "value": "Group and rank alarms by production impact, not just count."
+          },
+          "analyst": {
+            "title": "Operational Analyst",
+            "value": "An AI analyst that explains losses and suggests the next action."
+          },
+          "workorders": {
+            "title": "Work order orchestration",
+            "value": "Turn a decision into assigned, tracked field work."
+          },
+          "dispatch": {
+            "title": "Robotics dispatch readiness",
+            "value": "Hand cleaning tasks to Cleanuva robots when a site is equipped."
+          },
+          "reports": {
+            "title": "Verification reports",
+            "value": "Document before/after results as shareable evidence."
+          },
+          "twin": {
+            "title": "Digital twin view",
+            "value": "See assets, strings and zones in a structured site model."
+          },
+          "economics": {
+            "title": "Economic impact tracking",
+            "value": "Translate lost production into estimated revenue terms."
+          }
+        }
+      },
+      "action": {
+        "eyebrow": "From insight to action",
+        "title": "The platform decides. Robots and teams execute.",
+        "handoffLabel": "Handoff",
+        "platform": {
+          "tag": "Decides & proves",
+          "line": "Cleanuva Platform decides and proves."
+        },
+        "robotics": {
+          "tag": "Executes cleaning",
+          "line": "Cleanuva Robotics executes cleaning work."
+        },
+        "steps": {
+          "s1": "Platform identifies the issue.",
+          "s2": "Operator reviews the recommendation.",
+          "s3": "Cleaning or service action is assigned.",
+          "s4": "Robot or team executes the work.",
+          "s5": "Result is verified and recorded."
+        },
+        "note": "Two parallel businesses, one loop — the platform directs and verifies field execution rather than replacing it.",
+        "cta": {
+          "explore": "Explore Cleanuva Robotics",
+          "compare": "Compare cleaning robots"
+        }
+      },
+      "proof": {
+        "eyebrow": "Proof & reporting",
+        "title": "Evidence that the work paid off",
+        "intro": "Cleanuva turns operations into report-ready evidence — decision support, not financial or legal guarantees.",
+        "panel": {
+          "title": "Performance recovery",
+          "tag": "Illustrative",
+          "before": "Before cleaning",
+          "after": "After cleaning",
+          "recovery": "Estimated recovery"
+        },
+        "items": {
+          "kwh": "Recovered kWh (estimated)",
+          "revenue": "Estimated revenue recovery",
+          "beforeafter": "Before / after performance comparison",
+          "trail": "Work order trail",
+          "verification": "Cleaning verification",
+          "evidence": "Report-ready operational evidence"
+        },
+        "disclaimer": "Figures are operational estimates for decision support — not audited financial or legal results."
+      },
+      "data": {
+        "eyebrow": "Data & integrations",
+        "title": "Built on the data you already produce",
+        "inTitle": "Data we work with",
+        "in": {
+          "inverter": "Inverter telemetry",
+          "alarms": "Alarms",
+          "weather": "Weather context",
+          "inspection": "Inspection findings",
+          "robotRecords": "Robot operation records",
+          "workorders": "Work orders"
+        },
+        "intTitle": "Inverter integrations",
+        "int": {
+          "solarman": "Solarman — already connected where configured.",
+          "others": "Huawei, Sungrow and SMA — supported by project integration.",
+          "note": "We connect to the systems a site already runs; coverage is confirmed per project."
+        }
+      },
+      "deploy": {
+        "eyebrow": "Deployment & trust",
+        "title": "Run it your way, keep your data yours",
+        "modes": {
+          "saas": {
+            "name": "SaaS",
+            "note": "Hosted by Cleanuva — fastest to start."
+          },
+          "private": {
+            "name": "Private deployment",
+            "note": "Runs in your own environment."
+          },
+          "hybrid": {
+            "name": "Hybrid deployment",
+            "note": "Mix hosted and private by site or function."
+          }
+        },
+        "trust": {
+          "gdpr": "EU / GDPR-oriented operation",
+          "rbac": "Role-based access",
+          "audit": "Audit trail",
+          "ownership": "Your data stays yours"
+        }
+      },
+      "audience": {
+        "eyebrow": "Who it's for",
+        "title": "Built for the people who run solar",
+        "items": {
+          "owners": {
+            "name": "PV asset owners",
+            "use": "See production risk and recovered value across the portfolio."
+          },
+          "om": {
+            "name": "O&M teams",
+            "use": "Turn alarms into prioritized, trackable field work."
+          },
+          "cleaning": {
+            "name": "Cleaning service operators",
+            "use": "Plan, dispatch and verify cleaning rounds."
+          },
+          "epc": {
+            "name": "EPC / warranty teams",
+            "use": "Document performance issues with operational evidence."
+          },
+          "partners": {
+            "name": "Robotics distributors / service partners",
+            "use": "Offer connected cleaning backed by verification."
+          }
+        }
+      },
+      "finalCta": {
+        "title": "Turn solar asset data into verified action.",
+        "cta": {
+          "demo": "Request a demo",
+          "robotics": "View robotics",
+          "contact": "Contact Cleanuva"
+        }
+      }
     }
   },
   "Robotics": {

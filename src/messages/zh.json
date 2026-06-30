@@ -513,6 +513,229 @@
           "a": "来自你监控平台的 CSV 导出文件，以及巡检报告——历史的或当前的。只要你的电站已经产生这些数据，Cleanuva 即可将其转化为洞察。"
         }
       }
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "Cleanuva AI 运维平台",
+        "title": "面向光伏资产的 AI 原生运维",
+        "subtitle": "发现发电损失、判定正确动作、执行清洁或服务作业，并验证回收的价值。",
+        "support": "Cleanuva 平台把光伏遥测、告警、巡检与机器人作业汇成一个闭环运维流程——从发现到经过验证的回收。",
+        "panelLabel": "运维视图",
+        "screenshotAlt": "Cleanuva 平台运维仪表盘",
+        "cta": {
+          "demo": "预约演示",
+          "robotics": "查看机器人",
+          "loop": "查看运维闭环"
+        },
+        "triad": {
+          "t1": {
+            "label": "发现",
+            "line": "软件负责看见。"
+          },
+          "t2": {
+            "label": "执行",
+            "line": "机器人与团队负责修复。"
+          },
+          "t3": {
+            "label": "证明",
+            "line": "证据证明它带来回报。"
+          }
+        }
+      },
+      "loop": {
+        "eyebrow": "运维闭环",
+        "title": "一个闭环，从信号到证据",
+        "intro": "每个问题都走同一条路径——当回收得到验证时闭环闭合，并为下一次决策提供依据。",
+        "closure": "闭环闭合：Verify 为下一次 Detect 提供依据。",
+        "steps": {
+          "detect": {
+            "name": "Detect",
+            "body": "发现异常发电、积灰信号、告警或巡检结果。"
+          },
+          "quantify": {
+            "name": "Quantify",
+            "body": "估算发电影响与经济损失。"
+          },
+          "recommend": {
+            "name": "Recommend",
+            "body": "建议清洁、巡检、维修或观察等动作。"
+          },
+          "approve": {
+            "name": "Approve",
+            "body": "由运维人员审核并批准运维决策。"
+          },
+          "execute": {
+            "name": "Execute",
+            "body": "派发工单、服务团队或 Cleanuva 机器人。"
+          },
+          "verify": {
+            "name": "Verify",
+            "body": "比较前后表现并生成证据。"
+          }
+        }
+      },
+      "caps": {
+        "eyebrow": "能力",
+        "title": "平台能做什么",
+        "intro": "具体的运维工作——不是泛泛的仪表盘。",
+        "items": {
+          "portfolio": {
+            "title": "组合监控",
+            "value": "在一个视图中跟踪每个站点的发电与健康状况。"
+          },
+          "alarms": {
+            "title": "告警分析",
+            "value": "按发电影响而非仅按数量对告警分组与排序。"
+          },
+          "analyst": {
+            "title": "运维分析师",
+            "value": "一个解释损失并建议下一步动作的 AI 分析师。"
+          },
+          "workorders": {
+            "title": "工单编排",
+            "value": "把决策转化为已指派、可跟踪的现场作业。"
+          },
+          "dispatch": {
+            "title": "机器人派发就绪",
+            "value": "在站点具备条件时，把清洁任务交给 Cleanuva 机器人。"
+          },
+          "reports": {
+            "title": "验证报告",
+            "value": "把前后结果记录为可分享的证据。"
+          },
+          "twin": {
+            "title": "数字孪生视图",
+            "value": "在结构化站点模型中查看资产、组串与区域。"
+          },
+          "economics": {
+            "title": "经济影响跟踪",
+            "value": "把发电损失换算为估算的收入口径。"
+          }
+        }
+      },
+      "action": {
+        "eyebrow": "从洞察到行动",
+        "title": "平台决策，机器人与团队执行。",
+        "handoffLabel": "交接",
+        "platform": {
+          "tag": "决策与证明",
+          "line": "Cleanuva 平台负责决策与证明。"
+        },
+        "robotics": {
+          "tag": "执行清洁",
+          "line": "Cleanuva 机器人负责执行清洁作业。"
+        },
+        "steps": {
+          "s1": "平台识别问题。",
+          "s2": "运维人员审核建议。",
+          "s3": "指派清洁或服务动作。",
+          "s4": "机器人或团队执行作业。",
+          "s5": "结果经过验证并记录。"
+        },
+        "note": "两条并列的业务，一个闭环——平台是引导并验证现场执行，而不是取而代之。",
+        "cta": {
+          "explore": "了解 Cleanuva 机器人",
+          "compare": "对比清洁机器人"
+        }
+      },
+      "proof": {
+        "eyebrow": "证据与报告",
+        "title": "证明作业确有回报",
+        "intro": "Cleanuva 把运维转化为可出报告的证据——决策支持，而非财务或法律保证。",
+        "panel": {
+          "title": "性能回收",
+          "tag": "示意",
+          "before": "清洁前",
+          "after": "清洁后",
+          "recovery": "估算回收"
+        },
+        "items": {
+          "kwh": "回收 kWh（估算）",
+          "revenue": "估算收入回收",
+          "beforeafter": "前后性能对比",
+          "trail": "工单记录",
+          "verification": "清洁验证",
+          "evidence": "可出报告的运维证据"
+        },
+        "disclaimer": "数字为用于决策支持的运维估算——并非经审计的财务或法律结果。"
+      },
+      "data": {
+        "eyebrow": "数据与集成",
+        "title": "建立在你已有的数据之上",
+        "inTitle": "我们使用的数据",
+        "in": {
+          "inverter": "逆变器遥测",
+          "alarms": "告警",
+          "weather": "气象背景",
+          "inspection": "巡检结果",
+          "robotRecords": "机器人作业记录",
+          "workorders": "工单"
+        },
+        "intTitle": "逆变器集成",
+        "int": {
+          "solarman": "Solarman——在已配置处已接入。",
+          "others": "华为、阳光电源与 SMA——可通过项目集成支持。",
+          "note": "我们接入站点已在运行的系统；覆盖范围按项目确认。"
+        }
+      },
+      "deploy": {
+        "eyebrow": "部署与信任",
+        "title": "按你的方式运行，数据归你所有",
+        "modes": {
+          "saas": {
+            "name": "SaaS",
+            "note": "由 Cleanuva 托管——上手最快。"
+          },
+          "private": {
+            "name": "私有部署",
+            "note": "在你自己的环境中运行。"
+          },
+          "hybrid": {
+            "name": "混合部署",
+            "note": "按站点或职能混合托管与私有。"
+          }
+        },
+        "trust": {
+          "gdpr": "面向 EU / GDPR 的运营",
+          "rbac": "基于角色的访问",
+          "audit": "审计记录",
+          "ownership": "数据归你所有"
+        }
+      },
+      "audience": {
+        "eyebrow": "适用对象",
+        "title": "为运营光伏的人而建",
+        "items": {
+          "owners": {
+            "name": "光伏资产业主",
+            "use": "在组合层面查看发电风险与回收价值。"
+          },
+          "om": {
+            "name": "运维团队",
+            "use": "把告警转化为可优先、可跟踪的现场作业。"
+          },
+          "cleaning": {
+            "name": "清洁服务商",
+            "use": "规划、派发并验证清洁轮次。"
+          },
+          "epc": {
+            "name": "EPC / 质保团队",
+            "use": "用运维证据记录性能问题。"
+          },
+          "partners": {
+            "name": "机器人经销商 / 服务伙伴",
+            "use": "提供带验证的互联清洁服务。"
+          }
+        }
+      },
+      "finalCta": {
+        "title": "把光伏资产数据转化为经过验证的行动。",
+        "cta": {
+          "demo": "预约演示",
+          "robotics": "查看机器人",
+          "contact": "联系 Cleanuva"
+        }
+      }
     }
   },
   "Robotics": {

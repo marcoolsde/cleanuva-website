@@ -513,6 +513,229 @@
           "a": "CSV-Exporte aus Ihren Monitoring-Plattformen sowie Inspektionsberichte — historisch oder aktuell. Was Ihre Anlagen bereits erzeugen, ist Cleanuva darauf ausgelegt, in Erkenntnisse zu verwandeln."
         }
       }
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "Cleanuva AI-O&M-Plattform",
+        "title": "KI-native Operations für Solaranlagen",
+        "subtitle": "Produktionsverluste erkennen, die richtige Maßnahme entscheiden, Reinigung oder Service ausführen und den zurückgewonnenen Wert nachweisen.",
+        "support": "Cleanuva Platform verwandelt PV-Telemetrie, Alarme, Inspektionen und Roboterbetrieb in einen geschlossenen Betriebskreislauf — von der Erkennung bis zur verifizierten Wiederherstellung.",
+        "panelLabel": "Betriebsansicht",
+        "screenshotAlt": "Cleanuva Platform Betriebs-Dashboard",
+        "cta": {
+          "demo": "Demo anfragen",
+          "robotics": "Robotik ansehen",
+          "loop": "Betriebskreislauf ansehen"
+        },
+        "triad": {
+          "t1": {
+            "label": "Erkennen",
+            "line": "Software, die es sieht."
+          },
+          "t2": {
+            "label": "Ausführen",
+            "line": "Roboter und Teams, die es beheben."
+          },
+          "t3": {
+            "label": "Nachweisen",
+            "line": "Nachweis, dass es sich gelohnt hat."
+          }
+        }
+      },
+      "loop": {
+        "eyebrow": "Der Betriebskreislauf",
+        "title": "Ein geschlossener Kreislauf, vom Signal zum Nachweis",
+        "intro": "Jedes Problem läuft denselben Weg — und der Kreislauf schließt sich, wenn die Wiederherstellung verifiziert ist, und informiert die nächste Entscheidung.",
+        "closure": "Der Kreislauf schließt sich: Verify informiert das nächste Detect.",
+        "steps": {
+          "detect": {
+            "name": "Detect",
+            "body": "Auffällige Produktion, Verschmutzungssignale, Alarme oder Inspektionsbefunde finden."
+          },
+          "quantify": {
+            "name": "Quantify",
+            "body": "Produktionswirkung und wirtschaftlichen Verlust abschätzen."
+          },
+          "recommend": {
+            "name": "Recommend",
+            "body": "Reinigung, Inspektion, Reparatur oder Beobachtung vorschlagen."
+          },
+          "approve": {
+            "name": "Approve",
+            "body": "Betreiber prüfen und genehmigen die Betriebsentscheidung."
+          },
+          "execute": {
+            "name": "Execute",
+            "body": "Arbeitsaufträge, Serviceteams oder Cleanuva-Roboter disponieren."
+          },
+          "verify": {
+            "name": "Verify",
+            "body": "Leistung vorher/nachher vergleichen und Nachweis erzeugen."
+          }
+        }
+      },
+      "caps": {
+        "eyebrow": "Funktionen",
+        "title": "Was die Plattform leistet",
+        "intro": "Konkrete Betriebsarbeit — kein generisches Dashboard.",
+        "items": {
+          "portfolio": {
+            "title": "Portfolio-Monitoring",
+            "value": "Produktion und Zustand aller Standorte in einer Ansicht verfolgen."
+          },
+          "alarms": {
+            "title": "Alarmanalyse",
+            "value": "Alarme nach Produktionswirkung gruppieren und priorisieren, nicht nur zählen."
+          },
+          "analyst": {
+            "title": "Operational Analyst",
+            "value": "Ein KI-Analyst, der Verluste erklärt und die nächste Maßnahme vorschlägt."
+          },
+          "workorders": {
+            "title": "Arbeitsauftrags-Orchestrierung",
+            "value": "Eine Entscheidung in zugewiesene, nachverfolgte Feldarbeit umsetzen."
+          },
+          "dispatch": {
+            "title": "Robotik-Dispatch-Bereitschaft",
+            "value": "Reinigungsaufgaben an Cleanuva-Roboter übergeben, wenn ein Standort ausgestattet ist."
+          },
+          "reports": {
+            "title": "Verifizierungsberichte",
+            "value": "Vorher/Nachher-Ergebnisse als teilbaren Nachweis dokumentieren."
+          },
+          "twin": {
+            "title": "Digital-Twin-Ansicht",
+            "value": "Anlagen, Strings und Zonen in einem strukturierten Standortmodell sehen."
+          },
+          "economics": {
+            "title": "Wirtschaftliche Wirkungsverfolgung",
+            "value": "Produktionsverlust in geschätzte Umsatzgrößen übersetzen."
+          }
+        }
+      },
+      "action": {
+        "eyebrow": "Von der Erkenntnis zur Maßnahme",
+        "title": "Die Plattform entscheidet. Roboter und Teams führen aus.",
+        "handoffLabel": "Übergabe",
+        "platform": {
+          "tag": "Entscheidet & weist nach",
+          "line": "Cleanuva Platform entscheidet und weist nach."
+        },
+        "robotics": {
+          "tag": "Führt Reinigung aus",
+          "line": "Cleanuva Robotics führt die Reinigungsarbeit aus."
+        },
+        "steps": {
+          "s1": "Die Plattform erkennt das Problem.",
+          "s2": "Der Betreiber prüft die Empfehlung.",
+          "s3": "Reinigung oder Service wird zugewiesen.",
+          "s4": "Roboter oder Team führt die Arbeit aus.",
+          "s5": "Das Ergebnis wird verifiziert und erfasst."
+        },
+        "note": "Zwei parallele Geschäftsbereiche, ein Kreislauf — die Plattform steuert und verifiziert die Feldausführung, statt sie zu ersetzen.",
+        "cta": {
+          "explore": "Cleanuva Robotics entdecken",
+          "compare": "Reinigungsroboter vergleichen"
+        }
+      },
+      "proof": {
+        "eyebrow": "Nachweis & Reporting",
+        "title": "Belege, dass sich die Arbeit gelohnt hat",
+        "intro": "Cleanuva macht aus Betrieb berichtsfertige Belege — Entscheidungsunterstützung, keine finanziellen oder rechtlichen Garantien.",
+        "panel": {
+          "title": "Leistungswiederherstellung",
+          "tag": "Beispielhaft",
+          "before": "Vor der Reinigung",
+          "after": "Nach der Reinigung",
+          "recovery": "Geschätzte Wiederherstellung"
+        },
+        "items": {
+          "kwh": "Zurückgewonnene kWh (geschätzt)",
+          "revenue": "Geschätzte Umsatzwiederherstellung",
+          "beforeafter": "Leistungsvergleich vorher / nachher",
+          "trail": "Arbeitsauftrags-Verlauf",
+          "verification": "Reinigungsverifizierung",
+          "evidence": "Berichtsfertige Betriebsbelege"
+        },
+        "disclaimer": "Die Zahlen sind betriebliche Schätzungen zur Entscheidungsunterstützung — keine geprüften finanziellen oder rechtlichen Ergebnisse."
+      },
+      "data": {
+        "eyebrow": "Daten & Integrationen",
+        "title": "Auf den Daten aufgebaut, die Sie ohnehin erzeugen",
+        "inTitle": "Daten, mit denen wir arbeiten",
+        "in": {
+          "inverter": "Wechselrichter-Telemetrie",
+          "alarms": "Alarme",
+          "weather": "Wetterkontext",
+          "inspection": "Inspektionsbefunde",
+          "robotRecords": "Roboter-Betriebsdaten",
+          "workorders": "Arbeitsaufträge"
+        },
+        "intTitle": "Wechselrichter-Integrationen",
+        "int": {
+          "solarman": "Solarman — bereits angebunden, wo konfiguriert.",
+          "others": "Huawei, Sungrow und SMA — durch Projektintegration unterstützt.",
+          "note": "Wir binden die Systeme an, die ein Standort bereits nutzt; die Abdeckung wird pro Projekt bestätigt."
+        }
+      },
+      "deploy": {
+        "eyebrow": "Bereitstellung & Vertrauen",
+        "title": "Betreiben Sie es nach Ihren Vorgaben, Ihre Daten bleiben Ihre",
+        "modes": {
+          "saas": {
+            "name": "SaaS",
+            "note": "Von Cleanuva gehostet — am schnellsten startklar."
+          },
+          "private": {
+            "name": "Private Bereitstellung",
+            "note": "Läuft in Ihrer eigenen Umgebung."
+          },
+          "hybrid": {
+            "name": "Hybride Bereitstellung",
+            "note": "Gehostet und privat nach Standort oder Funktion kombinieren."
+          }
+        },
+        "trust": {
+          "gdpr": "EU- / DSGVO-orientierter Betrieb",
+          "rbac": "Rollenbasierter Zugriff",
+          "audit": "Audit-Trail",
+          "ownership": "Ihre Daten bleiben Ihre"
+        }
+      },
+      "audience": {
+        "eyebrow": "Für wen",
+        "title": "Gebaut für die Menschen, die Solar betreiben",
+        "items": {
+          "owners": {
+            "name": "PV-Anlagenbesitzer",
+            "use": "Produktionsrisiko und zurückgewonnenen Wert über das Portfolio sehen."
+          },
+          "om": {
+            "name": "O&M-Teams",
+            "use": "Alarme in priorisierte, nachverfolgbare Feldarbeit umsetzen."
+          },
+          "cleaning": {
+            "name": "Reinigungsdienstleister",
+            "use": "Reinigungsrunden planen, disponieren und verifizieren."
+          },
+          "epc": {
+            "name": "EPC- / Garantieteams",
+            "use": "Leistungsprobleme mit Betriebsbelegen dokumentieren."
+          },
+          "partners": {
+            "name": "Robotik-Distributoren / Servicepartner",
+            "use": "Vernetzte Reinigung mit Verifizierung anbieten."
+          }
+        }
+      },
+      "finalCta": {
+        "title": "Verwandeln Sie Solardaten in verifizierte Maßnahmen.",
+        "cta": {
+          "demo": "Demo anfragen",
+          "robotics": "Robotik ansehen",
+          "contact": "Cleanuva kontaktieren"
+        }
+      }
     }
   },
   "Robotics": {
