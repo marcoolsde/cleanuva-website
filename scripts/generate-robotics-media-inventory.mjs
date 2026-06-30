@@ -48,6 +48,13 @@ const USAGE = {
     { slot: "Demo media section — image (current)", path: "/images/robotics/overview-hero.jpg", ref: "content/compare.ts → NUVASPAN_DEMO_MEDIA (ProductDemoMedia)", kind: "temp", note: "Real still shown now; large media block in the first half of the page." },
     { slot: "Demo media section — future video slot", path: "/videos/robotics/nuvaspan-demo.mp4", ref: "content/compare.ts → NUVASPAN_DEMO_MEDIA.futureVideo", kind: "future", note: "Drop a clip here, then set NUVASPAN_DEMO_MEDIA.type='video' + src=this path — no page edit." },
   ],
+  overview: [
+    { slot: "Hero (full-bleed)", path: "/images/robotics/overview-hero.jpg", ref: "app/[locale]/robotics/page.tsx", kind: "real", note: "Utility-scale site shot for the index hero." },
+    { slot: "Product card — NuvaTrack-R", path: "/images/robotics/r-series-hero.jpg", ref: "content/compare.ts → OVERVIEW_MODELS", kind: "real", note: "R-Series photo." },
+    { slot: "Product card — NuvaTrack-R Pro", path: "/images/robotics/r-series-hero.jpg", ref: "content/compare.ts → OVERVIEW_MODELS", kind: "temp", note: "Reuses R photo — replace with a real R Pro shot." },
+    { slot: "Product card — NuvaTrack-U", path: "/images/robotics/u-series-hero.jpg", ref: "content/compare.ts → OVERVIEW_MODELS", kind: "real", note: "U-Series photo." },
+    { slot: "Product card — NuvaSpan", path: "/images/robotics/overview-hero.jpg", ref: "content/compare.ts → OVERVIEW_MODELS", kind: "temp", note: "Overview stand-in — replace with a real NuvaSpan shot (suspended/bridge)." },
+  ],
   compare: [
     { slot: "NuvaTrack-R card", path: "/images/robotics/r-series-hero.jpg", ref: "content/compare.ts → COMPARE_MODELS", kind: "real", note: "R-Series photo." },
     { slot: "NuvaTrack-R Pro card", path: "/images/robotics/r-series-hero.jpg", ref: "content/compare.ts → COMPARE_MODELS", kind: "temp", note: "Reuses R photo — replace with a real R Pro shot." },
@@ -85,6 +92,9 @@ ${imgs.length ? imgs.map((f) => `- \`${f}\``).join("\n") : "- (none)"}
 
 ## Files on disk — \`${VID_DIR}/\`
 ${vids.length ? vids.map((f) => `- \`${f}\``).join("\n") : "- (none)"}
+
+## Robotics overview (\`/robotics\`)
+${table(USAGE.overview)}
 
 ## R-Series page (\`/robotics/r-series\`)
 ${table(USAGE.rSeries)}

@@ -28,6 +28,27 @@ export const COMPARE_MODELS: CompareModel[] = [
   { id: "nuvaspan", name: "NuvaSpan", image: "/images/robotics/overview-hero.jpg", viewHref: "/robotics/nuvaspan", pricingHref: "/get-pricing?model=nuvaspan" },
 ];
 
+/**
+ * Robotics overview (index) page model entries. Same four models as the compare
+ * matrix, but the catalog/ladder lenses link straight into each product page
+ * (R + R Pro share the R-Series route via anchors). Real images only.
+ * `i18nKey` aligns each entry with its copy under Robotics.overview.*.
+ */
+export interface OverviewModel {
+  id: CompareModelId;
+  i18nKey: "r" | "rpro" | "u" | "span";
+  name: string;
+  image: string;
+  viewHref: string;
+  pricingHref: string;
+}
+export const OVERVIEW_MODELS: OverviewModel[] = [
+  { id: "nuvatrack-r", i18nKey: "r", name: "NuvaTrack-R", image: "/images/robotics/r-series-hero.jpg", viewHref: "/robotics/r-series#nuvatrack-r", pricingHref: "/get-pricing?model=nuvatrack-r" },
+  { id: "nuvatrack-r-pro", i18nKey: "rpro", name: "NuvaTrack-R Pro", image: "/images/robotics/r-series-hero.jpg", viewHref: "/robotics/r-series#nuvatrack-r-pro", pricingHref: "/get-pricing?model=nuvatrack-r-pro" },
+  { id: "nuvatrack-u", i18nKey: "u", name: "NuvaTrack-U", image: "/images/robotics/u-series-hero.jpg", viewHref: "/robotics/u-series", pricingHref: "/get-pricing?model=nuvatrack-u" },
+  { id: "nuvaspan", i18nKey: "span", name: "NuvaSpan", image: "/images/robotics/overview-hero.jpg", viewHref: "/robotics/nuvaspan", pricingHref: "/get-pricing?model=nuvaspan" },
+];
+
 /** Key decision metrics (text values resolve from comparePage.metrics.<id>.<field>). */
 export const METRIC_FIELDS = ["automation", "operator", "cleaning", "bestFit", "deployment"] as const;
 

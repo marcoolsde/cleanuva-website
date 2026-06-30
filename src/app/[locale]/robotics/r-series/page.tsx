@@ -122,7 +122,7 @@ export default async function RSeriesPage({
           </div>
           <div className="mt-10 grid items-start gap-6 lg:grid-cols-2">
             {/* NuvaTrack-R */}
-            <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-canvas">
+            <div id="nuvatrack-r" className="flex h-full scroll-mt-[120px] flex-col overflow-hidden rounded-2xl border border-line bg-canvas">
               <MediaFrame src={family.image} alt="NuvaTrack-R" sizes="(max-width:1024px) 100vw, 560px" className="aspect-[16/9]" />
               <div className="flex flex-1 flex-col p-7">
                 <span className="text-eyebrow text-ink-3">{t("choose.r.badge")}</span>
@@ -145,7 +145,7 @@ export default async function RSeriesPage({
             </div>
 
             {/* NuvaTrack-R Pro — elevated */}
-            <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-cool/60 bg-canvas shadow-lift ring-1 ring-cool/30 lg:-mt-3">
+            <div id="nuvatrack-r-pro" className="flex h-full scroll-mt-[120px] flex-col overflow-hidden rounded-2xl border border-cool/60 bg-canvas shadow-lift ring-1 ring-cool/30 lg:-mt-3">
               <div aria-hidden className="h-1 w-full bg-[image:var(--current)]" />
               <MediaFrame src={family.image} alt="NuvaTrack-R Pro" sizes="(max-width:1024px) 100vw, 560px" className="aspect-[16/9]" />
               <div className="flex flex-1 flex-col p-7">

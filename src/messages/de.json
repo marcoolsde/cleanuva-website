@@ -1370,6 +1370,117 @@
         "subtitle": "Ein festes Reinigungskonzept für projektierte PV-Strukturen.",
         "note": "Projektmedien können ergänzt werden, sobald Aufnahmen vom Standort vorliegen."
       }
+    },
+    "overview": {
+      "hero": {
+        "eyebrow": "Roboter-Produktlinie",
+        "subtitle": "Solar-Reinigungsroboter für portable, assistierte, unbeaufsichtigte und feste PV-Anwendungen.",
+        "support": "Von ferngesteuerter Einzeloperator-Reinigung über standortkonfigurierte Automatisierung bis zu Hängesystemen hilft Cleanuva Robotics PV-Teams, für jeden Standort den passenden Reinigungsansatz zu wählen.",
+        "modes": {
+          "r": "Portabel",
+          "rpro": "Assistiert",
+          "u": "Unbeaufsichtigt",
+          "span": "Fest"
+        }
+      },
+      "cards": {
+        "eyebrow": "Die Produktlinie",
+        "title": "Vier Roboter, ein Reinigungssystem",
+        "r": {
+          "tagline": "Ferngesteuertes Basismodell für flexible Reinigungsteams.",
+          "fit": "Ideal für Teams, die zwischen Standorten und Reihen wechseln."
+        },
+        "rpro": {
+          "tagline": "AI-Assist-Modell mit Spurhaltung, konstanter Fahrgeschwindigkeit und kameraunterstütztem Betrieb.",
+          "fit": "Ideal für lange, gerade Reihen, bei denen Konstanz zählt."
+        },
+        "u": {
+          "tagline": "Unbeaufsichtigte, standortkonfigurierte Reinigung für wiederkehrende PV-Abläufe.",
+          "fit": "Ideal für feste Standorte, die nach Zeitplan reinigen."
+        },
+        "span": {
+          "tagline": "Hänge-/Brückensystem zur Reinigung fester PV-Strukturen.",
+          "fit": "Ideal für Strukturen, die ein Bodenroboter nicht befahren kann."
+        }
+      },
+      "choose": {
+        "eyebrow": "Beginnen Sie bei Ihrer Arbeitsweise",
+        "title": "Nach Betriebsmodell wählen",
+        "r": {
+          "need": "Ich brauche einen portablen, ferngesteuerten Roboter"
+        },
+        "rpro": {
+          "need": "Ich brauche assistierten Geradeauslauf"
+        },
+        "u": {
+          "need": "Ich brauche unbeaufsichtigte, wiederkehrende Reinigung"
+        },
+        "span": {
+          "need": "Ich brauche ein festes Reinigungssystem"
+        }
+      },
+      "ladder": {
+        "eyebrow": "Wie die Linie skaliert",
+        "title": "Eine Automatisierungsleiter, kein Katalog",
+        "intro": "Jedes Modell ergänzt die Automatisierung des vorherigen — wählen Sie die Stufe, die dazu passt, wie selbstständig der Standort laufen soll.",
+        "r": {
+          "level": "Manuelle Fernsteuerung",
+          "role": "Ein Operator steuert jeden Durchgang."
+        },
+        "rpro": {
+          "level": "AI-Assist",
+          "role": "Der Operator lenkt; der Roboter hält Spur und Geschwindigkeit."
+        },
+        "u": {
+          "level": "Unbeaufsichtigt",
+          "role": "Läuft einen konfigurierten Zeitplan selbstständig."
+        },
+        "span": {
+          "level": "Festes System",
+          "role": "In die Struktur integriert und reinigt vor Ort."
+        }
+      },
+      "platform": {
+        "eyebrow": "Roboter + Plattform",
+        "title": "Die Plattform entscheidet, die Roboter reinigen",
+        "s1": {
+          "label": "Erkennen",
+          "body": "Die Plattform erkennt und priorisiert den Reinigungsbedarf."
+        },
+        "s2": {
+          "label": "Ausführen",
+          "body": "Roboter führen die Reinigung vor Ort aus."
+        },
+        "s3": {
+          "label": "Verifizieren",
+          "body": "Berichte und Verifizierung schließen den Kreis."
+        }
+      },
+      "accessories": {
+        "eyebrow": "Im Betrieb halten",
+        "title": "Zubehör und Service",
+        "intro": "Bürsten, Verbrauchsmaterial und Steuerzubehör, damit jeder Roboter einsatzbereit bleibt.",
+        "a1": "Bürsten",
+        "a2": "Verbrauchsmaterial",
+        "a3": "Fernsteuerung-, Kamera- und Steuerzubehör",
+        "a4": "Ersatzteile",
+        "a5": "Support"
+      },
+      "finalCta": {
+        "title": "Finden Sie den richtigen Reinigungsroboter für Ihren PV-Standort."
+      },
+      "cta": {
+        "compareModels": "Modelle vergleichen",
+        "getPricing": "Preis anfragen",
+        "viewAccessories": "Zubehör ansehen",
+        "viewProduct": "Produkt ansehen",
+        "viewModel": "Modell ansehen",
+        "compareAll": "Alle Modelle vergleichen",
+        "explorePlatform": "AI-O&M-Plattform entdecken",
+        "requestDemo": "Demo anfragen",
+        "askService": "Nach Ersatzteilen fragen",
+        "talk": "Mit Cleanuva sprechen"
+      }
     }
   },
   "Fragmentation": {

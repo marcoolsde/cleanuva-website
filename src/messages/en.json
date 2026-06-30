@@ -1370,6 +1370,117 @@
         "subtitle": "A fixed cleaning concept for project-engineered PV structures.",
         "note": "Project media can be added as site footage becomes available."
       }
+    },
+    "overview": {
+      "hero": {
+        "eyebrow": "Robotics product line",
+        "subtitle": "Solar cleaning robots for portable, assisted, unattended and fixed PV operations.",
+        "support": "From single-operator remote cleaning to site-configured automation and suspended systems, Cleanuva Robotics helps PV teams choose the right cleaning approach for each site.",
+        "modes": {
+          "r": "Portable",
+          "rpro": "Assisted",
+          "u": "Unattended",
+          "span": "Fixed"
+        }
+      },
+      "cards": {
+        "eyebrow": "The product line",
+        "title": "Four robots, one cleaning system",
+        "r": {
+          "tagline": "Remote-controlled base model for flexible cleaning teams.",
+          "fit": "Best for crews that move between sites and rows."
+        },
+        "rpro": {
+          "tagline": "AI-Assist model with heading hold, constant-speed cruise and camera-assisted operation.",
+          "fit": "Best for long, straight rows where consistency matters."
+        },
+        "u": {
+          "tagline": "Unattended, site-configured cleaning for repeatable PV operations.",
+          "fit": "Best for fixed sites that clean on a schedule."
+        },
+        "span": {
+          "tagline": "Suspended / bridge-type cleaning system for fixed PV structures.",
+          "fit": "Best for structures a ground robot can't traverse."
+        }
+      },
+      "choose": {
+        "eyebrow": "Start from how you work",
+        "title": "Choose by operation model",
+        "r": {
+          "need": "I need a portable, remote-controlled robot"
+        },
+        "rpro": {
+          "need": "I need assisted, straight-line operation"
+        },
+        "u": {
+          "need": "I need unattended, repeatable cleaning"
+        },
+        "span": {
+          "need": "I need a fixed cleaning system"
+        }
+      },
+      "ladder": {
+        "eyebrow": "How the line scales",
+        "title": "An automation ladder, not a catalog",
+        "intro": "Each model adds automation over the last — pick the rung that matches how much you want the site to run on its own.",
+        "r": {
+          "level": "Manual remote",
+          "role": "An operator drives every pass."
+        },
+        "rpro": {
+          "level": "AI-Assist",
+          "role": "The operator steers; the robot holds line and speed."
+        },
+        "u": {
+          "level": "Unattended",
+          "role": "Runs a configured schedule on its own."
+        },
+        "span": {
+          "level": "Fixed system",
+          "role": "Built into the structure and cleans in place."
+        }
+      },
+      "platform": {
+        "eyebrow": "Robots + platform",
+        "title": "The platform decides, the robots clean",
+        "s1": {
+          "label": "Detect",
+          "body": "The platform detects and prioritizes cleaning needs."
+        },
+        "s2": {
+          "label": "Execute",
+          "body": "Robots carry out the cleaning on the ground."
+        },
+        "s3": {
+          "label": "Verify",
+          "body": "Reports and verification close the loop."
+        }
+      },
+      "accessories": {
+        "eyebrow": "Keep them running",
+        "title": "Accessories and service",
+        "intro": "Brushes, consumables and control accessories to keep every robot in service.",
+        "a1": "Brushes",
+        "a2": "Consumables",
+        "a3": "Remote, camera and control accessories",
+        "a4": "Service parts",
+        "a5": "Support"
+      },
+      "finalCta": {
+        "title": "Find the right cleaning robot for your PV site."
+      },
+      "cta": {
+        "compareModels": "Compare models",
+        "getPricing": "Get pricing",
+        "viewAccessories": "View accessories",
+        "viewProduct": "View product",
+        "viewModel": "View model",
+        "compareAll": "Compare all models",
+        "explorePlatform": "Explore AI O&M Platform",
+        "requestDemo": "Request a demo",
+        "askService": "Ask about service parts",
+        "talk": "Talk to Cleanuva"
+      }
     }
   },
   "Fragmentation": {

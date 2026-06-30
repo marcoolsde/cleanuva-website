@@ -26,6 +26,15 @@ Drop a real file at the same path (same name) to replace any asset — no code c
 - `nuvatrack-r-demo.mp4`
 - `nuvatrack-u-demo.mp4`
 
+## Robotics overview (`/robotics`)
+| Slot | File | Exists | Type | Referenced in | Replace with |
+|---|---|---|---|---|---|
+| Hero (full-bleed) | `/images/robotics/overview-hero.jpg` | ✓ | real | `app/[locale]/robotics/page.tsx` | Utility-scale site shot for the index hero. |
+| Product card — NuvaTrack-R | `/images/robotics/r-series-hero.jpg` | ✓ | real | `content/compare.ts → OVERVIEW_MODELS` | R-Series photo. |
+| Product card — NuvaTrack-R Pro | `/images/robotics/r-series-hero.jpg` | ✓ | ⚠️ temp/reused | `content/compare.ts → OVERVIEW_MODELS` | Reuses R photo — replace with a real R Pro shot. |
+| Product card — NuvaTrack-U | `/images/robotics/u-series-hero.jpg` | ✓ | real | `content/compare.ts → OVERVIEW_MODELS` | U-Series photo. |
+| Product card — NuvaSpan | `/images/robotics/overview-hero.jpg` | ✓ | ⚠️ temp/reused | `content/compare.ts → OVERVIEW_MODELS` | Overview stand-in — replace with a real NuvaSpan shot (suspended/bridge). |
+
 ## R-Series page (`/robotics/r-series`)
 | Slot | File | Exists | Type | Referenced in | Replace with |
 |---|---|---|---|---|---|
