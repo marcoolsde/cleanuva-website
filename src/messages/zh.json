@@ -1120,6 +1120,256 @@
         "body": "发给我们场地类型、组件排布与清洁目标。我们会推荐合适的 Cleanuva 配置。",
         "consultation": "预约咨询"
       }
+    },
+    "uSeriesPage": {
+      "hero": {
+        "eyebrow": "Cleanuva Robotics",
+        "subtitle": "面向可重复光伏作业的无人值守组件清洁。",
+        "support": "面向需要按计划、可重复清洁且减少人工例行干预的运营方的站点配置型清洁机器人。",
+        "stats": {
+          "s1": {
+            "value": "无人值守",
+            "label": "运行"
+          },
+          "s2": {
+            "value": "站点配置",
+            "label": "部署"
+          },
+          "s3": {
+            "value": "按计划",
+            "label": "清洁"
+          },
+          "s4": {
+            "value": "大型地面",
+            "label": "最适合"
+          }
+        }
+      },
+      "subnav": {
+        "overview": "概览",
+        "useCases": "适用场景",
+        "requirements": "要求",
+        "compare": "对比",
+        "pricing": "获取报价"
+      },
+      "useCases": {
+        "eyebrow": "何时选择",
+        "title": "何时选择 NuvaTrack-U",
+        "b1": "你运营可重复的光伏场地",
+        "b2": "清洁路线可规划",
+        "b3": "人工通达受限或成本高",
+        "b4": "你需要按计划的清洁例程",
+        "b5": "你需要按项目配置的方案"
+      },
+      "how": {
+        "eyebrow": "运行",
+        "title": "无人值守如何运行",
+        "s1": "场地评估",
+        "s2": "路线配置",
+        "s3": "按计划运行",
+        "s4": "清洁作业",
+        "s5": "巡检/服务例程"
+      },
+      "deploy": {
+        "eyebrow": "部署",
+        "title": "部署要求",
+        "note": "NuvaTrack-U 不只是遥控机器人——无人值守运行需按场地配置。",
+        "d1": "组件排布",
+        "d2": "排间通达",
+        "d3": "对接/充电方案（如适用）",
+        "d4": "场地安全",
+        "d5": "运行例程",
+        "d6": "维护通达"
+      },
+      "tech": {
+        "eyebrow": "技术数据",
+        "title": "规格",
+        "selTitle": "运行与部署",
+        "specsTitle": "完整规格",
+        "note": "部分能力按场地配置并由项目确认。所列数值在可得时取自数据表。",
+        "sel": {
+          "automation": {
+            "label": "自动化水平",
+            "value": "无人值守（站点配置）"
+          },
+          "operationMode": {
+            "label": "运行模式",
+            "value": "按计划 / 可重复"
+          },
+          "cleaningMode": {
+            "label": "清洁方式",
+            "value": "干洗、全自动"
+          },
+          "operator": {
+            "label": "操作者要求",
+            "value": "减少例行干预"
+          },
+          "deployment": {
+            "label": "部署类型",
+            "value": "站点配置"
+          },
+          "recommended": {
+            "label": "推荐用途",
+            "value": "大型地面 / 定期清洁的光伏场地"
+          },
+          "siteConfig": {
+            "label": "场地配置",
+            "value": "取决于配置"
+          },
+          "service": {
+            "label": "配件 / 服务",
+            "value": "按需提供"
+          }
+        }
+      },
+      "inOp": {
+        "eyebrow": "现场作业",
+        "title": "NuvaTrack-U 现场作业",
+        "subtitle": "现场画面与清洁作业媒体。",
+        "media": {
+          "vid": "NuvaTrack-U 清洁演示",
+          "hero": "光伏阵列上的 NuvaTrack-U",
+          "op1": "NuvaTrack-U 现场作业"
+        }
+      },
+      "finalCta": {
+        "title": "为你的场地规划无人值守清洁方案。"
+      },
+      "cta": {
+        "compare": "对比型号",
+        "talk": "联系 Cleanuva",
+        "consultation": "预约咨询"
+      },
+      "demo": {
+        "title": "NuvaTrack-U 实际作业",
+        "subtitle": "为可重复的光伏站点作业提供计划内的无人值守清洁。"
+      }
+    },
+    "nuvaspanPage": {
+      "hero": {
+        "eyebrow": "Cleanuva Robotics",
+        "subtitle": "面向固定光伏安装的悬挂式清洁系统。",
+        "support": "面向固定结构比移动机器人更合适的场地的、按项目工程化的桥架式清洁方案。",
+        "stats": {
+          "s1": {
+            "value": "悬挂",
+            "label": "系统类型"
+          },
+          "s2": {
+            "value": "固定安装",
+            "label": "部署"
+          },
+          "s3": {
+            "value": "项目工程化",
+            "label": "搭建"
+          },
+          "s4": {
+            "value": "低干预",
+            "label": "运行"
+          }
+        }
+      },
+      "subnav": {
+        "overview": "概览",
+        "system": "系统",
+        "requirements": "要求",
+        "compare": "对比",
+        "pricing": "获取报价"
+      },
+      "useCases": {
+        "eyebrow": "何时选择",
+        "title": "何时选择 NuvaSpan",
+        "b1": "固定光伏结构",
+        "b2": "沿固定跨度的重复清洁",
+        "b3": "移动机器人不太适合的场地",
+        "b4": "基于项目的安装",
+        "b5": "特定安装或结构条件"
+      },
+      "system": {
+        "eyebrow": "系统概念",
+        "title": "固定结构清洁系统",
+        "s1": "固定或半固定清洁路径",
+        "s2": "跨度/桥架式运动",
+        "s3": "针对场地的工程设计",
+        "s4": "清洁模块",
+        "s5": "服务通达"
+      },
+      "project": {
+        "eyebrow": "项目要求",
+        "title": "我们需要你提供",
+        "note": "NuvaSpan 按场地工程化。为评估系统，请提供：",
+        "p1": "场地布局",
+        "p2": "组件尺寸",
+        "p3": "安装结构",
+        "p4": "排长",
+        "p5": "通达限制",
+        "p6": "清洁目标",
+        "p7": "当地气候 / 积灰类型"
+      },
+      "tech": {
+        "eyebrow": "技术数据",
+        "title": "规格",
+        "selTitle": "系统与部署",
+        "specsTitle": "完整规格",
+        "note": "NuvaSpan 按项目工程化；多个数值取决于配置或项目。数据表数值在可得时列出。",
+        "sel": {
+          "systemType": {
+            "label": "系统类型",
+            "value": "悬挂 / 桥架"
+          },
+          "installType": {
+            "label": "安装类型",
+            "value": "固定安装"
+          },
+          "cleaningMode": {
+            "label": "清洁方式",
+            "value": "干洗（依结构）"
+          },
+          "automation": {
+            "label": "自动化水平",
+            "value": "低例行干预"
+          },
+          "operator": {
+            "label": "操作者要求",
+            "value": "低例行干预"
+          },
+          "bestFit": {
+            "label": "最适合",
+            "value": "固定阵列 / 特定结构"
+          },
+          "projectReq": {
+            "label": "项目要求",
+            "value": "项目专属"
+          },
+          "config": {
+            "label": "配置",
+            "value": "取决于配置"
+          },
+          "service": {
+            "label": "质保 / 服务",
+            "value": "12 个月 / 按需"
+          }
+        }
+      },
+      "media": {
+        "eyebrow": "场地背景",
+        "title": "NuvaSpan 的适用场景",
+        "subtitle": "一张参考光伏场地图——NuvaSpan 产品媒体待补充。",
+        "caption": "参考光伏场地（NuvaSpan 实拍即将上线）。"
+      },
+      "finalCta": {
+        "title": "为你的光伏结构探讨固定清洁系统。"
+      },
+      "cta": {
+        "compare": "对比型号",
+        "talk": "联系 Cleanuva",
+        "consultation": "预约咨询"
+      },
+      "demo": {
+        "title": "NuvaSpan 系统概览",
+        "subtitle": "面向项目化光伏结构的固定式清洁方案。",
+        "note": "后续可在获得现场素材后补充项目媒体。"
+      }
     }
   },
   "Fragmentation": {

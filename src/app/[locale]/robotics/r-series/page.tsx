@@ -6,13 +6,13 @@ import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
 import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
-import { ProductVideo } from "@/components/sections/product-video";
 import { ProductSubnav } from "@/components/robotics/product-subnav";
+import { ProductDemoMedia } from "@/components/robotics/product-demo-media";
 import { InOperationGallery } from "@/components/robotics/in-operation";
 import { MediaFrame } from "@/components/robotics/media-frame";
 import { Link } from "@/i18n/navigation";
 import { familyBySlug } from "@/content/robots";
-import { COMPARE_MATRIX } from "@/content/compare";
+import { COMPARE_MATRIX, R_SERIES_MEDIA, R_DEMO_MEDIA } from "@/content/compare";
 
 export const metadata: Metadata = {
   title: "NuvaTrack-R Series — Cleanuva Robotics",
@@ -99,7 +99,19 @@ export default async function RSeriesPage({
       </section>
 
       {/* 2. Sticky product subnav */}
-      <ProductSubnav />
+      <ProductSubnav
+        name="NuvaTrack-R"
+        suffix="Series"
+        pricingHref="/get-pricing?model=nuvatrack-r-pro"
+        pricingLabel={t("subnav.pricing")}
+        links={[
+          { label: t("subnav.overview"), href: "#overview", anchor: true },
+          { label: t("subnav.models"), href: "#models", anchor: true },
+          { label: t("subnav.compare"), href: "/robotics/compare" },
+          { label: t("subnav.accessories"), href: "/robotics/accessories" },
+          { label: t("subnav.ask"), href: "/request-demo" },
+        ]}
+      />
 
       {/* 3. Choose your model — a buying decision, Pro elevated */}
       <Section id="models" tone="light" className="scroll-mt-[120px] bg-surface">
@@ -161,23 +173,15 @@ export default async function RSeriesPage({
         </Container>
       </Section>
 
-      {/* 4. Full-bleed demo media — clean product media block, no eyebrow label */}
-      <Section tone="dark" className="py-16 md:py-20">
-        <Container className="mb-8 max-w-[80ch]">
-          <h2 className="text-h1 text-ink-inv md:whitespace-nowrap">{t("demo.title")}</h2>
-          <p className="mt-3 text-body-l text-ink-inv-2">{t("demo.subtitle")}</p>
-        </Container>
-        <div className="mx-auto w-full max-w-[1680px] px-5 md:px-8">
-          <ProductVideo
-            src={family.video}
-            poster={family.image}
-            alt={t("demo.title")}
-            playLabel={tp("videoPlay")}
-            pauseLabel={tp("videoPause")}
-            soonLabel={tp("videoSoon")}
-          />
-        </div>
-      </Section>
+      {/* 4. Full-bleed demo media — shared product media block, no eyebrow label */}
+      <ProductDemoMedia
+        title={t("demo.title")}
+        subtitle={t("demo.subtitle")}
+        titleClassName="md:whitespace-nowrap"
+        alt={t("demo.title")}
+        media={R_DEMO_MEDIA}
+        videoLabels={{ play: tp("videoPlay"), pause: tp("videoPause"), soon: tp("videoSoon") }}
+      />
 
       {/* 5. How it works */}
       <Section>
@@ -266,7 +270,7 @@ export default async function RSeriesPage({
           <h2 className="mt-3 text-h1 text-balance text-ink">{t("inOp.title")}</h2>
           <p className="mt-3 max-w-[60ch] text-body-l text-ink-2">{t("inOp.subtitle")}</p>
           <div className="mt-10">
-            <InOperationGallery />
+            <InOperationGallery media={R_SERIES_MEDIA} tNamespace="Robotics.rSeriesPage.inOp" />
           </div>
         </Container>
       </Section>

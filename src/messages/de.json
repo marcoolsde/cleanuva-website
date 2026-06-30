@@ -1120,6 +1120,256 @@
         "body": "Senden Sie uns Standorttyp, Modullayout und Reinigungsziel. Wir empfehlen die passende Cleanuva-Konfiguration.",
         "consultation": "Beratung anfragen"
       }
+    },
+    "uSeriesPage": {
+      "hero": {
+        "eyebrow": "Cleanuva Robotics",
+        "subtitle": "Unbeaufsichtigte Solarmodulreinigung für wiederkehrende PV-Einsätze.",
+        "support": "Ein standortkonfigurierter Reinigungsroboter für Betreiber, die planmäßige, wiederkehrende Reinigung mit reduziertem manuellem Routineaufwand brauchen.",
+        "stats": {
+          "s1": {
+            "value": "Unbeaufsichtigt",
+            "label": "Betrieb"
+          },
+          "s2": {
+            "value": "Standortkonfiguriert",
+            "label": "Einsatz"
+          },
+          "s3": {
+            "value": "Planmäßig",
+            "label": "Reinigung"
+          },
+          "s4": {
+            "value": "Utility-Scale",
+            "label": "Am besten für"
+          }
+        }
+      },
+      "subnav": {
+        "overview": "Überblick",
+        "useCases": "Anwendungsfälle",
+        "requirements": "Anforderungen",
+        "compare": "Vergleich",
+        "pricing": "Angebot"
+      },
+      "useCases": {
+        "eyebrow": "Wann wählen",
+        "title": "Wann NuvaTrack-U wählen",
+        "b1": "Sie betreiben eine wiederkehrende PV-Anlage",
+        "b2": "Reinigungsrouten lassen sich planen",
+        "b3": "Manueller Zugang ist begrenzt oder teuer",
+        "b4": "Sie möchten planmäßige Reinigungsroutinen",
+        "b5": "Sie brauchen eine projektkonfigurierte Lösung"
+      },
+      "how": {
+        "eyebrow": "Betrieb",
+        "title": "So funktioniert der unbeaufsichtigte Betrieb",
+        "s1": "Standortbewertung",
+        "s2": "Routenkonfiguration",
+        "s3": "Planmäßiger Betrieb",
+        "s4": "Reinigungslauf",
+        "s5": "Inspektions-/Service-Routine"
+      },
+      "deploy": {
+        "eyebrow": "Einsatz",
+        "title": "Einsatzanforderungen",
+        "note": "NuvaTrack-U ist mehr als ein Fernroboter — der unbeaufsichtigte Betrieb wird je Standort eingerichtet.",
+        "d1": "Modullayout",
+        "d2": "Reihenzugang",
+        "d3": "Docking-/Ladekonzept (falls zutreffend)",
+        "d4": "Standortsicherheit",
+        "d5": "Betriebsroutine",
+        "d6": "Wartungszugang"
+      },
+      "tech": {
+        "eyebrow": "Technische Daten",
+        "title": "Spezifikationen",
+        "selTitle": "Betrieb & Einsatz",
+        "specsTitle": "Vollständige Spezifikationen",
+        "note": "Einige Fähigkeiten sind standortkonfiguriert und projektbestätigt. Angegebene Werte stammen, sofern verfügbar, aus dem Datenblatt.",
+        "sel": {
+          "automation": {
+            "label": "Automatisierungsgrad",
+            "value": "Unbeaufsichtigt (standortkonfiguriert)"
+          },
+          "operationMode": {
+            "label": "Betriebsmodus",
+            "value": "Planmäßig / wiederkehrend"
+          },
+          "cleaningMode": {
+            "label": "Reinigungsmodus",
+            "value": "Trocken, vollautomatisch"
+          },
+          "operator": {
+            "label": "Bedieneraufwand",
+            "value": "Reduzierter Routineeingriff"
+          },
+          "deployment": {
+            "label": "Einsatzart",
+            "value": "Standortkonfiguriert"
+          },
+          "recommended": {
+            "label": "Empfohlene Nutzung",
+            "value": "Utility-Scale / regelmäßig gereinigte PV-Anlagen"
+          },
+          "siteConfig": {
+            "label": "Standortkonfiguration",
+            "value": "Konfigurationsabhängig"
+          },
+          "service": {
+            "label": "Zubehör / Service",
+            "value": "Auf Anfrage verfügbar"
+          }
+        }
+      },
+      "inOp": {
+        "eyebrow": "Im Einsatz",
+        "title": "NuvaTrack-U im Einsatz",
+        "subtitle": "Feldaufnahmen und Reinigungs-Betriebsmedien.",
+        "media": {
+          "vid": "NuvaTrack-U Reinigungsdemo",
+          "hero": "NuvaTrack-U auf einer PV-Anlage",
+          "op1": "NuvaTrack-U im Feldeinsatz"
+        }
+      },
+      "finalCta": {
+        "title": "Planen Sie eine unbeaufsichtigte Reinigung für Ihren Standort."
+      },
+      "cta": {
+        "compare": "Modelle vergleichen",
+        "talk": "Cleanuva kontaktieren",
+        "consultation": "Beratung anfragen"
+      },
+      "demo": {
+        "title": "NuvaTrack-U im Einsatz",
+        "subtitle": "Geplante, unbeaufsichtigte Reinigung für wiederkehrende PV-Standortabläufe."
+      }
+    },
+    "nuvaspanPage": {
+      "hero": {
+        "eyebrow": "Cleanuva Robotics",
+        "subtitle": "Aufgehängtes Reinigungssystem für feste PV-Installationen.",
+        "support": "Eine projektierte Brücken-Reinigungslösung für Standorte, an denen eine feste Struktur besser passt als ein portabler Roboter.",
+        "stats": {
+          "s1": {
+            "value": "Aufgehängt",
+            "label": "Systemtyp"
+          },
+          "s2": {
+            "value": "Feste Installation",
+            "label": "Einsatz"
+          },
+          "s3": {
+            "value": "Projektiert",
+            "label": "Aufbau"
+          },
+          "s4": {
+            "value": "Geringer Eingriff",
+            "label": "Betrieb"
+          }
+        }
+      },
+      "subnav": {
+        "overview": "Überblick",
+        "system": "System",
+        "requirements": "Anforderungen",
+        "compare": "Vergleich",
+        "pricing": "Angebot"
+      },
+      "useCases": {
+        "eyebrow": "Wann wählen",
+        "title": "Wann NuvaSpan wählen",
+        "b1": "Feste PV-Strukturen",
+        "b2": "Wiederholte Reinigung entlang einer definierten Spannweite",
+        "b3": "Standorte, an denen portable Roboter weniger geeignet sind",
+        "b4": "Projektbasierte Installationen",
+        "b5": "Spezifische Montage- oder Strukturbedingungen"
+      },
+      "system": {
+        "eyebrow": "Systemkonzept",
+        "title": "Ein Reinigungssystem mit fester Struktur",
+        "s1": "Fester oder halbfester Reinigungspfad",
+        "s2": "Spann-/Brückenbewegung",
+        "s3": "Standortspezifische Auslegung",
+        "s4": "Reinigungsmodul",
+        "s5": "Servicezugang"
+      },
+      "project": {
+        "eyebrow": "Projektanforderungen",
+        "title": "Was wir von Ihnen brauchen",
+        "note": "NuvaSpan wird auf den Standort ausgelegt. Für die Auslegung teilen Sie bitte:",
+        "p1": "Standortlayout",
+        "p2": "Modulabmessungen",
+        "p3": "Montagestruktur",
+        "p4": "Reihenlänge",
+        "p5": "Zugangsbeschränkungen",
+        "p6": "Reinigungsziel",
+        "p7": "Lokales Klima / Verschmutzungsart"
+      },
+      "tech": {
+        "eyebrow": "Technische Daten",
+        "title": "Spezifikationen",
+        "selTitle": "System & Einsatz",
+        "specsTitle": "Vollständige Spezifikationen",
+        "note": "NuvaSpan ist projektiert; mehrere Werte sind konfigurations- oder projektspezifisch. Datenblattwerte sind angegeben, sofern verfügbar.",
+        "sel": {
+          "systemType": {
+            "label": "Systemtyp",
+            "value": "Aufgehängt / Brücke"
+          },
+          "installType": {
+            "label": "Installationsart",
+            "value": "Feste Installation"
+          },
+          "cleaningMode": {
+            "label": "Reinigungsmodus",
+            "value": "Trocken (strukturabhängig)"
+          },
+          "automation": {
+            "label": "Automatisierungsgrad",
+            "value": "Geringer Routineeingriff"
+          },
+          "operator": {
+            "label": "Bedieneraufwand",
+            "value": "Geringer Routineeingriff"
+          },
+          "bestFit": {
+            "label": "Am besten für",
+            "value": "Feste Anlagen / spezielle Strukturen"
+          },
+          "projectReq": {
+            "label": "Projektanforderungen",
+            "value": "Projektspezifisch"
+          },
+          "config": {
+            "label": "Konfiguration",
+            "value": "Konfigurationsabhängig"
+          },
+          "service": {
+            "label": "Garantie / Service",
+            "value": "12 Monate / auf Anfrage"
+          }
+        }
+      },
+      "media": {
+        "eyebrow": "Standortkontext",
+        "title": "Wo NuvaSpan passt",
+        "subtitle": "Eine Referenz-PV-Ansicht — NuvaSpan-Produktmedien folgen.",
+        "caption": "Referenz-PV-Anlage (NuvaSpan-Fotos folgen in Kürze)."
+      },
+      "finalCta": {
+        "title": "Besprechen Sie ein festes Reinigungssystem für Ihre PV-Struktur."
+      },
+      "cta": {
+        "compare": "Modelle vergleichen",
+        "talk": "Cleanuva kontaktieren",
+        "consultation": "Beratung anfragen"
+      },
+      "demo": {
+        "title": "NuvaSpan – Systemansicht",
+        "subtitle": "Ein festes Reinigungskonzept für projektierte PV-Strukturen.",
+        "note": "Projektmedien können ergänzt werden, sobald Aufnahmen vom Standort vorliegen."
+      }
     }
   },
   "Fragmentation": {

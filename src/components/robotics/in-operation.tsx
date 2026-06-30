@@ -6,19 +6,26 @@ import { Play } from "lucide-react";
 
 import { MediaFrame } from "@/components/robotics/media-frame";
 import { cn } from "@/lib/utils";
-import { R_SERIES_MEDIA } from "@/content/compare";
+import { type RMedia } from "@/content/compare";
 
 /**
  * In-operation media gallery — large main viewer + thumbnail rail (Tesla-style
- * media selection), supporting image and video items from R_SERIES_MEDIA. Video
+ * media selection), supporting image and video items from a `media` array. Video
  * uses native controls, muted, playsInline, preload="metadata", NO autoplay; a
  * missing file falls back to its poster / a neutral dark frame (never orange).
+ * Captions resolve from `<tNamespace>.media.<id>`.
  */
-export function InOperationGallery() {
-  const t = useTranslations("Robotics.rSeriesPage.inOp");
+export function InOperationGallery({
+  media,
+  tNamespace,
+}: {
+  media: RMedia[];
+  tNamespace: string;
+}) {
+  const t = useTranslations(tNamespace);
   const [active, setActive] = React.useState(0);
   const [failed, setFailed] = React.useState<Record<string, boolean>>({});
-  const item = R_SERIES_MEDIA[active];
+  const item = media[active];
 
   return (
     <div className="grid gap-4 lg:grid-cols-[1fr_124px]">
@@ -50,7 +57,7 @@ export function InOperationGallery() {
 
       {/* Thumbnail rail */}
       <div className="flex gap-3 overflow-x-auto pb-1 lg:flex-col lg:pb-0">
-        {R_SERIES_MEDIA.map((m, i) => (
+        {media.map((m, i) => (
           <button
             key={m.id}
             type="button"

@@ -51,6 +51,41 @@ export const COMPARE_MATRIX: Record<CompareModelId, Record<string, boolean>> = {
 /** "Which model should I choose?" recommendation cards (text from comparePage.choose.<id>). */
 export const CHOOSE_MODELS: CompareModelId[] = ["nuvatrack-r", "nuvatrack-r-pro", "nuvatrack-u", "nuvaspan"];
 
+/**
+ * Large "Demo / media" block config for each product page (consumed by
+ * ProductDemoMedia). `type: "video"` plays a clip with a graceful poster
+ * fallback; `type: "image"` shows a real still until a clip exists. `futureVideo`
+ * documents the path to drop a real clip at later — see
+ * docs/website/robotics-media-inventory.md. Swapping media here is the only
+ * change needed once real footage is supplied.
+ */
+export interface DemoMedia {
+  type: "image" | "video";
+  src: string;
+  poster?: string;
+  futureVideo?: string;
+}
+
+export const R_DEMO_MEDIA: DemoMedia = {
+  type: "video",
+  src: "/videos/robotics/nuvatrack-r-demo.mp4",
+  poster: "/images/robotics/r-series-hero.jpg",
+};
+
+export const U_DEMO_MEDIA: DemoMedia = {
+  type: "video",
+  src: "/videos/robotics/nuvatrack-u-demo.mp4",
+  poster: "/images/robotics/u-series-poster.jpg",
+};
+
+// No NuvaSpan clip yet → real overview still now; drop a clip at futureVideo
+// (and flip type to "video", src to futureVideo) to upgrade with zero page edits.
+export const NUVASPAN_DEMO_MEDIA: DemoMedia = {
+  type: "image",
+  src: "/images/robotics/overview-hero.jpg",
+  futureVideo: "/videos/robotics/nuvaspan-demo.mp4",
+};
+
 /** R-Series "In operation" media (graceful: missing file → placeholder). */
 export interface RMedia {
   id: string;
@@ -63,6 +98,13 @@ export const R_SERIES_MEDIA: RMedia[] = [
   { id: "hero", type: "image", src: "/images/robotics/r-series-hero.jpg" },
   { id: "op1", type: "image", src: "/images/robotics/r-series-op-1.jpg" },
   { id: "op2", type: "image", src: "/images/robotics/r-series-op-2.jpg" },
+];
+
+/** NuvaTrack-U "In operation" media — real assets only (no missing files). */
+export const U_SERIES_MEDIA: RMedia[] = [
+  { id: "vid", type: "video", src: "/videos/robotics/nuvatrack-u-demo.mp4", poster: "/images/robotics/u-series-poster.jpg" },
+  { id: "hero", type: "image", src: "/images/robotics/u-series-hero.jpg" },
+  { id: "op1", type: "image", src: "/images/robotics/u-series-op-1.jpg" },
 ];
 
 /** R vs R Pro technical comparison (two columns). Numeric values literal; the

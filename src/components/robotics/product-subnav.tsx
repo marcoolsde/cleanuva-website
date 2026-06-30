@@ -1,37 +1,36 @@
-import { getTranslations } from "next-intl/server";
-
 import { Container } from "@/components/primitives/container";
 import { Button } from "@/components/primitives/button";
 import { Link } from "@/i18n/navigation";
 
+export type SubnavLink = { label: string; href: string; anchor?: boolean };
+
 /**
- * Product-level sticky subnav for the R-Series page (Tesla-style product nav).
- * Sticks just below the global header (h-72px), never covers it. Pure CSS sticky
- * + in-page anchors (smooth via scroll-mt on targets) — no client JS. Mobile:
- * horizontal scroll. This carries the product-context actions so the global
- * header stays untouched.
+ * Product-level sticky subnav shared across robotics product pages (Tesla-style
+ * product nav). Sticks just below the global header (h-72px), never covers it.
+ * Pure CSS sticky + in-page anchors (smooth via scroll-mt on targets), no client
+ * JS. Mobile: horizontal scroll. Presentational — the page resolves labels.
  */
-export async function ProductSubnav() {
-  const t = await getTranslations("Robotics.rSeriesPage.subnav");
-
-  const links = [
-    { label: t("overview"), href: "#overview", anchor: true },
-    { label: t("models"), href: "#models", anchor: true },
-    { label: t("compare"), href: "/robotics/compare" },
-    { label: t("accessories"), href: "/robotics/accessories" },
-    { label: t("ask"), href: "/request-demo" },
-  ];
-
+export function ProductSubnav({
+  name,
+  suffix,
+  links,
+  pricingHref,
+  pricingLabel,
+}: {
+  name: string;
+  suffix?: string;
+  links: SubnavLink[];
+  pricingHref: string;
+  pricingLabel: string;
+}) {
   return (
     <div className="sticky top-[71px] z-40 border-b border-line bg-canvas/85 backdrop-blur-md">
       <Container className="flex items-center justify-between gap-6 py-3.5">
         <span className="shrink-0 text-[15px] font-semibold tracking-[-0.015em] text-ink">
-          NuvaTrack-R <span className="text-ink-3">Series</span>
+          {name}
+          {suffix ? <span className="text-ink-3"> {suffix}</span> : null}
         </span>
-        <nav
-          aria-label="Product"
-          className="flex items-center gap-5 overflow-x-auto whitespace-nowrap"
-        >
+        <nav aria-label="Product" className="flex items-center gap-5 overflow-x-auto whitespace-nowrap">
           {links.map((l) =>
             l.anchor ? (
               <a
@@ -52,7 +51,7 @@ export async function ProductSubnav() {
             ),
           )}
           <Button variant="warm" size="sm" asChild className="ms-1 shrink-0">
-            <Link href="/get-pricing?model=nuvatrack-r-pro">{t("pricing")}</Link>
+            <Link href={pricingHref}>{pricingLabel}</Link>
           </Button>
         </nav>
       </Container>

@@ -3,13 +3,13 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 
 import { RoboticsProduct } from "@/components/sections/robotics-product";
-import { ROBOT_FAMILIES, familyBySlug } from "@/content/robots";
+import { familyBySlug } from "@/content/robots";
 
-// Static product pages: /robotics/u-series, /robotics/nuvaspan.
-// /robotics/r-series and /robotics/compare are dedicated sibling routes that take
-// precedence — r-series is excluded here so the dedicated P4R-1 page renders.
+// All three product pages (r-series, u-series, nuvaspan) are now dedicated
+// sibling routes that take precedence. This dynamic route only serves unknown
+// slugs (→ notFound), so it generates no static params.
 export function generateStaticParams() {
-  return ROBOT_FAMILIES.filter((f) => f.slug !== "r-series").map((f) => ({ family: f.slug }));
+  return [] as { family: string }[];
 }
 
 export async function generateMetadata({

@@ -32,12 +32,29 @@ Drop a real file at the same path (same name) to replace any asset — no code c
 | Hero (full-bleed) | `/images/robotics/r-series-hero.jpg` | ✓ | real | `app/[locale]/robotics/r-series/page.tsx` | Main R-Series product photo. |
 | Model card — NuvaTrack-R | `/images/robotics/r-series-hero.jpg` | ✓ | real | `app/[locale]/robotics/r-series/page.tsx` | Shares the hero photo. |
 | Model card — NuvaTrack-R Pro | `/images/robotics/r-series-hero.jpg` | ✓ | ⚠️ temp/reused | `app/[locale]/robotics/r-series/page.tsx` | Reuses R photo — replace with a real R Pro shot. |
-| Demo video | `/videos/robotics/nuvatrack-r-demo.mp4` | ✓ | real | `app/[locale]/robotics/r-series/page.tsx (ProductVideo)` | Demo clip. |
-| Demo poster | `/images/robotics/r-series-hero.jpg` | ✓ | real | `app/[locale]/robotics/r-series/page.tsx (ProductVideo poster)` | Shown before/while paused. |
+| Demo media section — video | `/videos/robotics/nuvatrack-r-demo.mp4` | ✓ | real | `content/compare.ts → R_DEMO_MEDIA (ProductDemoMedia)` | Large demo clip below the model picker. |
+| Demo media section — poster | `/images/robotics/r-series-hero.jpg` | ✓ | real | `content/compare.ts → R_DEMO_MEDIA` | Shown before/while paused. |
 | In operation — video | `/videos/robotics/nuvatrack-r-demo.mp4` | ✓ | real | `content/compare.ts → R_SERIES_MEDIA` | Poster: r-series-hero.jpg. |
 | In operation — image | `/images/robotics/r-series-hero.jpg` | ✓ | real | `content/compare.ts → R_SERIES_MEDIA` | Gallery still. |
 | In operation — image | `/images/robotics/r-series-op-1.jpg` | ✓ | real | `content/compare.ts → R_SERIES_MEDIA` | Field operation photo. |
 | In operation — image | `/images/robotics/r-series-op-2.jpg` | ✓ | real | `content/compare.ts → R_SERIES_MEDIA` | Cleaning detail photo. |
+
+## U-Series page (`/robotics/u-series`)
+| Slot | File | Exists | Type | Referenced in | Replace with |
+|---|---|---|---|---|---|
+| Hero (full-bleed) | `/images/robotics/u-series-hero.jpg` | ✓ | real | `app/[locale]/robotics/u-series/page.tsx` | Main U-Series product photo. |
+| Demo media section — video | `/videos/robotics/nuvatrack-u-demo.mp4` | ✓ | real | `content/compare.ts → U_DEMO_MEDIA (ProductDemoMedia)` | Large demo clip in the first half of the page. |
+| Demo media section — poster | `/images/robotics/u-series-poster.jpg` | ✓ | real | `content/compare.ts → U_DEMO_MEDIA` | Shown before/while paused (falls back to u-series-hero.jpg if removed). |
+| In operation — video | `/videos/robotics/nuvatrack-u-demo.mp4` | ✓ | real | `content/compare.ts → U_SERIES_MEDIA` | Poster: u-series-poster.jpg. |
+| In operation — image | `/images/robotics/u-series-hero.jpg` | ✓ | real | `content/compare.ts → U_SERIES_MEDIA` | Gallery still. |
+| In operation — image | `/images/robotics/u-series-op-1.jpg` | ✓ | real | `content/compare.ts → U_SERIES_MEDIA` | Field operation photo. |
+
+## NuvaSpan page (`/robotics/nuvaspan`)
+| Slot | File | Exists | Type | Referenced in | Replace with |
+|---|---|---|---|---|---|
+| Hero (full-bleed) | `/images/robotics/overview-hero.jpg` | ✓ | ⚠️ temp/reused | `app/[locale]/robotics/nuvaspan/page.tsx` | Overview stand-in — replace with a real NuvaSpan shot (suspended/bridge). |
+| Demo media section — image (current) | `/images/robotics/overview-hero.jpg` | ✓ | ⚠️ temp/reused | `content/compare.ts → NUVASPAN_DEMO_MEDIA (ProductDemoMedia)` | Real still shown now; large media block in the first half of the page. |
+| Demo media section — future video slot | `/videos/robotics/nuvaspan-demo.mp4` | — (not yet) | 🔜 future slot | `content/compare.ts → NUVASPAN_DEMO_MEDIA.futureVideo` | Drop a clip here, then set NUVASPAN_DEMO_MEDIA.type='video' + src=this path — no page edit. |
 
 ## Compare page (`/robotics/compare`)
 | Slot | File | Exists | Type | Referenced in | Replace with |
@@ -47,7 +64,10 @@ Drop a real file at the same path (same name) to replace any asset — no code c
 | NuvaTrack-U card | `/images/robotics/u-series-hero.jpg` | ✓ | real | `content/compare.ts → COMPARE_MODELS` | U-Series photo. |
 | NuvaSpan card | `/images/robotics/overview-hero.jpg` | ✓ | ⚠️ temp/reused | `content/compare.ts → COMPARE_MODELS` | Overview stand-in — replace with a real NuvaSpan shot (suspended/bridge). |
 
+## Future video slots (drop a clip to upgrade — no page edit)
+- **NuvaSpan demo** — `/videos/robotics/nuvaspan-demo.mp4`. Currently the demo block shows a real still (`overview-hero.jpg`). Add the clip, then in `content/compare.ts` set `NUVASPAN_DEMO_MEDIA.type = "video"` and `src = "/videos/robotics/nuvaspan-demo.mp4"`.
+
 ## Replacement priorities (temp / reused → real)
 - **NuvaTrack-R Pro** — real R Pro product photo (used on R-Series model card + Compare card).
-- **NuvaSpan** — real suspended/bridge product photo (Compare card currently uses `overview-hero.jpg`).
+- **NuvaSpan** — real suspended/bridge product photo (hero + Compare card currently use `overview-hero.jpg`).
 - Optionally a higher-resolution `r-series-hero.jpg` for the full-bleed hero.

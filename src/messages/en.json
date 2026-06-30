@@ -1120,6 +1120,256 @@
         "body": "Send us your site type, module layout and cleaning target. We'll recommend the right Cleanuva configuration.",
         "consultation": "Request a consultation"
       }
+    },
+    "uSeriesPage": {
+      "hero": {
+        "eyebrow": "Cleanuva Robotics",
+        "subtitle": "Unattended solar panel cleaning for repeatable PV site operations.",
+        "support": "A site-configured cleaning robot for operators who need scheduled, repeatable cleaning with reduced routine manual intervention.",
+        "stats": {
+          "s1": {
+            "value": "Unattended",
+            "label": "Operation"
+          },
+          "s2": {
+            "value": "Site-configured",
+            "label": "Deployment"
+          },
+          "s3": {
+            "value": "Scheduled",
+            "label": "Cleaning"
+          },
+          "s4": {
+            "value": "Utility-scale",
+            "label": "Best fit"
+          }
+        }
+      },
+      "subnav": {
+        "overview": "Overview",
+        "useCases": "Use cases",
+        "requirements": "Requirements",
+        "compare": "Compare",
+        "pricing": "Get pricing"
+      },
+      "useCases": {
+        "eyebrow": "When to choose",
+        "title": "When to choose NuvaTrack-U",
+        "b1": "You operate a repeatable PV site",
+        "b2": "Cleaning routes can be planned",
+        "b3": "Manual access is limited or costly",
+        "b4": "You want scheduled cleaning routines",
+        "b5": "You need a project-configured solution"
+      },
+      "how": {
+        "eyebrow": "Operation",
+        "title": "How unattended operation works",
+        "s1": "Site assessment",
+        "s2": "Route configuration",
+        "s3": "Scheduled operation",
+        "s4": "Cleaning run",
+        "s5": "Inspection / service routine"
+      },
+      "deploy": {
+        "eyebrow": "Deployment",
+        "title": "Deployment requirements",
+        "note": "NuvaTrack-U is more than a remote robot — unattended operation is set up per site.",
+        "d1": "Module layout",
+        "d2": "Row access",
+        "d3": "Docking / charging concept (if applicable)",
+        "d4": "Site safety",
+        "d5": "Operation routine",
+        "d6": "Maintenance access"
+      },
+      "tech": {
+        "eyebrow": "Technical data",
+        "title": "Specifications",
+        "selTitle": "Operation & deployment",
+        "specsTitle": "Full specifications",
+        "note": "Some capabilities are site-configured and confirmed by project. Values shown are datasheet-sourced where available.",
+        "sel": {
+          "automation": {
+            "label": "Automation level",
+            "value": "Unattended (site-configured)"
+          },
+          "operationMode": {
+            "label": "Operation mode",
+            "value": "Scheduled / repeatable"
+          },
+          "cleaningMode": {
+            "label": "Cleaning mode",
+            "value": "Dry, fully automatic"
+          },
+          "operator": {
+            "label": "Operator requirement",
+            "value": "Reduced routine intervention"
+          },
+          "deployment": {
+            "label": "Deployment type",
+            "value": "Site-configured"
+          },
+          "recommended": {
+            "label": "Recommended use",
+            "value": "Utility-scale / regularly cleaned PV sites"
+          },
+          "siteConfig": {
+            "label": "Site configuration",
+            "value": "Configuration dependent"
+          },
+          "service": {
+            "label": "Accessories / service",
+            "value": "Available on request"
+          }
+        }
+      },
+      "inOp": {
+        "eyebrow": "In operation",
+        "title": "NuvaTrack-U in operation",
+        "subtitle": "Field views and cleaning operation media.",
+        "media": {
+          "vid": "NuvaTrack-U cleaning demo",
+          "hero": "NuvaTrack-U on a PV array",
+          "op1": "NuvaTrack-U field operation"
+        }
+      },
+      "finalCta": {
+        "title": "Plan an unattended cleaning setup for your site."
+      },
+      "cta": {
+        "compare": "Compare models",
+        "talk": "Talk to Cleanuva",
+        "consultation": "Request consultation"
+      },
+      "demo": {
+        "title": "NuvaTrack-U in operation",
+        "subtitle": "Scheduled unattended cleaning for repeatable PV site operations."
+      }
+    },
+    "nuvaspanPage": {
+      "hero": {
+        "eyebrow": "Cleanuva Robotics",
+        "subtitle": "Suspended cleaning system for fixed PV installations.",
+        "support": "A project-engineered bridge-type cleaning solution for sites where a fixed structure is more suitable than portable robot deployment.",
+        "stats": {
+          "s1": {
+            "value": "Suspended",
+            "label": "System type"
+          },
+          "s2": {
+            "value": "Fixed install",
+            "label": "Deployment"
+          },
+          "s3": {
+            "value": "Project-engineered",
+            "label": "Setup"
+          },
+          "s4": {
+            "value": "Low intervention",
+            "label": "Operation"
+          }
+        }
+      },
+      "subnav": {
+        "overview": "Overview",
+        "system": "System",
+        "requirements": "Requirements",
+        "compare": "Compare",
+        "pricing": "Get pricing"
+      },
+      "useCases": {
+        "eyebrow": "When to choose",
+        "title": "When to choose NuvaSpan",
+        "b1": "Fixed PV structures",
+        "b2": "Repeated cleaning along a defined span",
+        "b3": "Sites where portable robots are less suitable",
+        "b4": "Project-based installations",
+        "b5": "Specific mounting or structural conditions"
+      },
+      "system": {
+        "eyebrow": "System concept",
+        "title": "A fixed-structure cleaning system",
+        "s1": "Fixed or semi-fixed cleaning path",
+        "s2": "Span / bridge-type movement",
+        "s3": "Site-specific engineering",
+        "s4": "Cleaning module",
+        "s5": "Service access"
+      },
+      "project": {
+        "eyebrow": "Project requirements",
+        "title": "What we need from you",
+        "note": "NuvaSpan is engineered to the site. To scope a system, share:",
+        "p1": "Site layout",
+        "p2": "Module dimensions",
+        "p3": "Mounting structure",
+        "p4": "Row length",
+        "p5": "Access constraints",
+        "p6": "Cleaning target",
+        "p7": "Local climate / soiling type"
+      },
+      "tech": {
+        "eyebrow": "Technical data",
+        "title": "Specifications",
+        "selTitle": "System & deployment",
+        "specsTitle": "Full specifications",
+        "note": "NuvaSpan is project-engineered; several values are configuration- or project-specific. Datasheet values are shown where available.",
+        "sel": {
+          "systemType": {
+            "label": "System type",
+            "value": "Suspended / bridge-type"
+          },
+          "installType": {
+            "label": "Installation type",
+            "value": "Fixed installation"
+          },
+          "cleaningMode": {
+            "label": "Cleaning mode",
+            "value": "Dry (structure-dependent)"
+          },
+          "automation": {
+            "label": "Automation level",
+            "value": "Low routine intervention"
+          },
+          "operator": {
+            "label": "Operator requirement",
+            "value": "Low routine intervention"
+          },
+          "bestFit": {
+            "label": "Best fit",
+            "value": "Fixed arrays / specific structures"
+          },
+          "projectReq": {
+            "label": "Project requirements",
+            "value": "Project-specific"
+          },
+          "config": {
+            "label": "Configuration",
+            "value": "Configuration dependent"
+          },
+          "service": {
+            "label": "Warranty / service",
+            "value": "12 months / on request"
+          }
+        }
+      },
+      "media": {
+        "eyebrow": "Site context",
+        "title": "Where NuvaSpan fits",
+        "subtitle": "A reference PV site view — NuvaSpan product media will be added.",
+        "caption": "Reference PV site (NuvaSpan photography coming soon)."
+      },
+      "finalCta": {
+        "title": "Discuss a fixed cleaning system for your PV structure."
+      },
+      "cta": {
+        "compare": "Compare models",
+        "talk": "Talk to Cleanuva",
+        "consultation": "Request consultation"
+      },
+      "demo": {
+        "title": "NuvaSpan system view",
+        "subtitle": "A fixed cleaning concept for project-engineered PV structures.",
+        "note": "Project media can be added as site footage becomes available."
+      }
     }
   },
   "Fragmentation": {
