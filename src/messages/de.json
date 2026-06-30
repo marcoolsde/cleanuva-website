@@ -892,6 +892,234 @@
         "desc": "Ein ferngesteuertes Upgrade mit kamerafähigem Betrieb und Kurshalte-Assistenz für einen ruhigeren, kontrollierteren Lauf."
       },
       "proCta": "NuvaTrack-R Pro anfragen"
+    },
+    "rSeriesPage": {
+      "hero": {
+        "eyebrow": "Cleanuva Robotics",
+        "subtitle": "Solarmodul-Reinigungsroboter für Ein-Personen-Betrieb, für Trocken- und Nassreinigung.",
+        "support": "Kompakte, feldtaugliche Roboter für gewerbliche und Utility-Scale-PV-Anlagen.",
+        "rDesc": "Ferngesteuertes Basismodell mit manueller Lenkung.",
+        "proDesc": "AI-Assist-Modell mit Kurshaltung, konstanter Fahrgeschwindigkeit und kameragestütztem Betrieb.",
+        "compareCta": "R vs. R Pro vergleichen",
+        "chips": {
+          "c1": "1,1 m Bürstenbreite",
+          "c2": "Trocken-/Nassreinigung",
+          "c3": "Ein-Personen-Betrieb",
+          "c4": "Fernsteuerung",
+          "c5": "R Pro: Kurshaltung",
+          "c6": "R Pro: Geschwindigkeitsregelung",
+          "c7": "R Pro: kameragestützter Betrieb"
+        },
+        "stats": {
+          "s1": {
+            "value": "1,1 m",
+            "label": "Bürstenbreite"
+          },
+          "s2": {
+            "value": "Trocken / nass",
+            "label": "Reinigung"
+          },
+          "s3": {
+            "value": "Eine Person",
+            "label": "Bediener"
+          },
+          "s4": {
+            "value": "AI-Assist",
+            "label": "NuvaTrack-R Pro"
+          }
+        }
+      },
+      "subnav": {
+        "overview": "Überblick",
+        "models": "Modelle",
+        "compare": "Vergleich",
+        "accessories": "Zubehör",
+        "ask": "Kontakt",
+        "pricing": "Angebot"
+      },
+      "choose": {
+        "eyebrow": "Modell wählen",
+        "title": "NuvaTrack-R oder NuvaTrack-R Pro?",
+        "r": {
+          "badge": "Basismodell",
+          "tagline": "Ferngesteuertes Basismodell.",
+          "b1": "Ideal für Reinigungsteams, die einen zuverlässigen manuellen Roboter wollen",
+          "b2": "Manuelle Lenkung",
+          "b3": "Trocken-/Nassreinigung",
+          "b4": "Geringere Komplexität"
+        },
+        "pro": {
+          "badge": "AI-Assist",
+          "tagline": "AI-Assist-Modell für assistiertes Fahren.",
+          "b1": "Ideal für lange Reihen und assistiertes Fahren",
+          "b2": "Kurshaltung",
+          "b3": "Konstante Fahrgeschwindigkeit",
+          "b4": "Kameragestützter Betrieb",
+          "b5": "Bessere Sicht und Kontrolle für den Bediener"
+        }
+      },
+      "demo": {
+        "eyebrow": "Demo",
+        "title": "NuvaTrack-R im Einsatz",
+        "subtitle": "Reinigung von PV-Reihen unter trockenen und nassen Betriebsbedingungen."
+      },
+      "how": {
+        "eyebrow": "So funktioniert's",
+        "title": "Vom Transport zur sauberen Reihe",
+        "s1": "Zum Standort transportieren",
+        "s2": "Auf die Modulreihe setzen",
+        "s3": "Fernbetrieb starten",
+        "s4": "Trocken oder nass reinigen",
+        "s5": "Zur nächsten Reihe wechseln"
+      },
+      "cleaning": {
+        "eyebrow": "Reinigungssystem",
+        "title": "Für die Pflege von PV-Glasoberflächen",
+        "p1": "Walzenbürsten-Reinigungssystem",
+        "p2": "Trockenreinigung für übliche Verschmutzung",
+        "p3": "Nassreinigung für stärkere Verschmutzung",
+        "p4": "Austauschbare Bürste und Verschleißteile",
+        "p5": "Für die Pflege von PV-Glasoberflächen ausgelegt"
+      },
+      "tech": {
+        "eyebrow": "Technische Daten",
+        "title": "Spezifikationen",
+        "featuresTitle": "NuvaTrack-R vs. NuvaTrack-R Pro",
+        "specsTitle": "Vollständige Spezifikationen",
+        "note": "Manche Konfigurationen sind auf Anfrage verfügbar und hängen von den Standortbedingungen ab."
+      },
+      "inOp": {
+        "eyebrow": "Im Einsatz",
+        "title": "Im Einsatz",
+        "subtitle": "Feldaufnahmen, Reinigungsdetails und Betriebsmedien.",
+        "media": {
+          "vid": "NuvaTrack-R Reinigungsdemo",
+          "hero": "NuvaTrack-R auf einer PV-Anlage",
+          "op1": "NuvaTrack-R im Feldeinsatz",
+          "op2": "NuvaTrack-R Reinigungsdetail"
+        }
+      },
+      "finalCta": {
+        "title": "Wählen Sie das richtige NuvaTrack-R-Modell für Ihren Standort.",
+        "compare": "Modelle vergleichen",
+        "accessories": "Zubehör anfragen"
+      }
+    },
+    "comparePage": {
+      "hero": {
+        "eyebrow": "Vergleich",
+        "title": "Cleanuva-Roboter vergleichen",
+        "subtitle": "Wählen Sie das richtige Reinigungssystem für Ihre PV-Anlage, Ihr Betriebsmodell und den Automatisierungsgrad.",
+        "talk": "Cleanuva kontaktieren",
+        "back": "Zurück zu Robotik"
+      },
+      "selector": {
+        "eyebrow": "Modelle",
+        "title": "Wählen Sie einen Ausgangspunkt"
+      },
+      "models": {
+        "nuvatrack-r": {
+          "tagline": "Ferngesteuertes Basismodell.",
+          "fit": "Für flexible Reinigungsteams."
+        },
+        "nuvatrack-r-pro": {
+          "tagline": "AI-Assist-Modell mit Kurshaltung, Geschwindigkeitsregelung und kameragestütztem Betrieb.",
+          "fit": "Für lange Reihen und assistierten Betrieb."
+        },
+        "nuvatrack-u": {
+          "tagline": "Unbeaufsichtigter Reinigungsroboter für wiederkehrende Einsätze.",
+          "fit": "Für wiederkehrende Utility-Scale-Einsätze."
+        },
+        "nuvaspan": {
+          "tagline": "Aufgehängtes/Brücken-Reinigungssystem für feste Installationen.",
+          "fit": "Für feste Anlagen und spezielle Strukturen."
+        }
+      },
+      "viewProduct": "Produkt ansehen",
+      "metrics": {
+        "eyebrow": "Kennzahlen",
+        "title": "Entscheidende Kennzahlen",
+        "fields": {
+          "automation": "Automatisierungsgrad",
+          "operator": "Bediener",
+          "cleaning": "Reinigungsmodus",
+          "bestFit": "Am besten für",
+          "deployment": "Einsatz"
+        },
+        "nuvatrack-r": {
+          "automation": "Manuell ferngesteuert",
+          "operator": "Ein Bediener",
+          "cleaning": "Trocken / nass",
+          "bestFit": "Flexible Reinigungsteams",
+          "deployment": "Portabel"
+        },
+        "nuvatrack-r-pro": {
+          "automation": "AI-Assist",
+          "operator": "Ein Bediener",
+          "cleaning": "Trocken / nass",
+          "bestFit": "Lange Reihen & assistierter Betrieb",
+          "deployment": "Portabel"
+        },
+        "nuvatrack-u": {
+          "automation": "Unbeaufsichtigt",
+          "operator": "Minimale Routine-Eingriffe",
+          "cleaning": "Standortabhängig",
+          "bestFit": "Wiederkehrende Utility-Scale-Einsätze",
+          "deployment": "Standortkonfiguriert"
+        },
+        "nuvaspan": {
+          "automation": "Festes System",
+          "operator": "Geringe Routine-Eingriffe",
+          "cleaning": "Trockenreinigung",
+          "bestFit": "Feste Anlagen / spezielle Strukturen",
+          "deployment": "Aufgehängt / Brücke"
+        }
+      },
+      "tableEyebrow": "Details",
+      "tableTitle": "Detailvergleich",
+      "tableNote": "Manche Funktionen hängen von Konfiguration und Standort ab. Für alle Modelle ist ein Angebot erforderlich.",
+      "groups": {
+        "operation": "Betriebsmodell",
+        "automation": "Automatisierung",
+        "cleaning": "Reinigung",
+        "deployment": "Einsatz",
+        "visibility": "Sicht & Kontrolle",
+        "commercial": "Kommerziell & Service"
+      },
+      "rows": {
+        "manualSteering": "Manuelle Lenkung",
+        "remoteControl": "Fernsteuerung",
+        "singleOperator": "Ein Bediener",
+        "unattended": "Unbeaufsichtigter Betrieb",
+        "aiAssist": "AI-Assist",
+        "headingHold": "Kurshaltung",
+        "cruiseControl": "Konstante Fahrgeschwindigkeit",
+        "dryCleaning": "Trockenreinigung",
+        "wetCleaning": "Nassreinigung",
+        "portable": "Portabler Einsatz",
+        "fixedInstall": "Feste Installation",
+        "suspended": "Aufgehängt / Brücke",
+        "cameraAssist": "Kameragestützter Betrieb",
+        "accessories": "Zubehör verfügbar",
+        "quoteRequired": "Angebot erforderlich"
+      },
+      "val": {
+        "yes": "Ja",
+        "no": "—"
+      },
+      "choose": {
+        "eyebrow": "Empfehlung",
+        "title": "Welches Modell soll ich wählen?",
+        "nuvatrack-r": "Wählen Sie NuvaTrack-R, wenn Sie einen zuverlässigen, wenig komplexen ferngesteuerten Roboter für ein Reinigungsteam möchten.",
+        "nuvatrack-r-pro": "Wählen Sie NuvaTrack-R Pro, wenn Sie lange Reihen reinigen und Kurshaltung, Geschwindigkeitsregelung und kameragestützten Betrieb wünschen.",
+        "nuvatrack-u": "Wählen Sie NuvaTrack-U, wenn Sie unbeaufsichtigte, wiederkehrende Reinigung auf einer Utility-Scale-Anlage benötigen.",
+        "nuvaspan": "Wählen Sie NuvaSpan, wenn Sie feste Anlagen oder spezielle Strukturen für ein aufgehängtes/Brückensystem haben."
+      },
+      "cta": {
+        "title": "Unsicher, welcher Roboter zu Ihrem Standort passt?",
+        "body": "Senden Sie uns Standorttyp, Modullayout und Reinigungsziel. Wir empfehlen die passende Cleanuva-Konfiguration.",
+        "consultation": "Beratung anfragen"
+      }
     }
   },
   "Fragmentation": {

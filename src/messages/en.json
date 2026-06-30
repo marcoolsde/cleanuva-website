@@ -892,6 +892,234 @@
         "desc": "A remote-controlled upgrade with camera-ready operation and heading-hold assistance for a smoother, more controlled run."
       },
       "proCta": "Ask about NuvaTrack-R Pro"
+    },
+    "rSeriesPage": {
+      "hero": {
+        "eyebrow": "Cleanuva Robotics",
+        "subtitle": "Single-operator solar panel cleaning robots for dry and wet cleaning.",
+        "support": "Compact, field-deployable robots for commercial and utility-scale PV sites.",
+        "rDesc": "Remote-controlled base model for manual steering.",
+        "proDesc": "AI-Assist model with heading hold, constant-speed cruise and camera-assisted operation.",
+        "compareCta": "Compare R vs R Pro",
+        "chips": {
+          "c1": "1.1 m brush width",
+          "c2": "Dry / wet cleaning",
+          "c3": "Single operator",
+          "c4": "Remote control",
+          "c5": "R Pro: heading hold",
+          "c6": "R Pro: cruise control",
+          "c7": "R Pro: camera-assisted operation"
+        },
+        "stats": {
+          "s1": {
+            "value": "1.1 m",
+            "label": "Brush width"
+          },
+          "s2": {
+            "value": "Dry / wet",
+            "label": "Cleaning mode"
+          },
+          "s3": {
+            "value": "Single",
+            "label": "Operator"
+          },
+          "s4": {
+            "value": "AI-Assist",
+            "label": "NuvaTrack-R Pro"
+          }
+        }
+      },
+      "subnav": {
+        "overview": "Overview",
+        "models": "Models",
+        "compare": "Compare",
+        "accessories": "Accessories",
+        "ask": "Ask us",
+        "pricing": "Get pricing"
+      },
+      "choose": {
+        "eyebrow": "Choose your model",
+        "title": "NuvaTrack-R or NuvaTrack-R Pro?",
+        "r": {
+          "badge": "Base model",
+          "tagline": "Remote-controlled base model.",
+          "b1": "Best for cleaning teams that want a reliable manual robot",
+          "b2": "Manual steering",
+          "b3": "Dry / wet cleaning",
+          "b4": "Lower complexity"
+        },
+        "pro": {
+          "badge": "AI-Assist",
+          "tagline": "AI-Assist model for assisted driving.",
+          "b1": "Best for long rows and operators who need assisted driving",
+          "b2": "Heading hold",
+          "b3": "Constant-speed cruise",
+          "b4": "Camera-assisted operation",
+          "b5": "Better operator visibility and control"
+        }
+      },
+      "demo": {
+        "eyebrow": "Demo",
+        "title": "NuvaTrack-R in operation",
+        "subtitle": "Cleaning PV rows in dry and wet operating conditions."
+      },
+      "how": {
+        "eyebrow": "How it works",
+        "title": "From transport to clean rows",
+        "s1": "Transport to site",
+        "s2": "Place on module row",
+        "s3": "Start remote operation",
+        "s4": "Clean dry or wet",
+        "s5": "Move to next row"
+      },
+      "cleaning": {
+        "eyebrow": "Cleaning system",
+        "title": "Built for PV glass surface care",
+        "p1": "Roller brush cleaning system",
+        "p2": "Dry cleaning for routine soiling",
+        "p3": "Wet cleaning for heavier soiling",
+        "p4": "Replaceable brush and consumables",
+        "p5": "Designed for PV glass surface care"
+      },
+      "tech": {
+        "eyebrow": "Technical data",
+        "title": "Specifications",
+        "featuresTitle": "NuvaTrack-R vs NuvaTrack-R Pro",
+        "specsTitle": "Full specifications",
+        "note": "Some configurations are available on request and depend on site conditions."
+      },
+      "inOp": {
+        "eyebrow": "In operation",
+        "title": "In operation",
+        "subtitle": "Field views, cleaning details and robot operation media.",
+        "media": {
+          "vid": "NuvaTrack-R cleaning demo",
+          "hero": "NuvaTrack-R on a PV array",
+          "op1": "NuvaTrack-R field operation",
+          "op2": "NuvaTrack-R cleaning detail"
+        }
+      },
+      "finalCta": {
+        "title": "Choose the right NuvaTrack-R model for your site.",
+        "compare": "Compare models",
+        "accessories": "Ask about accessories"
+      }
+    },
+    "comparePage": {
+      "hero": {
+        "eyebrow": "Compare",
+        "title": "Compare Cleanuva robots",
+        "subtitle": "Choose the right cleaning system for your PV site, operation model and automation level.",
+        "talk": "Talk to Cleanuva",
+        "back": "Back to Robotics"
+      },
+      "selector": {
+        "eyebrow": "Models",
+        "title": "Pick a starting point"
+      },
+      "models": {
+        "nuvatrack-r": {
+          "tagline": "Remote-controlled base model.",
+          "fit": "For flexible site cleaning teams."
+        },
+        "nuvatrack-r-pro": {
+          "tagline": "AI-Assist model with heading hold, cruise control and camera-assisted operation.",
+          "fit": "For long rows and assisted operation."
+        },
+        "nuvatrack-u": {
+          "tagline": "Unattended cleaning robot for repeatable site operations.",
+          "fit": "For repeatable utility-scale operations."
+        },
+        "nuvaspan": {
+          "tagline": "Suspended / bridge-type cleaning system for fixed installations.",
+          "fit": "For fixed arrays and specific structures."
+        }
+      },
+      "viewProduct": "View product",
+      "metrics": {
+        "eyebrow": "Key metrics",
+        "title": "Key decision metrics",
+        "fields": {
+          "automation": "Automation level",
+          "operator": "Operator",
+          "cleaning": "Cleaning mode",
+          "bestFit": "Best fit",
+          "deployment": "Deployment"
+        },
+        "nuvatrack-r": {
+          "automation": "Manual remote",
+          "operator": "Single operator",
+          "cleaning": "Dry / wet",
+          "bestFit": "Flexible site cleaning teams",
+          "deployment": "Portable"
+        },
+        "nuvatrack-r-pro": {
+          "automation": "AI-Assist",
+          "operator": "Single operator",
+          "cleaning": "Dry / wet",
+          "bestFit": "Long rows & assisted operation",
+          "deployment": "Portable"
+        },
+        "nuvatrack-u": {
+          "automation": "Unattended",
+          "operator": "Minimal routine intervention",
+          "cleaning": "Site dependent",
+          "bestFit": "Repeatable utility-scale operations",
+          "deployment": "Site configured"
+        },
+        "nuvaspan": {
+          "automation": "Fixed system",
+          "operator": "Low routine intervention",
+          "cleaning": "Dry cleaning",
+          "bestFit": "Fixed arrays / specific structures",
+          "deployment": "Suspended / bridge-type"
+        }
+      },
+      "tableEyebrow": "Details",
+      "tableTitle": "Detailed comparison",
+      "tableNote": "Some features depend on configuration and site conditions. Quote required for all models.",
+      "groups": {
+        "operation": "Operation model",
+        "automation": "Automation",
+        "cleaning": "Cleaning",
+        "deployment": "Deployment",
+        "visibility": "Visibility & control",
+        "commercial": "Commercial & service"
+      },
+      "rows": {
+        "manualSteering": "Manual steering",
+        "remoteControl": "Remote control",
+        "singleOperator": "Single operator",
+        "unattended": "Unattended operation",
+        "aiAssist": "AI-Assist",
+        "headingHold": "Heading hold",
+        "cruiseControl": "Constant-speed cruise",
+        "dryCleaning": "Dry cleaning",
+        "wetCleaning": "Wet cleaning",
+        "portable": "Portable deployment",
+        "fixedInstall": "Fixed installation",
+        "suspended": "Suspended / bridge",
+        "cameraAssist": "Camera-assisted operation",
+        "accessories": "Accessories available",
+        "quoteRequired": "Quote required"
+      },
+      "val": {
+        "yes": "Yes",
+        "no": "—"
+      },
+      "choose": {
+        "eyebrow": "Recommendation",
+        "title": "Which model should I choose?",
+        "nuvatrack-r": "Choose NuvaTrack-R if you want a reliable, lower-complexity remote-controlled robot for a cleaning team.",
+        "nuvatrack-r-pro": "Choose NuvaTrack-R Pro if you clean long rows and want heading hold, cruise control and camera-assisted operation.",
+        "nuvatrack-u": "Choose NuvaTrack-U if you need unattended, repeatable cleaning across a utility-scale site.",
+        "nuvaspan": "Choose NuvaSpan if you have fixed arrays or specific structures suited to a suspended / bridge-type system."
+      },
+      "cta": {
+        "title": "Not sure which robot fits your site?",
+        "body": "Send us your site type, module layout and cleaning target. We'll recommend the right Cleanuva configuration.",
+        "consultation": "Request a consultation"
+      }
     }
   },
   "Fragmentation": {

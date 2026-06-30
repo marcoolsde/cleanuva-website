@@ -892,6 +892,234 @@
         "desc": "遥控升级款，预留摄像头操作并提供航向保持辅助，作业更顺畅、更可控。"
       },
       "proCta": "咨询 NuvaTrack-R Pro"
+    },
+    "rSeriesPage": {
+      "hero": {
+        "eyebrow": "Cleanuva Robotics",
+        "subtitle": "单人操作的光伏组件清洁机器人，支持干洗与湿洗。",
+        "support": "结构紧凑、可现场部署，面向工商业与大型地面光伏电站。",
+        "rDesc": "遥控基础版，手动转向。",
+        "proDesc": "AI-Assist 版本，具备航向保持、恒速巡航与摄像头辅助操作。",
+        "compareCta": "对比 R 与 R Pro",
+        "chips": {
+          "c1": "1.1 m 刷宽",
+          "c2": "干洗 / 湿洗",
+          "c3": "单人操作",
+          "c4": "遥控",
+          "c5": "R Pro：航向保持",
+          "c6": "R Pro：恒速巡航",
+          "c7": "R Pro：摄像头辅助操作"
+        },
+        "stats": {
+          "s1": {
+            "value": "1.1 m",
+            "label": "刷宽"
+          },
+          "s2": {
+            "value": "干 / 湿",
+            "label": "清洁方式"
+          },
+          "s3": {
+            "value": "单人",
+            "label": "操作者"
+          },
+          "s4": {
+            "value": "AI-Assist",
+            "label": "NuvaTrack-R Pro"
+          }
+        }
+      },
+      "subnav": {
+        "overview": "概览",
+        "models": "型号",
+        "compare": "对比",
+        "accessories": "配件",
+        "ask": "联系",
+        "pricing": "获取报价"
+      },
+      "choose": {
+        "eyebrow": "选择型号",
+        "title": "NuvaTrack-R 还是 NuvaTrack-R Pro？",
+        "r": {
+          "badge": "基础版",
+          "tagline": "遥控基础版。",
+          "b1": "适合想要可靠手动机器人的清洁团队",
+          "b2": "手动转向",
+          "b3": "干洗 / 湿洗",
+          "b4": "复杂度更低"
+        },
+        "pro": {
+          "badge": "AI-Assist",
+          "tagline": "面向辅助驾驶的 AI-Assist 版本。",
+          "b1": "适合长排清洁与需要辅助驾驶的操作者",
+          "b2": "航向保持",
+          "b3": "恒速巡航",
+          "b4": "摄像头辅助操作",
+          "b5": "更好的操作可视性与控制"
+        }
+      },
+      "demo": {
+        "eyebrow": "演示",
+        "title": "NuvaTrack-R 现场作业",
+        "subtitle": "在干、湿作业条件下清洁光伏排列。"
+      },
+      "how": {
+        "eyebrow": "工作方式",
+        "title": "从运输到清洁排列",
+        "s1": "运输到现场",
+        "s2": "放置到组件排",
+        "s3": "启动遥控操作",
+        "s4": "干洗或湿洗",
+        "s5": "移至下一排"
+      },
+      "cleaning": {
+        "eyebrow": "清洁系统",
+        "title": "为光伏玻璃表面养护而设计",
+        "p1": "滚刷清洁系统",
+        "p2": "干洗应对日常积灰",
+        "p3": "湿洗应对较重积灰",
+        "p4": "可更换刷子与耗材",
+        "p5": "为光伏玻璃表面养护而设计"
+      },
+      "tech": {
+        "eyebrow": "技术数据",
+        "title": "规格",
+        "featuresTitle": "NuvaTrack-R 与 NuvaTrack-R Pro 对比",
+        "specsTitle": "完整规格",
+        "note": "部分配置按需提供，并取决于现场条件。"
+      },
+      "inOp": {
+        "eyebrow": "现场作业",
+        "title": "现场作业",
+        "subtitle": "现场画面、清洁细节与机器人作业媒体。",
+        "media": {
+          "vid": "NuvaTrack-R 清洁演示",
+          "hero": "光伏阵列上的 NuvaTrack-R",
+          "op1": "NuvaTrack-R 现场作业",
+          "op2": "NuvaTrack-R 清洁细节"
+        }
+      },
+      "finalCta": {
+        "title": "为你的场地选对 NuvaTrack-R 型号。",
+        "compare": "对比型号",
+        "accessories": "咨询配件"
+      }
+    },
+    "comparePage": {
+      "hero": {
+        "eyebrow": "对比",
+        "title": "对比 Cleanuva 机器人",
+        "subtitle": "按你的光伏场地、运营模式与自动化水平，选择合适的清洁系统。",
+        "talk": "联系 Cleanuva",
+        "back": "返回机器人"
+      },
+      "selector": {
+        "eyebrow": "型号",
+        "title": "从一个起点开始"
+      },
+      "models": {
+        "nuvatrack-r": {
+          "tagline": "遥控基础版。",
+          "fit": "适合灵活的清洁团队。"
+        },
+        "nuvatrack-r-pro": {
+          "tagline": "AI-Assist 版本，具备航向保持、巡航与摄像头辅助操作。",
+          "fit": "适合长排与辅助操作。"
+        },
+        "nuvatrack-u": {
+          "tagline": "无人值守清洁机器人，面向可重复作业。",
+          "fit": "适合可重复的大型地面作业。"
+        },
+        "nuvaspan": {
+          "tagline": "面向固定安装的悬挂/桥架清洁系统。",
+          "fit": "适合固定阵列与特定结构。"
+        }
+      },
+      "viewProduct": "查看产品",
+      "metrics": {
+        "eyebrow": "关键指标",
+        "title": "关键选型指标",
+        "fields": {
+          "automation": "自动化水平",
+          "operator": "操作者",
+          "cleaning": "清洁方式",
+          "bestFit": "最适合",
+          "deployment": "部署"
+        },
+        "nuvatrack-r": {
+          "automation": "手动遥控",
+          "operator": "单人操作",
+          "cleaning": "干 / 湿",
+          "bestFit": "灵活清洁团队",
+          "deployment": "便携"
+        },
+        "nuvatrack-r-pro": {
+          "automation": "AI-Assist",
+          "operator": "单人操作",
+          "cleaning": "干 / 湿",
+          "bestFit": "长排与辅助操作",
+          "deployment": "便携"
+        },
+        "nuvatrack-u": {
+          "automation": "无人值守",
+          "operator": "极少例行干预",
+          "cleaning": "依现场而定",
+          "bestFit": "可重复的大型地面作业",
+          "deployment": "按现场配置"
+        },
+        "nuvaspan": {
+          "automation": "固定系统",
+          "operator": "低例行干预",
+          "cleaning": "干洗",
+          "bestFit": "固定阵列 / 特定结构",
+          "deployment": "悬挂 / 桥架"
+        }
+      },
+      "tableEyebrow": "详情",
+      "tableTitle": "详细对比",
+      "tableNote": "部分功能取决于配置与现场条件。所有型号均需询价。",
+      "groups": {
+        "operation": "运营模式",
+        "automation": "自动化",
+        "cleaning": "清洁",
+        "deployment": "部署",
+        "visibility": "可视与控制",
+        "commercial": "商务与服务"
+      },
+      "rows": {
+        "manualSteering": "手动转向",
+        "remoteControl": "遥控",
+        "singleOperator": "单人操作",
+        "unattended": "无人值守运行",
+        "aiAssist": "AI-Assist",
+        "headingHold": "航向保持",
+        "cruiseControl": "恒速巡航",
+        "dryCleaning": "干洗",
+        "wetCleaning": "湿洗",
+        "portable": "便携部署",
+        "fixedInstall": "固定安装",
+        "suspended": "悬挂 / 桥架",
+        "cameraAssist": "摄像头辅助操作",
+        "accessories": "提供配件",
+        "quoteRequired": "需询价"
+      },
+      "val": {
+        "yes": "是",
+        "no": "—"
+      },
+      "choose": {
+        "eyebrow": "推荐",
+        "title": "我该选择哪个型号？",
+        "nuvatrack-r": "如果你想要一台可靠、复杂度更低的遥控机器人用于清洁团队，选择 NuvaTrack-R。",
+        "nuvatrack-r-pro": "如果你清洁长排并希望获得航向保持、巡航与摄像头辅助操作，选择 NuvaTrack-R Pro。",
+        "nuvatrack-u": "如果你需要在大型地面电站进行无人值守、可重复的清洁，选择 NuvaTrack-U。",
+        "nuvaspan": "如果你有适合悬挂/桥架系统的固定阵列或特定结构，选择 NuvaSpan。"
+      },
+      "cta": {
+        "title": "不确定哪款机器人适合你的场地？",
+        "body": "发给我们场地类型、组件排布与清洁目标。我们会推荐合适的 Cleanuva 配置。",
+        "consultation": "预约咨询"
+      }
     }
   },
   "Fragmentation": {
