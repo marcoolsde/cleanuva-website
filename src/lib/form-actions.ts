@@ -81,45 +81,6 @@ export async function submitQuote(input: QuoteInput, locale: string): Promise<Su
   return deliver({ formType: "quote_request", sourcePage: "get_pricing" }, parsed.data, locale);
 }
 
-/**
- * Accessories inquiry email template — ready for a future email service / admin.
- * Today it is only logged alongside the payload (no real mail is sent yet);
- * WIRING POINT: send `subject` + `text` to RECIPIENT from a transactional email
- * service, or have the webhook/CRM do it.
- */
-function formatAccessoryEmail(d: {
-  inquiryType: string;
-  firstName: string;
-  lastName: string;
-  company: string;
-  country: string;
-  email: string;
-  phone: string;
-  robotModel: string;
-  accessoryInterest: string | null;
-  hearAbout: string | null;
-  message: string;
-  locale: string;
-  submittedAt: string;
-}) {
-  const subject = `[Cleanuva Website] Accessories inquiry — ${d.inquiryType} — ${d.company}`;
-  const text = [
-    `Inquiry type: ${d.inquiryType}`,
-    `Name: ${d.firstName} ${d.lastName}`,
-    `Company: ${d.company}`,
-    `Country: ${d.country}`,
-    `Email: ${d.email}`,
-    `Phone: ${d.phone}`,
-    `Robot model: ${d.robotModel}`,
-    `Accessory interest: ${d.accessoryInterest ?? "—"}`,
-    `How heard: ${d.hearAbout ?? "—"}`,
-    `Message: ${d.message}`,
-    `Locale: ${d.locale}`,
-    `Submitted at: ${d.submittedAt}`,
-  ].join("\n");
-  return { to: RECIPIENT, subject, text };
-}
-
 export async function submitAccessoryInquiry(
   input: AccessoryInput,
   locale: string,
@@ -128,26 +89,21 @@ export async function submitAccessoryInquiry(
   if (!parsed.success) return { ok: false, error: "invalid" };
   const d = parsed.data;
 
+  // Same delivery path as quote/demo — through deliver() → FORM_WEBHOOK_URL.
   const data = {
-    inquiryType: d.inquiryType,
     firstName: d.firstName,
     lastName: d.lastName,
     company: d.company,
     country: d.country,
     email: d.email,
     phone: d.phone,
+    inquiryType: d.inquiryType,
     robotModel: d.robotModel,
     accessoryInterest: d.accessoryInterest.trim() || null,
-    hearAbout: d.hearAbout.trim() || null,
+    howHeard: d.hearAbout.trim() || null,
     message: d.message,
     consent: d.consent,
   };
-
-  // Email template prepared now (not sent yet — see formatAccessoryEmail).
-  console.info(
-    "[accessories-inquiry] email:",
-    JSON.stringify(formatAccessoryEmail({ ...data, locale, submittedAt: new Date().toISOString() })),
-  );
 
   return deliver({ formType: "accessories_inquiry", sourcePage: "robotics_accessories" }, data, locale);
 }
