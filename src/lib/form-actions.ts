@@ -11,37 +11,48 @@ import {
 import { LEGAL } from "@/content/legal";
 
 /**
- * Two conceptually separate commercial funnels (founder clarification #5):
- *   platform-demo  → AI Platform sales process
- *   robotics-rfq   → Robotics quotation process
- * Even though one team handles both today, the payload tags the funnel so the
- * downstream routing stays distinct.
+ * Single lead-delivery path for every public form (demo, quote, accessories).
+ * Each lead is tagged with a stable `formType` + `sourcePage` so a downstream
+ * Make / Zapier / n8n / CRM can route it. Delivery is a configurable webhook
+ * (FORM_WEBHOOK_URL, server-only) — no hard-coded endpoint, no API keys here.
  *
- * Delivery is a configurable webhook (FORM_WEBHOOK_URL, server-only). With no
- * endpoint set we log and succeed gracefully so the funnel is never blocked.
- * Live CRM / quotation-system integration is a deliberate follow-up task.
+ * Behaviour when FORM_WEBHOOK_URL is NOT set:
+ *   • production  → return ok:false (never fake success; the visitor is shown an
+ *                   error and asked to email info@cleanuva.de — lead not lost).
+ *   • dev / test  → log the payload + return ok:true so the funnel is testable
+ *                   locally without configuring a real webhook.
  */
 
-const serverMessages = { required: "Required", email: "Invalid email" };
+const serverMessages = { required: "Required", email: "Invalid email", consent: "Required" };
+const RECIPIENT = LEGAL.contactEmail; // info@cleanuva.de
 
 export type SubmitResult = { ok: true } | { ok: false; error: string };
 
+type LeadMeta = { formType: string; sourcePage: string };
+
 async function deliver(
-  funnel: "platform-demo" | "robotics-rfq" | "accessories-inquiry",
-  data: unknown,
+  meta: LeadMeta,
+  data: Record<string, unknown>,
   locale: string,
 ): Promise<SubmitResult> {
   const payload = {
-    funnel,
+    formType: meta.formType,
+    sourcePage: meta.sourcePage,
     locale,
     submittedAt: new Date().toISOString(),
-    data,
+    recipient: RECIPIENT,
+    ...data,
   };
 
   const url = process.env.FORM_WEBHOOK_URL;
   if (!url) {
-    // No endpoint configured yet — keep the funnel working in dev/preview.
-    console.info("[lead] no FORM_WEBHOOK_URL set; payload:", JSON.stringify(payload));
+    if (process.env.NODE_ENV === "production") {
+      console.error(
+        `[lead] FORM_WEBHOOK_URL missing in production — ${meta.formType} NOT delivered; configure it to enable delivery.`,
+      );
+      return { ok: false, error: "not_configured" };
+    }
+    console.info("[lead] no FORM_WEBHOOK_URL (dev); payload:", JSON.stringify(payload));
     return { ok: true };
   }
 
@@ -61,79 +72,63 @@ async function deliver(
 export async function submitDemo(input: DemoInput, locale: string): Promise<SubmitResult> {
   const parsed = makeDemoSchema(serverMessages).safeParse(input);
   if (!parsed.success) return { ok: false, error: "invalid" };
-  return deliver("platform-demo", parsed.data, locale);
+  return deliver({ formType: "demo_request", sourcePage: "request_demo" }, parsed.data, locale);
 }
 
 export async function submitQuote(input: QuoteInput, locale: string): Promise<SubmitResult> {
   const parsed = makeQuoteSchema(serverMessages).safeParse(input);
   if (!parsed.success) return { ok: false, error: "invalid" };
-  return deliver("robotics-rfq", parsed.data, locale);
+  return deliver({ formType: "quote_request", sourcePage: "get_pricing" }, parsed.data, locale);
 }
-
-/** Public support inbox for accessories / general inquiries. */
-const ACCESSORY_RECIPIENT = LEGAL.contactEmail; // info@cleanuva.de
 
 /**
- * Notification template for the accessories inquiry — ready for a future email
- * service / admin (app.cleanuva.ai/admin). Today it is only logged alongside
- * the payload; WIRING POINT: send `subject` + `text` to ACCESSORY_RECIPIENT from
- * a transactional email service (or have the webhook/CRM do it).
- *
- *   Subject: [Cleanuva Website] Accessories inquiry — {inquiryType} — {company}
+ * Accessories inquiry email template — ready for a future email service / admin.
+ * Today it is only logged alongside the payload (no real mail is sent yet);
+ * WIRING POINT: send `subject` + `text` to RECIPIENT from a transactional email
+ * service, or have the webhook/CRM do it.
  */
-function formatAccessoryEmail(lead: AccessoryLead) {
-  const subject = `[Cleanuva Website] Accessories inquiry — ${lead.inquiryType} — ${lead.company}`;
-  const text = [
-    `Inquiry type: ${lead.inquiryType}`,
-    `Name: ${lead.firstName} ${lead.lastName}`,
-    `Company: ${lead.company}`,
-    `Country: ${lead.country}`,
-    `Email: ${lead.email}`,
-    `Phone: ${lead.phone}`,
-    `Robot model: ${lead.robotModel}`,
-    `Accessory interest: ${lead.accessoryInterest ?? "—"}`,
-    `How heard: ${lead.hearAbout ?? "—"}`,
-    `Message: ${lead.message}`,
-    `Page source: ${lead.page}`,
-    `Locale: ${lead.locale}`,
-    `Submitted at: ${lead.submittedAt}`,
-  ].join("\n");
-  return { to: ACCESSORY_RECIPIENT, subject, text };
-}
-
-type AccessoryLead = {
-  source: "website";
-  page: "robotics_accessories";
-  recipient: string;
-  inquiryType: AccessoryInput["inquiryType"];
+function formatAccessoryEmail(d: {
+  inquiryType: string;
   firstName: string;
   lastName: string;
   company: string;
   country: string;
   email: string;
   phone: string;
-  robotModel: AccessoryInput["robotModel"];
+  robotModel: string;
   accessoryInterest: string | null;
   hearAbout: string | null;
   message: string;
-  consent: boolean;
   locale: string;
   submittedAt: string;
-};
+}) {
+  const subject = `[Cleanuva Website] Accessories inquiry — ${d.inquiryType} — ${d.company}`;
+  const text = [
+    `Inquiry type: ${d.inquiryType}`,
+    `Name: ${d.firstName} ${d.lastName}`,
+    `Company: ${d.company}`,
+    `Country: ${d.country}`,
+    `Email: ${d.email}`,
+    `Phone: ${d.phone}`,
+    `Robot model: ${d.robotModel}`,
+    `Accessory interest: ${d.accessoryInterest ?? "—"}`,
+    `How heard: ${d.hearAbout ?? "—"}`,
+    `Message: ${d.message}`,
+    `Locale: ${d.locale}`,
+    `Submitted at: ${d.submittedAt}`,
+  ].join("\n");
+  return { to: RECIPIENT, subject, text };
+}
 
 export async function submitAccessoryInquiry(
   input: AccessoryInput,
   locale: string,
 ): Promise<SubmitResult> {
-  const parsed = makeAccessorySchema({ ...serverMessages, consent: "Required" }).safeParse(input);
+  const parsed = makeAccessorySchema(serverMessages).safeParse(input);
   if (!parsed.success) return { ok: false, error: "invalid" };
   const d = parsed.data;
 
-  // Future-admin-ready payload (flat fields keyed for app.cleanuva.ai/admin).
-  const lead: AccessoryLead = {
-    source: "website",
-    page: "robotics_accessories",
-    recipient: ACCESSORY_RECIPIENT,
+  const data = {
     inquiryType: d.inquiryType,
     firstName: d.firstName,
     lastName: d.lastName,
@@ -146,24 +141,13 @@ export async function submitAccessoryInquiry(
     hearAbout: d.hearAbout.trim() || null,
     message: d.message,
     consent: d.consent,
-    locale,
-    submittedAt: new Date().toISOString(),
   };
 
-  // Email template is prepared now; actual send happens once an email service
-  // or webhook/CRM is wired (no real mail is sent yet).
-  console.info("[accessories-inquiry] email:", JSON.stringify(formatAccessoryEmail(lead)));
+  // Email template prepared now (not sent yet — see formatAccessoryEmail).
+  console.info(
+    "[accessories-inquiry] email:",
+    JSON.stringify(formatAccessoryEmail({ ...data, locale, submittedAt: new Date().toISOString() })),
+  );
 
-  // Production safety: never fake success when there is nowhere to deliver the
-  // lead. Without FORM_WEBHOOK_URL in production we fail loudly so the visitor is
-  // told to email us instead of silently losing the inquiry. (Dev/test still
-  // logs + succeeds via deliver() so the funnel is testable locally.)
-  if (process.env.NODE_ENV === "production" && !process.env.FORM_WEBHOOK_URL) {
-    console.error(
-      "[accessories-inquiry] FORM_WEBHOOK_URL missing in production — inquiry NOT delivered; configure it to enable delivery.",
-    );
-    return { ok: false, error: "not_configured" };
-  }
-
-  return deliver("accessories-inquiry", lead, locale);
+  return deliver({ formType: "accessories_inquiry", sourcePage: "robotics_accessories" }, data, locale);
 }

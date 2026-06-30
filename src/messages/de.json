@@ -1035,7 +1035,7 @@
     "required": "Dieses Feld ist erforderlich.",
     "invalidEmail": "Bitte eine gültige E-Mail-Adresse eingeben.",
     "submitting": "Wird gesendet…",
-    "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder schreiben Sie uns direkt.",
+    "errorGeneric": "Wir konnten Ihre Anfrage im Moment nicht senden. Bitte kontaktieren Sie uns direkt unter info@cleanuva.de.",
     "optional": "optional",
     "selectPlaceholder": "Bitte auswählen",
     "Demo": {
@@ -1171,7 +1171,10 @@
         "not_sure": "Noch unsicher"
       },
       "submitError": "Wir konnten Ihre Anfrage gerade nicht senden. Bitte schreiben Sie uns direkt an info@cleanuva.de."
-    }
+    },
+    "consent": "Ich bin einverstanden, dass Cleanuva meine Angaben zur Beantwortung dieser Anfrage verwendet, wie beschrieben in der",
+    "privacyPolicy": "Datenschutzerklärung",
+    "consentError": "Bitte stimmen Sie zu, um fortzufahren."
   },
   "Legal": {
     "imprint": {

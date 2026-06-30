@@ -1,7 +1,13 @@
 "use client";
 
 import * as React from "react";
-import { Controller, type Control, type FieldValues, type Path } from "react-hook-form";
+import {
+  Controller,
+  type Control,
+  type FieldValues,
+  type Path,
+  type UseFormRegisterReturn,
+} from "react-hook-form";
 
 import { CheckCircle2 } from "lucide-react";
 
@@ -12,7 +18,46 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
+
+/** Privacy-consent checkbox shared across the public lead forms (GDPR). */
+export function ConsentField({
+  registration,
+  error,
+  label,
+  privacyLabel,
+}: {
+  registration: UseFormRegisterReturn;
+  error?: string;
+  label: string;
+  privacyLabel: string;
+}) {
+  return (
+    <div className="space-y-1.5">
+      <label htmlFor={registration.name} className="flex items-start gap-3 text-body-s text-ink-2">
+        <input
+          id={registration.name}
+          type="checkbox"
+          className="mt-0.5 size-4 shrink-0 rounded border-line accent-cool"
+          {...registration}
+        />
+        <span>
+          {label}{" "}
+          <Link href="/company/legal/privacy" className="text-cool-text underline">
+            {privacyLabel}
+          </Link>
+          .
+        </span>
+      </label>
+      {error ? (
+        <p className="text-xs text-destructive" role="alert">
+          {error}
+        </p>
+      ) : null}
+    </div>
+  );
+}
 
 /** Shared confirmation panel shown after a successful submit. */
 export function FormSuccess({ title, body }: { title: string; body: string }) {

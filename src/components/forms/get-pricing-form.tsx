@@ -8,7 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/primitives/button";
-import { Field, SelectField, FormSuccess, fieldControl } from "@/components/forms/fields";
+import { Field, SelectField, FormSuccess, ConsentField, fieldControl } from "@/components/forms/fields";
 import { makeQuoteSchema, type QuoteInput } from "@/lib/form-schemas";
 import { submitQuote } from "@/lib/form-actions";
 
@@ -41,7 +41,7 @@ export function GetPricingForm({ initialModel }: { initialModel?: string }) {
   const [submitFailed, setSubmitFailed] = React.useState(false);
 
   const schema = React.useMemo(
-    () => makeQuoteSchema({ required: t("required"), email: t("invalidEmail") }),
+    () => makeQuoteSchema({ required: t("required"), email: t("invalidEmail"), consent: t("consentError") }),
     [t],
   );
 
@@ -68,6 +68,7 @@ export function GetPricingForm({ initialModel }: { initialModel?: string }) {
       email: "",
       company: "",
       message: "",
+      consent: false,
     },
   });
 
@@ -186,6 +187,13 @@ export function GetPricingForm({ initialModel }: { initialModel?: string }) {
             <Textarea id="q-message" rows={4} className="rounded-md border-line bg-surface-sunk text-base text-ink" {...register("message")} />
           </Field>
         </fieldset>
+
+        <ConsentField
+          registration={register("consent")}
+          error={errors.consent?.message}
+          label={t("consent")}
+          privacyLabel={t("privacyPolicy")}
+        />
 
         {submitFailed ? (
           <p className="text-sm text-destructive" role="alert">

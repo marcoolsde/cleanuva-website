@@ -192,7 +192,7 @@ export function AccessoryInquiryForm() {
 
       {submitFailed ? (
         <p className="text-sm text-destructive" role="alert">
-          {tA("submitError")}
+          {t("errorGeneric")}
         </p>
       ) : null}
 

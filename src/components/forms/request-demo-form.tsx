@@ -8,7 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/primitives/button";
-import { Field, SelectField, FormSuccess, fieldControl } from "@/components/forms/fields";
+import { Field, SelectField, FormSuccess, ConsentField, fieldControl } from "@/components/forms/fields";
 import { makeDemoSchema, type DemoInput } from "@/lib/form-schemas";
 import { submitDemo } from "@/lib/form-actions";
 
@@ -25,7 +25,7 @@ export function RequestDemoForm() {
   const [submitFailed, setSubmitFailed] = React.useState(false);
 
   const schema = React.useMemo(
-    () => makeDemoSchema({ required: t("required"), email: t("invalidEmail") }),
+    () => makeDemoSchema({ required: t("required"), email: t("invalidEmail"), consent: t("consentError") }),
     [t],
   );
 
@@ -45,6 +45,7 @@ export function RequestDemoForm() {
       region: "",
       goal: "",
       message: "",
+      consent: false,
     },
   });
 
@@ -126,6 +127,13 @@ export function RequestDemoForm() {
       >
         <Textarea id="message" rows={4} className="rounded-md border-line bg-surface-sunk text-base text-ink" {...register("message")} />
       </Field>
+
+      <ConsentField
+        registration={register("consent")}
+        error={errors.consent?.message}
+        label={t("consent")}
+        privacyLabel={t("privacyPolicy")}
+      />
 
       {submitFailed ? (
         <p className="text-sm text-destructive" role="alert">

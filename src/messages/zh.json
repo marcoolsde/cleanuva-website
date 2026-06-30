@@ -1035,7 +1035,7 @@
     "required": "此字段为必填项。",
     "invalidEmail": "请输入有效的电子邮箱地址。",
     "submitting": "正在提交…",
-    "errorGeneric": "出了点问题。请重试或直接发邮件给我们。",
+    "errorGeneric": "暂时无法提交请求。请直接发送邮件至 info@cleanuva.de 联系我们。",
     "optional": "选填",
     "selectPlaceholder": "请选择",
     "Demo": {
@@ -1171,7 +1171,10 @@
         "not_sure": "尚不确定"
       },
       "submitError": "暂时无法发送您的咨询，请直接发送邮件至 info@cleanuva.de。"
-    }
+    },
+    "consent": "我同意 Cleanuva 使用我提供的信息回复本次请求，详见",
+    "privacyPolicy": "隐私政策",
+    "consentError": "请勾选同意以继续。"
   },
   "Legal": {
     "imprint": {

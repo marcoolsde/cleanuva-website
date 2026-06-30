@@ -8,8 +8,9 @@ import { z } from "zod";
  */
 
 type Messages = { required: string; email: string };
+type ConsentMessages = Messages & { consent: string };
 
-export function makeDemoSchema(m: Messages) {
+export function makeDemoSchema(m: ConsentMessages) {
   return z.object({
     name: z.string().min(1, m.required),
     email: z.string().min(1, m.required).email(m.email),
@@ -19,12 +20,13 @@ export function makeDemoSchema(m: Messages) {
     region: z.string().min(1, m.required),
     goal: z.string(),
     message: z.string(),
+    consent: z.boolean().refine((v) => v === true, { message: m.consent }),
   });
 }
 
 export type DemoInput = z.infer<ReturnType<typeof makeDemoSchema>>;
 
-export function makeQuoteSchema(m: Messages) {
+export function makeQuoteSchema(m: ConsentMessages) {
   return z.object({
     model: z.string().min(1, m.required),
     battery: z.string().min(1, m.required),
@@ -36,6 +38,7 @@ export function makeQuoteSchema(m: Messages) {
     email: z.string().min(1, m.required).email(m.email),
     company: z.string().min(1, m.required),
     message: z.string(),
+    consent: z.boolean().refine((v) => v === true, { message: m.consent }),
   });
 }
 
@@ -51,8 +54,6 @@ export const INQUIRY_TYPES = [
 
 /** Robot-model values for the accessories inquiry (no link to any product page). */
 export const INQUIRY_MODELS = ["not_sure", "nuvatrack-r", "nuvatrack-r-pro", "nuvatrack-u", "nuvaspan"] as const;
-
-type ConsentMessages = Messages & { consent: string };
 
 /**
  * Accessories / contact inquiry (P1A). A general support-style lead from the
