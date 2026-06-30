@@ -805,9 +805,9 @@
       "compatTitle": "按你的机器人与场地匹配。",
       "compatLead": "配件按机器人型号、清洁方式与场地条件进行匹配。",
       "compat": {
-        "point1": "告诉我们你的机器人型号与场地条件。",
-        "point2": "我们帮你匹配刷子、电池、充电器与保养套件。",
-        "point3": "部分部件取决于配置与供货情况。"
+        "point1": "部分配件取决于机器人型号与配置。",
+        "point2": "Cleanuva 将在报价前确认兼容性。",
+        "point3": "对于 NuvaSpan 等项目化系统，部件可能按项目定制。"
       },
       "ctaTitle": "需要配件或服务备件？",
       "ctaBody": "告诉我们你的机器人型号与场地条件——我们会帮你确定合适的部件与清洁配置。",
@@ -865,7 +865,80 @@
       },
       "requestQuote": "申请配件报价",
       "contactSupport": "联系支持",
-      "inquiryEyebrow": "联系我们"
+      "inquiryEyebrow": "配件询价",
+      "hero": {
+        "eyebrow": "Cleanuva Robotics · 配件与服务",
+        "title": "配件与服务件",
+        "subtitle": "面向 Cleanuva 太阳能清洁机器人的刷子、耗材与服务件。",
+        "support": "告诉我们机器人型号、现场条件与所需部件——我们将帮助确定合适的配件或服务件。"
+      },
+      "cta": {
+        "sendInquiry": "发送询价",
+        "compareRobots": "对比机器人",
+        "contactSupport": "联系支持",
+        "addToInquiry": "加入询价",
+        "startInquiry": "开始询价"
+      },
+      "categories": {
+        "eyebrow": "我们可提供",
+        "title": "配件与服务分类",
+        "intro": "刷子、耗材、控制配件与服务件，按型号与现场匹配。",
+        "items": {
+          "brushes": {
+            "title": "刷子",
+            "desc": "适用于干式与湿式作业的清洁刷。",
+            "note": "因型号而定 · 由 Cleanuva 确认"
+          },
+          "consumables": {
+            "title": "耗材",
+            "desc": "日常运行中的可更换易损件。",
+            "note": "按配置提供"
+          },
+          "control": {
+            "title": "遥控与控制",
+            "desc": "遥控器、摄像头及操作员辅助配件。",
+            "note": "遥控型号"
+          },
+          "power": {
+            "title": "电池与充电",
+            "desc": "电池组与充电相关部件，视型号而定。",
+            "note": "因型号而定"
+          },
+          "service": {
+            "title": "服务件",
+            "desc": "用于现场维护与维修的更换部件。",
+            "note": "按配置匹配"
+          },
+          "support": {
+            "title": "支持与维护",
+            "desc": "协助为你的机器人与现场选定合适部件。",
+            "note": "可按需提供"
+          }
+        }
+      },
+      "chooseModel": {
+        "eyebrow": "按型号",
+        "title": "按机器人型号选择",
+        "intro": "选择你运行的机器人——即使尚不确定，也可直接提交询价。",
+        "notSure": {
+          "badge": "暂无型号",
+          "name": "尚不确定",
+          "note": "仍可提交询价——我们将帮助确定型号与合适的部件。"
+        }
+      },
+      "checklist": {
+        "eyebrow": "信息更全，回复更快",
+        "title": "询价时请提供",
+        "intro": "几项信息能帮助我们在首次回复就匹配到正确部件。",
+        "i1": "机器人型号",
+        "i2": "所需配件或部件",
+        "i3": "现场所在国家",
+        "i4": "清洁条件（干式 / 湿式）",
+        "i5": "数量",
+        "i6": "紧急程度",
+        "i7": "现有机器人信息（如有序列号）",
+        "photoNote": "图片可在后续邮件中补充——表单暂不支持附件。"
+      }
     },
     "home": {
       "eyebrow": "Cleanuva Robotics",

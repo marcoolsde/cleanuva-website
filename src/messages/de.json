@@ -805,9 +805,9 @@
       "compatTitle": "Passend zu Roboter und Standort.",
       "compatLead": "Zubehör wird nach Robotermodell, Reinigungsmethode und Standortbedingungen abgestimmt.",
       "compat": {
-        "point1": "Nennen Sie uns Ihr Robotermodell und die Standortbedingungen.",
-        "point2": "Wir helfen, Bürsten, Batterien, Ladegeräte und Service-Kits zuzuordnen.",
-        "point3": "Manche Teile hängen von Konfiguration und Verfügbarkeit ab."
+        "point1": "Manche Zubehörteile hängen von Robotermodell und Konfiguration ab.",
+        "point2": "Cleanuva bestätigt die Kompatibilität vor dem Angebot.",
+        "point3": "Bei projektspezifischen Systemen wie NuvaSpan können Teile projektbezogen ausgelegt sein."
       },
       "ctaTitle": "Zubehör oder Serviceteile benötigt?",
       "ctaBody": "Nennen Sie uns Ihr Robotermodell und die Standortbedingungen — wir helfen, die richtigen Teile und das passende Reinigungssetup zu finden.",
@@ -865,7 +865,80 @@
       },
       "requestQuote": "Zubehör-Angebot anfragen",
       "contactSupport": "Support kontaktieren",
-      "inquiryEyebrow": "Kontakt"
+      "inquiryEyebrow": "Zubehöranfrage",
+      "hero": {
+        "eyebrow": "Cleanuva Robotics · Teile & Service",
+        "title": "Zubehör & Ersatzteile",
+        "subtitle": "Bürsten, Verbrauchsmaterial und Ersatzteile für Cleanuva Solar-Reinigungsroboter.",
+        "support": "Nennen Sie uns Robotermodell, Standortbedingungen und benötigtes Teil — wir helfen, das richtige Zubehör oder Serviceteil zu finden."
+      },
+      "cta": {
+        "sendInquiry": "Anfrage senden",
+        "compareRobots": "Roboter vergleichen",
+        "contactSupport": "Support kontaktieren",
+        "addToInquiry": "Zur Anfrage hinzufügen",
+        "startInquiry": "Anfrage starten"
+      },
+      "categories": {
+        "eyebrow": "Was wir liefern",
+        "title": "Zubehör- und Servicekategorien",
+        "intro": "Bürsten, Verbrauchsmaterial, Steuerzubehör und Ersatzteile — abgestimmt auf Modell und Standort.",
+        "items": {
+          "brushes": {
+            "title": "Bürsten",
+            "desc": "Reinigungsbürsten für Trocken- und Nassbetrieb.",
+            "note": "Modellabhängig · mit Cleanuva bestätigt"
+          },
+          "consumables": {
+            "title": "Verbrauchsmaterial",
+            "desc": "Austauschbare Verschleißteile für den laufenden Betrieb.",
+            "note": "Je nach Konfiguration verfügbar"
+          },
+          "control": {
+            "title": "Fernsteuerung & Steuerung",
+            "desc": "Fernsteuerung, Kamera und Zubehör zur Bedienerunterstützung.",
+            "note": "Ferngesteuerte Modelle"
+          },
+          "power": {
+            "title": "Batterie & Laden",
+            "desc": "Batteriepacks und Ladekomponenten, je nach Modell.",
+            "note": "Modellabhängig"
+          },
+          "service": {
+            "title": "Ersatzteile",
+            "desc": "Ersatzteile für Wartung und Reparatur im Feld.",
+            "note": "Nach Konfiguration abgestimmt"
+          },
+          "support": {
+            "title": "Support & Wartung",
+            "desc": "Hilfe bei der Auswahl des richtigen Teils für Roboter und Standort.",
+            "note": "Auf Anfrage verfügbar"
+          }
+        }
+      },
+      "chooseModel": {
+        "eyebrow": "Nach Robotermodell",
+        "title": "Nach Robotermodell wählen",
+        "intro": "Wählen Sie Ihren Roboter — oder senden Sie eine Anfrage, auch wenn Sie noch unsicher sind.",
+        "notSure": {
+          "badge": "Noch kein Modell",
+          "name": "Noch unsicher",
+          "note": "Senden Sie Ihre Anfrage trotzdem — wir helfen, Modell und passendes Teil zu bestimmen."
+        }
+      },
+      "checklist": {
+        "eyebrow": "Bessere Anfragen, schnellere Antworten",
+        "title": "Was Ihre Anfrage enthalten sollte",
+        "intro": "Ein paar Angaben helfen uns, das richtige Teil schon in der ersten Antwort zu treffen.",
+        "i1": "Robotermodell",
+        "i2": "Benötigtes Zubehör oder Teil",
+        "i3": "Land des Standorts",
+        "i4": "Reinigungsbedingung (trocken / nass)",
+        "i5": "Menge",
+        "i6": "Dringlichkeit",
+        "i7": "Angaben zum vorhandenen Roboter (Seriennummer, falls verfügbar)",
+        "photoNote": "Fotos können später per E-Mail nachgereicht werden — das Formular nimmt noch keine Anhänge entgegen."
+      }
     },
     "home": {
       "eyebrow": "Cleanuva Robotics",

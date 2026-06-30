@@ -805,9 +805,9 @@
       "compatTitle": "Matched to your robot and site.",
       "compatLead": "Accessories are matched by robot model, cleaning method and site conditions.",
       "compat": {
-        "point1": "Tell us your robot model and site conditions.",
-        "point2": "We help match brushes, batteries, chargers and service kits.",
-        "point3": "Some parts depend on configuration and availability."
+        "point1": "Some accessories depend on robot model and configuration.",
+        "point2": "Cleanuva confirms compatibility before quotation.",
+        "point3": "For project-specific systems like NuvaSpan, parts may be project-engineered."
       },
       "ctaTitle": "Need accessories or service parts?",
       "ctaBody": "Tell us your robot model and site conditions — we’ll help identify the right parts and cleaning setup.",
@@ -865,7 +865,80 @@
       },
       "requestQuote": "Request accessories quote",
       "contactSupport": "Contact support",
-      "inquiryEyebrow": "Contact"
+      "inquiryEyebrow": "Accessories inquiry",
+      "hero": {
+        "eyebrow": "Cleanuva Robotics · Parts & service",
+        "title": "Accessories & service parts",
+        "subtitle": "Brushes, consumables and service parts for Cleanuva solar cleaning robots.",
+        "support": "Tell us your robot model, site condition and required part — we'll help identify the right accessory or service item."
+      },
+      "cta": {
+        "sendInquiry": "Send inquiry",
+        "compareRobots": "Compare robots",
+        "contactSupport": "Contact support",
+        "addToInquiry": "Add to inquiry",
+        "startInquiry": "Start an inquiry"
+      },
+      "categories": {
+        "eyebrow": "What we supply",
+        "title": "Accessory and service categories",
+        "intro": "Brushes, consumables, control accessories and service parts — matched to model and site.",
+        "items": {
+          "brushes": {
+            "title": "Brushes",
+            "desc": "Cleaning brushes for dry and wet operating conditions.",
+            "note": "Model-dependent · confirmed with Cleanuva"
+          },
+          "consumables": {
+            "title": "Consumables",
+            "desc": "Replaceable wear parts for routine operation.",
+            "note": "Available by configuration"
+          },
+          "control": {
+            "title": "Remote & control",
+            "desc": "Remote control, camera and operator-support accessories.",
+            "note": "Remote-controlled models"
+          },
+          "power": {
+            "title": "Battery & charging",
+            "desc": "Battery packs and charging items, where applicable by model.",
+            "note": "Model-dependent"
+          },
+          "service": {
+            "title": "Service parts",
+            "desc": "Replacement parts for field maintenance and repair.",
+            "note": "Matched by configuration"
+          },
+          "support": {
+            "title": "Support & maintenance",
+            "desc": "Help identifying the right item for your robot and site.",
+            "note": "Available on request"
+          }
+        }
+      },
+      "chooseModel": {
+        "eyebrow": "By robot model",
+        "title": "Choose by robot model",
+        "intro": "Pick the robot you run — or send an inquiry even if you're not sure yet.",
+        "notSure": {
+          "badge": "No model yet",
+          "name": "Not sure yet",
+          "note": "Send your inquiry anyway — we'll help identify the model and the right part."
+        }
+      },
+      "checklist": {
+        "eyebrow": "Better inquiries, faster answers",
+        "title": "What to include in your inquiry",
+        "intro": "A few details help us match the right part on the first reply.",
+        "i1": "Robot model",
+        "i2": "Accessory or part needed",
+        "i3": "Site country",
+        "i4": "Cleaning condition (dry / wet)",
+        "i5": "Quantity",
+        "i6": "Urgency",
+        "i7": "Existing robot information (serial number if available)",
+        "photoNote": "Photos can be shared later by email — the form doesn't take attachments yet."
+      }
     },
     "home": {
       "eyebrow": "Cleanuva Robotics",

@@ -2,7 +2,10 @@
 
 import * as React from "react";
 import Image from "next/image";
-import type { LucideIcon } from "lucide-react";
+import {
+  Brush, BatteryCharging, PlugZap, Gamepad2, Droplets, Cog, Waves, Wrench, Recycle, Package,
+  type LucideIcon,
+} from "lucide-react";
 
 /**
  * Accessory card image — a horizontal rectangular frame that shows the WHOLE
@@ -11,17 +14,25 @@ import type { LucideIcon } from "lucide-react";
  * frame. On a missing/404 file it degrades to a branded placeholder with the
  * category glyph — never a broken image. Drop a real photo at the item's `image`
  * path to replace it automatically (no code change).
+ *
+ * Takes the icon by NAME (string) — not a component — so server components can
+ * render it without passing a function across the client boundary.
  */
+const ICONS: Record<string, LucideIcon> = {
+  Brush, BatteryCharging, PlugZap, Gamepad2, Droplets, Cog, Waves, Wrench, Recycle, Package,
+};
+
 export function AccessoryImage({
   src,
   alt,
-  Icon,
+  icon,
 }: {
   src: string;
   alt: string;
-  Icon: LucideIcon;
+  icon: string;
 }) {
   const [ok, setOk] = React.useState(true);
+  const Icon = ICONS[icon] ?? Package;
 
   return (
     <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-line bg-surface">

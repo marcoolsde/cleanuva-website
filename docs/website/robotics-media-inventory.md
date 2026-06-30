@@ -65,6 +65,17 @@ Drop a real file at the same path (same name) to replace any asset — no code c
 | Demo media section — image (current) | `/images/robotics/overview-hero.jpg` | ✓ | ⚠️ temp/reused | `content/compare.ts → NUVASPAN_DEMO_MEDIA (ProductDemoMedia)` | Real still shown now; large media block in the first half of the page. |
 | Demo media section — future video slot | `/videos/robotics/nuvaspan-demo.mp4` | — (not yet) | 🔜 future slot | `content/compare.ts → NUVASPAN_DEMO_MEDIA.futureVideo` | Drop a clip here, then set NUVASPAN_DEMO_MEDIA.type='video' + src=this path — no page edit. |
 
+## Accessories page (`/robotics/accessories`)
+| Slot | File | Exists | Type | Referenced in | Replace with |
+|---|---|---|---|---|---|
+| Hero (full-bleed) | `/images/robotics/r-series-op-1.jpg` | ✓ | real | `app/[locale]/robotics/accessories/page.tsx` | Robot field-detail shot for the parts-page hero. |
+| Category — Brushes | `/images/accessories/brushes.jpg` | ✓ | real | `accessories/page.tsx (CATEGORIES)` | Graceful icon fallback if absent. |
+| Category — Consumables | `/images/accessories/water-system.jpg` | ✓ | real | `accessories/page.tsx (CATEGORIES)` | Reuses the water-system photo. |
+| Category — Remote & control | `/images/accessories/remote-controllers.jpg` | ✓ | real | `accessories/page.tsx (CATEGORIES)` | Graceful icon fallback if absent. |
+| Category — Battery & charging | `/images/accessories/batteries.jpg` | ✓ | real | `accessories/page.tsx (CATEGORIES)` | Graceful icon fallback if absent. |
+| Category — Service parts | `/images/accessories/motors.jpg` | ✓ | real | `accessories/page.tsx (CATEGORIES)` | Graceful icon fallback if absent. |
+| Category — Support & maintenance | `/images/accessories/service-kits.jpg` | ✓ | real | `accessories/page.tsx (CATEGORIES)` | Graceful icon fallback if absent. |
+
 ## Compare page (`/robotics/compare`)
 | Slot | File | Exists | Type | Referenced in | Replace with |
 |---|---|---|---|---|---|

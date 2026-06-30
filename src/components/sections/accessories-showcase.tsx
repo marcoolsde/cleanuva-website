@@ -2,39 +2,16 @@
 
 import * as React from "react";
 import { useTranslations } from "next-intl";
-import {
-  Brush,
-  BatteryCharging,
-  PlugZap,
-  Gamepad2,
-  Droplets,
-  Cog,
-  Waves,
-  Wrench,
-  ArrowRight,
-  type LucideIcon,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { Container } from "@/components/primitives/container";
 import { cn } from "@/lib/utils";
 import {
   ACCESSORY_MODELS,
   ACCESSORY_ITEMS,
-  type AccessoryIcon,
   type AccessoryModelId,
 } from "@/content/accessories";
 import { AccessoryImage } from "@/components/sections/accessory-image";
-
-const ICONS: Record<AccessoryIcon, LucideIcon> = {
-  Brush,
-  BatteryCharging,
-  PlugZap,
-  Gamepad2,
-  Droplets,
-  Cog,
-  Waves,
-  Wrench,
-};
 
 /**
  * Accessories selector + showcase grid (P1A). Client-only filter: choosing a
@@ -74,13 +51,12 @@ export function AccessoriesShowcase() {
       {/* Showcase grid */}
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {items.map((item) => {
-          const Icon = ICONS[item.icon];
           return (
             <article
               key={item.id}
               className="flex flex-col overflow-hidden rounded-xl border border-line bg-canvas transition-shadow hover:shadow-lift"
             >
-              <AccessoryImage src={item.image} alt={t(item.titleKey)} Icon={Icon} />
+              <AccessoryImage src={item.image} alt={t(item.titleKey)} icon={item.icon} />
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="text-h4 text-ink">{t(item.titleKey)}</h3>
                 <p className="mt-2 flex-1 text-body-s text-ink-2">{t(item.descriptionKey)}</p>

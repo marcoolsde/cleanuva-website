@@ -55,6 +55,15 @@ const USAGE = {
     { slot: "Product card — NuvaTrack-U", path: "/images/robotics/u-series-hero.jpg", ref: "content/compare.ts → OVERVIEW_MODELS", kind: "real", note: "U-Series photo." },
     { slot: "Product card — NuvaSpan", path: "/images/robotics/overview-hero.jpg", ref: "content/compare.ts → OVERVIEW_MODELS", kind: "temp", note: "Overview stand-in — replace with a real NuvaSpan shot (suspended/bridge)." },
   ],
+  accessories: [
+    { slot: "Hero (full-bleed)", path: "/images/robotics/r-series-op-1.jpg", ref: "app/[locale]/robotics/accessories/page.tsx", kind: "real", note: "Robot field-detail shot for the parts-page hero." },
+    { slot: "Category — Brushes", path: "/images/accessories/brushes.jpg", ref: "accessories/page.tsx (CATEGORIES)", kind: "real", note: "Graceful icon fallback if absent." },
+    { slot: "Category — Consumables", path: "/images/accessories/water-system.jpg", ref: "accessories/page.tsx (CATEGORIES)", kind: "real", note: "Reuses the water-system photo." },
+    { slot: "Category — Remote & control", path: "/images/accessories/remote-controllers.jpg", ref: "accessories/page.tsx (CATEGORIES)", kind: "real", note: "Graceful icon fallback if absent." },
+    { slot: "Category — Battery & charging", path: "/images/accessories/batteries.jpg", ref: "accessories/page.tsx (CATEGORIES)", kind: "real", note: "Graceful icon fallback if absent." },
+    { slot: "Category — Service parts", path: "/images/accessories/motors.jpg", ref: "accessories/page.tsx (CATEGORIES)", kind: "real", note: "Graceful icon fallback if absent." },
+    { slot: "Category — Support & maintenance", path: "/images/accessories/service-kits.jpg", ref: "accessories/page.tsx (CATEGORIES)", kind: "real", note: "Graceful icon fallback if absent." },
+  ],
   compare: [
     { slot: "NuvaTrack-R card", path: "/images/robotics/r-series-hero.jpg", ref: "content/compare.ts → COMPARE_MODELS", kind: "real", note: "R-Series photo." },
     { slot: "NuvaTrack-R Pro card", path: "/images/robotics/r-series-hero.jpg", ref: "content/compare.ts → COMPARE_MODELS", kind: "temp", note: "Reuses R photo — replace with a real R Pro shot." },
@@ -104,6 +113,9 @@ ${table(USAGE.uSeries)}
 
 ## NuvaSpan page (\`/robotics/nuvaspan\`)
 ${table(USAGE.nuvaSpan)}
+
+## Accessories page (\`/robotics/accessories\`)
+${table(USAGE.accessories)}
 
 ## Compare page (\`/robotics/compare\`)
 ${table(USAGE.compare)}
