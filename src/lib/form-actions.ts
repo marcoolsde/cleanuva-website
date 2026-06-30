@@ -35,13 +35,23 @@ async function deliver(
   data: Record<string, unknown>,
   locale: string,
 ): Promise<SubmitResult> {
+  // Drop empty-string business fields so n8n email templates stay clean
+  // (a missing key reads as undefined → `{{$json.body.company || "—"}}`).
+  // Protected keys are always set below; booleans (consent), null and numbers
+  // are kept untouched.
+  const cleaned: Record<string, unknown> = {};
+  for (const [k, v] of Object.entries(data)) {
+    if (typeof v === "string" && v.trim() === "") continue;
+    cleaned[k] = v;
+  }
+
   const payload = {
     formType: meta.formType,
     sourcePage: meta.sourcePage,
     locale,
     submittedAt: new Date().toISOString(),
     recipient: RECIPIENT,
-    ...data,
+    ...cleaned,
   };
 
   const url = process.env.FORM_WEBHOOK_URL;
