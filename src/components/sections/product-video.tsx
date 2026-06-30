@@ -77,6 +77,7 @@ export function ProductVideo({
         <video
           ref={videoRef}
           src={src}
+          poster={poster}
           aria-label={alt}
           className="absolute inset-0 h-full w-full object-cover"
           autoPlay
