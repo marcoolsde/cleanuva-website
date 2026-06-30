@@ -21,6 +21,7 @@ export function makeDemoSchema(m: ConsentMessages) {
     goal: z.string(),
     message: z.string(),
     consent: z.boolean().refine((v) => v === true, { message: m.consent }),
+    hpWebsite: z.string().optional(), // honeypot — must stay empty; never delivered
   });
 }
 
@@ -39,6 +40,7 @@ export function makeQuoteSchema(m: ConsentMessages) {
     company: z.string().min(1, m.required),
     message: z.string(),
     consent: z.boolean().refine((v) => v === true, { message: m.consent }),
+    hpWebsite: z.string().optional(), // honeypot — must stay empty; never delivered
   });
 }
 
@@ -74,6 +76,7 @@ export function makeAccessorySchema(m: ConsentMessages) {
     hearAbout: z.string(),
     message: z.string().min(1, m.required),
     consent: z.boolean().refine((v) => v === true, { message: m.consent }),
+    hpWebsite: z.string().optional(), // honeypot — must stay empty; never delivered
   });
 }
 

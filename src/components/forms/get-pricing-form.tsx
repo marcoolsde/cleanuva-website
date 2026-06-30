@@ -8,7 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/primitives/button";
-import { Field, SelectField, FormSuccess, ConsentField, fieldControl } from "@/components/forms/fields";
+import { Field, SelectField, FormSuccess, ConsentField, HoneypotField, fieldControl } from "@/components/forms/fields";
 import { makeQuoteSchema, type QuoteInput } from "@/lib/form-schemas";
 import { submitQuote } from "@/lib/form-actions";
 
@@ -39,6 +39,7 @@ export function GetPricingForm({ initialModel }: { initialModel?: string }) {
 
   const [done, setDone] = React.useState(false);
   const [submitFailed, setSubmitFailed] = React.useState(false);
+  const [startedAt] = React.useState(() => Date.now());
 
   const schema = React.useMemo(
     () => makeQuoteSchema({ required: t("required"), email: t("invalidEmail"), consent: t("consentError") }),
@@ -69,6 +70,7 @@ export function GetPricingForm({ initialModel }: { initialModel?: string }) {
       company: "",
       message: "",
       consent: false,
+      hpWebsite: "",
     },
   });
 
@@ -76,7 +78,7 @@ export function GetPricingForm({ initialModel }: { initialModel?: string }) {
 
   async function onSubmit(values: QuoteInput) {
     setSubmitFailed(false);
-    const res = await submitQuote(values, locale);
+    const res = await submitQuote(values, locale, startedAt);
     if (res.ok) setDone(true);
     else setSubmitFailed(true);
   }
@@ -187,6 +189,8 @@ export function GetPricingForm({ initialModel }: { initialModel?: string }) {
             <Textarea id="q-message" rows={4} className="rounded-md border-line bg-surface-sunk text-base text-ink" {...register("message")} />
           </Field>
         </fieldset>
+
+        <HoneypotField registration={register("hpWebsite")} />
 
         <ConsentField
           registration={register("consent")}

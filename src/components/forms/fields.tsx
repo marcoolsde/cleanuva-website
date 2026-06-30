@@ -21,6 +21,26 @@ import {
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
+/**
+ * Hidden anti-spam honeypot. Positioned off-screen + aria-hidden + tabIndex -1 +
+ * autoComplete off, so real users never see, tab to, or hear it — but bots that
+ * fill every field trip it. The value is checked server-side and never delivered.
+ */
+export function HoneypotField({ registration }: { registration: UseFormRegisterReturn }) {
+  return (
+    <div aria-hidden="true" className="pointer-events-none absolute -left-[9999px] top-0 h-0 w-0 overflow-hidden">
+      <label htmlFor={registration.name}>Leave this field empty</label>
+      <input
+        id={registration.name}
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        {...registration}
+      />
+    </div>
+  );
+}
+
 /** Privacy-consent checkbox shared across the public lead forms (GDPR). */
 export function ConsentField({
   registration,

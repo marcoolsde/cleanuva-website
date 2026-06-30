@@ -8,7 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/primitives/button";
-import { Field, SelectField, FormSuccess, ConsentField, fieldControl } from "@/components/forms/fields";
+import { Field, SelectField, FormSuccess, ConsentField, HoneypotField, fieldControl } from "@/components/forms/fields";
 import { makeDemoSchema, type DemoInput } from "@/lib/form-schemas";
 import { submitDemo } from "@/lib/form-actions";
 
@@ -23,6 +23,7 @@ export function RequestDemoForm() {
 
   const [done, setDone] = React.useState(false);
   const [submitFailed, setSubmitFailed] = React.useState(false);
+  const [startedAt] = React.useState(() => Date.now());
 
   const schema = React.useMemo(
     () => makeDemoSchema({ required: t("required"), email: t("invalidEmail"), consent: t("consentError") }),
@@ -46,12 +47,13 @@ export function RequestDemoForm() {
       goal: "",
       message: "",
       consent: false,
+      hpWebsite: "",
     },
   });
 
   async function onSubmit(values: DemoInput) {
     setSubmitFailed(false);
-    const res = await submitDemo(values, locale);
+    const res = await submitDemo(values, locale, startedAt);
     if (res.ok) setDone(true);
     else setSubmitFailed(true);
   }
@@ -127,6 +129,8 @@ export function RequestDemoForm() {
       >
         <Textarea id="message" rows={4} className="rounded-md border-line bg-surface-sunk text-base text-ink" {...register("message")} />
       </Field>
+
+      <HoneypotField registration={register("hpWebsite")} />
 
       <ConsentField
         registration={register("consent")}

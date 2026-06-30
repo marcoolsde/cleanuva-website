@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/primitives/button";
 import { Link } from "@/i18n/navigation";
-import { Field, SelectField, FormSuccess, fieldControl } from "@/components/forms/fields";
+import { Field, SelectField, FormSuccess, HoneypotField, fieldControl } from "@/components/forms/fields";
 import {
   makeAccessorySchema,
   INQUIRY_TYPES,
@@ -38,6 +38,7 @@ export function AccessoryInquiryForm() {
 
   const [done, setDone] = React.useState(false);
   const [submitFailed, setSubmitFailed] = React.useState(false);
+  const [startedAt] = React.useState(() => Date.now());
 
   const schema = React.useMemo(
     () =>
@@ -69,12 +70,13 @@ export function AccessoryInquiryForm() {
       hearAbout: "",
       message: "",
       consent: false,
+      hpWebsite: "",
     },
   });
 
   async function onSubmit(values: AccessoryInput) {
     setSubmitFailed(false);
-    const res = await submitAccessoryInquiry(values, locale);
+    const res = await submitAccessoryInquiry(values, locale, startedAt);
     if (res.ok) setDone(true);
     else setSubmitFailed(true);
   }
@@ -91,6 +93,8 @@ export function AccessoryInquiryForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+      <HoneypotField registration={register("hpWebsite")} />
+
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label={tA("fields.firstName")} htmlFor="firstName" error={errors.firstName?.message}>
           <Input id="firstName" autoComplete="given-name" className={fieldControl} {...register("firstName")} />

@@ -79,27 +79,65 @@ async function deliver(
   }
 }
 
-export async function submitDemo(input: DemoInput, locale: string): Promise<SubmitResult> {
-  const parsed = makeDemoSchema(serverMessages).safeParse(input);
-  if (!parsed.success) return { ok: false, error: "invalid" };
-  return deliver({ formType: "demo_request", sourcePage: "request_demo" }, parsed.data, locale);
+/**
+ * Minimal anti-spam shared by all three forms:
+ *   • honeypot (hpWebsite) — a real user never fills the hidden field;
+ *   • min submit time — a genuine fill takes longer than MIN_SUBMIT_MS.
+ * On a hit we DON'T deliver (no n8n, no email) but still return ok:true so a bot
+ * can't tell it was blocked and a real user is never shown a scary error. The
+ * honeypot / timing fields are never forwarded to n8n.
+ */
+const MIN_SUBMIT_MS = 1200;
+
+function isSpam(hpWebsite: string | undefined, startedAt: number | undefined): boolean {
+  if ((hpWebsite ?? "").trim() !== "") return true; // honeypot filled → bot
+  if (typeof startedAt === "number" && Date.now() - startedAt < MIN_SUBMIT_MS) return true; // too fast
+  return false;
 }
 
-export async function submitQuote(input: QuoteInput, locale: string): Promise<SubmitResult> {
+function suppressed(formType: string): SubmitResult {
+  if (process.env.NODE_ENV !== "production") {
+    console.info(`[lead-spam-filter] suppressed ${formType}`);
+  }
+  return { ok: true };
+}
+
+export async function submitDemo(
+  input: DemoInput,
+  locale: string,
+  startedAt?: number,
+): Promise<SubmitResult> {
+  const parsed = makeDemoSchema(serverMessages).safeParse(input);
+  if (!parsed.success) return { ok: false, error: "invalid" };
+  const { hpWebsite, ...data } = parsed.data;
+  if (isSpam(hpWebsite, startedAt)) return suppressed("demo_request");
+  return deliver({ formType: "demo_request", sourcePage: "request_demo" }, data, locale);
+}
+
+export async function submitQuote(
+  input: QuoteInput,
+  locale: string,
+  startedAt?: number,
+): Promise<SubmitResult> {
   const parsed = makeQuoteSchema(serverMessages).safeParse(input);
   if (!parsed.success) return { ok: false, error: "invalid" };
-  return deliver({ formType: "quote_request", sourcePage: "get_pricing" }, parsed.data, locale);
+  const { hpWebsite, ...data } = parsed.data;
+  if (isSpam(hpWebsite, startedAt)) return suppressed("quote_request");
+  return deliver({ formType: "quote_request", sourcePage: "get_pricing" }, data, locale);
 }
 
 export async function submitAccessoryInquiry(
   input: AccessoryInput,
   locale: string,
+  startedAt?: number,
 ): Promise<SubmitResult> {
   const parsed = makeAccessorySchema(serverMessages).safeParse(input);
   if (!parsed.success) return { ok: false, error: "invalid" };
   const d = parsed.data;
+  if (isSpam(d.hpWebsite, startedAt)) return suppressed("accessories_inquiry");
 
   // Same delivery path as quote/demo — through deliver() → FORM_WEBHOOK_URL.
+  // hpWebsite / startedAt are never included here, so they never reach n8n.
   const data = {
     firstName: d.firstName,
     lastName: d.lastName,
