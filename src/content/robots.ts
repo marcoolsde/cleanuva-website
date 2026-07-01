@@ -124,7 +124,9 @@ export const ROBOT_FAMILIES: RobotFamily[] = [
     accent: "warm",
     theme: "day",
     scene: "plant-utility",
-    image: "/images/robotics/nuvaspan-hero.jpg",
+    // No dedicated NuvaSpan shot yet — reuse the real overview plant photo (the
+    // same stand-in used by the NuvaSpan page + Compare). video is a future slot.
+    image: "/images/robotics/overview-hero.jpg",
     video: "/videos/robotics/nuvaspan-demo.mp4",
     datasheet: "/downloads/robotics/nuvaspan-series-datasheet.pdf",
     // Datasheet: 4000 m²/h · 18 m/min · 25° climb · 45° module tilt · suspended/bridge

@@ -40,7 +40,7 @@ export default async function ResourcesPage({
     <>
       <Section className="relative isolate overflow-hidden">
         <div className="absolute inset-0" aria-hidden>
-          <HeroBackgroundImage src="/images/hero/resources-hero.jpg" />
+          <HeroBackgroundImage src="/images/hero/homepage-hero-daylight.jpg" />
         </div>
         <Container className="relative z-10 max-w-[820px]">
           <Eyebrow accent="cool">{t("eyebrow")}</Eyebrow>
