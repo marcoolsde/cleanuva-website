@@ -1,31 +1,44 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Bot, Wrench, Cpu, Building2, Check, ArrowRight } from "lucide-react";
+import { Building2, Droplet, Wrench, ShieldCheck, Handshake, Check, ArrowRight, type LucideIcon } from "lucide-react";
 
 import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
 import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
-import { Reveal } from "@/components/primitives/reveal";
+import { MediaFrame } from "@/components/robotics/media-frame";
 import { Link } from "@/i18n/navigation";
 
 export const metadata: Metadata = {
-  title: "Distribution Network — Cleanuva",
+  title: "Distribution & partners — Cleanuva",
   description:
-    "Become a Cleanuva distribution partner — bring cost-efficient solar cleaning robotics and AI-supported operations to PV owners, EPCs and service companies in your market.",
+    "Partner with Cleanuva to bring solar cleaning robots, accessories and AI-supported operations to your market — a serious regional partner network for distributors, cleaning service companies, O&M providers, EPCs and service partners.",
 };
 
-const WHY = [
-  { key: "c1", icon: Bot },
-  { key: "c2", icon: Wrench },
-  { key: "c3", icon: Cpu },
-  { key: "c4", icon: Building2 },
-] as const;
-const PROFILES = ["p1", "p2", "p3", "p4"] as const;
-const SUPPORT = ["s1", "s2", "s3", "s4", "s5", "s6"] as const;
-const REGIONS = ["europe", "mea", "nafrica", "intl"] as const;
-const MTYPES = ["utility", "commercial", "distributed", "service"] as const;
-const STEPS = ["s1", "s2", "s3", "s4"] as const;
+const HERO_IMAGE = "/images/robotics/overview-hero.jpg";
+
+const STRIP = ["a", "b", "c", "d"] as const;
+const PARTNERS: { key: string; Icon: LucideIcon }[] = [
+  { key: "distributors", Icon: Building2 },
+  { key: "cleaning", Icon: Droplet },
+  { key: "om", Icon: Wrench },
+  { key: "epc", Icon: ShieldCheck },
+  { key: "regional", Icon: Handshake },
+];
+// Robotics offers carry the warm accent; the platform story carries cool — the
+// same colour code used across Robotics / Platform / Solutions.
+const OFFER: { key: string; accent: "warm" | "cool" }[] = [
+  { key: "robots", accent: "warm" },
+  { key: "unattended", accent: "warm" },
+  { key: "fixed", accent: "warm" },
+  { key: "accessories", accent: "warm" },
+  { key: "platform", accent: "cool" },
+  { key: "verification", accent: "cool" },
+];
+const SUPPORT = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8"] as const;
+const STEPS = ["s1", "s2", "s3", "s4", "s5"] as const;
+const REGIONS = ["r1", "r2", "r3", "r4", "r5"] as const;
+const MARKETS = ["m1", "m2", "m3", "m4"] as const;
 
 export default async function DistributionNetworkPage({
   params,
@@ -34,85 +47,99 @@ export default async function DistributionNetworkPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Distribution");
+  const t = await getTranslations("Distribution.page");
 
   return (
     <>
-      {/* 1. Hero */}
-      <Section>
-        <Container className="max-w-[860px]">
-          <Eyebrow accent="warm">{t("eyebrow")}</Eyebrow>
-          <h1 className="mt-3 text-display-l text-balance text-ink">{t("title")}</h1>
-          <p className="mt-5 text-body-l text-ink-2">{t("subtitle")}</p>
-          <div className="mt-8 flex flex-wrap gap-4">
+      {/* 1. Cinematic partner hero — a regional PV site, not a single product */}
+      <section className="dark relative isolate flex min-h-[72vh] w-full items-end overflow-hidden bg-abyss text-ink-inv">
+        <MediaFrame src={HERO_IMAGE} alt="Utility-scale PV site" priority imageClassName="object-[center_45%]" className="absolute inset-0" />
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-abyss via-abyss/50 to-transparent" />
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-abyss/55 via-transparent to-transparent" />
+        <div aria-hidden className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-abyss/55 to-transparent" />
+
+        <Container className="relative z-10 w-full pb-12 pt-36 md:pb-16">
+          <p className="text-eyebrow text-warm">{t("hero.eyebrow")}</p>
+          <h1 className="mt-3 max-w-[22ch] text-display-l text-balance text-ink-inv">{t("hero.title")}</h1>
+          <p className="mt-4 max-w-[54ch] text-body-l text-ink-inv-2">{t("hero.subtitle")}</p>
+          <p className="mt-3 max-w-[64ch] text-body-m text-ink-inv-3">{t("hero.support")}</p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
             <Button variant="warm" asChild>
-              <Link href="/request-demo">{t("becomePartner")}</Link>
+              <Link href="/request-demo">{t("hero.cta.partner")}</Link>
             </Button>
-            <Button variant="secondary" asChild>
-              <Link href="/get-pricing">{t("talkToUs")}</Link>
+            <Button variant="glass" asChild>
+              <Link href="/robotics">{t("hero.cta.robotics")}</Link>
+            </Button>
+            <Button variant="glass" asChild>
+              <Link href="/robotics/compare">{t("hero.cta.compare")}</Link>
             </Button>
           </div>
-        </Container>
-      </Section>
 
-      {/* 2. Why partner */}
+          {/* What you'd represent — hairline preview strip */}
+          <dl className="mt-12 grid max-w-[920px] grid-cols-2 overflow-hidden rounded-xl border border-line-inv-strong sm:grid-cols-4">
+            {STRIP.map((s, i) => (
+              <div key={s} className={"bg-white/5 px-5 py-4 backdrop-blur" + (i > 0 ? " border-line-inv-strong sm:border-s" : "")}>
+                <dd className="text-h4 font-medium text-ink-inv">{t(`hero.strip.${s}.label`)}</dd>
+                <dt className="mt-1 text-[11px] uppercase tracking-[0.1em] text-ink-inv-3">{t(`hero.strip.${s}.cap`)}</dt>
+              </div>
+            ))}
+          </dl>
+        </Container>
+      </section>
+
+      {/* 2. Who we work with */}
       <Section tone="light" className="bg-surface">
         <Container>
-          <Reveal>
-            <div className="max-w-[62ch]">
-              <Eyebrow accent="warm">{t("why.eyebrow")}</Eyebrow>
-              <h2 className="mt-3 text-h1 text-balance text-ink">{t("why.heading")}</h2>
-              <p className="mt-4 text-body-l text-ink-2">{t("why.body")}</p>
-            </div>
-          </Reveal>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {WHY.map(({ key, icon: Icon }, i) => (
-              <Reveal key={key} delay={(i % 4) * 0.06} className="h-full">
-                <div className="flex h-full flex-col rounded-lg border border-line bg-canvas p-6">
-                  <span className="inline-flex size-10 items-center justify-center rounded-md bg-warm-tint text-warm-text">
-                    <Icon className="size-5" aria-hidden />
-                  </span>
-                  <h3 className="mt-4 text-h4 text-ink">{t(`why.cards.${key}.title`)}</h3>
-                  <p className="mt-2 text-body-s text-ink-2">{t(`why.cards.${key}.desc`)}</p>
-                </div>
-              </Reveal>
+          <div className="max-w-[60ch]">
+            <Eyebrow accent="warm">{t("partners.eyebrow")}</Eyebrow>
+            <h2 className="mt-3 text-h1 text-balance text-ink">{t("partners.title")}</h2>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {PARTNERS.map(({ key, Icon }) => (
+              <div key={key} className="flex h-full flex-col rounded-xl border border-line bg-canvas p-6">
+                <span className="inline-flex size-10 items-center justify-center rounded-md bg-warm/10 text-warm-text">
+                  <Icon className="size-5" aria-hidden />
+                </span>
+                <h3 className="mt-4 text-h4 text-ink">{t(`partners.items.${key}.role`)}</h3>
+                <p className="mt-2 text-body-s text-ink-2">{t(`partners.items.${key}.line`)}</p>
+              </div>
             ))}
           </div>
         </Container>
       </Section>
 
-      {/* 3. Partner profiles */}
+      {/* 3. What partners can offer */}
       <Section>
         <Container>
-          <Reveal>
-            <div className="max-w-[60ch]">
-              <Eyebrow accent="cool">{t("profiles.eyebrow")}</Eyebrow>
-              <h2 className="mt-3 text-h1 text-balance text-ink">{t("profiles.heading")}</h2>
-            </div>
-          </Reveal>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2">
-            {PROFILES.map((p, i) => (
-              <Reveal key={p} delay={(i % 2) * 0.06} className="h-full">
-                <div className="flex h-full flex-col rounded-lg border border-line bg-canvas p-6">
-                  <h3 className="text-h4 text-ink">{t(`profiles.items.${p}.title`)}</h3>
-                  <p className="mt-2 text-body-s text-ink-2">{t(`profiles.items.${p}.desc`)}</p>
-                </div>
-              </Reveal>
+          <div className="max-w-[60ch]">
+            <Eyebrow accent="cool">{t("offer.eyebrow")}</Eyebrow>
+            <h2 className="mt-3 text-h1 text-balance text-ink">{t("offer.title")}</h2>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {OFFER.map(({ key, accent }) => (
+              <div key={key} className="flex flex-col rounded-xl border border-line bg-canvas p-6">
+                <span
+                  aria-hidden
+                  className={"h-1 w-10 rounded-full " + (accent === "warm" ? "bg-warm" : "bg-cool")}
+                />
+                <h3 className="mt-4 text-h4 text-ink">{t(`offer.items.${key}.title`)}</h3>
+                <p className="mt-2 text-body-s text-ink-2">{t(`offer.items.${key}.desc`)}</p>
+              </div>
             ))}
           </div>
+          <p className="mt-6 max-w-[72ch] text-body-s text-ink-3">{t("offer.note")}</p>
         </Container>
       </Section>
 
-      {/* 4. What we can support */}
+      {/* 4. Partner support from Cleanuva */}
       <Section tone="light" className="bg-surface">
-        <Container className="max-w-[900px]">
-          <Reveal>
-            <div className="max-w-[60ch]">
-              <Eyebrow accent="warm">{t("support.eyebrow")}</Eyebrow>
-              <h2 className="mt-3 text-h1 text-balance text-ink">{t("support.heading")}</h2>
-              <p className="mt-4 text-body-l text-ink-2">{t("support.body")}</p>
-            </div>
-          </Reveal>
+        <Container className="max-w-[940px]">
+          <div className="max-w-[60ch]">
+            <Eyebrow accent="warm">{t("support.eyebrow")}</Eyebrow>
+            <h2 className="mt-3 text-h1 text-balance text-ink">{t("support.title")}</h2>
+            <p className="mt-3 text-body-l text-ink-2">{t("support.intro")}</p>
+          </div>
           <ul className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
             {SUPPORT.map((s) => (
               <li key={s} className="flex items-start gap-3 border-t border-line pt-4">
@@ -121,80 +148,77 @@ export default async function DistributionNetworkPage({
               </li>
             ))}
           </ul>
+          <p className="mt-6 text-body-s text-ink-3">{t("support.note")}</p>
         </Container>
       </Section>
 
-      {/* 5. Target markets */}
+      {/* 5. How cooperation can start */}
       <Section>
-        <Container className="max-w-[900px]">
-          <Eyebrow accent="cool">{t("markets.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("markets.heading")}</h2>
-          <div className="mt-8 grid gap-8 sm:grid-cols-2">
+        <Container>
+          <div className="max-w-[60ch]">
+            <Eyebrow accent="cool">{t("process.eyebrow")}</Eyebrow>
+            <h2 className="mt-3 text-h1 text-balance text-ink">{t("process.title")}</h2>
+            <p className="mt-3 text-body-l text-ink-2">{t("process.intro")}</p>
+          </div>
+          <ol className="mt-10 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
+            {STEPS.map((s, i) => (
+              <li key={s} className="flex flex-col bg-canvas p-6">
+                <span className="font-mono text-body-s text-warm-text">{`0${i + 1}`}</span>
+                <p className="mt-3 text-body-s text-ink">{t(`process.steps.${s}`)}</p>
+              </li>
+            ))}
+          </ol>
+        </Container>
+      </Section>
+
+      {/* 6. Regional opportunity */}
+      <Section tone="light" className="bg-surface">
+        <Container className="max-w-[940px]">
+          <Eyebrow accent="warm">{t("region.eyebrow")}</Eyebrow>
+          <h2 className="mt-3 text-h1 text-balance text-ink">{t("region.title")}</h2>
+          <div className="mt-8 grid gap-10 sm:grid-cols-2">
             <div>
-              <h3 className="text-eyebrow text-ink-3">{t("markets.regionsTitle")}</h3>
+              <h3 className="text-eyebrow text-ink-3">{t("region.regionsLabel")}</h3>
               <div className="mt-3 flex flex-wrap gap-2">
                 {REGIONS.map((r) => (
-                  <span
-                    key={r}
-                    className="rounded-pill border border-line bg-canvas px-3 py-1 text-body-s text-ink-2"
-                  >
-                    {t(`markets.regions.${r}`)}
+                  <span key={r} className="rounded-pill border border-line bg-canvas px-3 py-1 text-body-s text-ink-2">
+                    {t(`region.regions.${r}`)}
                   </span>
                 ))}
               </div>
             </div>
             <div>
-              <h3 className="text-eyebrow text-ink-3">{t("markets.marketsTitle")}</h3>
+              <h3 className="text-eyebrow text-ink-3">{t("region.marketsLabel")}</h3>
               <div className="mt-3 flex flex-wrap gap-2">
-                {MTYPES.map((m) => (
-                  <span
-                    key={m}
-                    className="rounded-pill border border-line bg-canvas px-3 py-1 text-body-s text-ink-2"
-                  >
-                    {t(`markets.types.${m}`)}
+                {MARKETS.map((m) => (
+                  <span key={m} className="rounded-pill border border-line bg-canvas px-3 py-1 text-body-s text-ink-2">
+                    {t(`region.markets.${m}`)}
                   </span>
                 ))}
               </div>
             </div>
           </div>
+          <p className="mt-6 text-body-s text-ink-3">{t("region.note")}</p>
         </Container>
       </Section>
 
-      {/* 6. Partner process */}
-      <Section tone="light" className="bg-surface">
-        <Container>
-          <Reveal>
-            <div className="max-w-[60ch]">
-              <Eyebrow accent="warm">{t("process.eyebrow")}</Eyebrow>
-              <h2 className="mt-3 text-h1 text-balance text-ink">{t("process.heading")}</h2>
-            </div>
-          </Reveal>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {STEPS.map((s, i) => (
-              <Reveal key={s} delay={(i % 4) * 0.06} className="h-full">
-                <div className="flex h-full flex-col rounded-lg border border-line bg-canvas p-6">
-                  <span className="text-loop text-warm-text">{String(i + 1).padStart(2, "0")}</span>
-                  <h3 className="mt-2 text-h4 text-ink">{t(`process.steps.${s}`)}</h3>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* 7. Final CTA */}
-      <Section>
-        <Container className="max-w-[640px] text-center">
-          <h2 className="text-display-l text-balance text-ink">{t("finalTitle")}</h2>
-          <p className="mt-4 text-body-l text-ink-2">{t("finalBody")}</p>
+      {/* 7. Partner inquiry CTA — existing contact entries, no new form */}
+      <Section tone="dark">
+        <Container className="max-w-[760px] text-center">
+          <p className="text-eyebrow text-warm">{t("inquiry.eyebrow")}</p>
+          <h2 className="mt-3 text-display-l text-balance text-ink-inv">{t("inquiry.title")}</h2>
+          <p className="mt-4 text-body-l text-ink-inv-2">{t("inquiry.body")}</p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button variant="warm" asChild>
-              <Link href="/request-demo">{t("becomePartner")}</Link>
+              <Link href="/company">{t("inquiry.cta.contact")}</Link>
             </Button>
-            <Button variant="secondary" asChild>
+            <Button variant="glass" asChild>
+              <Link href="/request-demo">{t("inquiry.cta.discuss")}</Link>
+            </Button>
+            <Button variant="ghostLink" asChild>
               <Link href="/robotics">
-                {t("exploreRobotics")}
-                <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+                {t("inquiry.cta.portfolio")}
+                <ArrowRight className="size-4 rtl:-scale-x-100" aria-hidden />
               </Link>
             </Button>
           </div>

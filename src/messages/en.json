@@ -2737,6 +2737,152 @@
         "s3": "Plan demo or pilot",
         "s4": "Build local sales and service pathway"
       }
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "Cleanuva partner network",
+        "title": "Build your regional solar cleaning business with Cleanuva",
+        "subtitle": "Partner with Cleanuva to bring solar cleaning robots, accessories and AI-supported operations to your market.",
+        "support": "Cleanuva combines field-ready solar cleaning robots with an AI-native operations platform — giving partners a clearer product story for PV asset owners, O&M teams and cleaning operators.",
+        "cta": {
+          "partner": "Become a partner",
+          "robotics": "View robotics",
+          "compare": "Compare robots"
+        },
+        "strip": {
+          "a": {
+            "label": "Robots",
+            "cap": "NuvaTrack & NuvaSpan"
+          },
+          "b": {
+            "label": "Accessories",
+            "cap": "Brushes & service parts"
+          },
+          "c": {
+            "label": "Platform story",
+            "cap": "AI O&M differentiator"
+          },
+          "d": {
+            "label": "Verification",
+            "cap": "Before / after proof"
+          }
+        }
+      },
+      "partners": {
+        "eyebrow": "Who we work with",
+        "title": "Partners we're building with",
+        "items": {
+          "distributors": {
+            "role": "Solar equipment distributors",
+            "line": "Sell Cleanuva Robotics and accessories through existing PV channels."
+          },
+          "cleaning": {
+            "role": "PV cleaning service companies",
+            "line": "Use robots to improve productivity and offer verified service."
+          },
+          "om": {
+            "role": "O&M service providers",
+            "line": "Add robot execution and operational reporting to existing asset services."
+          },
+          "epc": {
+            "role": "EPC / solar integrators",
+            "line": "Include cleaning systems and platform-enabled proof in project packages."
+          },
+          "regional": {
+            "role": "Regional service partners",
+            "line": "Support demos, training, maintenance and spare parts locally."
+          }
+        }
+      },
+      "offer": {
+        "eyebrow": "What you can offer",
+        "title": "A product story your customers understand",
+        "note": "Availability is subject to regional configuration and project scope. The platform is a differentiator — not a requirement to resell robots.",
+        "items": {
+          "robots": {
+            "title": "NuvaTrack-R / R Pro",
+            "desc": "Portable, remote and AI-Assist cleaning robots."
+          },
+          "unattended": {
+            "title": "NuvaTrack-U",
+            "desc": "Unattended, site-configured cleaning."
+          },
+          "fixed": {
+            "title": "NuvaSpan",
+            "desc": "Fixed / suspended cleaning system."
+          },
+          "accessories": {
+            "title": "Accessories & service parts",
+            "desc": "Brushes, consumables and spares."
+          },
+          "platform": {
+            "title": "AI O&M platform story",
+            "desc": "An operations layer that detects, prioritizes and proves."
+          },
+          "verification": {
+            "title": "Verification & reporting",
+            "desc": "Before / after proof your customers can keep."
+          }
+        }
+      },
+      "support": {
+        "eyebrow": "Partner support",
+        "title": "What Cleanuva brings to the table",
+        "intro": "Practical support to get you selling and servicing — commercial terms are agreed separately.",
+        "items": {
+          "s1": "Product portfolio materials",
+          "s2": "Demo and sales assets",
+          "s3": "Technical training",
+          "s4": "Project configuration support",
+          "s5": "Accessories and spare-parts guidance",
+          "s6": "Platform demo story",
+          "s7": "Lead and opportunity discussion",
+          "s8": "After-sales coordination"
+        },
+        "note": "Territories, margins and targets aren't promised here — we agree them with each partner."
+      },
+      "process": {
+        "eyebrow": "How it starts",
+        "title": "How cooperation can start",
+        "intro": "A short, two-way evaluation — partnership isn't automatic.",
+        "steps": {
+          "s1": "Introduce your market and customer base",
+          "s2": "Discuss product fit and partner role",
+          "s3": "Review demo, sample or project needs",
+          "s4": "Align commercial and service responsibilities",
+          "s5": "Start with pilot customers or a regional launch"
+        }
+      },
+      "region": {
+        "eyebrow": "Where we're looking",
+        "title": "Regional opportunity",
+        "regionsLabel": "Regions of interest",
+        "regions": {
+          "r1": "Europe",
+          "r2": "Middle East",
+          "r3": "North Africa",
+          "r4": "Türkiye",
+          "r5": "Selected high-soiling PV markets"
+        },
+        "marketsLabel": "Market conditions that fit",
+        "markets": {
+          "m1": "High-soiling regions",
+          "m2": "Large PV portfolios",
+          "m3": "Labor-constrained O&M markets",
+          "m4": "Recurring cleaning demand"
+        },
+        "note": "Indicative interest, not a commitment of availability in any specific country."
+      },
+      "inquiry": {
+        "eyebrow": "Partner inquiry",
+        "title": "Interested in representing or servicing Cleanuva in your market?",
+        "body": "Tell us your country, customer base and the type of cooperation you're considering. We'll review the fit and respond with the next steps.",
+        "cta": {
+          "contact": "Contact Cleanuva",
+          "discuss": "Request a discussion",
+          "portfolio": "View robotics portfolio"
+        }
+      }
     }
   },
   "Gallery": {

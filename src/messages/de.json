@@ -2737,6 +2737,152 @@
         "s3": "Demo oder Pilot planen",
         "s4": "Lokalen Vertriebs- und Serviceweg aufbauen"
       }
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "Cleanuva Partnernetzwerk",
+        "title": "Bauen Sie Ihr regionales Solarreinigungsgeschäft mit Cleanuva auf",
+        "subtitle": "Werden Sie Cleanuva-Partner und bringen Sie Solar-Reinigungsroboter, Zubehör und KI-gestützte Operations in Ihren Markt.",
+        "support": "Cleanuva verbindet feldtaugliche Solar-Reinigungsroboter mit einer KI-nativen Operations-Plattform — und gibt Partnern eine klarere Produktstory für PV-Besitzer, O&M-Teams und Reinigungsbetriebe.",
+        "cta": {
+          "partner": "Partner werden",
+          "robotics": "Robotik ansehen",
+          "compare": "Roboter vergleichen"
+        },
+        "strip": {
+          "a": {
+            "label": "Roboter",
+            "cap": "NuvaTrack & NuvaSpan"
+          },
+          "b": {
+            "label": "Zubehör",
+            "cap": "Bürsten & Ersatzteile"
+          },
+          "c": {
+            "label": "Plattform-Story",
+            "cap": "KI-O&M-Differenzierung"
+          },
+          "d": {
+            "label": "Verifizierung",
+            "cap": "Vorher- / Nachher-Nachweis"
+          }
+        }
+      },
+      "partners": {
+        "eyebrow": "Mit wem wir arbeiten",
+        "title": "Partner, mit denen wir aufbauen",
+        "items": {
+          "distributors": {
+            "role": "Distributoren für Solartechnik",
+            "line": "Cleanuva Robotics und Zubehör über bestehende PV-Kanäle verkaufen."
+          },
+          "cleaning": {
+            "role": "PV-Reinigungsdienstleister",
+            "line": "Roboter nutzen, um Produktivität zu steigern und verifizierten Service anzubieten."
+          },
+          "om": {
+            "role": "O&M-Dienstleister",
+            "line": "Roboterausführung und Betriebsreporting zu bestehenden Anlagendiensten hinzufügen."
+          },
+          "epc": {
+            "role": "EPC / Solar-Integratoren",
+            "line": "Reinigungssysteme und plattformgestützten Nachweis in Projektpakete aufnehmen."
+          },
+          "regional": {
+            "role": "Regionale Servicepartner",
+            "line": "Demos, Schulung, Wartung und Ersatzteile vor Ort unterstützen."
+          }
+        }
+      },
+      "offer": {
+        "eyebrow": "Was Sie anbieten können",
+        "title": "Eine Produktstory, die Ihre Kunden verstehen",
+        "note": "Die Verfügbarkeit hängt von regionaler Konfiguration und Projektumfang ab. Die Plattform ist ein Differenzierer — keine Voraussetzung, um Roboter weiterzuverkaufen.",
+        "items": {
+          "robots": {
+            "title": "NuvaTrack-R / R Pro",
+            "desc": "Portable, ferngesteuerte und AI-Assist-Reinigungsroboter."
+          },
+          "unattended": {
+            "title": "NuvaTrack-U",
+            "desc": "Unbeaufsichtigte, standortkonfigurierte Reinigung."
+          },
+          "fixed": {
+            "title": "NuvaSpan",
+            "desc": "Festes / hängendes Reinigungssystem."
+          },
+          "accessories": {
+            "title": "Zubehör & Ersatzteile",
+            "desc": "Bürsten, Verbrauchsmaterial und Ersatzteile."
+          },
+          "platform": {
+            "title": "KI-O&M-Plattform-Story",
+            "desc": "Eine Operations-Schicht, die erkennt, priorisiert und nachweist."
+          },
+          "verification": {
+            "title": "Verifizierung & Reporting",
+            "desc": "Vorher- / Nachher-Nachweis, den Ihre Kunden behalten."
+          }
+        }
+      },
+      "support": {
+        "eyebrow": "Partnersupport",
+        "title": "Was Cleanuva einbringt",
+        "intro": "Praktische Unterstützung, damit Sie verkaufen und betreuen können — kommerzielle Konditionen werden separat vereinbart.",
+        "items": {
+          "s1": "Produktportfolio-Materialien",
+          "s2": "Demo- und Vertriebsunterlagen",
+          "s3": "Technische Schulung",
+          "s4": "Projektkonfigurations-Support",
+          "s5": "Beratung zu Zubehör und Ersatzteilen",
+          "s6": "Plattform-Demo-Story",
+          "s7": "Lead- und Opportunity-Gespräch",
+          "s8": "After-Sales-Koordination"
+        },
+        "note": "Gebiete, Margen und Ziele werden hier nicht versprochen — wir vereinbaren sie mit jedem Partner."
+      },
+      "process": {
+        "eyebrow": "Wie es beginnt",
+        "title": "Wie die Zusammenarbeit beginnen kann",
+        "intro": "Eine kurze, beidseitige Bewertung — eine Partnerschaft ist nicht automatisch.",
+        "steps": {
+          "s1": "Stellen Sie Ihren Markt und Kundenstamm vor",
+          "s2": "Produktpassung und Partnerrolle besprechen",
+          "s3": "Demo-, Muster- oder Projektbedarf prüfen",
+          "s4": "Kommerzielle und Service-Verantwortung abstimmen",
+          "s5": "Mit Pilotkunden oder einem regionalen Start beginnen"
+        }
+      },
+      "region": {
+        "eyebrow": "Wo wir suchen",
+        "title": "Regionale Chance",
+        "regionsLabel": "Regionen von Interesse",
+        "regions": {
+          "r1": "Europa",
+          "r2": "Naher Osten",
+          "r3": "Nordafrika",
+          "r4": "Türkei",
+          "r5": "Ausgewählte PV-Märkte mit starker Verschmutzung"
+        },
+        "marketsLabel": "Passende Marktbedingungen",
+        "markets": {
+          "m1": "Regionen mit starker Verschmutzung",
+          "m2": "Große PV-Portfolios",
+          "m3": "O&M-Märkte mit Arbeitskräftemangel",
+          "m4": "Wiederkehrender Reinigungsbedarf"
+        },
+        "note": "Indikatives Interesse, keine Zusage der Verfügbarkeit in einem bestimmten Land."
+      },
+      "inquiry": {
+        "eyebrow": "Partneranfrage",
+        "title": "Interesse, Cleanuva in Ihrem Markt zu vertreten oder zu betreuen?",
+        "body": "Nennen Sie uns Ihr Land, Ihren Kundenstamm und die Art der angedachten Zusammenarbeit. Wir prüfen die Passung und melden uns mit den nächsten Schritten.",
+        "cta": {
+          "contact": "Cleanuva kontaktieren",
+          "discuss": "Gespräch anfragen",
+          "portfolio": "Robotik-Portfolio ansehen"
+        }
+      }
     }
   },
   "Gallery": {
