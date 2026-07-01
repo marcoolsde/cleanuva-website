@@ -1,33 +1,38 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { FileText, Wrench, ShieldCheck, Cpu } from "lucide-react";
+import { Bot, Cpu, Wrench, GitCompare, Handshake, LifeBuoy, Check, ArrowRight, type LucideIcon } from "lucide-react";
 
 import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
 import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Link } from "@/i18n/navigation";
 
 export const metadata: Metadata = {
-  title: "Support — Cleanuva",
+  title: "Support & sales assistance — Cleanuva",
   description:
-    "Support entry for product information, documentation, service questions and after-sales communication — Cleanuva robotics, accessories and AI-supported PV operations.",
+    "Find the right Cleanuva contact path for robot sales, the AI O&M platform, accessories, product comparison, distribution partnership and existing-customer support.",
 };
 
-const AREAS = [
-  { key: "docs", icon: FileText },
-  { key: "accessories", icon: Wrench },
-  { key: "warranty", icon: ShieldCheck },
-  { key: "platform", icon: Cpu },
-] as const;
-const FAQ = ["q1", "q2", "q3", "q4", "q5", "q6"] as const;
-const MATERIALS = ["datasheets", "brochures", "manuals", "certificates"] as const;
+// Each path routes to an existing entry — no new form.
+const PATHS: { key: string; Icon: LucideIcon; href: string }[] = [
+  { key: "robots", Icon: Bot, href: "/robotics" },
+  { key: "platform", Icon: Cpu, href: "/request-demo" },
+  { key: "accessories", Icon: Wrench, href: "/robotics/accessories#accessories-inquiry" },
+  { key: "compare", Icon: GitCompare, href: "/robotics/compare" },
+  { key: "distribution", Icon: Handshake, href: "/distribution-network" },
+  { key: "existing", Icon: LifeBuoy, href: "/company" },
+];
+const PREP = ["i1", "i2", "i3", "i4", "i5", "i6", "i7", "i8"] as const;
+const LINKS: { key: string; href: string }[] = [
+  { key: "robotics", href: "/robotics" },
+  { key: "compare", href: "/robotics/compare" },
+  { key: "platform", href: "/platform" },
+  { key: "solutions", href: "/solutions" },
+  { key: "accessories", href: "/robotics/accessories" },
+  { key: "distribution", href: "/distribution-network" },
+  { key: "company", href: "/company" },
+];
 
 export default async function SupportPage({
   params,
@@ -36,101 +41,112 @@ export default async function SupportPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Support");
+  const t = await getTranslations("Support.page");
 
   return (
     <>
-      {/* Hero */}
+      {/* 1. Hero — utilitarian, clear routing */}
       <Section>
-        <Container className="max-w-[860px]">
-          <Eyebrow accent="warm">{t("eyebrow")}</Eyebrow>
-          <h1 className="mt-3 text-display-l text-balance text-ink">{t("title")}</h1>
-          <p className="mt-5 text-body-l text-ink-2">{t("subtitle")}</p>
-          <div className="mt-8 flex flex-wrap gap-4">
+        <Container className="max-w-[880px]">
+          <Eyebrow accent="warm">{t("hero.eyebrow")}</Eyebrow>
+          <h1 className="mt-3 text-display-l text-balance text-ink">{t("hero.title")}</h1>
+          <p className="mt-5 max-w-[60ch] text-body-l text-ink-2">{t("hero.subtitle")}</p>
+          <div className="mt-8 flex flex-wrap gap-3">
             <Button variant="warm" asChild>
-              <Link href="/request-demo">{t("contactSupport")}</Link>
+              <Link href="/get-pricing">{t("hero.cta.pricing")}</Link>
             </Button>
             <Button variant="secondary" asChild>
-              <Link href="/robotics/accessories">{t("viewAccessories")}</Link>
+              <Link href="/request-demo">{t("hero.cta.demo")}</Link>
+            </Button>
+            <Button variant="ghostLink" asChild>
+              <Link href="/robotics/accessories#accessories-inquiry">{t("hero.cta.accessories")}</Link>
             </Button>
           </div>
         </Container>
       </Section>
 
-      {/* Support areas */}
+      {/* 2. Support paths — 6 entry cards */}
       <Section tone="light" className="bg-surface">
         <Container>
-          <Eyebrow accent="warm">{t("areas.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("areas.heading")}</h2>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {AREAS.map(({ key, icon: Icon }) => (
-              <div key={key} className="flex h-full flex-col rounded-lg border border-line bg-canvas p-6">
-                <span className="inline-flex size-10 items-center justify-center rounded-md bg-warm-tint text-warm-text">
+          <div className="max-w-[60ch]">
+            <Eyebrow accent="warm">{t("paths.eyebrow")}</Eyebrow>
+            <h2 className="mt-3 text-h1 text-balance text-ink">{t("paths.title")}</h2>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {PATHS.map(({ key, Icon, href }) => (
+              <Link
+                key={key}
+                href={href}
+                className="group flex flex-col rounded-xl border border-line bg-canvas p-6 transition-colors hover:border-cool/50"
+              >
+                <span className="inline-flex size-10 items-center justify-center rounded-md bg-warm/10 text-warm-text">
                   <Icon className="size-5" aria-hidden />
                 </span>
-                <h3 className="mt-4 text-h4 text-ink">{t(`areas.cards.${key}.title`)}</h3>
-                <p className="mt-2 text-body-s text-ink-2">{t(`areas.cards.${key}.desc`)}</p>
-              </div>
+                <h3 className="mt-4 text-h4 text-ink">{t(`paths.items.${key}.title`)}</h3>
+                <p className="mt-2 flex-1 text-body-s text-ink-2">{t(`paths.items.${key}.desc`)}</p>
+                <span className="mt-5 inline-flex items-center gap-1.5 text-body-s font-medium text-cool-text">
+                  {t(`paths.items.${key}.action`)}
+                  <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100" aria-hidden />
+                </span>
+              </Link>
             ))}
           </div>
         </Container>
       </Section>
 
-      {/* FAQ */}
+      {/* 3. Before contacting us — prep checklist */}
       <Section>
-        <Container className="max-w-[760px]">
-          <Eyebrow accent="cool">{t("faq.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("faq.heading")}</h2>
-          <Accordion type="single" collapsible className="mt-8 w-full">
-            {FAQ.map((k) => (
-              <AccordionItem key={k} value={k}>
-                <AccordionTrigger className="text-left text-h4">
-                  {t(`faq.items.${k}.q`)}
-                </AccordionTrigger>
-                <AccordionContent className="text-body-m text-ink-2">
-                  {t(`faq.items.${k}.a`)}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </Container>
-      </Section>
-
-      {/* Materials — on request only (no fake downloads) */}
-      <Section tone="light" className="bg-surface">
-        <Container className="max-w-[760px]">
-          <Eyebrow accent="warm">{t("materials.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("materials.heading")}</h2>
-          <p className="mt-4 text-body-l text-ink-2">{t("materials.body")}</p>
-          <ul className="mt-8 divide-y divide-line border-y border-line">
-            {MATERIALS.map((m) => (
-              <li key={m} className="flex items-center justify-between gap-4 py-4">
-                <span className="text-body-m text-ink">{t(`materials.items.${m}`)}</span>
-                <span className="rounded-pill border border-line bg-canvas px-3 py-1 text-body-s text-ink-3">
-                  {t("materials.status")}
-                </span>
+        <Container className="max-w-[900px]">
+          <Eyebrow accent="cool">{t("prep.eyebrow")}</Eyebrow>
+          <h2 className="mt-3 text-h1 text-balance text-ink">{t("prep.title")}</h2>
+          <p className="mt-3 text-body-l text-ink-2">{t("prep.intro")}</p>
+          <ul className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
+            {PREP.map((i) => (
+              <li key={i} className="flex items-start gap-3 border-t border-line pt-4">
+                <Check className="mt-0.5 size-5 shrink-0 text-warm-text" aria-hidden />
+                <span className="text-body-m text-ink">{t(`prep.items.${i}`)}</span>
               </li>
             ))}
           </ul>
-          <div className="mt-8">
-            <Button variant="warm" asChild>
-              <Link href="/request-demo">{t("requestMaterials")}</Link>
-            </Button>
+        </Container>
+      </Section>
+
+      {/* 4. Useful links */}
+      <Section tone="light" className="bg-surface">
+        <Container>
+          <div className="max-w-[60ch]">
+            <Eyebrow accent="warm">{t("links.eyebrow")}</Eyebrow>
+            <h2 className="mt-3 text-h1 text-balance text-ink">{t("links.title")}</h2>
+          </div>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {LINKS.map(({ key, href }) => (
+              <Link
+                key={key}
+                href={href}
+                className="group flex items-center justify-between gap-4 rounded-xl border border-line bg-canvas px-5 py-4 transition-colors hover:border-cool/50"
+              >
+                <span className="text-body-m font-medium text-ink">{t(`links.items.${key}`)}</span>
+                <ArrowRight className="size-4 shrink-0 text-ink-3 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100" aria-hidden />
+              </Link>
+            ))}
           </div>
         </Container>
       </Section>
 
-      {/* Final CTA */}
-      <Section>
-        <Container className="max-w-[640px] text-center">
-          <h2 className="text-display-l text-balance text-ink">{t("finalTitle")}</h2>
-          <p className="mt-4 text-body-l text-ink-2">{t("finalBody")}</p>
+      {/* 5. Final CTA */}
+      <Section tone="dark">
+        <Container className="max-w-[680px] text-center">
+          <h2 className="text-display-l text-balance text-ink-inv">{t("finalCta.title")}</h2>
+          <p className="mt-4 text-body-l text-ink-inv-2">{t("finalCta.body")}</p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button variant="warm" asChild>
-              <Link href="/request-demo">{t("contactSupport")}</Link>
+              <Link href="/request-demo">{t("finalCta.cta.demo")}</Link>
             </Button>
-            <Button variant="secondary" asChild>
-              <Link href="/robotics">{t("exploreRobotics")}</Link>
+            <Button variant="glass" asChild>
+              <Link href="/company">{t("finalCta.cta.contact")}</Link>
+            </Button>
+            <Button variant="ghostLink" asChild>
+              <Link href="/get-pricing">{t("finalCta.cta.pricing")}</Link>
             </Button>
           </div>
         </Container>

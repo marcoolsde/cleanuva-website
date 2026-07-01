@@ -73,6 +73,17 @@ const USAGE = {
     { slot: "Category — Service parts", path: "/images/accessories/motors.jpg", ref: "accessories/page.tsx (CATEGORIES)", kind: "real", note: "Graceful icon fallback if absent." },
     { slot: "Category — Support & maintenance", path: "/images/accessories/service-kits.jpg", ref: "accessories/page.tsx (CATEGORIES)", kind: "real", note: "Graceful icon fallback if absent." },
   ],
+  gallery: [
+    { slot: "Hero + featured", path: "/images/robotics/r-series-op-1.jpg", ref: "app/[locale]/gallery/page.tsx", kind: "real", note: "Field-operation hero + featured still." },
+    { slot: "Featured stills", path: "/images/robotics/u-series-op-1.jpg", ref: "app/[locale]/gallery/page.tsx (FEATURED + HIGHLIGHT)", kind: "real", note: "Also used in the in-operation highlight." },
+    { slot: "Featured stills", path: "/images/robotics/r-series-op-2.jpg", ref: "app/[locale]/gallery/page.tsx (FEATURED)", kind: "real", note: "Cleaning detail." },
+    { slot: "Featured + posters", path: "/images/robotics/r-series-hero.jpg", ref: "app/[locale]/gallery/page.tsx (FEATURED + HIGHLIGHT poster)", kind: "real", note: "Product still + R demo poster." },
+    { slot: "Featured stills", path: "/images/robotics/u-series-hero.jpg", ref: "app/[locale]/gallery/page.tsx (FEATURED)", kind: "real", note: "Product still." },
+    { slot: "Featured stills", path: "/images/robotics/overview-hero.jpg", ref: "app/[locale]/gallery/page.tsx (FEATURED)", kind: "real", note: "PV site context." },
+    { slot: "Highlight — video", path: "/videos/robotics/nuvatrack-r-demo.mp4", ref: "app/[locale]/gallery/page.tsx (HIGHLIGHT)", kind: "real", note: "Poster: r-series-hero.jpg." },
+    { slot: "Highlight — video", path: "/videos/robotics/nuvatrack-u-demo.mp4", ref: "app/[locale]/gallery/page.tsx (HIGHLIGHT)", kind: "real", note: "Poster: u-series-poster.jpg." },
+    { slot: "Highlight — poster", path: "/images/robotics/u-series-poster.jpg", ref: "app/[locale]/gallery/page.tsx (HIGHLIGHT)", kind: "real", note: "U demo poster." },
+  ],
   compare: [
     { slot: "NuvaTrack-R card", path: "/images/robotics/r-series-hero.jpg", ref: "content/compare.ts → COMPARE_MODELS", kind: "real", note: "R-Series photo." },
     { slot: "NuvaTrack-R Pro card", path: "/images/robotics/r-series-hero.jpg", ref: "content/compare.ts → COMPARE_MODELS", kind: "temp", note: "Reuses R photo — replace with a real R Pro shot." },
@@ -145,6 +156,9 @@ ${table(USAGE.nuvaSpan)}
 
 ## Accessories page (\`/robotics/accessories\`)
 ${table(USAGE.accessories)}
+
+## Gallery page (\`/gallery\`)
+${table(USAGE.gallery)}
 
 ## Compare page (\`/robotics/compare\`)
 ${table(USAGE.compare)}

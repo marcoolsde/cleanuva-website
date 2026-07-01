@@ -1,42 +1,32 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Layers, Bot, Boxes, ArrowRight, ShieldCheck, Factory, Wrench } from "lucide-react";
+import { Bot, Layers, Boxes, ShieldCheck, ArrowRight, Check, type LucideIcon } from "lucide-react";
 
 import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
 import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
-import { HeroBackgroundImage } from "@/components/sections/hero-image";
-import { TrustSection } from "@/components/sections/trust";
 import { Link } from "@/i18n/navigation";
 import { LEGAL } from "@/content/legal";
 
 export const metadata: Metadata = {
-  title: "Company — Cleanuva",
+  title: "About Cleanuva — a brand of NETRO Sparkle GmbH",
   description:
-    "Cleanuva is the AI-native operating layer for solar — a brand of NETRO Sparkle GmbH, based in Germany.",
+    "Cleanuva is a solar robotics and AI operations brand of NETRO Sparkle GmbH, based in Germany — bringing field-ready cleaning robots and an AI-native operations platform to PV teams.",
 };
 
-const PILLARS = [
-  { key: "platform", icon: Layers },
-  { key: "robotics", icon: Bot },
-  { key: "solutions", icon: Boxes },
-] as const;
-
+const BUILD: { key: string; Icon: LucideIcon; href: string }[] = [
+  { key: "robotics", Icon: Bot, href: "/robotics" },
+  { key: "platform", Icon: Layers, href: "/platform" },
+  { key: "solutions", Icon: Boxes, href: "/solutions" },
+];
+const PRINCIPLES = ["p1", "p2", "p3", "p4", "p5"] as const;
 const LEGAL_PAGES = [
   { key: "imprint", href: "/company/legal/imprint" },
   { key: "privacy", href: "/company/legal/privacy" },
   { key: "terms", href: "/company/legal/terms" },
   { key: "cookies", href: "/company/legal/cookies" },
 ] as const;
-
-const MFG_POINTS = [
-  { key: "p1", icon: Factory },
-  { key: "p2", icon: Wrench },
-  { key: "p3", icon: Boxes },
-] as const;
-const PRESENCE_REGIONS = ["europe", "mea", "nafrica", "na"] as const;
-const PRESENCE_MARKETS = ["utility", "commercial", "distributed"] as const;
 
 export default async function CompanyPage({
   params,
@@ -45,195 +35,172 @@ export default async function CompanyPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Company");
+  const t = await getTranslations("Company.page");
   const tf = await getTranslations("Footer.legal");
+
+  const INFO: { label: string; value: string; href?: string }[] = [
+    { label: t("info.labels.entity"), value: LEGAL.entity },
+    { label: t("info.labels.office"), value: LEGAL.registeredOffice },
+    { label: t("info.labels.court"), value: LEGAL.registerCourt },
+    { label: t("info.labels.hrb"), value: LEGAL.hrb },
+    { label: t("info.labels.vat"), value: LEGAL.vatId },
+    { label: t("info.labels.website"), value: "www.cleanuva.ai", href: "https://www.cleanuva.ai" },
+    { label: t("info.labels.email"), value: LEGAL.contactEmail, href: `mailto:${LEGAL.contactEmail}` },
+  ];
 
   return (
     <>
-      {/* Hero */}
-      <Section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0" aria-hidden>
-          <HeroBackgroundImage src="/images/company/company-hero.jpg" />
-        </div>
-        <Container className="relative z-10 max-w-[820px]">
-          <Eyebrow accent="cool">{t("eyebrow")}</Eyebrow>
-          <h1 className="mt-3 text-display-l text-balance text-ink">{t("title")}</h1>
-          <p className="mt-5 text-body-l text-ink-2">{t("lead")}</p>
+      {/* 1. Brand hero — system look, no photo */}
+      <section className="dark relative isolate overflow-hidden bg-abyss text-ink-inv">
+        <div aria-hidden className="absolute inset-0 bg-[radial-gradient(120%_120%_at_20%_0%,#15293D_0%,#0A1320_60%)]" />
+        <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:44px_44px] [mask-image:radial-gradient(80%_80%_at_35%_0%,black,transparent)]" />
+        <Container className="relative z-10 pt-36 pb-16 lg:pb-20">
+          <p className="text-eyebrow text-warm">{t("hero.eyebrow")}</p>
+          <h1 className="mt-3 text-display-xl text-balance text-ink-inv">{t("hero.title")}</h1>
+          <p className="mt-4 max-w-[52ch] text-body-l text-ink-inv-2">{t("hero.subtitle")}</p>
+          <p className="mt-3 max-w-[64ch] text-body-m text-ink-inv-3">{t("hero.support")}</p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button variant="warm" asChild>
+              <Link href="/robotics">{t("hero.cta.robotics")}</Link>
+            </Button>
+            <Button variant="glass" asChild>
+              <Link href="/platform">{t("hero.cta.platform")}</Link>
+            </Button>
+            <Button variant="glass" asChild>
+              <a href="#company-info">{t("hero.cta.contact")}</a>
+            </Button>
+          </div>
         </Container>
-      </Section>
+      </section>
 
-      {/* About — operator perspective + solar focus */}
+      {/* 2. Brand ↔ legal entity — parity, no ambiguity */}
       <Section tone="light" className="bg-surface">
-        <Container className="max-w-[760px] space-y-10">
-          <div className="space-y-3">
-            <h2 className="text-h2 text-ink">{t("about.heading")}</h2>
-            <p className="text-body-m text-ink-2">{t("about.body1")}</p>
-            <p className="text-body-m text-ink-2">{t("about.body2")}</p>
+        <Container>
+          <div className="max-w-[62ch]">
+            <Eyebrow accent="cool">{t("brand.eyebrow")}</Eyebrow>
+            <h2 className="mt-3 text-h1 text-balance text-ink">{t("brand.title")}</h2>
           </div>
-          <div className="space-y-3">
-            <h2 className="text-h2 text-ink">{t("focus.heading")}</h2>
-            <p className="text-body-m text-ink-2">{t("focus.body")}</p>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <div className="rounded-2xl border border-cool/40 bg-cool-tint/40 p-7">
+              <span className="text-eyebrow text-cool-text">{t("brand.brandTag")}</span>
+              <h3 className="mt-2 text-h2 text-ink">Cleanuva</h3>
+              <p className="mt-2 text-body-m text-ink-2">{t("brand.brandBody")}</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-canvas p-7">
+              <span className="text-eyebrow text-ink-3">{t("brand.entityTag")}</span>
+              <h3 className="mt-2 text-h2 text-ink">NETRO Sparkle GmbH</h3>
+              <p className="mt-2 text-body-m text-ink-2">{t("brand.entityBody")}</p>
+            </div>
           </div>
+          <p className="mt-6 max-w-[72ch] text-body-s text-ink-3">{t("brand.note")}</p>
         </Container>
       </Section>
 
-      {/* Vision — Platform + AI Copilot + Robotics */}
-      <Section id="vision">
+      {/* 3. What we build */}
+      <Section>
         <Container>
           <div className="max-w-[60ch]">
-            <Eyebrow accent="neutral">{t("vision.eyebrow")}</Eyebrow>
-            <h2 className="mt-3 text-h1 text-ink">{t("vision.heading")}</h2>
-            <p className="mt-4 text-body-l text-ink-2">{t("vision.body")}</p>
+            <Eyebrow accent="warm">{t("build.eyebrow")}</Eyebrow>
+            <h2 className="mt-3 text-h1 text-balance text-ink">{t("build.title")}</h2>
           </div>
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
-            {PILLARS.map(({ key, icon: Icon }) => (
-              <div key={key} className="rounded-lg border border-line bg-canvas p-6">
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {BUILD.map(({ key, Icon, href }) => (
+              <Link
+                key={key}
+                href={href}
+                className="group flex flex-col rounded-xl border border-line bg-canvas p-6 transition-colors hover:border-cool/50"
+              >
                 <span className="inline-flex size-10 items-center justify-center rounded-md bg-cool-tint text-cool-text">
                   <Icon className="size-5" aria-hidden />
                 </span>
-                <h3 className="mt-4 text-h4 text-ink">{t(`vision.pillars.${key}.title`)}</h3>
-                <p className="mt-2 text-body-s text-ink-2">{t(`vision.pillars.${key}.desc`)}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* Manufacturing & supply chain */}
-      <Section>
-        <Container className="max-w-[920px]">
-          <Eyebrow accent="warm">{t("manufacturing.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("manufacturing.heading")}</h2>
-          <p className="mt-4 max-w-[62ch] text-body-l text-ink-2">{t("manufacturing.body")}</p>
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {MFG_POINTS.map(({ key, icon: Icon }) => (
-              <div key={key} className="rounded-lg border border-line bg-canvas p-6">
-                <span className="inline-flex size-10 items-center justify-center rounded-md bg-warm-tint text-warm-text">
-                  <Icon className="size-5" aria-hidden />
+                <h3 className="mt-4 text-h3 text-ink">{t(`build.items.${key}.title`)}</h3>
+                <p className="mt-2 flex-1 text-body-s text-ink-2">{t(`build.items.${key}.desc`)}</p>
+                <span className="mt-5 inline-flex items-center gap-1.5 text-body-s font-medium text-cool-text">
+                  {t("build.learnMore")}
+                  <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100" aria-hidden />
                 </span>
-                <h3 className="mt-4 text-h4 text-ink">{t(`manufacturing.points.${key}.title`)}</h3>
-                <p className="mt-2 text-body-s text-ink-2">{t(`manufacturing.points.${key}.desc`)}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </Container>
       </Section>
 
-      {/* Global presence — regions & markets served (no fabricated offices) */}
+      {/* 4. Operating principles */}
       <Section tone="light" className="bg-surface">
-        <Container className="max-w-[920px]">
-          <Eyebrow accent="cool">{t("presence.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("presence.heading")}</h2>
-          <p className="mt-4 max-w-[62ch] text-body-l text-ink-2">{t("presence.body")}</p>
-          <div className="mt-8 grid gap-8 sm:grid-cols-2">
-            <div>
-              <h3 className="text-eyebrow text-ink-3">{t("presence.regionsTitle")}</h3>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {PRESENCE_REGIONS.map((r) => (
-                  <span
-                    key={r}
-                    className="rounded-pill border border-line bg-canvas px-3 py-1 text-body-s text-ink-2"
-                  >
-                    {t(`presence.regions.${r}`)}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-eyebrow text-ink-3">{t("presence.marketsTitle")}</h3>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {PRESENCE_MARKETS.map((m) => (
-                  <span
-                    key={m}
-                    className="rounded-pill border border-line bg-canvas px-3 py-1 text-body-s text-ink-2"
-                  >
-                    {t(`presence.markets.${m}`)}
-                  </span>
-                ))}
-              </div>
-            </div>
+        <Container className="max-w-[900px]">
+          <Eyebrow accent="cool">{t("principles.eyebrow")}</Eyebrow>
+          <h2 className="mt-3 text-h1 text-balance text-ink">{t("principles.title")}</h2>
+          <ul className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
+            {PRINCIPLES.map((p) => (
+              <li key={p} className="flex items-start gap-3 border-t border-line pt-4">
+                <Check className="mt-0.5 size-5 shrink-0 text-warm-text" aria-hidden />
+                <span className="text-body-m text-ink">{t(`principles.items.${p}`)}</span>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </Section>
+
+      {/* 5. Company information + legal */}
+      <Section id="company-info" className="scroll-mt-20">
+        <Container className="grid gap-12 lg:grid-cols-[1.3fr_1fr]">
+          <div>
+            <Eyebrow accent="neutral">{t("info.eyebrow")}</Eyebrow>
+            <h2 className="mt-3 text-h1 text-balance text-ink">{t("info.title")}</h2>
+            <dl className="mt-8 divide-y divide-line border-y border-line">
+              {INFO.map((row) => (
+                <div key={row.label} className="flex flex-col gap-1 py-4 sm:flex-row sm:justify-between sm:gap-6">
+                  <dt className="text-body-s uppercase tracking-[0.08em] text-ink-3">{row.label}</dt>
+                  <dd className="text-body-m text-ink sm:text-end">
+                    {row.href ? (
+                      <a href={row.href} className="text-cool-text underline-offset-4 hover:underline">{row.value}</a>
+                    ) : (
+                      row.value
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <Button variant="ghostLink" asChild className="mt-6">
+              <Link href="/company/legal/imprint">
+                {t("info.imprintLink")}
+                <ArrowRight className="size-4 rtl:-scale-x-100" aria-hidden />
+              </Link>
+            </Button>
+          </div>
+
+          <div className="rounded-2xl border border-line bg-canvas p-7">
+            <span className="inline-flex size-10 items-center justify-center rounded-md bg-verified/10 text-verified">
+              <ShieldCheck className="size-5" aria-hidden />
+            </span>
+            <h3 className="mt-4 text-h4 text-ink">{t("info.legalHeading")}</h3>
+            <ul className="mt-4 space-y-2.5">
+              {LEGAL_PAGES.map((p) => (
+                <li key={p.key}>
+                  <Link href={p.href} className="text-body-m text-ink underline-offset-4 hover:text-cool-text hover:underline">
+                    {tf(p.key)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </Container>
       </Section>
 
-      {/* Exhibitions & events */}
-      <Section>
-        <Container className="max-w-[760px]">
-          <Eyebrow accent="warm">{t("events.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("events.heading")}</h2>
-          <p className="mt-4 text-body-l text-ink-2">{t("events.body")}</p>
-          <p className="mt-3 text-body-s text-ink-3">{t("events.note")}</p>
-        </Container>
-      </Section>
-
-      {/* Trust layer */}
-      <TrustSection />
-
-      {/* Entity · Security · Contact · Legal */}
-      <Section tone="light" className="bg-surface">
-        <Container className="grid gap-12 lg:grid-cols-2">
-          <div className="space-y-12">
-            {/* Entity */}
-            <div className="space-y-3">
-              <h2 className="text-h2 text-ink">{t("entity.heading")}</h2>
-              <p className="text-body-m text-ink-2">
-                {t("entity.body", { entity: LEGAL.entity })}
-              </p>
-              <Button variant="ghostLink" asChild>
-                <Link href="/company/legal/imprint">
-                  {t("entity.imprintLink")}
-                  <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-                </Link>
-              </Button>
-            </div>
-
-            {/* Security pointer */}
-            <div id="security" className="space-y-3 scroll-mt-24">
-              <span className="inline-flex size-10 items-center justify-center rounded-md bg-verified/10 text-verified">
-                <ShieldCheck className="size-5" aria-hidden />
-              </span>
-              <h2 className="text-h2 text-ink">{t("security.heading")}</h2>
-              <p className="text-body-m text-ink-2">{t("security.body")}</p>
-              <Button variant="ghostLink" asChild>
-                <Link href="/platform">
-                  {t("security.link")}
-                  <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-                </Link>
-              </Button>
-            </div>
-          </div>
-
-          {/* Contact + Legal */}
-          <div className="space-y-12">
-            <div id="contact" className="scroll-mt-24 rounded-lg border border-line bg-canvas p-6">
-              <h2 className="text-h2 text-ink">{t("contact.heading")}</h2>
-              <p className="mt-3 text-body-m text-ink-2">{t("contact.body")}</p>
-              <div className="mt-5 flex flex-wrap gap-3">
-                <Button variant="warm" asChild>
-                  <Link href="/get-pricing">{t("contact.quoteCta")}</Link>
-                </Button>
-                <Button variant="secondary" asChild>
-                  <Link href="/request-demo">{t("contact.demoCta")}</Link>
-                </Button>
-              </div>
-              <p className="mt-4 text-body-s text-ink-3">{t("contact.legalNote")}</p>
-            </div>
-
-            <div className="space-y-3">
-              <h2 className="text-eyebrow text-ink-3">{t("legalHeading")}</h2>
-              <ul className="space-y-2">
-                {LEGAL_PAGES.map((p) => (
-                  <li key={p.key}>
-                    <Link
-                      href={p.href}
-                      className="text-body-m text-ink underline-offset-4 hover:text-cool-text hover:underline"
-                    >
-                      {tf(p.key)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+      {/* 6. Final CTA */}
+      <Section tone="dark">
+        <Container className="max-w-[720px] text-center">
+          <h2 className="text-display-l text-balance text-ink-inv">{t("finalCta.title")}</h2>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <Button variant="warm" asChild>
+              <Link href="/support">{t("finalCta.cta.contact")}</Link>
+            </Button>
+            <Button variant="glass" asChild>
+              <Link href="/request-demo">{t("finalCta.cta.demo")}</Link>
+            </Button>
+            <Button variant="ghostLink" asChild>
+              <Link href="/distribution-network">{t("finalCta.cta.distribution")}</Link>
+            </Button>
           </div>
         </Container>
       </Section>
