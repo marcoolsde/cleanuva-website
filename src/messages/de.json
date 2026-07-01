@@ -1527,10 +1527,12 @@
         "title": "Im Einsatz",
         "subtitle": "Feldaufnahmen, Reinigungsdetails und Betriebsmedien.",
         "media": {
-          "vid": "NuvaTrack-R Reinigungsdemo",
-          "hero": "NuvaTrack-R auf einer PV-Anlage",
-          "op1": "NuvaTrack-R im Feldeinsatz",
-          "op2": "NuvaTrack-R Reinigungsdetail"
+          "op1": "NuvaTrack-R Reinigungsfahrt",
+          "op2": "NuvaTrack-R Reinigung (Hochformat)",
+          "op3": "NuvaTrack-R auf einer PV-Reihe",
+          "op4": "NuvaTrack-R Feldeinsatz",
+          "op5": "NuvaTrack-R Reinigungsdetail",
+          "op6": "NuvaTrack-R im Einsatz"
         }
       },
       "finalCta": {
@@ -1761,9 +1763,9 @@
         "title": "NuvaTrack-U im Einsatz",
         "subtitle": "Feldaufnahmen und Reinigungs-Betriebsmedien.",
         "media": {
-          "vid": "NuvaTrack-U Reinigungsdemo",
-          "hero": "NuvaTrack-U auf einer PV-Anlage",
-          "op1": "NuvaTrack-U im Feldeinsatz"
+          "op1": "NuvaTrack-U unbeaufsichtigter Lauf",
+          "op2": "NuvaTrack-U vor Ort",
+          "op3": "NuvaTrack-U Reinigungsbetrieb"
         }
       },
       "finalCta": {

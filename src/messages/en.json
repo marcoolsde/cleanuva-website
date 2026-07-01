@@ -1527,10 +1527,12 @@
         "title": "In operation",
         "subtitle": "Field views, cleaning details and robot operation media.",
         "media": {
-          "vid": "NuvaTrack-R cleaning demo",
-          "hero": "NuvaTrack-R on a PV array",
-          "op1": "NuvaTrack-R field operation",
-          "op2": "NuvaTrack-R cleaning detail"
+          "op1": "NuvaTrack-R cleaning run",
+          "op2": "NuvaTrack-R cleaning (vertical view)",
+          "op3": "NuvaTrack-R on a PV row",
+          "op4": "NuvaTrack-R field operation",
+          "op5": "NuvaTrack-R cleaning detail",
+          "op6": "NuvaTrack-R in operation"
         }
       },
       "finalCta": {
@@ -1761,9 +1763,9 @@
         "title": "NuvaTrack-U in operation",
         "subtitle": "Field views and cleaning operation media.",
         "media": {
-          "vid": "NuvaTrack-U cleaning demo",
-          "hero": "NuvaTrack-U on a PV array",
-          "op1": "NuvaTrack-U field operation"
+          "op1": "NuvaTrack-U unattended run",
+          "op2": "NuvaTrack-U on site",
+          "op3": "NuvaTrack-U cleaning operation"
         }
       },
       "finalCta": {

@@ -4,12 +4,12 @@ import { Check } from "lucide-react";
 
 import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
-import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
 import { ProductSubnav } from "@/components/robotics/product-subnav";
 import { ProductDemoMedia } from "@/components/robotics/product-demo-media";
 import { InOperationGallery } from "@/components/robotics/in-operation";
 import { MediaFrame } from "@/components/robotics/media-frame";
+import { DatasheetButton } from "@/components/sections/datasheet-button";
 import { Link } from "@/i18n/navigation";
 import { familyBySlug } from "@/content/robots";
 import { U_SERIES_MEDIA, U_DEMO_MEDIA } from "@/content/compare";
@@ -118,8 +118,7 @@ export default async function USeriesPage({
       {/* 4. When to choose */}
       <Section id="use-cases" tone="light" className="scroll-mt-[120px] bg-surface">
         <Container className="max-w-[900px]">
-          <Eyebrow accent="warm">{t("useCases.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("useCases.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("useCases.title")}</h2>
           <ul className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
             {USE_CASES.map((b) => (
               <li key={b} className="flex items-start gap-3 border-t border-line pt-4">
@@ -134,8 +133,7 @@ export default async function USeriesPage({
       {/* 4. How unattended operation works */}
       <Section>
         <Container>
-          <Eyebrow accent="cool">{t("how.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("how.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("how.title")}</h2>
           <ol className="mt-10 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
             {HOW_STEPS.map((s, i) => (
               <li key={s} className="flex flex-col bg-canvas p-6">
@@ -150,8 +148,7 @@ export default async function USeriesPage({
       {/* 5. Deployment requirements */}
       <Section id="requirements" tone="light" className="scroll-mt-[120px] bg-surface">
         <Container className="max-w-[900px]">
-          <Eyebrow accent="warm">{t("deploy.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("deploy.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("deploy.title")}</h2>
           <p className="mt-3 max-w-[60ch] text-body-l text-ink-2">{t("deploy.note")}</p>
           <ul className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
             {DEPLOY.map((d) => (
@@ -167,8 +164,7 @@ export default async function USeriesPage({
       {/* 6. Technical data */}
       <Section>
         <Container>
-          <Eyebrow accent="neutral">{t("tech.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("tech.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("tech.title")}</h2>
 
           <h3 className="mt-10 text-h3 text-ink">{t("tech.selTitle")}</h3>
           <dl className="mt-5 grid gap-x-14 sm:grid-cols-2">
@@ -192,14 +188,22 @@ export default async function USeriesPage({
             )}
           </dl>
           <p className="mt-6 text-body-s text-ink-3">{t("tech.note")}</p>
+
+          {/* Datasheet download (graceful: real PDF → download; missing → request). */}
+          <div className="mt-8">
+            <DatasheetButton
+              href={family.datasheet}
+              downloadLabel={tp("downloadDatasheet")}
+              requestLabel={tp("requestDatasheet")}
+            />
+          </div>
         </Container>
       </Section>
 
       {/* 7. In operation gallery */}
       <Section tone="light" className="bg-surface">
         <Container>
-          <Eyebrow accent="cool">{t("inOp.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("inOp.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("inOp.title")}</h2>
           <p className="mt-3 max-w-[60ch] text-body-l text-ink-2">{t("inOp.subtitle")}</p>
           <div className="mt-10">
             <InOperationGallery media={U_SERIES_MEDIA} tNamespace="Robotics.uSeriesPage.inOp" />

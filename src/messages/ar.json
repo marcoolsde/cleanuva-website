@@ -1527,10 +1527,12 @@
         "title": "أثناء التشغيل",
         "subtitle": "لقطات ميدانية وتفاصيل تنظيف ووسائط تشغيل الروبوت.",
         "media": {
-          "vid": "عرض تنظيف NuvaTrack-R",
-          "hero": "NuvaTrack-R على مصفوفة كهروضوئية",
-          "op1": "NuvaTrack-R في العمل الميداني",
-          "op2": "تفصيل تنظيف NuvaTrack-R"
+          "op1": "NuvaTrack-R أثناء التنظيف",
+          "op2": "NuvaTrack-R تنظيف (عمودي)",
+          "op3": "NuvaTrack-R على صف ألواح",
+          "op4": "NuvaTrack-R في الميدان",
+          "op5": "تفاصيل تنظيف NuvaTrack-R",
+          "op6": "NuvaTrack-R أثناء التشغيل"
         }
       },
       "finalCta": {
@@ -1761,9 +1763,9 @@
         "title": "NuvaTrack-U أثناء التشغيل",
         "subtitle": "لقطات ميدانية ووسائط تشغيل التنظيف.",
         "media": {
-          "vid": "عرض تنظيف NuvaTrack-U",
-          "hero": "NuvaTrack-U على مصفوفة كهروضوئية",
-          "op1": "NuvaTrack-U في العمل الميداني"
+          "op1": "NuvaTrack-U تشغيل غير مُراقَب",
+          "op2": "NuvaTrack-U في الموقع",
+          "op3": "تشغيل تنظيف NuvaTrack-U"
         }
       },
       "finalCta": {

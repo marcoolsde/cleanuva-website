@@ -22,8 +22,8 @@ export interface CompareModel {
 // NuvaSpan uses the overview photo until dedicated shots exist (no missing files,
 // no warm placeholder).
 export const COMPARE_MODELS: CompareModel[] = [
-  { id: "nuvatrack-r", name: "NuvaTrack-R", image: "/images/robotics/r-series-hero.jpg", viewHref: "/robotics/r-series", pricingHref: "/get-pricing?model=nuvatrack-r" },
-  { id: "nuvatrack-r-pro", name: "NuvaTrack-R Pro", image: "/images/robotics/r-series-hero.jpg", viewHref: "/robotics/r-series#nuvatrack-r-pro", pricingHref: "/get-pricing?model=nuvatrack-r-pro" },
+  { id: "nuvatrack-r", name: "NuvaTrack-R", image: "/images/robotics/nuvatrack-r-hero.jpg", viewHref: "/robotics/r-series", pricingHref: "/get-pricing?model=nuvatrack-r" },
+  { id: "nuvatrack-r-pro", name: "NuvaTrack-R Pro", image: "/images/robotics/nuvatrack-r-pro-hero.png", viewHref: "/robotics/r-series#nuvatrack-r-pro", pricingHref: "/get-pricing?model=nuvatrack-r-pro" },
   { id: "nuvatrack-u", name: "NuvaTrack-U", image: "/images/robotics/u-series-hero.jpg", viewHref: "/robotics/u-series", pricingHref: "/get-pricing?model=nuvatrack-u" },
   { id: "nuvaspan", name: "NuvaSpan", image: "/images/robotics/overview-hero.jpg", viewHref: "/robotics/nuvaspan", pricingHref: "/get-pricing?model=nuvaspan" },
 ];
@@ -43,8 +43,8 @@ export interface OverviewModel {
   pricingHref: string;
 }
 export const OVERVIEW_MODELS: OverviewModel[] = [
-  { id: "nuvatrack-r", i18nKey: "r", name: "NuvaTrack-R", image: "/images/robotics/r-series-hero.jpg", viewHref: "/robotics/r-series#nuvatrack-r", pricingHref: "/get-pricing?model=nuvatrack-r" },
-  { id: "nuvatrack-r-pro", i18nKey: "rpro", name: "NuvaTrack-R Pro", image: "/images/robotics/r-series-hero.jpg", viewHref: "/robotics/r-series#nuvatrack-r-pro", pricingHref: "/get-pricing?model=nuvatrack-r-pro" },
+  { id: "nuvatrack-r", i18nKey: "r", name: "NuvaTrack-R", image: "/images/robotics/nuvatrack-r-hero.jpg", viewHref: "/robotics/r-series#nuvatrack-r", pricingHref: "/get-pricing?model=nuvatrack-r" },
+  { id: "nuvatrack-r-pro", i18nKey: "rpro", name: "NuvaTrack-R Pro", image: "/images/robotics/nuvatrack-r-pro-hero.png", viewHref: "/robotics/r-series#nuvatrack-r-pro", pricingHref: "/get-pricing?model=nuvatrack-r-pro" },
   { id: "nuvatrack-u", i18nKey: "u", name: "NuvaTrack-U", image: "/images/robotics/u-series-hero.jpg", viewHref: "/robotics/u-series", pricingHref: "/get-pricing?model=nuvatrack-u" },
   { id: "nuvaspan", i18nKey: "span", name: "NuvaSpan", image: "/images/robotics/overview-hero.jpg", viewHref: "/robotics/nuvaspan", pricingHref: "/get-pricing?model=nuvaspan" },
 ];
@@ -113,19 +113,26 @@ export interface RMedia {
   type: "image" | "video";
   src: string;
   poster?: string;
+  /** Portrait clip → contained (not cropped) in the 16:9 viewer. */
+  vertical?: boolean;
 }
+// Six field-operation clips (posters captured from each clip's own first
+// second). op-2 is the portrait clip (720×1280) → marked vertical so it is
+// contained, not cropped; the rest are landscape.
 export const R_SERIES_MEDIA: RMedia[] = [
-  { id: "vid", type: "video", src: "/videos/robotics/nuvatrack-r-demo.mp4", poster: "/images/robotics/r-series-hero.jpg" },
-  { id: "hero", type: "image", src: "/images/robotics/r-series-hero.jpg" },
-  { id: "op1", type: "image", src: "/images/robotics/r-series-op-1.jpg" },
-  { id: "op2", type: "image", src: "/images/robotics/r-series-op-2.jpg" },
+  { id: "op1", type: "video", src: "/videos/robotics/r-series-op-1.mp4", poster: "/images/robotics/r-series-op-1-poster.jpg" },
+  { id: "op2", type: "video", src: "/videos/robotics/r-series-op-2.mp4", poster: "/images/robotics/r-series-op-2-poster.jpg", vertical: true },
+  { id: "op3", type: "video", src: "/videos/robotics/r-series-op-3.mp4", poster: "/images/robotics/r-series-op-3-poster.jpg" },
+  { id: "op4", type: "video", src: "/videos/robotics/r-series-op-4.mp4", poster: "/images/robotics/r-series-op-4-poster.jpg" },
+  { id: "op5", type: "video", src: "/videos/robotics/r-series-op-5.mp4", poster: "/images/robotics/r-series-op-5-poster.jpg" },
+  { id: "op6", type: "video", src: "/videos/robotics/r-series-op-6.mp4", poster: "/images/robotics/r-series-op-6-poster.jpg" },
 ];
 
 /** NuvaTrack-U "In operation" media — real assets only (no missing files). */
 export const U_SERIES_MEDIA: RMedia[] = [
-  { id: "vid", type: "video", src: "/videos/robotics/nuvatrack-u-demo.mp4", poster: "/images/robotics/u-series-poster.jpg" },
-  { id: "hero", type: "image", src: "/images/robotics/u-series-hero.jpg" },
-  { id: "op1", type: "image", src: "/images/robotics/u-series-op-1.jpg" },
+  { id: "op1", type: "video", src: "/videos/robotics/u-series-op-1.mp4", poster: "/images/robotics/u-series-op-1-poster.jpg" },
+  { id: "op2", type: "video", src: "/videos/robotics/u-series-op-2.mp4", poster: "/images/robotics/u-series-op-2-poster.jpg" },
+  { id: "op3", type: "video", src: "/videos/robotics/u-series-op-3.mp4", poster: "/images/robotics/u-series-op-3-poster.jpg" },
 ];
 
 /** R vs R Pro technical comparison (two columns). Numeric values literal; the

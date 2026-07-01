@@ -1527,10 +1527,12 @@
         "title": "现场作业",
         "subtitle": "现场画面、清洁细节与机器人作业媒体。",
         "media": {
-          "vid": "NuvaTrack-R 清洁演示",
-          "hero": "光伏阵列上的 NuvaTrack-R",
-          "op1": "NuvaTrack-R 现场作业",
-          "op2": "NuvaTrack-R 清洁细节"
+          "op1": "NuvaTrack-R 清洁作业",
+          "op2": "NuvaTrack-R 清洁（竖屏）",
+          "op3": "NuvaTrack-R 光伏阵列作业",
+          "op4": "NuvaTrack-R 现场作业",
+          "op5": "NuvaTrack-R 清洁细节",
+          "op6": "NuvaTrack-R 实际作业"
         }
       },
       "finalCta": {
@@ -1761,9 +1763,9 @@
         "title": "NuvaTrack-U 现场作业",
         "subtitle": "现场画面与清洁作业媒体。",
         "media": {
-          "vid": "NuvaTrack-U 清洁演示",
-          "hero": "光伏阵列上的 NuvaTrack-U",
-          "op1": "NuvaTrack-U 现场作业"
+          "op1": "NuvaTrack-U 无人值守作业",
+          "op2": "NuvaTrack-U 现场",
+          "op3": "NuvaTrack-U 清洁作业"
         }
       },
       "finalCta": {

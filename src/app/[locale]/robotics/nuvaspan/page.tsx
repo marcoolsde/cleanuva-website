@@ -4,11 +4,11 @@ import { Check } from "lucide-react";
 
 import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
-import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
 import { ProductSubnav } from "@/components/robotics/product-subnav";
 import { ProductDemoMedia } from "@/components/robotics/product-demo-media";
 import { MediaFrame } from "@/components/robotics/media-frame";
+import { DatasheetButton } from "@/components/sections/datasheet-button";
 import { Link } from "@/i18n/navigation";
 import { familyBySlug } from "@/content/robots";
 import { NUVASPAN_DEMO_MEDIA } from "@/content/compare";
@@ -49,6 +49,7 @@ export default async function NuvaSpanPage({
   setRequestLocale(locale);
   const t = await getTranslations("Robotics.nuvaspanPage");
   const ts = await getTranslations("Robotics.specs");
+  const tp = await getTranslations("Robotics.product");
   const tCta = await getTranslations("Cta");
 
   const family = familyBySlug("nuvaspan")!;
@@ -120,8 +121,7 @@ export default async function NuvaSpanPage({
       {/* 4. When to choose */}
       <Section tone="light" className="bg-surface">
         <Container className="max-w-[900px]">
-          <Eyebrow accent="warm">{t("useCases.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("useCases.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("useCases.title")}</h2>
           <ul className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
             {USE_CASES.map((b) => (
               <li key={b} className="flex items-start gap-3 border-t border-line pt-4">
@@ -136,8 +136,7 @@ export default async function NuvaSpanPage({
       {/* 4. System concept */}
       <Section id="system" className="scroll-mt-[120px]">
         <Container>
-          <Eyebrow accent="cool">{t("system.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("system.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("system.title")}</h2>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {SYSTEM.map((s) => (
               <div key={s} className="rounded-lg border border-line bg-canvas p-6">
@@ -151,8 +150,7 @@ export default async function NuvaSpanPage({
       {/* 5. Project requirements */}
       <Section id="requirements" tone="light" className="scroll-mt-[120px] bg-surface">
         <Container className="max-w-[900px]">
-          <Eyebrow accent="warm">{t("project.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("project.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("project.title")}</h2>
           <p className="mt-3 max-w-[60ch] text-body-l text-ink-2">{t("project.note")}</p>
           <ul className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
             {PROJECT.map((p) => (
@@ -168,8 +166,7 @@ export default async function NuvaSpanPage({
       {/* 6. Technical data */}
       <Section>
         <Container>
-          <Eyebrow accent="neutral">{t("tech.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("tech.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("tech.title")}</h2>
 
           <h3 className="mt-10 text-h3 text-ink">{t("tech.selTitle")}</h3>
           <dl className="mt-5 grid gap-x-14 sm:grid-cols-2">
@@ -193,6 +190,15 @@ export default async function NuvaSpanPage({
             )}
           </dl>
           <p className="mt-6 text-body-s text-ink-3">{t("tech.note")}</p>
+
+          {/* Datasheet download (graceful: real PDF → download; missing → request). */}
+          <div className="mt-8">
+            <DatasheetButton
+              href={family.datasheet}
+              downloadLabel={tp("downloadDatasheet")}
+              requestLabel={tp("requestDatasheet")}
+            />
+          </div>
         </Container>
       </Section>
 

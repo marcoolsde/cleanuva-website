@@ -41,7 +41,12 @@ export function InOperationGallery({
             muted
             playsInline
             preload="metadata"
-            className="absolute inset-0 h-full w-full bg-abyss object-cover"
+            className={cn(
+              "absolute inset-0 h-full w-full bg-abyss",
+              // Vertical clips are contained (centered in the dark 16:9 frame) so
+              // they are never heavily cropped; landscape clips fill the frame.
+              item.vertical ? "object-contain" : "object-cover",
+            )}
             onError={() => setFailed((f) => ({ ...f, [item.id]: true }))}
           />
         ) : (

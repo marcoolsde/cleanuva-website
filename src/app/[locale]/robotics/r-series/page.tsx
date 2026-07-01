@@ -4,12 +4,12 @@ import { Check } from "lucide-react";
 
 import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
-import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
 import { ProductSubnav } from "@/components/robotics/product-subnav";
 import { ProductDemoMedia } from "@/components/robotics/product-demo-media";
 import { InOperationGallery } from "@/components/robotics/in-operation";
 import { MediaFrame } from "@/components/robotics/media-frame";
+import { DatasheetButton } from "@/components/sections/datasheet-button";
 import { Link } from "@/i18n/navigation";
 import { familyBySlug } from "@/content/robots";
 import { COMPARE_MATRIX, R_SERIES_MEDIA, R_DEMO_MEDIA } from "@/content/compare";
@@ -121,13 +121,12 @@ export default async function RSeriesPage({
       <Section id="models" tone="light" className="scroll-mt-[120px] bg-surface">
         <Container>
           <div className="max-w-[60ch]">
-            <Eyebrow accent="warm">{t("choose.eyebrow")}</Eyebrow>
-            <h2 className="mt-3 text-h1 text-balance text-ink">{t("choose.title")}</h2>
+            <h2 className="text-h1 text-balance text-ink">{t("choose.title")}</h2>
           </div>
           <div className="mt-10 grid items-start gap-6 lg:grid-cols-2">
             {/* NuvaTrack-R */}
             <div id="nuvatrack-r" className="flex h-full scroll-mt-[120px] flex-col overflow-hidden rounded-2xl border border-line bg-canvas">
-              <MediaFrame src={family.image} alt="NuvaTrack-R" sizes="(max-width:1024px) 100vw, 560px" className="aspect-[16/9]" />
+              <MediaFrame src="/images/robotics/nuvatrack-r-hero.jpg" alt="NuvaTrack-R" sizes="(max-width:1024px) 100vw, 560px" className="aspect-[16/9]" />
               <div className="flex flex-1 flex-col p-7">
                 <span className="text-eyebrow text-ink-3">{t("choose.r.badge")}</span>
                 <h3 className="mt-1.5 text-h2 text-ink">NuvaTrack-R</h3>
@@ -151,7 +150,7 @@ export default async function RSeriesPage({
             {/* NuvaTrack-R Pro — elevated */}
             <div id="nuvatrack-r-pro" className="flex h-full scroll-mt-[120px] flex-col overflow-hidden rounded-2xl border border-cool/60 bg-canvas shadow-lift ring-1 ring-cool/30 lg:-mt-3">
               <div aria-hidden className="h-1 w-full bg-[image:var(--current)]" />
-              <MediaFrame src={family.image} alt="NuvaTrack-R Pro" sizes="(max-width:1024px) 100vw, 560px" className="aspect-[16/9]" />
+              <MediaFrame src="/images/robotics/nuvatrack-r-pro-hero.png" alt="NuvaTrack-R Pro" sizes="(max-width:1024px) 100vw, 560px" className="aspect-[16/9]" />
               <div className="flex flex-1 flex-col p-7">
                 <span className="inline-flex w-fit items-center gap-1.5 rounded-pill bg-cool-tint px-2.5 py-0.5 text-[12px] font-medium text-cool-text">
                   {t("choose.pro.badge")}
@@ -190,8 +189,7 @@ export default async function RSeriesPage({
       {/* 5. How it works */}
       <Section>
         <Container>
-          <Eyebrow accent="cool">{t("how.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("how.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("how.title")}</h2>
           <ol className="mt-10 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
             {HOW_STEPS.map((s, i) => (
               <li key={s} className="flex flex-col bg-canvas p-6">
@@ -206,8 +204,7 @@ export default async function RSeriesPage({
       {/* 6. Cleaning system */}
       <Section tone="light" className="bg-surface">
         <Container className="max-w-[900px]">
-          <Eyebrow accent="warm">{t("cleaning.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("cleaning.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("cleaning.title")}</h2>
           <ul className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
             {CLEAN_POINTS.map((p) => (
               <li key={p} className="flex items-start gap-3 border-t border-line pt-4">
@@ -222,8 +219,7 @@ export default async function RSeriesPage({
       {/* 7. Technical data */}
       <Section>
         <Container>
-          <Eyebrow accent="neutral">{t("tech.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("tech.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("tech.title")}</h2>
 
           {/* R vs R Pro differentiators */}
           <div className="mt-10 overflow-x-auto rounded-xl border border-line">
@@ -264,14 +260,22 @@ export default async function RSeriesPage({
             )}
           </dl>
           <p className="mt-6 text-body-s text-ink-3">{t("tech.note")}</p>
+
+          {/* Datasheet download (graceful: real PDF → download; missing → request). */}
+          <div className="mt-8">
+            <DatasheetButton
+              href={family.datasheet}
+              downloadLabel={tp("downloadDatasheet")}
+              requestLabel={tp("requestDatasheet")}
+            />
+          </div>
         </Container>
       </Section>
 
       {/* 8. In operation gallery */}
       <Section tone="light" className="bg-surface">
         <Container>
-          <Eyebrow accent="cool">{t("inOp.eyebrow")}</Eyebrow>
-          <h2 className="mt-3 text-h1 text-balance text-ink">{t("inOp.title")}</h2>
+          <h2 className="text-h1 text-balance text-ink">{t("inOp.title")}</h2>
           <p className="mt-3 max-w-[60ch] text-body-l text-ink-2">{t("inOp.subtitle")}</p>
           <div className="mt-10">
             <InOperationGallery media={R_SERIES_MEDIA} tNamespace="Robotics.rSeriesPage.inOp" />
