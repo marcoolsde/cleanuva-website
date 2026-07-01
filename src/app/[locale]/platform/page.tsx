@@ -13,12 +13,16 @@ import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
 import { MediaFrame } from "@/components/robotics/media-frame";
 import { Link } from "@/i18n/navigation";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "AI O&M Platform — Cleanuva",
-  description:
-    "Cleanuva Platform is the AI-native operations layer for solar assets: detect production losses, quantify impact, recommend and approve actions, execute with robots or teams, and verify the recovered value.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("platform", locale);
+}
 
 const SCREENSHOT = "/images/platform/platform-home-screenshot.png";
 

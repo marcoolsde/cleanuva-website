@@ -5,12 +5,16 @@ import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
 import { Eyebrow } from "@/components/primitives/eyebrow";
 import { RequestDemoForm } from "@/components/forms/request-demo-form";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Request a demo — Cleanuva",
-  description:
-    "See the Cleanuva operating layer on your portfolio — the Command Center and AI Copilot, live. A short, focused session. No account needed.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("requestDemo", locale);
+}
 
 // Platform lead funnel (v1.1-A). Lead-gen, not registration.
 export default async function RequestDemoPage({

@@ -10,12 +10,16 @@ import { MediaFrame } from "@/components/robotics/media-frame";
 import { InOperationGallery } from "@/components/robotics/in-operation";
 import { Link } from "@/i18n/navigation";
 import { type RMedia } from "@/content/compare";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Media gallery — Cleanuva",
-  description:
-    "Robotics, platform and field-operation visuals for solar cleaning and PV operations — a growing library of Cleanuva media that expands as more field footage becomes available.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("gallery", locale);
+}
 
 const HERO_IMAGE = "/images/robotics/r-series-op-1.jpg";
 

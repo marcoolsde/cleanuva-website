@@ -5,12 +5,16 @@ import { Section } from "@/components/primitives/section";
 import { Container } from "@/components/primitives/container";
 import { Eyebrow } from "@/components/primitives/eyebrow";
 import { GetPricingForm } from "@/components/forms/get-pricing-form";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Get pricing — Cleanuva Robotics",
-  description:
-    "Configure your autonomous cleaning robot and request a tailored quote. Model, configuration, options — straight to our team. No account needed.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("getPricing", locale);
+}
 
 // Robotics RFQ funnel (v1.1-A). Simple Model → Configuration → Options → RFQ.
 export default async function GetPricingPage({

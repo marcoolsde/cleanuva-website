@@ -8,12 +8,16 @@ import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
 import { Link } from "@/i18n/navigation";
 import { LEGAL } from "@/content/legal";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Cleanuva — a brand of NETRO Sparkle GmbH",
-  description:
-    "Cleanuva is a solar robotics and AI operations brand of NETRO Sparkle GmbH, based in Germany — bringing field-ready cleaning robots and an AI-native operations platform to PV teams.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("company", locale);
+}
 
 const BUILD: { key: string; Icon: LucideIcon; href: string }[] = [
   { key: "robotics", Icon: Bot, href: "/robotics" },

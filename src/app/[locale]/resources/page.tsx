@@ -8,11 +8,16 @@ import { Eyebrow } from "@/components/primitives/eyebrow";
 import { HeroBackgroundImage } from "@/components/sections/hero-image";
 import { Link } from "@/i18n/navigation";
 import { RESOURCE_CATEGORIES, type ResourceCategory } from "@/content/resources";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Resources — Cleanuva",
-  description: "Product brochures, platform and robotics overviews, and economic models for Cleanuva — more coming soon.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("resources", locale);
+}
 
 const ICONS: Record<ResourceCategory["icon"], typeof Layers> = {
   Layers,

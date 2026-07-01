@@ -12,12 +12,16 @@ import { AccessoryInquiryForm } from "@/components/forms/accessories-inquiry-for
 import { Link } from "@/i18n/navigation";
 import { ACCESSORY_MODELS } from "@/content/accessories";
 import { LEGAL } from "@/content/legal";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Accessories & service parts — Cleanuva Robotics",
-  description:
-    "Brushes, consumables, control accessories and service parts for Cleanuva solar cleaning robots — NuvaTrack-R, NuvaTrack-R Pro, NuvaTrack-U and NuvaSpan. Send an inquiry and we'll match the right part.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("accessories", locale);
+}
 
 const HERO_IMAGE = "/images/robotics/r-series-op-1.jpg";
 

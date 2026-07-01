@@ -9,12 +9,16 @@ import { Button } from "@/components/primitives/button";
 import { MediaFrame } from "@/components/robotics/media-frame";
 import { Link } from "@/i18n/navigation";
 import { OVERVIEW_MODELS } from "@/content/compare";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Cleanuva Robotics — solar cleaning robots",
-  description:
-    "Cleanuva Robotics: NuvaTrack-R (remote), NuvaTrack-R Pro (AI-Assist), NuvaTrack-U (unattended) and NuvaSpan (fixed / suspended). Compare models, see pricing and accessories.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("robotics", locale);
+}
 
 const HERO_IMAGE = "/images/robotics/overview-hero.jpg";
 

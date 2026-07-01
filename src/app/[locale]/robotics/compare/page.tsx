@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 
 import { RoboticsCompare } from "@/components/sections/robotics-compare";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Compare robots — Cleanuva Robotics",
-  description:
-    "Compare NuvaTrack-R, NuvaTrack-U and NuvaSpan — coverage, operation mode, and best-fit deployment.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("compare", locale);
+}
 
 export default async function RoboticsComparePage({
   params,

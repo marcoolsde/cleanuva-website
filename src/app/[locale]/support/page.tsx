@@ -7,12 +7,16 @@ import { Container } from "@/components/primitives/container";
 import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
 import { Link } from "@/i18n/navigation";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Support & sales assistance — Cleanuva",
-  description:
-    "Find the right Cleanuva contact path for robot sales, the AI O&M platform, accessories, product comparison, distribution partnership and existing-customer support.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("support", locale);
+}
 
 // Each path routes to an existing entry — no new form.
 const PATHS: { key: string; Icon: LucideIcon; href: string }[] = [

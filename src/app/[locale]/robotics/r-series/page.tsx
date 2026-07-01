@@ -13,12 +13,16 @@ import { MediaFrame } from "@/components/robotics/media-frame";
 import { Link } from "@/i18n/navigation";
 import { familyBySlug } from "@/content/robots";
 import { COMPARE_MATRIX, R_SERIES_MEDIA, R_DEMO_MEDIA } from "@/content/compare";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "NuvaTrack-R Series — Cleanuva Robotics",
-  description:
-    "NuvaTrack-R Series: single-operator solar panel cleaning robots for dry and wet cleaning. NuvaTrack-R (remote) and NuvaTrack-R Pro (AI-Assist with heading hold, cruise control and camera-assisted operation).",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("rSeries", locale);
+}
 
 const HERO_STATS = ["s1", "s2", "s3", "s4"] as const;
 const HOW_STEPS = ["s1", "s2", "s3", "s4", "s5"] as const;

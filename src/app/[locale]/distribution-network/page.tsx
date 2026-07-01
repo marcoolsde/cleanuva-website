@@ -8,12 +8,16 @@ import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
 import { MediaFrame } from "@/components/robotics/media-frame";
 import { Link } from "@/i18n/navigation";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Distribution & partners — Cleanuva",
-  description:
-    "Partner with Cleanuva to bring solar cleaning robots, accessories and AI-supported operations to your market — a serious regional partner network for distributors, cleaning service companies, O&M providers, EPCs and service partners.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("distribution", locale);
+}
 
 const HERO_IMAGE = "/images/robotics/overview-hero.jpg";
 

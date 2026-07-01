@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 
 import { routing, localeDir, type Locale } from "@/i18n/routing";
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, PAGE_SEO } from "@/lib/seo";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -44,15 +45,26 @@ const notoSC = Noto_Sans_SC({
 });
 
 export const metadata: Metadata = {
-  title: "Cleanuva — Autonomous Solar Asset Operations",
-  description:
-    "From detection to done. And proven. The operating system and robotics for solar asset operations.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: PAGE_SEO.home.title,
+    template: "%s",
+  },
+  description: PAGE_SEO.home.description,
   // Brand favicon / app icon. Falls back to src/app/favicon.ico until the PNG
   // is added; once present it becomes the declared icon. Swap = same-name file.
   icons: {
     icon: "/images/brand/cleanuva-icon.png",
     shortcut: "/images/brand/cleanuva-icon.png",
     apple: "/images/brand/cleanuva-icon.png",
+  },
+  openGraph: {
+    siteName: SITE_NAME,
+    type: "website",
+    images: [DEFAULT_OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 

@@ -8,6 +8,8 @@ import { Button } from "@/components/primitives/button";
 import { MediaFrame } from "@/components/robotics/media-frame";
 import { Link } from "@/i18n/navigation";
 import { OVERVIEW_MODELS } from "@/content/compare";
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
 const HERO_IMAGE = "/images/hero/homepage-hero-daylight.jpg";
 
@@ -20,6 +22,15 @@ const LOOP: { key: string; Icon: LucideIcon; accent: string }[] = [
 ];
 const AUDIENCE = ["owners", "om", "cleaning", "epc", "partners"] as const;
 const PROOF = ["beforeafter", "kwh", "trail", "verification", "evidence"] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("home", locale);
+}
 
 export default async function HomePage({
   params,

@@ -11,12 +11,16 @@ import { Container } from "@/components/primitives/container";
 import { Eyebrow } from "@/components/primitives/eyebrow";
 import { Button } from "@/components/primitives/button";
 import { Link } from "@/i18n/navigation";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Solutions — Cleanuva",
-  description:
-    "Cleanuva Solutions combines robotics and AI O&M into scenarios for PV asset owners, O&M teams, cleaning service operators, EPC / warranty teams and distribution partners — from site condition to verified proof.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("solutions", locale);
+}
 
 // Platform-led beats are cool; robotics/field execution is warm. This code runs
 // through the whole page so "two business lines combine" stays legible.

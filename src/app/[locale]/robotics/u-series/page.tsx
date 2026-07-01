@@ -13,12 +13,16 @@ import { MediaFrame } from "@/components/robotics/media-frame";
 import { Link } from "@/i18n/navigation";
 import { familyBySlug } from "@/content/robots";
 import { U_SERIES_MEDIA, U_DEMO_MEDIA } from "@/content/compare";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "NuvaTrack-U — Cleanuva Robotics",
-  description:
-    "NuvaTrack-U: an unattended, site-configured solar panel cleaning robot for repeatable PV site operations with reduced routine manual intervention.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("uSeries", locale);
+}
 
 const HERO_STATS = ["s1", "s2", "s3", "s4"] as const;
 const USE_CASES = ["b1", "b2", "b3", "b4", "b5"] as const;

@@ -12,12 +12,16 @@ import { MediaFrame } from "@/components/robotics/media-frame";
 import { Link } from "@/i18n/navigation";
 import { familyBySlug } from "@/content/robots";
 import { NUVASPAN_DEMO_MEDIA } from "@/content/compare";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "NuvaSpan — Cleanuva Robotics",
-  description:
-    "NuvaSpan: a project-engineered, suspended / bridge-type cleaning system for fixed PV installations and specific structures, with low routine manual intervention.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata("nuvaspan", locale);
+}
 
 // NuvaSpan has no dedicated product photo yet — hero + media reuse the real
 // overview plant shot (a clear stand-in, never a colour placeholder).
