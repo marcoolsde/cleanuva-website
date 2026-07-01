@@ -4,8 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LegalShell, type LegalSection } from "@/components/legal/legal-shell";
 
 export const metadata: Metadata = {
-  title: "Cookie settings — Cleanuva",
-  description: "How the Cleanuva website uses cookies and similar technologies.",
+  title: "Cookie Policy | Cleanuva",
+  description: "Cleanuva uses only technically necessary cookies or storage where required — no advertising or analytics cookies at this time.",
 };
 
 export default async function CookiesPage({

@@ -5,8 +5,8 @@ import { LegalShell, type LegalSection } from "@/components/legal/legal-shell";
 import { LEGAL } from "@/content/legal";
 
 export const metadata: Metadata = {
-  title: "Imprint — Cleanuva",
-  description: "Legal disclosure for NETRO Sparkle GmbH pursuant to § 5 DDG.",
+  title: "Imprint / Legal Notice | Cleanuva",
+  description: "Legal disclosure (Impressum) for NETRO Sparkle GmbH pursuant to § 5 DDG — the legal entity behind the Cleanuva brand.",
 };
 
 export default async function ImprintPage({
@@ -18,18 +18,17 @@ export default async function ImprintPage({
   setRequestLocale(locale);
   const t = await getTranslations("Legal.imprint");
 
-  // Values come from the single source (content/legal.ts); unknown fields show
-  // their literal "TODO" placeholder. Labels are localized; German uses German
-  // legal terminology.
+  // Values come from the single source (content/legal.ts). Managing director +
+  // phone are intentionally omitted until confirmed data exists (they still hold
+  // "TODO") — we never render placeholder values. Labels are localized.
   const rows: { label: string; value: string }[] = [
     { label: t("labels.entity"), value: LEGAL.entity },
     { label: t("labels.address"), value: LEGAL.registeredOffice },
     { label: t("labels.court"), value: LEGAL.registerCourt },
     { label: t("labels.hrb"), value: LEGAL.hrb },
-    { label: t("labels.director"), value: LEGAL.managingDirectors.join(", ") },
     { label: t("labels.vat"), value: LEGAL.vatId },
     { label: t("labels.email"), value: LEGAL.contactEmail },
-    { label: t("labels.phone"), value: LEGAL.phone },
+    { label: t("labels.website"), value: "cleanuva.ai" },
   ];
 
   return (

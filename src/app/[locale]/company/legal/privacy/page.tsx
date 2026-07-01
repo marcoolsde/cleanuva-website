@@ -4,8 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LegalShell, type LegalSection } from "@/components/legal/legal-shell";
 
 export const metadata: Metadata = {
-  title: "Privacy — Cleanuva",
-  description: "How NETRO Sparkle GmbH processes personal data on the Cleanuva website.",
+  title: "Privacy Policy | Cleanuva",
+  description: "How NETRO Sparkle GmbH (Cleanuva) handles personal data for website visitors and inquiries worldwide, under the GDPR framework.",
 };
 
 export default async function PrivacyPage({

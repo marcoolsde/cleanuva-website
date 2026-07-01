@@ -63,6 +63,14 @@ export const SITEMAP_PATHS: string[] = [
   "/get-pricing", "/request-demo",
 ];
 
+/** Legal / compliance pages — included in the sitemap at low priority. */
+export const LEGAL_PATHS: string[] = [
+  "/company/legal/imprint",
+  "/company/legal/privacy",
+  "/company/legal/cookies",
+  "/company/legal/terms",
+];
+
 /** Localized href map for hreflang (+ x-default → English). */
 export function languageAlternates(path: string): Record<string, string> {
   const languages: Record<string, string> = {};

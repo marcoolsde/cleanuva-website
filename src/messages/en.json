@@ -2301,124 +2301,167 @@
   },
   "Legal": {
     "imprint": {
-      "title": "Imprint",
+      "title": "Impressum / Legal Notice",
+      "note": "Legal disclosure for NETRO Sparkle GmbH.",
       "providerHeading": "Information pursuant to § 5 DDG",
       "brandOf": "Cleanuva is a brand of NETRO Sparkle GmbH.",
       "labels": {
         "entity": "Company",
         "address": "Registered office",
         "court": "Register court",
-        "hrb": "Register number",
-        "director": "Managing director",
+        "hrb": "Commercial register",
         "vat": "VAT ID",
         "email": "Email",
-        "phone": "Phone"
+        "website": "Website"
       },
       "sections": [
         {
+          "heading": "International business",
+          "body": "Cleanuva serves international PV customers and partners. Formal contracts, offers, delivery and service terms depend on the relevant country, project configuration and a separate agreement."
+        },
+        {
           "heading": "Responsibility for content",
-          "body": "Responsible for content pursuant to § 18 (2) MStV: TODO (address as above)."
+          "body": "NETRO Sparkle GmbH prepares the content of this website with reasonable care. Content is provided for general information and may be updated over time."
         },
         {
-          "heading": "EU online dispute resolution",
-          "body": "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr.\nWe are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
-        },
-        {
-          "heading": "Liability for content",
-          "body": "As a service provider we are responsible for our own content on these pages in accordance with general law. We are not obliged to monitor transmitted or stored third-party information. Obligations to remove or block the use of information under general law remain unaffected."
-        },
-        {
-          "heading": "Liability for links",
-          "body": "Our site contains links to external websites over whose content we have no control. We accept no liability for this third-party content. The respective provider or operator of the linked pages is always responsible for their content."
+          "heading": "External links",
+          "body": "This website may contain links to external websites. Their content is the responsibility of the respective providers. Links are reviewed when added, but external content is not continuously monitored."
         }
-      ],
-      "note": "Some details below are marked TODO and will be completed before launch."
+      ]
     },
     "privacy": {
-      "title": "Privacy policy",
+      "title": "Privacy Policy",
+      "note": "This policy explains how we handle personal data on cleanuva.ai. It applies worldwide.",
       "sections": [
         {
-          "heading": "Overview",
-          "body": "This policy explains how NETRO Sparkle GmbH (“we”) processes personal data when you use this website. Specific details marked TODO will be finalised before launch."
-        },
-        {
           "heading": "Controller",
-          "body": "The controller responsible for data processing on this website is NETRO Sparkle GmbH (see Imprint). Data protection contact: TODO."
+          "body": "NETRO Sparkle GmbH\nRömerstraße 54, 40667 Meerbusch, Germany\nPrivacy contact: info@cleanuva.de"
         },
         {
-          "heading": "Data we process",
-          "body": "When you contact us through the demo or quote forms, we process the information you provide — such as your name, work email, company, role and message — in order to respond to your request. Server log data may be processed by our hosting provider: TODO."
+          "heading": "Scope",
+          "body": "This privacy policy applies to visitors, customers, prospective customers and partners using cleanuva.ai worldwide."
         },
         {
-          "heading": "Purpose and legal basis",
-          "body": "We process this data to handle your enquiry and our business communication, based on Art. 6(1)(b) and Art. 6(1)(f) GDPR. TODO: confirm with counsel."
+          "heading": "Hosting and server logs",
+          "body": "The website is hosted on cloud infrastructure used by NETRO Sparkle GmbH. Basic technical access logs may include the IP address, browser / user agent, timestamp, requested URL and referrer where applicable. These are processed for security, stability and abuse prevention."
+        },
+        {
+          "heading": "Contact forms",
+          "body": "The website offers three inquiry forms: Get Pricing, Request a Demo and Accessories Inquiry. Depending on the form we collect: name, company, email, phone (if provided), country, product interest, your message, your consent and the submission time, together with technical metadata as needed.\nWe use this to respond to inquiries, prepare offers, arrange demos, handle accessories and service inquiries, process partner inquiries and communicate with you."
+        },
+        {
+          "heading": "International inquiries",
+          "body": "Because Cleanuva serves international markets, inquiries may relate to customers or partners outside Germany and the EU — including Europe, China, the Middle East, North Africa and other regions. Data may be processed to evaluate regional availability, project fit, distribution cooperation, pricing and next steps."
+        },
+        {
+          "heading": "Form processing and email",
+          "body": "Form submissions are processed through a self-hosted automation workflow and forwarded by email to Cleanuva so our team can respond. Business email services may be provided by a professional email provider."
+        },
+        {
+          "heading": "Legal basis",
+          "body": "Art. 6(1)(b) GDPR for pre-contractual inquiries and responding to requests; Art. 6(1)(f) GDPR for website security, business communication and operational stability; Art. 6(1)(a) GDPR where we explicitly ask for your consent."
         },
         {
           "heading": "Retention",
-          "body": "We retain enquiry data only as long as necessary to process your request and to meet legal obligations. TODO: retention periods."
+          "body": "We keep inquiry data as long as necessary to respond and manage the business relationship. Business communication is kept in line with applicable legal and commercial retention obligations. Technical logs are kept for a limited period unless a security issue requires longer retention."
         },
         {
-          "heading": "Processors and transfers",
-          "body": "We may use processors such as hosting and CRM providers. TODO: list of processors and any international transfers."
+          "heading": "Recipients",
+          "body": "Depending on the request, data may be shared with internal Cleanuva / NETRO Sparkle GmbH staff; hosting and technical service providers; email and automation infrastructure providers; advisors where legally necessary; and project or regional partners only where needed to respond to a specific inquiry, handled with appropriate care."
+        },
+        {
+          "heading": "International transfers",
+          "body": "Because Cleanuva receives inquiries from international markets and may use service providers, data may be processed outside the EU/EEA where necessary. Where applicable, appropriate safeguards are used."
         },
         {
           "heading": "Your rights",
-          "body": "Under the GDPR you have the right to access, rectification, erasure, restriction, data portability and objection, and you may lodge a complaint with a supervisory authority. To exercise your rights, contact: TODO."
+          "body": "You have the right to access, rectification, erasure, restriction, data portability and objection, and to withdraw consent at any time, as well as to lodge a complaint with a supervisory authority. Depending on your location, additional local privacy rights may apply. To exercise your rights, contact info@cleanuva.de."
+        },
+        {
+          "heading": "No automated decision-making",
+          "body": "Website inquiries are not subject to automated decisions that produce legal or similarly significant effects."
+        },
+        {
+          "heading": "Cookies",
+          "body": "The website currently uses only technically necessary storage where required. See the Cookie Policy for details."
+        },
+        {
+          "heading": "Updates",
+          "body": "We may update this policy as the website and our services evolve."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "note": "How this website uses cookies and local storage.",
+      "sections": [
+        {
+          "heading": "Current use",
+          "body": "This website currently uses only technically necessary cookies or storage where required for language handling, security, form operation or basic website functionality."
+        },
+        {
+          "heading": "No advertising or analytics cookies",
+          "body": "We do not use advertising cookies, and we do not use analytics cookies at this time. We do not use third-party advertising pixels, analytics scripts or social-media tracking on this website."
+        },
+        {
+          "heading": "Future changes",
+          "body": "If non-essential cookies or analytics are introduced later, we will request consent where required and update this policy accordingly."
+        },
+        {
+          "heading": "Regional note",
+          "body": "Visitors from different regions may have different privacy and cookie rights. Cleanuva will update this policy if analytics or other non-essential technologies are introduced."
         },
         {
           "heading": "Contact",
-          "body": "For any privacy questions, contact: TODO."
+          "body": "Questions about cookies: info@cleanuva.de."
         }
-      ],
-      "note": "Some details below are marked TODO and will be completed before launch."
+      ]
     },
     "terms": {
-      "title": "Terms of use",
+      "title": "Terms of Use",
+      "note": "Please read these terms before using this website.",
       "sections": [
         {
-          "heading": "Scope",
-          "body": "These terms govern your use of the Cleanuva website operated by NETRO Sparkle GmbH. The website is for information purposes and does not constitute a binding offer; product quotations are provided separately through our sales process."
+          "heading": "Website information",
+          "body": "The information on this website is provided for general international business information. It does not constitute a binding offer or professional advice."
         },
         {
-          "heading": "Use of the website",
-          "body": "You may use this website for lawful, informational purposes. You agree not to misuse the website or interfere with its operation."
+          "heading": "Product availability",
+          "body": "Products, platform functions, accessories, service, delivery and support may vary by country, region, project configuration, technical requirements and local regulations. Availability in any specific market is not guaranteed."
+        },
+        {
+          "heading": "No automatic offer",
+          "body": "Submitting an inquiry, demo request or pricing form does not create a binding offer, sales contract, distribution agreement or service contract. Any cooperation follows a separate, written agreement."
+        },
+        {
+          "heading": "Project-specific configuration",
+          "body": "Technical specifications may depend on the model, site, configuration, region, climate, PV layout, local safety requirements and the agreed scope. Figures shown are indicative unless confirmed in a contract."
+        },
+        {
+          "heading": "International business",
+          "body": "Import, export, customs, certification, installation, training, warranty, service and spare-parts terms are confirmed separately for each market and contract."
+        },
+        {
+          "heading": "Platform outputs",
+          "body": "Platform outputs are decision-support and operational estimates. They are not audited financial, engineering, legal or warranty determinations."
         },
         {
           "heading": "Intellectual property",
-          "body": "Cleanuva, NuvaTrack, NuvaSpan and the content of this website are the property of NETRO Sparkle GmbH or its licensors. TODO: detailed usage terms."
+          "body": "Website content, images, product names and brand materials belong to NETRO Sparkle GmbH / Cleanuva unless otherwise stated. They may not be reused without permission."
         },
         {
-          "heading": "Disclaimer and liability",
-          "body": "The website is provided “as is”, without warranty as to completeness or accuracy. TODO: liability provisions, subject to legal review."
+          "heading": "External links",
+          "body": "This website may link to external sites whose content is the responsibility of their respective providers."
+        },
+        {
+          "heading": "Liability",
+          "body": "We provide this website with reasonable care but do not warrant that all content is complete, current or error-free. To the extent permitted by law, liability arising from the use of this website is limited accordingly."
         },
         {
           "heading": "Governing law",
-          "body": "German law applies, to the extent permitted by mandatory consumer-protection rules. TODO: place of jurisdiction."
+          "body": "These terms of use are governed by the laws of Germany, without prejudice to mandatory consumer-protection rules that may apply in your country of residence."
         }
-      ],
-      "note": "Some details below are marked TODO and will be completed before launch."
-    },
-    "cookies": {
-      "title": "Cookie policy",
-      "sections": [
-        {
-          "heading": "What cookies are",
-          "body": "Cookies are small text files stored on your device that help a website function and remember your preferences."
-        },
-        {
-          "heading": "Cookies we use",
-          "body": "This website uses cookies that are necessary for it to function and to remember your language preference. TODO: confirm the full cookie inventory, including any analytics or third-party cookies."
-        },
-        {
-          "heading": "Managing cookies",
-          "body": "You can control or delete cookies through your browser settings. TODO: consent management tool, if introduced."
-        },
-        {
-          "heading": "Changes to this policy",
-          "body": "We update this notice when our use of cookies changes."
-        }
-      ],
-      "note": "Some details below are marked TODO and will be completed before launch."
+      ]
     }
   },
   "Company": {
