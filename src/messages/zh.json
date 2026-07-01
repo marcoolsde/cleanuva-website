@@ -2513,6 +2513,81 @@
       "heading": "现场与我们相见。",
       "body": "Cleanuva 在光伏展会与行业活动中与电站业主、EPC、分销商和清洁服务商交流，包括 Intersolar Europe / The smarter E Europe（慕尼黑）等活动。",
       "note": "如需在即将举办的活动中安排会面，欢迎与我们联系。"
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "公司",
+        "title": "关于 Cleanuva",
+        "subtitle": "NETRO Sparkle GmbH 旗下的太阳能机器人与 AI 运维品牌。",
+        "support": "Cleanuva 把可现场作业的太阳能清洁机器人与 AI 原生运维平台结合起来，帮助光伏团队发现损失、执行清洁并验证结果。",
+        "cta": {
+          "robotics": "查看机器人",
+          "platform": "了解平台",
+          "contact": "联系 Cleanuva"
+        }
+      },
+      "brand": {
+        "eyebrow": "品牌与主体",
+        "title": "Cleanuva 是品牌，NETRO Sparkle GmbH 是公司。",
+        "brandTag": "品牌",
+        "brandBody": "Cleanuva 是所有对外业务的主品牌——机器人、平台与解决方案都以 Cleanuva 名义销售与支持。",
+        "entityTag": "法律主体",
+        "entityBody": "NETRO Sparkle GmbH 是 Cleanuva 背后的注册公司，出现在合同、发票、Impressum 与隐私政策中。",
+        "note": "Cleanuva 是 NETRO Sparkle GmbH 的品牌——并非另一家未注册的公司。"
+      },
+      "build": {
+        "eyebrow": "我们做什么",
+        "title": "两条业务线，一套运营",
+        "learnMore": "了解更多",
+        "items": {
+          "robotics": {
+            "title": "Cleanuva Robotics",
+            "desc": "面向便携、无人值守与固定式光伏作业的现场级清洁机器人。"
+          },
+          "platform": {
+            "title": "Cleanuva Platform",
+            "desc": "发现损失并验证回收的 AI 原生运维层。"
+          },
+          "solutions": {
+            "title": "Cleanuva Solutions",
+            "desc": "把机器人与平台组合成面向各类客户的场景。"
+          }
+        }
+      },
+      "principles": {
+        "eyebrow": "我们如何工作",
+        "title": "运营原则",
+        "items": {
+          "p1": "现场优先的机器人",
+          "p2": "以结果为导向的软件",
+          "p3": "从发现到证明的验证行动闭环",
+          "p4": "面向合作伙伴的业务模式",
+          "p5": "保守的表述与项目化配置"
+        }
+      },
+      "info": {
+        "eyebrow": "公司信息",
+        "title": "正式公司信息",
+        "labels": {
+          "entity": "主体",
+          "office": "注册地址",
+          "court": "登记法院",
+          "hrb": "商业登记号",
+          "vat": "增值税号",
+          "website": "网站",
+          "email": "邮箱"
+        },
+        "imprintLink": "阅读完整 Impressum",
+        "legalHeading": "法律与政策"
+      },
+      "finalCta": {
+        "title": "与 Cleanuva 背后的团队沟通。",
+        "cta": {
+          "contact": "联系 Cleanuva",
+          "demo": "预约演示",
+          "distribution": "查看分销网络"
+        }
+      }
     }
   },
   "Resources": {
@@ -2917,6 +2992,85 @@
       "spanVid": "NuvaSpan 应用",
       "exh1": "展会会面",
       "exh2": "展会瞬间"
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "媒体库",
+        "title": "Cleanuva 媒体库",
+        "subtitle": "面向太阳能清洁与光伏运维的机器人、平台与现场作业影像。",
+        "cta": {
+          "robotics": "查看机器人",
+          "compare": "对比机器人",
+          "demo": "预约演示"
+        }
+      },
+      "comingSoon": "即将上线",
+      "categories": {
+        "eyebrow": "按类型浏览",
+        "title": "媒体分类",
+        "items": {
+          "robots": {
+            "title": "机器人作业",
+            "desc": "清洁机器人在光伏阵列间作业。"
+          },
+          "details": {
+            "title": "产品细节",
+            "desc": "产品与配置的近景视图。"
+          },
+          "site": {
+            "title": "电站场景",
+            "desc": "地面电站与工商业站点环境。"
+          },
+          "platform": {
+            "title": "平台界面",
+            "desc": "AI 运维的作业视图。"
+          },
+          "accessories": {
+            "title": "配件与服务",
+            "desc": "刷子、部件与服务件。"
+          },
+          "events": {
+            "title": "活动 / 伙伴演示",
+            "desc": "展会与伙伴演示。"
+          }
+        }
+      },
+      "featured": {
+        "eyebrow": "精选",
+        "title": "来自现场与产品线",
+        "note": "更多现场影像与活动素材将在获得后陆续补充。",
+        "items": {
+          "op1": "R-Series 清洁作业",
+          "op3": "U-Series 现场",
+          "op2": "清洁细节",
+          "rHero": "NuvaTrack-R",
+          "uHero": "NuvaTrack-U",
+          "site": "地面级光伏电站",
+          "platform": "作业视图",
+          "brushes": "清洁刷",
+          "motors": "服务件"
+        }
+      },
+      "highlight": {
+        "eyebrow": "实际作业",
+        "title": "看机器人作业",
+        "subtitle": "来自 NuvaTrack 系列的演示片段与现场照片。",
+        "media": {
+          "rVid": "NuvaTrack-R 清洁演示",
+          "uVid": "NuvaTrack-U 清洁演示",
+          "rOp": "R-Series 现场作业",
+          "uOp": "U-Series 现场作业"
+        }
+      },
+      "finalCta": {
+        "title": "需要产品照片、演示视频或伙伴素材？",
+        "body": "告诉我们你的需求，我们会分享可提供的素材。",
+        "cta": {
+          "contact": "联系 Cleanuva",
+          "robotics": "查看机器人",
+          "distribution": "分销网络"
+        }
+      }
     }
   },
   "Support": {
@@ -2992,6 +3146,233 @@
         "manuals": "手册与指南",
         "certificates": "证书"
       }
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "支持",
+        "title": "支持与销售协助",
+        "subtitle": "为机器人、平台、配件与服务问题找到合适的 Cleanuva 联系入口。",
+        "cta": {
+          "pricing": "获取报价",
+          "demo": "预约演示",
+          "accessories": "配件询价"
+        }
+      },
+      "paths": {
+        "eyebrow": "从哪开始",
+        "title": "选择合适的入口",
+        "items": {
+          "robots": {
+            "title": "机器人销售",
+            "desc": "选择型号并获取你站点的报价。",
+            "action": "查看机器人"
+          },
+          "platform": {
+            "title": "AI 运维平台",
+            "desc": "在你的资产上查看运维平台。",
+            "action": "预约演示"
+          },
+          "accessories": {
+            "title": "配件与服务件",
+            "desc": "刷子、耗材与备件。",
+            "action": "配件询价"
+          },
+          "compare": {
+            "title": "产品对比",
+            "desc": "对比 NuvaTrack-R、R Pro、U 与 NuvaSpan。",
+            "action": "对比机器人"
+          },
+          "distribution": {
+            "title": "分销合作",
+            "desc": "在你的市场销售、集成或服务 Cleanuva。",
+            "action": "分销网络"
+          },
+          "existing": {
+            "title": "现有客户支持",
+            "desc": "已在使用 Cleanuva？联系团队。",
+            "action": "联系 Cleanuva"
+          }
+        }
+      },
+      "prep": {
+        "eyebrow": "更快回复",
+        "title": "联系我们之前",
+        "intro": "几项信息能帮助我们分派你的请求并给出正确的下一步。",
+        "items": {
+          "i1": "国家 / 地区",
+          "i2": "站点类型",
+          "i3": "光伏电站规模",
+          "i4": "机器人型号（若已知）",
+          "i5": "清洁方式",
+          "i6": "当前挑战",
+          "i7": "时间计划",
+          "i8": "配件或服务需求"
+        }
+      },
+      "links": {
+        "eyebrow": "快速链接",
+        "title": "实用链接",
+        "items": {
+          "robotics": "机器人",
+          "compare": "对比",
+          "platform": "平台",
+          "solutions": "解决方案",
+          "accessories": "配件",
+          "distribution": "分销网络",
+          "company": "公司"
+        }
+      },
+      "finalCta": {
+        "title": "仍不确定从哪开始？",
+        "body": "联系 Cleanuva——我们会为你指向正确的入口。",
+        "cta": {
+          "demo": "预约演示",
+          "contact": "联系",
+          "pricing": "获取报价"
+        }
+      }
+    }
+  },
+  "Home": {
+    "hero": {
+      "title": "面向每个光伏站点的太阳能清洁机器人。",
+      "subtitle": "从遥控清洁到无人值守与固定式系统，Cleanuva 帮助光伏团队更快清洁组件、减少人工，并以 AI 支持的运维验证结果。",
+      "modes": {
+        "r": "便携",
+        "rpro": "辅助",
+        "u": "无人值守",
+        "span": "固定"
+      }
+    },
+    "cta": {
+      "viewRobotics": "查看机器人",
+      "compareRobots": "对比机器人",
+      "getPricing": "获取报价",
+      "explorePlatform": "了解平台",
+      "requestDemo": "预约演示",
+      "viewModel": "查看产品",
+      "viewSolutions": "查看解决方案",
+      "distribution": "分销网络",
+      "contact": "联系 Cleanuva",
+      "view": "查看"
+    },
+    "matrix": {
+      "eyebrow": "机器人产品线",
+      "title": "四款机器人，覆盖四类站点",
+      "items": {
+        "r": "面向灵活清洁团队的遥控基础型。",
+        "rpro": "AI-Assist 型号，具备航向保持、巡航与摄像头辅助作业。",
+        "u": "无人值守、站点配置的清洁，面向可重复的光伏作业。",
+        "span": "面向固定光伏结构的悬挂／桥式清洁系统。"
+      }
+    },
+    "chooseOp": {
+      "eyebrow": "找到适配",
+      "title": "按清洁方式选择",
+      "intro": "从你的作业方式出发——Cleanuva 都有对应的机器人。",
+      "items": {
+        "r": {
+          "need": "便携的遥控机器人"
+        },
+        "rpro": {
+          "need": "辅助的直线作业"
+        },
+        "u": {
+          "need": "无人值守、可重复的清洁"
+        },
+        "span": {
+          "need": "固定式清洁系统"
+        }
+      }
+    },
+    "lines": {
+      "eyebrow": "机器人 + 平台",
+      "title": "机器人干活，软件证明回报。",
+      "triad": "软件负责看见。机器人负责修复。证据证明它带来回报。",
+      "robotics": {
+        "tag": "Cleanuva Robotics · 执行",
+        "desc": "现场级机器人在便携、辅助、无人值守与固定式光伏作业中清洁组件。"
+      },
+      "platform": {
+        "tag": "Cleanuva Platform · 发现与证明",
+        "desc": "AI 原生平台发现损失、排序清洁优先级并验证回收价值——让每一次机器人作业都可追溯。"
+      }
+    },
+    "loop": {
+      "eyebrow": "如何证明价值",
+      "title": "发现、执行、验证、证明",
+      "intro": "平台负责发现与证明；中间由机器人和团队执行。",
+      "steps": {
+        "detect": {
+          "name": "发现",
+          "body": "平台标记发电损失、积灰或告警。"
+        },
+        "execute": {
+          "name": "执行",
+          "body": "机器人或服务团队完成清洁。"
+        },
+        "verify": {
+          "name": "验证",
+          "body": "在现场比较前后表现。"
+        },
+        "prove": {
+          "name": "证明",
+          "body": "把结果转化为可出报告的证据。"
+        }
+      }
+    },
+    "solutions": {
+      "eyebrow": "适用对象",
+      "title": "为运营光伏的人而建",
+      "items": {
+        "owners": {
+          "name": "光伏资产业主",
+          "desc": "在组合层面查看发电风险与回收价值。"
+        },
+        "om": {
+          "name": "运维团队",
+          "desc": "把告警转化为可优先、可跟踪的现场作业。"
+        },
+        "cleaning": {
+          "name": "清洁服务商",
+          "desc": "规划、派发并验证清洁轮次。"
+        },
+        "epc": {
+          "name": "EPC / 质保团队",
+          "desc": "用运维证据记录性能。"
+        },
+        "partners": {
+          "name": "经销商 / 服务伙伴",
+          "desc": "提供带验证的互联清洁服务。"
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "证据与报告",
+      "title": "证明作业确有回报",
+      "intro": "Cleanuva 把运维转化为可出报告的证据——决策支持，而非财务保证。",
+      "panel": {
+        "title": "性能回收",
+        "tag": "示意",
+        "before": "清洁前",
+        "after": "清洁后",
+        "recovery": "估算回收"
+      },
+      "items": {
+        "beforeafter": "前后对比",
+        "kwh": "估算回收 kWh",
+        "trail": "工单记录",
+        "verification": "清洁验证",
+        "evidence": "可出报告的运维证据"
+      },
+      "disclaimer": "数字为用于决策支持的运维估算——并非经审计的财务或法律结果。"
+    },
+    "partner": {
+      "title": "与 Cleanuva 一起开展你的太阳能清洁业务。",
+      "body": "成为 Cleanuva 合作伙伴，把太阳能清洁机器人、配件与 AI 支持的运维带入你的市场。"
+    },
+    "finalCta": {
+      "title": "为你的光伏站点选择合适的 Cleanuva 机器人。"
     }
   }
 }

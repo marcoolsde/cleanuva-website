@@ -2513,6 +2513,81 @@
       "heading": "Meet us in the field.",
       "body": "Cleanuva meets PV owners, EPCs, distributors and service companies at solar exhibitions and industry meetings, including events such as Intersolar Europe / The smarter E Europe in Munich.",
       "note": "Get in touch to arrange a meeting at an upcoming event."
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "Company",
+        "title": "About Cleanuva",
+        "subtitle": "A solar robotics and AI operations brand by NETRO Sparkle GmbH.",
+        "support": "Cleanuva brings together field-ready solar cleaning robots and an AI-native operations platform to help PV teams detect losses, execute cleaning work and verify results.",
+        "cta": {
+          "robotics": "View robotics",
+          "platform": "Explore platform",
+          "contact": "Contact Cleanuva"
+        }
+      },
+      "brand": {
+        "eyebrow": "Brand & entity",
+        "title": "Cleanuva is the brand. NETRO Sparkle GmbH is the company.",
+        "brandTag": "The brand",
+        "brandBody": "Cleanuva is the main brand for all outward business — robots, platform and solutions are sold and supported under the Cleanuva name.",
+        "entityTag": "The legal entity",
+        "entityBody": "NETRO Sparkle GmbH is the registered company behind Cleanuva. It appears on contracts, invoices, the Impressum and the privacy policy.",
+        "note": "Cleanuva is a brand of NETRO Sparkle GmbH — not a separate, unregistered company."
+      },
+      "build": {
+        "eyebrow": "What we build",
+        "title": "Two business lines, one operation",
+        "learnMore": "Learn more",
+        "items": {
+          "robotics": {
+            "title": "Cleanuva Robotics",
+            "desc": "Field-ready solar cleaning robots for portable, unattended and fixed PV work."
+          },
+          "platform": {
+            "title": "Cleanuva Platform",
+            "desc": "An AI-native operations layer that detects losses and verifies recovery."
+          },
+          "solutions": {
+            "title": "Cleanuva Solutions",
+            "desc": "Robotics and platform combined into scenarios for each customer type."
+          }
+        }
+      },
+      "principles": {
+        "eyebrow": "How we work",
+        "title": "Operating principles",
+        "items": {
+          "p1": "Field-first robotics",
+          "p2": "Outcome-oriented software",
+          "p3": "A verified action loop, from detection to proof",
+          "p4": "A partner-ready business model",
+          "p5": "Conservative claims and project-based configuration"
+        }
+      },
+      "info": {
+        "eyebrow": "Company information",
+        "title": "Formal company details",
+        "labels": {
+          "entity": "Entity",
+          "office": "Registered office",
+          "court": "Register court",
+          "hrb": "Commercial register",
+          "vat": "VAT ID",
+          "website": "Website",
+          "email": "Email"
+        },
+        "imprintLink": "Read the full Impressum",
+        "legalHeading": "Legal & policies"
+      },
+      "finalCta": {
+        "title": "Talk to the team behind Cleanuva.",
+        "cta": {
+          "contact": "Contact Cleanuva",
+          "demo": "Request a demo",
+          "distribution": "View distribution network"
+        }
+      }
     }
   },
   "Resources": {
@@ -2917,6 +2992,85 @@
       "spanVid": "NuvaSpan application",
       "exh1": "Exhibition meeting",
       "exh2": "Exhibition moment"
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "Media gallery",
+        "title": "Cleanuva media gallery",
+        "subtitle": "Robotics, platform and field-operation visuals for solar cleaning and PV operations.",
+        "cta": {
+          "robotics": "View robotics",
+          "compare": "Compare robots",
+          "demo": "Request a demo"
+        }
+      },
+      "comingSoon": "Coming soon",
+      "categories": {
+        "eyebrow": "Browse by type",
+        "title": "Media categories",
+        "items": {
+          "robots": {
+            "title": "Robots in operation",
+            "desc": "Cleaning robots working across PV rows."
+          },
+          "details": {
+            "title": "Product details",
+            "desc": "Close-up product and configuration views."
+          },
+          "site": {
+            "title": "PV site context",
+            "desc": "Utility-scale and commercial site settings."
+          },
+          "platform": {
+            "title": "Platform interface",
+            "desc": "The AI O&M operations view."
+          },
+          "accessories": {
+            "title": "Accessories & service",
+            "desc": "Brushes, parts and service items."
+          },
+          "events": {
+            "title": "Events / partner demos",
+            "desc": "Exhibitions and partner demonstrations."
+          }
+        }
+      },
+      "featured": {
+        "eyebrow": "Featured",
+        "title": "From the field and the product line",
+        "note": "More field footage and event media will be added as it becomes available.",
+        "items": {
+          "op1": "R-Series cleaning run",
+          "op3": "U-Series on site",
+          "op2": "Cleaning detail",
+          "rHero": "NuvaTrack-R",
+          "uHero": "NuvaTrack-U",
+          "site": "Utility-scale PV site",
+          "platform": "Operations view",
+          "brushes": "Cleaning brushes",
+          "motors": "Service parts"
+        }
+      },
+      "highlight": {
+        "eyebrow": "In operation",
+        "title": "See the robots run",
+        "subtitle": "Demo clips and field stills from the NuvaTrack line.",
+        "media": {
+          "rVid": "NuvaTrack-R cleaning demo",
+          "uVid": "NuvaTrack-U cleaning demo",
+          "rOp": "R-Series field operation",
+          "uOp": "U-Series field operation"
+        }
+      },
+      "finalCta": {
+        "title": "Want product photos, demo footage or partner material?",
+        "body": "Tell us what you need and we'll share what's available.",
+        "cta": {
+          "contact": "Contact Cleanuva",
+          "robotics": "View robotics",
+          "distribution": "Distribution Network"
+        }
+      }
     }
   },
   "Support": {
@@ -2992,6 +3146,233 @@
         "manuals": "Manuals & guides",
         "certificates": "Certificates"
       }
+    },
+    "page": {
+      "hero": {
+        "eyebrow": "Support",
+        "title": "Support and sales assistance",
+        "subtitle": "Find the right Cleanuva contact path for robots, platform, accessories and service questions.",
+        "cta": {
+          "pricing": "Get pricing",
+          "demo": "Request a demo",
+          "accessories": "Accessories inquiry"
+        }
+      },
+      "paths": {
+        "eyebrow": "Where to start",
+        "title": "Pick the path that fits",
+        "items": {
+          "robots": {
+            "title": "Robot sales",
+            "desc": "Choose a model and get a quote for your site.",
+            "action": "View robotics"
+          },
+          "platform": {
+            "title": "AI O&M Platform",
+            "desc": "See the operations platform on your assets.",
+            "action": "Request a demo"
+          },
+          "accessories": {
+            "title": "Accessories & service parts",
+            "desc": "Brushes, consumables and spares for your robots.",
+            "action": "Accessories inquiry"
+          },
+          "compare": {
+            "title": "Product comparison",
+            "desc": "Compare NuvaTrack-R, R Pro, U and NuvaSpan.",
+            "action": "Compare robots"
+          },
+          "distribution": {
+            "title": "Distribution partnership",
+            "desc": "Sell, integrate or service Cleanuva in your market.",
+            "action": "Distribution Network"
+          },
+          "existing": {
+            "title": "Existing customer support",
+            "desc": "Already running Cleanuva? Reach the team.",
+            "action": "Contact Cleanuva"
+          }
+        }
+      },
+      "prep": {
+        "eyebrow": "Faster answers",
+        "title": "Before contacting us",
+        "intro": "A few details help us route your request and reply with the right next step.",
+        "items": {
+          "i1": "Country / region",
+          "i2": "Site type",
+          "i3": "PV plant size",
+          "i4": "Robot model (if known)",
+          "i5": "Cleaning mode",
+          "i6": "Current challenge",
+          "i7": "Timeline",
+          "i8": "Accessories or service needs"
+        }
+      },
+      "links": {
+        "eyebrow": "Quick links",
+        "title": "Useful links",
+        "items": {
+          "robotics": "Robotics",
+          "compare": "Compare",
+          "platform": "Platform",
+          "solutions": "Solutions",
+          "accessories": "Accessories",
+          "distribution": "Distribution Network",
+          "company": "Company"
+        }
+      },
+      "finalCta": {
+        "title": "Still not sure where to start?",
+        "body": "Talk to Cleanuva — we'll point you to the right path.",
+        "cta": {
+          "demo": "Request a demo",
+          "contact": "Contact",
+          "pricing": "Get pricing"
+        }
+      }
+    }
+  },
+  "Home": {
+    "hero": {
+      "title": "Solar cleaning robots for every PV site.",
+      "subtitle": "From remote-controlled cleaning to unattended and fixed systems, Cleanuva helps PV teams clean panels faster, cut manual work and verify results with AI-supported operations.",
+      "modes": {
+        "r": "Portable",
+        "rpro": "Assisted",
+        "u": "Unattended",
+        "span": "Fixed"
+      }
+    },
+    "cta": {
+      "viewRobotics": "View robotics",
+      "compareRobots": "Compare robots",
+      "getPricing": "Get pricing",
+      "explorePlatform": "Explore platform",
+      "requestDemo": "Request a demo",
+      "viewModel": "View product",
+      "viewSolutions": "View solutions",
+      "distribution": "Distribution Network",
+      "contact": "Contact Cleanuva",
+      "view": "View"
+    },
+    "matrix": {
+      "eyebrow": "The robot line",
+      "title": "Four robots for four site types",
+      "items": {
+        "r": "Remote-controlled base model for flexible cleaning teams.",
+        "rpro": "AI-Assist model with heading hold, cruise control and camera-assisted operation.",
+        "u": "Unattended, site-configured cleaning for repeatable PV operations.",
+        "span": "Suspended / bridge-type cleaning system for fixed PV structures."
+      }
+    },
+    "chooseOp": {
+      "eyebrow": "Find your fit",
+      "title": "Choose by how you clean",
+      "intro": "Start from the operation you run — Cleanuva has a robot for it.",
+      "items": {
+        "r": {
+          "need": "A portable, remote-controlled robot"
+        },
+        "rpro": {
+          "need": "Assisted, straight-line operation"
+        },
+        "u": {
+          "need": "Unattended, repeatable cleaning"
+        },
+        "span": {
+          "need": "A fixed cleaning system"
+        }
+      }
+    },
+    "lines": {
+      "eyebrow": "Robotics + Platform",
+      "title": "Robots do the work. Software proves it paid.",
+      "triad": "Software that sees it. Robots that fix it. Proof that it paid.",
+      "robotics": {
+        "tag": "Cleanuva Robotics · executes",
+        "desc": "Field-ready robots clean panels across portable, assisted, unattended and fixed PV work."
+      },
+      "platform": {
+        "tag": "Cleanuva Platform · sees & proves",
+        "desc": "The AI-native platform finds losses, prioritizes cleaning and verifies the recovered value — making every robot run accountable."
+      }
+    },
+    "loop": {
+      "eyebrow": "How value is proven",
+      "title": "Detect, execute, verify, prove",
+      "intro": "The platform detects and proves; robots and teams execute in between.",
+      "steps": {
+        "detect": {
+          "name": "Detect",
+          "body": "The platform flags production loss, soiling or alarms."
+        },
+        "execute": {
+          "name": "Execute",
+          "body": "Robots or service teams do the cleaning."
+        },
+        "verify": {
+          "name": "Verify",
+          "body": "Compare before/after performance on site."
+        },
+        "prove": {
+          "name": "Prove",
+          "body": "Turn results into report-ready evidence."
+        }
+      }
+    },
+    "solutions": {
+      "eyebrow": "Who it's for",
+      "title": "Built for the people who run solar",
+      "items": {
+        "owners": {
+          "name": "PV asset owners",
+          "desc": "See production risk and recovered value across the portfolio."
+        },
+        "om": {
+          "name": "O&M teams",
+          "desc": "Turn alarms into prioritized, trackable field work."
+        },
+        "cleaning": {
+          "name": "Cleaning service operators",
+          "desc": "Plan, dispatch and verify cleaning rounds."
+        },
+        "epc": {
+          "name": "EPC / warranty teams",
+          "desc": "Document performance with operational evidence."
+        },
+        "partners": {
+          "name": "Distributors / service partners",
+          "desc": "Offer connected cleaning backed by verification."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "Proof & reporting",
+      "title": "Show the work paid off",
+      "intro": "Cleanuva turns operations into report-ready evidence — decision support, not financial guarantees.",
+      "panel": {
+        "title": "Performance recovery",
+        "tag": "Illustrative",
+        "before": "Before cleaning",
+        "after": "After cleaning",
+        "recovery": "Estimated recovery"
+      },
+      "items": {
+        "beforeafter": "Before / after comparison",
+        "kwh": "Estimated recovered kWh",
+        "trail": "Work order trail",
+        "verification": "Cleaning verification",
+        "evidence": "Report-ready operational evidence"
+      },
+      "disclaimer": "Figures are operational estimates for decision support — not audited financial or legal results."
+    },
+    "partner": {
+      "title": "Build your solar cleaning business with Cleanuva.",
+      "body": "Partner with Cleanuva to bring solar cleaning robots, accessories and AI-supported operations to your market."
+    },
+    "finalCta": {
+      "title": "Choose the right Cleanuva robot for your PV site."
     }
   }
 }
