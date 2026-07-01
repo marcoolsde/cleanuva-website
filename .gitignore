@@ -48,3 +48,10 @@ next-env.d.ts
 
 # Local OEM reference materials - never commit
 tmp_ref/
+
+# Local working docs & unused hero source masters (keep local, don't commit).
+# Note: doc/ (singular) is local scratch — docs/ (the tracked website docs) is NOT ignored.
+# The live optimized hero homepage-hero-daylight.jpg stays tracked.
+doc/*.md
+public/images/hero/homepage-robot-*.png
+public/images/hero/homepage-hero2.jpg
